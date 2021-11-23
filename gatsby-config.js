@@ -4,6 +4,7 @@ module.exports = {
     title: "Devfest",
   },
   plugins: [
+    "gatsby-plugin-typescript",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
