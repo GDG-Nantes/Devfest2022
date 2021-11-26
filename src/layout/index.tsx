@@ -1,3 +1,4 @@
+import { CloseRounded, MenuRounded } from "@mui/icons-material";
 import {
   AppBar,
   CssBaseline,
@@ -40,7 +41,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar>
           <Box style={{ flexGrow: 1 }}>
             <StaticImage
@@ -58,7 +59,7 @@ const Layout: React.FC = ({ children }) => {
               aria-label="open drawer"
               onClick={toggleDrawer(true)}
             >
-              bouton
+              <MenuRounded />
             </IconButton>
           </Box>
         </Toolbar>
@@ -74,15 +75,16 @@ const Layout: React.FC = ({ children }) => {
           role="presentation"
           onKeyDown={toggleDrawer(true)}
           onClick={toggleDrawer(false)}
-          style={{ width: "250px" }}
         >
           <List>
             <ListItem button style={{ height: "75px" }}>
-              <ListItemIcon>close</ListItemIcon>
+              <ListItemIcon>
+                <CloseRounded />
+              </ListItemIcon>
             </ListItem>
             <Divider />
             {Menu.map((menuItem) => (
-              <ListItem button>
+              <ListItem button key={menuItem.label}>
                 <Link to={menuItem.link}>
                   <ListItemText>{menuItem.label}</ListItemText>
                 </Link>

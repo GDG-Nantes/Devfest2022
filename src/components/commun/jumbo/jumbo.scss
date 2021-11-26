@@ -1,0 +1,16 @@
+.jumbo {
+  height: calc(100vh - 65px);
+  width: 100%;
+  font-size: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .jumbo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
