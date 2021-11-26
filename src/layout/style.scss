@@ -1,5 +1,14 @@
-.appBar {
+.top-bar-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-grow: 0;
+}
+.top-bar-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
 }
