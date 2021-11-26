@@ -1,12 +1,36 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Devfest",
+    siteUrl: "https://devfest2022.gdgnantes.com",
+    title: "Devfest 2022",
   },
   plugins: [
     "gatsby-plugin-typescript",
+    {
+      resolve: `gatsby-theme-material-ui`,
+      options: {
+        webFontsConfig: {
+          fonts: {
+            google: [
+              {
+                family: `Montserrat`,
+                variants: [`300`, `400`, `500`],
+              },
+            ],
+          },
+        },
+      },
+    },
+    "gatsby-plugin-material-ui",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`,
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
