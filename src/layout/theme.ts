@@ -3,6 +3,11 @@ import "./theme.scss";
 
 // A custom theme for this app
 const theme = createTheme({
+  typography: {
+    allVariants: {
+      color: "white",
+    },
+  },
   palette: {
     primary: {
       main: "#4483A2",
@@ -29,11 +34,11 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiIconButton: {
-      defaultProps: {
-        color: "secondary", // TODO
-      },
-    },
+    // MuiIconButton: {
+    //   defaultProps: {
+    //     color: "secondary", // TODO
+    //   },
+    // },
   },
 });
 

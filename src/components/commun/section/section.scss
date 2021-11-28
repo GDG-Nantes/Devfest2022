@@ -1,6 +1,11 @@
 .section {
   padding: 20px 50px;
-  color: white;
+  align-items: center;
+  justify-content: center;
+
+  // &:first-child {
+  //   align-self: left;
+  // }
 
   &.primary {
     background-color: var(--primary);

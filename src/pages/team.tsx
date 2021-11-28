@@ -1,4 +1,4 @@
-import { List, ListItem, Typography } from "@mui/material";
+import { Grid, List, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import * as React from "react";
 import team from "../../data/team.json";
@@ -6,6 +6,7 @@ import { DefaultPage } from "../components/commun/page";
 import { DefaultSection } from "../components/commun/section/section";
 import { SocialLink } from "../components/commun/socials/socials";
 import "../components/team/team.scss";
+import Image from "../helpers/image";
 
 const IndexPage = () => (
   <DefaultPage title="Team" background={"back-4.jpg"}>
@@ -18,15 +19,17 @@ const IndexPage = () => (
     <DefaultSection>
       <Typography variant="h2">Core Team</Typography>
 
-      <List className="team-members">
+      {/* <List className="team-members"> */}
+      <Grid container spacing={2} justifyContent="center">
         {team.bureau.map((member) => (
           // create a component once types have been generated
-          <ListItem>
+          <Grid item maxWidth={300}>
             {/* <GatsbyImage
-              src={`../images/team/${member.id}.jpg`}
-              alt={member.id}
-            /> */}
+                src={`../images/team/${member.id}.jpg`}
+                alt={member.id}
+              /> */}
             <Box>
+              <Image name="team/arthur.jpg" alt="truc" />
               <Typography variant="h6">
                 {member.firstName} {member.lastName.toUpperCase()}
               </Typography>
@@ -37,9 +40,10 @@ const IndexPage = () => (
                 ))}
               </List>
             </Box>
-          </ListItem>
+          </Grid>
         ))}
-      </List>
+      </Grid>
+      {/* </List> */}
     </DefaultSection>
   </DefaultPage>
 );
