@@ -12,3 +12,14 @@
   align-items: center;
   flex-grow: 1;
 }
+
+.menu-desktop {
+  .active-link {
+    border-bottom: 1px solid white;
+  }
+}
+.menu-mobile {
+  a {
+    color: black;
+  }
+}

@@ -6,7 +6,7 @@ import {
   Drawer,
   IconButton,
   List,
-  ListItem,
+  ListItemButton,
   ListItemIcon,
   ListItemText,
   ThemeProvider,
@@ -17,10 +17,10 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { useResponsiveData } from "../helpers/responsive";
-import "./style.scss";
+import "./layout.scss";
 import theme from "./theme";
 
-const Menu = [
+const MENU: Array<{ label: string; link: string }> = [
   {
     label: "Home",
     link: "/",
@@ -60,12 +60,14 @@ const Topbar: React.FC<{
   <AppBar position="sticky">
     <Toolbar>
       <Box className="top-bar-left">
-        <StaticImage
-          alt="Logo Devfest 2021"
-          src="../images/logos/devfest_color512.png"
-          height={65}
-          objectFit="contain"
-        />
+        <Link to="/">
+          <StaticImage
+            alt="Logo Devfest 2021"
+            src="../images/logos/devfest_color512.png"
+            height={65}
+            objectFit="contain"
+          />
+        </Link>
       </Box>
 
       <Box className="top-bar-right">
@@ -86,7 +88,11 @@ const Topbar: React.FC<{
   </AppBar>
 );
 
-const TopMenu = () => <div>top menu</div>;
+const TopMenu = () => (
+  <List className="menu-desktop">
+    <ListMenuButtons />
+  </List>
+);
 
 const BarMenu: React.FC<{
   toggleDrawer: (open: any) => (event: any) => void;
@@ -103,23 +109,29 @@ const BarMenu: React.FC<{
       onKeyDown={toggleDrawer(true)}
       onClick={toggleDrawer(false)}
     >
-      <List>
-        <ListItem button style={{ height: "75px" }}>
+      <List className="menu-mobile">
+        <ListItemButton style={{ height: "75px" }}>
           <ListItemIcon>
             <CloseRounded />
           </ListItemIcon>
-        </ListItem>
+        </ListItemButton>
         <Divider />
-        {Menu.map((menuItem) => (
-          <ListItem button key={menuItem.label}>
-            <Link to={menuItem.link}>
-              <ListItemText>{menuItem.label}</ListItemText>
-            </Link>
-          </ListItem>
-        ))}
+        <ListMenuButtons />
       </List>
     </Box>
   </Drawer>
+);
+
+const ListMenuButtons: React.FC = () => (
+  <>
+    {MENU.map((menuItem) => (
+      <ListItemButton key={menuItem.label}>
+        <Link to={menuItem.link} activeClassName="active-link">
+          <ListItemText>{menuItem.label}</ListItemText>
+        </Link>
+      </ListItemButton>
+    ))}
+  </>
 );
 
 export default Layout;

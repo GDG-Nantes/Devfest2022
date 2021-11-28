@@ -16,9 +16,7 @@ export const DefaultPage: React.FC<PageConfig> = ({ children, ...config }) => {
       {config.jumbo ? (
         <Jumbo background={config.background}>{config.jumbo}</Jumbo>
       ) : (
-        <Hero background={config.background}>
-          <h1>{config.title}</h1>
-        </Hero>
+        <Hero background={config.background} title={config.title} />
       )}
       {children}
     </main>

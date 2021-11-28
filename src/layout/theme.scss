@@ -1,0 +1,14 @@
+$primary: #4483a2;
+$primary-dark: #1c3744;
+$secondary: #ed7954;
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.secondary {
+  a {
+    color: $primary-dark;
+  }
+}

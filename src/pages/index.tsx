@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import * as React from "react";
 import { DefaultPage } from "../components/commun/page";
 
-const jumbo = <Typography>October 20,21 2022</Typography>;
+const jumbo = <Typography variant="h1">October 20,21 2022</Typography>;
 
 const IndexPage = () => (
   <DefaultPage

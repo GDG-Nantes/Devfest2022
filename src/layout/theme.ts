@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { red } from "@mui/material/colors";
+import "./theme.scss";
 
 // A custom theme for this app
 const theme = createTheme({
@@ -9,9 +9,6 @@ const theme = createTheme({
     },
     secondary: {
       main: "#ED7954",
-    },
-    error: {
-      main: red.A400,
     },
     background: {
       default: "#fff",

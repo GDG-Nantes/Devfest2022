@@ -1,9 +1,10 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import "./hero.scss";
 
-export const Hero: React.FC<{ background?: string }> = ({
-  children,
+export const Hero: React.FC<{ background?: string; title: string }> = ({
   background,
+  title,
 }) => {
   const backgroundImage = background
     ? require(`../../../images/backgrounds/${background}`).default
@@ -13,7 +14,9 @@ export const Hero: React.FC<{ background?: string }> = ({
       className="hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="hero-content">{children}</div>
+      <div className="hero-content">
+        <Typography variant="h1">{title}</Typography>
+      </div>
     </div>
   );
 };
