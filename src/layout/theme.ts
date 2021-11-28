@@ -13,6 +13,10 @@ const theme = createTheme({
     background: {
       default: "#fff",
     },
+    text: {
+      primary: "#fff",
+      secondary: "#fff",
+    },
   },
   breakpoints: {
     keys: ["xs", "sm", "md", "lg", "xl"],
@@ -22,6 +26,13 @@ const theme = createTheme({
       md: 960,
       lg: 1280,
       xl: 1920,
+    },
+  },
+  components: {
+    MuiIconButton: {
+      defaultProps: {
+        color: "secondary", // TODO
+      },
     },
   },
 });

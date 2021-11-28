@@ -1,6 +1,8 @@
-$primary: #4483a2;
-$primary-dark: #1c3744;
-$secondary: #ed7954;
+body {
+  --primary: #4483a2;
+  --primary-dark: #1c3744;
+  --secondary: #ed7954;
+}
 
 a {
   color: white;
@@ -9,6 +11,6 @@ a {
 
 .secondary {
   a {
-    color: $primary-dark;
+    color: var(--primary-dark);
   }
 }

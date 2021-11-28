@@ -1,8 +1,10 @@
 .hero {
+  min-height: 350px;
   height: calc(50vh - 65px);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right center;
 
   .hero-content {
     display: flex;

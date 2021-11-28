@@ -1,0 +1,49 @@
+{
+  "$schema": "../json_schemas/schema_team.json",
+  "bureau": [
+    {
+      "id": "arthur",
+      "firstName": "Arthur",
+      "lastName": "Maury",
+      "title": "Software Architect at Bouygues Telecom",
+      "socials": {
+        "twitter": "ArthurMaury1",
+        "linkedin": "arthur-maury",
+        "github": "ArtyMaury"
+      }
+    },
+    {
+      "id": "arthur",
+      "firstName": "Arthur",
+      "lastName": "Maury",
+      "title": "Software Architect at Bouygues Telecom",
+      "socials": {
+        "twitter": "ArthurMaury1",
+        "linkedin": "arthur-maury",
+        "github": "ArtyMaury"
+      }
+    },
+    {
+      "id": "arthur",
+      "firstName": "Arthur",
+      "lastName": "Maury",
+      "title": "Software Architect at Bouygues Telecom",
+      "socials": {
+        "twitter": "ArthurMaury1",
+        "linkedin": "arthur-maury",
+        "github": "ArtyMaury"
+      }
+    },
+    {
+      "id": "arthur",
+      "firstName": "Arthur",
+      "lastName": "Maury",
+      "title": "Software Architect at Bouygues Telecom",
+      "socials": {
+        "twitter": "ArthurMaury1",
+        "linkedin": "arthur-maury",
+        "github": "ArtyMaury"
+      }
+    }
+  ]
+}

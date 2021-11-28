@@ -1,0 +1,11 @@
+.section {
+  padding: 20px 50px;
+  color: white;
+
+  &.primary {
+    background-color: var(--primary);
+  }
+  &.secondary {
+    background-color: var(--secondary);
+  }
+}
