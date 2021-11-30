@@ -5,6 +5,7 @@ SEO
 generate interfaces
 yaml data
 target \_blank
+stocker images speakers
 
 <!-- Dev -->
 

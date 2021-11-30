@@ -1,19 +1,16 @@
 import { createTheme } from "@mui/material";
 import "./theme.scss";
 
+const secondary = "#ED7954";
+const primary = "#4483A2";
 // A custom theme for this app
 const theme = createTheme({
-  typography: {
-    allVariants: {
-      color: "white",
-    },
-  },
   palette: {
     primary: {
-      main: "#4483A2",
+      main: primary,
     },
     secondary: {
-      main: "#ED7954",
+      main: secondary,
     },
     background: {
       default: "#fff",
@@ -34,11 +31,16 @@ const theme = createTheme({
     },
   },
   components: {
-    // MuiIconButton: {
-    //   defaultProps: {
-    //     color: "secondary", // TODO
-    //   },
-    // },
+    MuiIconButton: {
+      defaultProps: {
+        color: "inherit",
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        color: "inherit",
+      },
+    },
   },
 });
 

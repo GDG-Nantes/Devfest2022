@@ -23,6 +23,7 @@
     "@mui/material": "^5.2.0",
     "gatsby": "^4.2.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
+    "gatsby-plugin-graphql-config": "^1.2.0",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-manifest": "^4.2.0",
@@ -42,5 +43,12 @@
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.14.3",
     "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-react": "^7.27.1",
+    "typescript": "^4.5.2"
   }
 }

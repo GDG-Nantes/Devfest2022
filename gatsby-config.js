@@ -23,6 +23,7 @@ module.exports = {
     "gatsby-plugin-material-ui",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    "gatsby-plugin-graphql-config",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

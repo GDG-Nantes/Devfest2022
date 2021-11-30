@@ -17,15 +17,9 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { useResponsiveData } from "../helpers/responsive";
+import { MENU } from "../menu";
 import "./layout.scss";
 import theme from "./theme";
-
-const MENU: Array<{ label: string; link: string }> = [
-  {
-    label: "Home",
-    link: "/",
-  },
-];
 
 const Layout: React.FC = ({ children }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
@@ -54,7 +48,7 @@ const Layout: React.FC = ({ children }) => {
 };
 
 const Topbar: React.FC<{
-  toggleDrawer: (open: any) => (event: any) => void;
+  toggleDrawer: (open) => (event) => void;
   showMenu: boolean;
 }> = ({ toggleDrawer, showMenu }) => (
   <AppBar position="sticky">
@@ -95,7 +89,7 @@ const TopMenu = () => (
 );
 
 const BarMenu: React.FC<{
-  toggleDrawer: (open: any) => (event: any) => void;
+  toggleDrawer: (open) => (event) => void;
   isOpen: boolean;
 }> = ({ isOpen, toggleDrawer }) => (
   <Drawer
