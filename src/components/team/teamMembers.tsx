@@ -3,15 +3,14 @@ import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useMemo } from "react";
-import { ISocials, ITeamMember } from "../../../json_schemas/interfaces/team";
+import { Member, Social } from "../../../json_schemas/interfaces/schema_team";
+import { shuffleArray } from "../../helpers";
 import { getImageData, ImageData } from "../../helpers/images";
 import { SocialLink } from "../commun/socials/socials";
 
-export const TeamMembers: React.FC<{ members: ITeamMember[] }> = ({
-  members,
-}) => {
+export const TeamMembers: React.FC<{ members: Member[] }> = ({ members }) => {
   // All team members pictures with the right size
-  const imagesQuery: ImageData = useStaticQuery(graphql`
+  const imageQuery: ImageData = useStaticQuery(graphql`
     query Images(
       $width: Int = 100
       $height: Int = 100
@@ -24,18 +23,17 @@ export const TeamMembers: React.FC<{ members: ITeamMember[] }> = ({
   const imageByMember = useMemo(() => {
     const mapObj = {};
     members.forEach(
-      (member) => (mapObj[member.id] = getImageData(imagesQuery, member.id))
+      (member) => (mapObj[member.id] = getImageData(imageQuery, member.id))
     );
     return mapObj;
-  }, [members, imagesQuery]);
+  }, [members, imageQuery]);
 
   return (
     <Grid container spacing={2} justifyContent="center">
-      {members.map((member) => (
+      {shuffleArray(members).map((member) => (
         <Grid item maxWidth={300} key={member.id}>
           <Box>
             <GatsbyImage alt={member.id} image={imageByMember[member.id]} />
-            {/* <Image name="team/arthur.jpg" alt="truc" /> */}
             <Typography variant="h6">
               {member.firstName} {member.lastName.toUpperCase()}
             </Typography>
@@ -45,7 +43,7 @@ export const TeamMembers: React.FC<{ members: ITeamMember[] }> = ({
                 <SocialLink
                   key={media}
                   login={login}
-                  type={media as keyof ISocials}
+                  type={media as keyof Social}
                 />
               ))}
             </List>

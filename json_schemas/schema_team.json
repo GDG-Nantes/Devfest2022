@@ -1,7 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Schema for team member",
+  "title": "team",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "bureau": {
       "type": "array",
@@ -11,6 +12,7 @@
   "definitions": {
     "member": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "id": {
           "type": "string"
@@ -32,6 +34,7 @@
     },
     "social": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "twitter": {
           "type": "string"

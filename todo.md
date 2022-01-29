@@ -10,8 +10,6 @@ stocker images speakers
 <!-- Dev -->
 
 yaml schema
-eslint
-prettier
 
 <!-- Infra -->
 

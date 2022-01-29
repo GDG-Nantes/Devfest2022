@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "json_schemas/schema_team.json": "data/team.yml"
+  }
+}

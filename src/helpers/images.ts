@@ -7,7 +7,7 @@ export const queryImageByWidth = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(height: $height)
+            gatsbyImageData(width: $width)
           }
         }
       }

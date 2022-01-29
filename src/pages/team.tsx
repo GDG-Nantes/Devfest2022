@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import * as React from "react";
-import team from "../../data/team.json";
+import team from "../../data/team.yml";
+import { Team } from "../../json_schemas/interfaces/schema_team";
 import { DefaultPage } from "../components/commun/page";
 import { DefaultSection } from "../components/commun/section/section";
 import "../components/team/team.scss";
@@ -16,7 +17,7 @@ const IndexPage = () => (
     </DefaultSection>
     <DefaultSection>
       <Typography variant="h2">Core Team</Typography>
-      <TeamMembers members={team.bureau} />
+      <TeamMembers members={(team as Team).bureau} />
     </DefaultSection>
   </DefaultPage>
 );
