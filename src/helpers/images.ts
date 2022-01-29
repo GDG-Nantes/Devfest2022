@@ -1,14 +1,13 @@
 import { graphql } from "gatsby";
+import { getImage, ImageDataLike } from "gatsby-plugin-image";
 
 export const queryImageByWidth = graphql`
   fragment imageDataByWidth on Query {
     images: allFile(filter: { relativePath: { glob: $pathGlob } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            gatsbyImageData(width: $width)
-          }
+      nodes {
+        name
+        childImageSharp {
+          gatsbyImageData(width: $width)
         }
       }
     }
@@ -18,12 +17,10 @@ export const queryImageByWidth = graphql`
 export const queryImageByHeight = graphql`
   fragment imageDataByHeight on Query {
     images: allFile(filter: { relativePath: { glob: $pathGlob } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            gatsbyImageData(height: $height)
-          }
+      nodes {
+        name
+        childImageSharp {
+          gatsbyImageData(height: $height)
         }
       }
     }
@@ -33,12 +30,14 @@ export const queryImageByHeight = graphql`
 export const queryImage = graphql`
   fragment imageData on Query {
     images: allFile(filter: { relativePath: { glob: $pathGlob } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            gatsbyImageData(width: $width, height: $height)
-          }
+      nodes {
+        name
+        childImageSharp {
+          gatsbyImageData(
+            width: $width
+            height: $height
+            backgroundColor: "#fff"
+          )
         }
       }
     }
@@ -47,18 +46,16 @@ export const queryImage = graphql`
 
 export type ImageData = {
   images: {
-    edges: Array<{
-      node: {
+    nodes: Array<
+      ImageDataLike & {
         name: string;
-        childImageSharp: {
-          gatsbyImageData;
-        };
-      };
-    }>;
+      }
+    >;
   };
 };
 
 export function getImageData(imageData: ImageData, name?: string) {
-  return imageData.images.edges.find((edge) => !name || edge.node.name === name)
-    .node.childImageSharp.gatsbyImageData;
+  return getImage(
+    imageData.images.nodes.find((node) => !name || node.name === name)
+  );
 }

@@ -41,6 +41,22 @@ const theme = createTheme({
         color: "inherit",
       },
     },
+    MuiTypography: {
+      styleOverrides: {
+        h2: {
+          margin: "1rem 0 4rem",
+        },
+        h3: {
+          fontSize: "1.17rem",
+          lineHeight: "1.5rem",
+          fontWeight: "bold",
+        },
+        h4: {
+          fontSize: "1rem",
+          lineHeight: "1.5rem",
+        },
+      },
+    },
   },
 });
 

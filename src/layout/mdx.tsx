@@ -16,16 +16,19 @@ export const CustomMDXProvider: React.FC = ({ children }) => (
       h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
       p: ({ children }) => <Typography>{children}</Typography>,
       a: (props) => <Link {...props}>{children}</Link>,
-      code: ({ children, className }) => (
-        <DefaultSection variant={className.replace("language-", "")}>
-          {children}
-        </DefaultSection>
-      ),
-      DefaultSection,
+      SecondarySection,
+      PrimarySection,
     }}
   >
     {children}
   </MDXProvider>
+);
+
+const SecondarySection: React.FC = ({ children }) => (
+  <DefaultSection variant="secondary">{children}</DefaultSection>
+);
+const PrimarySection: React.FC = ({ children }) => (
+  <DefaultSection variant="primary">{children}</DefaultSection>
 );
 
 const MDXPageLayout: React.FC<{ metadata?: PageConfig }> = ({
