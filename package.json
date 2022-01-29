@@ -48,6 +48,8 @@
     "sharp": "^0.29.3"
   },
   "devDependencies": {
+    "@types/mdx": "^2.0.1",
+    "@types/mdx-js__react": "^1.5.5",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^8.8.0",

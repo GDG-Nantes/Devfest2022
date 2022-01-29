@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 import { Hero } from "./hero/hero";
 import { Jumbo } from "./jumbo/jumbo";
 
-type PageConfig = {
+export type PageConfig = {
   title: string;
   description?: string;
   background?: string;

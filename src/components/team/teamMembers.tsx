@@ -3,12 +3,15 @@ import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useMemo } from "react";
+import team from "../../../data/team.yml";
 import { Member, Social } from "../../../json_schemas/interfaces/schema_team";
 import { shuffleArray } from "../../helpers";
 import { getImageData, ImageData } from "../../helpers/images";
 import { SocialLink } from "../commun/socials/socials";
 
-export const TeamMembers: React.FC<{ members: Member[] }> = ({ members }) => {
+const members = shuffleArray(team.bureau) as Member[];
+
+export const TeamMembers: React.FC = () => {
   // All team members pictures with the right size
   const imageQuery: ImageData = useStaticQuery(graphql`
     query Images(
@@ -26,11 +29,11 @@ export const TeamMembers: React.FC<{ members: Member[] }> = ({ members }) => {
       (member) => (mapObj[member.id] = getImageData(imageQuery, member.id))
     );
     return mapObj;
-  }, [members, imageQuery]);
+  }, [imageQuery]);
 
   return (
     <Grid container spacing={2} justifyContent="center">
-      {shuffleArray(members).map((member) => (
+      {members.map((member) => (
         <Grid item maxWidth={300} key={member.id}>
           <Box>
             <GatsbyImage alt={member.id} image={imageByMember[member.id]} />

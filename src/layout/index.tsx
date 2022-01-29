@@ -19,6 +19,7 @@ import React from "react";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
 import "./layout.scss";
+import { CustomMDXProvider } from "./mdx";
 import theme from "./theme";
 
 const Layout: React.FC = ({ children }) => {
@@ -42,7 +43,7 @@ const Layout: React.FC = ({ children }) => {
       {isMobileOrTablet && (
         <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
       )}
-      {children}
+      <CustomMDXProvider>{children}</CustomMDXProvider>
     </ThemeProvider>
   );
 };
