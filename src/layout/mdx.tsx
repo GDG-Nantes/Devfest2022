@@ -2,7 +2,16 @@ import { MDXProvider } from "@mdx-js/react";
 import { Link, Typography } from "@mui/material";
 import React from "react";
 import { DefaultPage, PageConfig } from "../components/commun/page";
-import { DefaultSection } from "../components/commun/section/section";
+import {
+  PrimarySection,
+  SecondarySection,
+} from "../components/commun/section/section";
+import Layout from "./index";
+
+const components = {
+  PrimarySection,
+  SecondarySection,
+};
 
 export const CustomMDXProvider: React.FC = ({ children }) => (
   <MDXProvider
@@ -16,24 +25,20 @@ export const CustomMDXProvider: React.FC = ({ children }) => (
       h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
       p: ({ children }) => <Typography>{children}</Typography>,
       a: (props) => <Link {...props}>{children}</Link>,
-      SecondarySection,
-      PrimarySection,
+      ...components,
     }}
   >
     {children}
   </MDXProvider>
 );
 
-const SecondarySection: React.FC = ({ children }) => (
-  <DefaultSection variant="secondary">{children}</DefaultSection>
-);
-const PrimarySection: React.FC = ({ children }) => (
-  <DefaultSection variant="primary">{children}</DefaultSection>
-);
-
 const MDXPageLayout: React.FC<{ metadata?: PageConfig }> = ({
   children,
   metadata,
-}) => <DefaultPage {...metadata}>{children}</DefaultPage>;
+}) => (
+  <Layout>
+    <DefaultPage {...metadata}>{children}</DefaultPage>
+  </Layout>
+);
 
 export default MDXPageLayout;

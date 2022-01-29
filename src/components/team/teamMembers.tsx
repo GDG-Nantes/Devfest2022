@@ -28,7 +28,6 @@ export const TeamMembers: React.FC = () => {
     members.forEach(
       (member) => (mapObj[member.id] = getImageData(imageQuery, member.id))
     );
-    console.log(mapObj);
     return mapObj;
   }, [imageQuery]);
 
