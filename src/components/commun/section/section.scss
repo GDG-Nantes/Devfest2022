@@ -3,9 +3,14 @@
   align-items: center;
   justify-content: center;
 
-  // &:first-child {
-  //   align-self: left;
-  // }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
 
   &.primary {
     background-color: var(--primary);

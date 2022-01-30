@@ -101,18 +101,20 @@ const BarMenu: React.FC<{
   isOpen: boolean;
 }> = ({ isOpen, toggleDrawer }) => (
   <Drawer
-    anchor="right"
+    className="drawer"
+    anchor="top"
     variant="temporary"
     open={isOpen}
     onClose={toggleDrawer(false)}
   >
     <Box
+      className="menu-mobile"
       role="presentation"
       onKeyDown={toggleDrawer(true)}
       onClick={toggleDrawer(false)}
     >
-      <List className="menu-mobile">
-        <ListItemButton style={{ height: "75px" }}>
+      <List>
+        <ListItemButton style={{ height: "75px", justifyContent: "end" }}>
           <ListItemIcon>
             <CloseRounded />
           </ListItemIcon>
@@ -129,7 +131,7 @@ const ListMenuButtons: React.FC = () => (
     {MENU.map((menuItem) => (
       <ListItemButton key={menuItem.label}>
         <Link to={menuItem.link} activeClassName="active-link">
-          <ListItemText>{menuItem.label}</ListItemText>
+          <ListItemText disableTypography>{menuItem.label}</ListItemText>
         </Link>
       </ListItemButton>
     ))}

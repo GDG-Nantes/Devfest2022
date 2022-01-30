@@ -9,7 +9,39 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          node-version: "16"
+          cache: "npm"
+      - run: npm install
+
+      - run: npm run build
+
+      # Deploy
+
+      - run: cp .appengine/app.yaml public/
+
+      - name: Livraison ${{ steps.get_version.outputs.VERSION }}
+        uses: actions-hub/gcloud@master
+        env:
+          PROJECT_ID: devfest2022
+          APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
+          CLI: gcloud
+        with:
+          args: app deploy --version ${{ steps.get_version.outputs.VERSION }} --quiet public/app.yaml --no-promote
+
+      # Notification
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2.2.0
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_TITLE: Déploiement réussi
+          SLACK_MESSAGE: Version ${{ steps.get_version.outputs.VERSION }} https://${{ steps.get_version.outputs.VERSION }}-dot-devfest2022.ew.r.appspot.com/
+          SLACK_ICON: https://github.com/fluidicon.png
+          SLACK_USERNAME: Github Actions

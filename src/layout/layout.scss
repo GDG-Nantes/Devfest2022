@@ -20,8 +20,11 @@
   }
 }
 .menu-mobile {
+  background-color: var(--primary);
   a {
-    color: black;
+    color: white;
+    padding: 0.5rem 5rem;
+    font-size: 1.5rem;
   }
 }
 

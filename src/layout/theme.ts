@@ -41,6 +41,13 @@ const theme = createTheme({
         color: "inherit",
       },
     },
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          color: "inherit",
+        },
+      },
+    },
     MuiTypography: {
       styleOverrides: {
         h2: {
