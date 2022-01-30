@@ -26,14 +26,17 @@ jobs:
 
       - run: cp .appengine/app.yaml public/
 
-      - name: Livraison ${{ steps.get_version.outputs.VERSION }}
-        uses: actions-hub/gcloud@master
-        env:
-          PROJECT_ID: devfest2022
-          APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
-          CLI: gcloud
+      - id: "auth"
+        uses: "google-github-actions/auth@v0"
         with:
-          args: app deploy --version ${{ steps.get_version.outputs.VERSION }} --quiet public/app.yaml --no-promote
+          credentials_json: "${{ secrets.GOOGLE_SERVICE_ACCOUNT }}"
+
+      - name: "Deploy to App Engine"
+        uses: "google-github-actions/deploy-appengine@v0"
+        with:
+          deliverables: "public/app.yaml"
+          promote: false
+          version: ${{ steps.get_version.outputs.VERSION }}
 
       # Notification
 
@@ -42,6 +45,6 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: Déploiement réussi
-          SLACK_MESSAGE: Version ${{ steps.get_version.outputs.VERSION }} https://${{ steps.get_version.outputs.VERSION }}-dot-devfest2022.ew.r.appspot.com/
+          SLACK_MESSAGE: Version ${{ steps.get_version.outputs.VERSION }} "${{ steps.deploy.outputs.url }}"
           SLACK_ICON: https://github.com/fluidicon.png
           SLACK_USERNAME: Github Actions
