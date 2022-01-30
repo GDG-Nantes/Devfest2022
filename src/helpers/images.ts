@@ -1,50 +1,6 @@
-import { graphql } from "gatsby";
 import { getImage, ImageDataLike } from "gatsby-plugin-image";
 
-export const queryImageByWidth = graphql`
-  fragment imageDataByWidth on Query {
-    images: allFile(filter: { relativePath: { glob: $pathGlob } }) {
-      nodes {
-        name
-        childImageSharp {
-          gatsbyImageData(width: $width)
-        }
-      }
-    }
-  }
-`;
-
-export const queryImageByHeight = graphql`
-  fragment imageDataByHeight on Query {
-    images: allFile(filter: { relativePath: { glob: $pathGlob } }) {
-      nodes {
-        name
-        childImageSharp {
-          gatsbyImageData(height: $height)
-        }
-      }
-    }
-  }
-`;
-
-export const queryImage = graphql`
-  fragment imageData on Query {
-    images: allFile(filter: { relativePath: { glob: $pathGlob } }) {
-      nodes {
-        name
-        childImageSharp {
-          gatsbyImageData(
-            width: $width
-            height: $height
-            backgroundColor: "#fff"
-          )
-        }
-      }
-    }
-  }
-`;
-
-export type ImageData = {
+export type ImagesData = {
   images: {
     nodes: Array<
       ImageDataLike & {
@@ -54,8 +10,8 @@ export type ImageData = {
   };
 };
 
-export function getImageData(imageData: ImageData, name?: string) {
+export function getImagesData(imagesData: ImagesData, name?: string) {
   return getImage(
-    imageData.images.nodes.find((node) => !name || node.name === name)
+    imagesData.images.nodes.find((node) => !name || node.name === name)
   );
 }

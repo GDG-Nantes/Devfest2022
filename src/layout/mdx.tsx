@@ -11,6 +11,7 @@ import Layout from "./index";
 const components = {
   PrimarySection,
   SecondarySection,
+  Typography,
 };
 
 export const CustomMDXProvider: React.FC = ({ children }) => (
@@ -35,9 +36,12 @@ export const CustomMDXProvider: React.FC = ({ children }) => (
 const MDXPageLayout: React.FC<{ metadata?: PageConfig }> = ({
   children,
   metadata,
+  ...props
 }) => (
   <Layout>
-    <DefaultPage {...metadata}>{children}</DefaultPage>
+    <DefaultPage {...metadata} {...props}>
+      {children}
+    </DefaultPage>
   </Layout>
 );
 

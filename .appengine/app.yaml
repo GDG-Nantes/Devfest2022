@@ -6,7 +6,7 @@ handlers:
     static_files: index.html
     upload: index.html
     secure: always
-  - url: /(.+)/
+  - url: /(.+)/?
     static_files: \1/index.html
     upload: (.+)/index.html
     secure: always

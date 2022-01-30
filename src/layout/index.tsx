@@ -13,8 +13,7 @@ import {
   Toolbar,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
@@ -48,46 +47,54 @@ const Layout: React.FC = ({ children }) => {
   );
 };
 
-const Topbar: React.FC<{
-  toggleDrawer: (open) => (event) => void;
-  showMenu: boolean;
-}> = ({ toggleDrawer, showMenu }) => (
-  <AppBar position="sticky">
-    <Toolbar>
-      <Box className="top-bar-left">
-        <Link to="/">
-          <StaticImage
-            alt="Logo Devfest 2021"
-            src="../images/logos/devfest_color512.png"
-            height={65}
-            objectFit="contain"
-          />
-        </Link>
-      </Box>
-
-      <Box className="top-bar-right">
-        {showMenu ? (
-          <TopMenu />
-        ) : (
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            onClick={toggleDrawer(true)}
-          >
-            <MenuRounded />
-          </IconButton>
-        )}
-      </Box>
-    </Toolbar>
-  </AppBar>
-);
-
 const TopMenu = () => (
   <List className="menu-desktop">
     <ListMenuButtons />
   </List>
 );
+
+const Topbar: React.FC<{
+  toggleDrawer: (open) => (event) => void;
+  showMenu: boolean;
+}> = ({ toggleDrawer, showMenu }) => {
+  const logo = useStaticQuery(graphql`
+    query {
+      file(name: { eq: "devfest_color_text_white_white" }) {
+        publicURL
+      }
+    }
+  `);
+  return (
+    <AppBar position="sticky">
+      <Toolbar>
+        <Box className="top-bar-left">
+          <Link to="/">
+            <img
+              className="logo-top-bar"
+              src={logo.file.publicURL}
+              alt="Logo Devfest 2021"
+            />
+          </Link>
+        </Box>
+
+        <Box className="top-bar-right">
+          {showMenu ? (
+            <TopMenu />
+          ) : (
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              onClick={toggleDrawer(true)}
+            >
+              <MenuRounded />
+            </IconButton>
+          )}
+        </Box>
+      </Toolbar>
+    </AppBar>
+  );
+};
 
 const BarMenu: React.FC<{
   toggleDrawer: (open) => (event) => void;

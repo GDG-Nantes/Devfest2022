@@ -1,11 +1,11 @@
 import { Grid, List, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import React, { useMemo } from "react";
 import team from "../../../data/team.yml";
 import { Member, Social } from "../../../json_schemas/interfaces/schema_team";
 import { shuffleArray } from "../../helpers";
-import { getImageData, ImageData } from "../../helpers/images";
 import { SocialLink } from "../commun/socials/socials";
 import "./team.scss";
 
@@ -13,23 +13,29 @@ const members = shuffleArray(team.bureau) as Member[];
 
 export const TeamMembers: React.FC = () => {
   // All team members pictures with the right size
-  const imageQuery: ImageData = useStaticQuery(graphql`
-    query Images(
-      $width: Int = 200
-      $height: Int = 200
-      $pathGlob: String = "team/**/*"
-    ) {
-      ...imageData
+  const { allFile } = useStaticQuery(graphql`
+    query {
+      allFile(filter: { relativePath: { glob: "team/**/*" } }) {
+        nodes {
+          name
+          childImageSharp {
+            gatsbyImageData(width: 200, height: 200, backgroundColor: "#fff")
+          }
+        }
+      }
     }
   `);
 
   const imageByMember = useMemo(() => {
     const mapObj = {};
     members.forEach(
-      (member) => (mapObj[member.id] = getImageData(imageQuery, member.id))
+      (member) =>
+        (mapObj[member.id] = getImage(
+          allFile.nodes.find((node) => !member.id || node.name === member.id)
+        ))
     );
     return mapObj;
-  }, [imageQuery]);
+  }, [allFile]);
 
   return (
     <Grid container columnSpacing={3} rowSpacing={10} justifyContent="center">

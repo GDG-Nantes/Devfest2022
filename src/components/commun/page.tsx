@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material";
-import React, { ReactElement } from "react";
+import React from "react";
 import { Hero } from "./hero/hero";
 import { Jumbo } from "./jumbo/jumbo";
 
@@ -7,19 +6,24 @@ export type PageConfig = {
   title: string;
   description?: string;
   background?: string;
-  jumbo?: ReactElement;
+  jumbo?: React.FC;
 };
 
-export const DefaultPage: React.FC<PageConfig> = ({ children, ...config }) => {
+export const DefaultPage: React.FC<PageConfig> = ({
+  children,
+  title,
+  jumbo: JumboContent,
+  background,
+}) => {
   return (
     <main>
-      <title>{config.title}</title>
-      {config.jumbo ? (
-        <Jumbo background={config.background}>
-          <Typography variant="h1">{config.jumbo}</Typography>
+      <title>{title}</title>
+      {JumboContent ? (
+        <Jumbo background={background}>
+          <JumboContent />
         </Jumbo>
       ) : (
-        <Hero background={config.background} title={config.title} />
+        <Hero background={background} title={title} />
       )}
       {children}
     </main>

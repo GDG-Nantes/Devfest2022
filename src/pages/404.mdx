@@ -1,5 +1,10 @@
+import { Typography } from "@mui/material";
 export const metadata = {
-  title: "Not Found",
-  jumbo: "Vous avez l'air perdus...",
+  title: "Home",
   background: "back-neutre.jpg",
+  jumbo: () => (
+    <Typography variant="h1" component="h1">
+      Vous avez l'air perdus...
+    </Typography>
+  ),
 };

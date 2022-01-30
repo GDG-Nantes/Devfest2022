@@ -5,13 +5,16 @@
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .jumbo-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    max-height: 75vh;
+    max-width: 75vw;
   }
 }
