@@ -13,8 +13,10 @@ import {
   Toolbar,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+// import { LocalizedLink as Link } from "gatsby-theme-i18n";
 import React from "react";
+import { MyLink } from "../helpers/i18n";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
 import "./layout.scss";
@@ -68,13 +70,13 @@ const Topbar: React.FC<{
     <AppBar position="sticky">
       <Toolbar>
         <Box className="top-bar-left">
-          <Link to="/">
+          <MyLink to="/">
             <img
               className="logo-top-bar"
               src={logo.file.publicURL}
               alt="Logo Devfest 2021"
             />
-          </Link>
+          </MyLink>
         </Box>
 
         <Box className="top-bar-right">
@@ -130,9 +132,13 @@ const ListMenuButtons: React.FC = () => (
   <>
     {MENU.map((menuItem) => (
       <ListItemButton key={menuItem.label}>
-        <Link to={menuItem.link} activeClassName="active-link">
+        <MyLink
+          to={menuItem.link}
+          activeClassName="active-link"
+          style={{ width: "100%" }}
+        >
           <ListItemText disableTypography>{menuItem.label}</ListItemText>
-        </Link>
+        </MyLink>
       </ListItemButton>
     ))}
   </>

@@ -25,7 +25,7 @@ export const CustomMDXProvider: React.FC = ({ children }) => (
       h5: ({ children }) => <Typography variant="h5">{children}</Typography>,
       h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
       p: ({ children }) => <Typography>{children}</Typography>,
-      a: (props) => <Link {...props}>{children}</Link>,
+      a: (props) => <Link {...props}>{children}</Link>, // TODO
       ...components,
     }}
   >

@@ -24,7 +24,7 @@ export const SocialLink: React.FC<SocialData> = ({ type, login, url }) => {
   }
 
   return (
-    <Link href={url}>
+    <Link href={url} target="_blank">
       <IconButton>{icon}</IconButton>
     </Link>
   );

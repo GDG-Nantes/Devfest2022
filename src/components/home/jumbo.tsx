@@ -1,6 +1,7 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./home.scss";
 
 export const HomeJumbo = () => {
@@ -11,6 +12,7 @@ export const HomeJumbo = () => {
       }
     }
   `);
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -22,6 +24,10 @@ export const HomeJumbo = () => {
       <Typography variant="h3" className="primary">
         Cité des Congrès, Nantes, France
       </Typography>
+      <Typography variant="h3" className="primary">
+        {t("toto")}
+      </Typography>
+      <Button onClick={() => i18n.changeLanguage("en")}>bouton</Button>
     </>
   );
 };
