@@ -7,15 +7,15 @@ import {
   IconButton,
   List,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   ThemeProvider,
   Toolbar,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
-// import { LocalizedLink as Link } from "gatsby-theme-i18n";
+import { LocalizedLink as Link, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
+import ReactCountryFlag from "react-country-flag";
 import { MyLink } from "../helpers/i18n";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
@@ -117,9 +117,9 @@ const BarMenu: React.FC<{
     >
       <List>
         <ListItemButton style={{ height: "75px", justifyContent: "end" }}>
-          <ListItemIcon>
+          <ListItemText>
             <CloseRounded />
-          </ListItemIcon>
+          </ListItemText>
         </ListItemButton>
         <Divider />
         <ListMenuButtons />
@@ -128,20 +128,34 @@ const BarMenu: React.FC<{
   </Drawer>
 );
 
-const ListMenuButtons: React.FC = () => (
-  <>
-    {MENU.map((menuItem) => (
-      <ListItemButton key={menuItem.label}>
-        <MyLink
-          to={menuItem.link}
-          activeClassName="active-link"
+const ListMenuButtons: React.FC = () => {
+  const { locale, config, localizedPath } = useLocalization();
+  return (
+    <>
+      {MENU.map((menuItem) => (
+        <ListItemButton key={menuItem.label}>
+          <MyLink
+            to={menuItem.link}
+            activeClassName="active-link"
+            style={{ width: "100%" }}
+          >
+            <ListItemText disableTypography>{menuItem.label}</ListItemText>
+          </MyLink>
+        </ListItemButton>
+      ))}
+      <ListItemButton>
+        <Link
+          language={locale === "fr" ? "en" : "fr"}
+          to={location.pathname.replace(/\/(fr|en)/, "")}
           style={{ width: "100%" }}
         >
-          <ListItemText disableTypography>{menuItem.label}</ListItemText>
-        </MyLink>
+          <ListItemText>
+            <ReactCountryFlag countryCode={locale} />
+          </ListItemText>
+        </Link>
       </ListItemButton>
-    ))}
-  </>
-);
+    </>
+  );
+};
 
 export default Layout;

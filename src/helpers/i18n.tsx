@@ -5,7 +5,7 @@ import React from "react";
 interface IMyLink<TState = any> extends React.FC<GatsbyLinkProps<TState>> {}
 
 export const MyLink: IMyLink = ({ children, ...props }) => {
-  const { locale, ...a } = useLocalization();
+  const { locale } = useLocalization();
   return (
     <Link language={locale} {...(props as any)}>
       {children}

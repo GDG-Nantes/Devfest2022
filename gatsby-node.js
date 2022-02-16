@@ -12,17 +12,16 @@ exports.onCreatePage = ({ page, actions }) => {
     /\/(?:(?<prefix>[a-z]{2}))?[^.]*(?:\.(?<suffix>[a-z]{2}))?\//.exec(
       page.path
     );
-  console.log(page.path, extensionMatch);
+
   if (extensionMatch) {
     let pathWithoutSuffix = page.path;
     if (
       extensionMatch.groups.suffix &&
       extensionMatch.groups.prefix === extensionMatch.groups.suffix
     ) {
-      pathWithoutSuffix = page.path.replace(
-        `.${extensionMatch.groups.suffix}/`,
-        "/"
-      );
+      pathWithoutSuffix = page.path
+        .replace(`.${extensionMatch.groups.suffix}/`, "/")
+        .replace("/index/", "/");
       createPage({
         ...page,
         path: pathWithoutSuffix,
