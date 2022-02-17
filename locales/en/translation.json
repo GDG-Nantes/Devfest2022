@@ -1,3 +1,9 @@
 {
-  "toto": "en"
+  "site": {
+    "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant fpr students, professionals, or any curious techie"
+  },
+  "pages": {
+    "home": "Home",
+    "team": "Team"
+  }
 }

@@ -1,3 +1,9 @@
 {
-  "toto": "blabla"
+  "site": {
+    "description": "Le DevFest, ou 'Developers Festival', est une conférence technique destinée aux développeurs. Elle s'adresse aussi bien aux étudiants, aux professionnels ou tout simplement aux curieux technophiles."
+  },
+  "pages": {
+    "home": "Accueil",
+    "team": "L'Équipe"
+  }
 }

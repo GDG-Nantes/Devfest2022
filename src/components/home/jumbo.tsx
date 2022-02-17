@@ -1,7 +1,6 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { useTranslation } from "react-i18next";
 import "./home.scss";
 
 export const HomeJumbo = () => {
@@ -12,11 +11,15 @@ export const HomeJumbo = () => {
       }
     }
   `);
-  const { t, i18n } = useTranslation();
 
   return (
     <>
-      <img className="logo-jumbo-home" alt="logo" src={logo.file.publicURL} />
+      <img
+        className="logo-jumbo-home"
+        alt="logo"
+        src={logo.file.publicURL}
+        height="220px"
+      />
 
       <Typography variant="h2" className="primary">
         October 20,21 2022
@@ -24,10 +27,6 @@ export const HomeJumbo = () => {
       <Typography variant="h3" className="primary">
         Cité des Congrès, Nantes, France
       </Typography>
-      <Typography variant="h3" className="primary">
-        {t("toto")}
-      </Typography>
-      <Button onClick={() => i18n.changeLanguage("en")}>bouton</Button>
     </>
   );
 };

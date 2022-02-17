@@ -13,12 +13,12 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
-import { LocalizedLink as Link, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
-import ReactCountryFlag from "react-country-flag";
-import { MyLink } from "../helpers/i18n";
+import { useTranslation } from "react-i18next";
+import { MyLink, ToggleLanguage } from "../helpers/i18n";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
+import { Helmet } from "./helmet";
 import "./layout.scss";
 import { CustomMDXProvider } from "./mdx";
 import theme from "./theme";
@@ -26,6 +26,15 @@ import theme from "./theme";
 const Layout: React.FC = ({ children }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
   const { isMobileOrTablet } = useResponsiveData();
+
+  const layout = useStaticQuery(graphql`
+    query {
+      file(name: { eq: "devfest_color_text_white_white" }) {
+        publicURL
+      }
+    }
+  `);
+
   const toggleDrawer = (open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -38,8 +47,13 @@ const Layout: React.FC = ({ children }) => {
   };
   return (
     <ThemeProvider theme={theme}>
+      <Helmet />
       <CssBaseline />
-      <Topbar toggleDrawer={toggleDrawer} showMenu={!isMobileOrTablet} />
+      <Topbar
+        toggleDrawer={toggleDrawer}
+        showMenu={!isMobileOrTablet}
+        logo={layout.file.publicURL}
+      />
 
       {isMobileOrTablet && (
         <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
@@ -58,23 +72,21 @@ const TopMenu = () => (
 const Topbar: React.FC<{
   toggleDrawer: (open) => (event) => void;
   showMenu: boolean;
-}> = ({ toggleDrawer, showMenu }) => {
-  const logo = useStaticQuery(graphql`
-    query {
-      file(name: { eq: "devfest_color_text_white_white" }) {
-        publicURL
-      }
-    }
-  `);
+  logo: string;
+}> = ({ toggleDrawer, showMenu, logo }) => {
+  const styleToolbar = showMenu
+    ? { maxWidth: "1100px", width: "100%", margin: "auto" }
+    : {};
   return (
     <AppBar position="sticky">
-      <Toolbar>
+      <Toolbar style={styleToolbar}>
         <Box className="top-bar-left">
           <MyLink to="/">
             <img
               className="logo-top-bar"
-              src={logo.file.publicURL}
+              src={logo}
               alt="Logo Devfest 2021"
+              height="50px"
             />
           </MyLink>
         </Box>
@@ -129,7 +141,7 @@ const BarMenu: React.FC<{
 );
 
 const ListMenuButtons: React.FC = () => {
-  const { locale, config, localizedPath } = useLocalization();
+  const { t } = useTranslation();
   return (
     <>
       {MENU.map((menuItem) => (
@@ -139,20 +151,14 @@ const ListMenuButtons: React.FC = () => {
             activeClassName="active-link"
             style={{ width: "100%" }}
           >
-            <ListItemText disableTypography>{menuItem.label}</ListItemText>
+            <ListItemText disableTypography>
+              {t("pages." + menuItem.label)}
+            </ListItemText>
           </MyLink>
         </ListItemButton>
       ))}
       <ListItemButton>
-        <Link
-          language={locale === "fr" ? "en" : "fr"}
-          to={location.pathname.replace(/\/(fr|en)/, "")}
-          style={{ width: "100%" }}
-        >
-          <ListItemText>
-            <ReactCountryFlag countryCode={locale} />
-          </ListItemText>
-        </Link>
+        <ToggleLanguage />
       </ListItemButton>
     </>
   );

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://devfest2022.gdgnantes.com",
-    title: "Devfest 2022",
+    title: "Devfest Nantes 2022",
   },
   plugins: [
     "gatsby-plugin-typescript",
@@ -20,39 +20,13 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-material-ui",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-graphql-config",
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/locales`,
-    //     name: `locale`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-plugin-react-i18next`,
-    //   options: {
-    //     localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-    //     languages: [`en`, `fr`],
-    //     defaultLanguage: `en`,
-    //     // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-    //     siteUrl: `https://devfest2022.gdgnantes.com`,
-    //     // you can pass any i18next options
-    //     i18nextOptions: {
-    //       interpolation: {
-    //         escapeValue: false, // not needed for react as it escapes by default
-    //       },
-    //       keySeparator: false,
-    //       nsSeparator: false,
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-theme-i18n`,
       options: {
-        defaultLang: `en`,
+        defaultLang: `fr`,
         configPath: require.resolve(`./locales/config.json`),
         prefixDefault: true,
       },
@@ -67,20 +41,20 @@ module.exports = {
       },
     },
 
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "G-D66NP8CLV0",
-    //   },
-    // },
-    // "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-sitemap",
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {
-    //     icon: "src/images/icon.png",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "G-D66NP8CLV0",
+      },
+    },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
