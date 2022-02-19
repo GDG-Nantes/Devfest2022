@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://devfest2022.gdgnantes.com",
     title: "Devfest Nantes 2022",
+    image: "/images/social-share.jpg",
   },
   plugins: [
     "gatsby-plugin-typescript",
@@ -28,7 +29,7 @@ module.exports = {
       options: {
         defaultLang: `fr`,
         configPath: require.resolve(`./locales/config.json`),
-        prefixDefault: true,
+        prefixDefault: false,
       },
     },
     {

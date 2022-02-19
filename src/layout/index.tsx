@@ -46,20 +46,22 @@ const Layout: React.FC = ({ children }) => {
     setDrawerOpen(open);
   };
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Helmet />
-      <CssBaseline />
-      <Topbar
-        toggleDrawer={toggleDrawer}
-        showMenu={!isMobileOrTablet}
-        logo={layout.file.publicURL}
-      />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Topbar
+          toggleDrawer={toggleDrawer}
+          showMenu={!isMobileOrTablet}
+          logo={layout.file.publicURL}
+        />
 
-      {isMobileOrTablet && (
-        <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
-      )}
-      <CustomMDXProvider>{children}</CustomMDXProvider>
-    </ThemeProvider>
+        {isMobileOrTablet && (
+          <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
+        )}
+        <CustomMDXProvider>{children}</CustomMDXProvider>
+      </ThemeProvider>
+    </>
   );
 };
 

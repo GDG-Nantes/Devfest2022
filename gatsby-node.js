@@ -9,7 +9,7 @@ exports.onCreatePage = ({ page, actions }) => {
 
   // /en/team.fr/ -> prefix: en; suffix: en
   const extensionMatch =
-    /\/(?:(?<prefix>[a-z]{2}))?[^.]*(?:\.(?<suffix>[a-z]{2}))?\//.exec(
+    /\/(?:(?<prefix>[a-z]{2})\/)?[^.]*(?:\.(?<suffix>[a-z]{2}))?\//.exec(
       page.path
     );
 
@@ -17,7 +17,9 @@ exports.onCreatePage = ({ page, actions }) => {
     let pathWithoutSuffix = page.path;
     if (
       extensionMatch.groups.suffix &&
-      extensionMatch.groups.prefix === extensionMatch.groups.suffix
+      (extensionMatch.groups.prefix === extensionMatch.groups.suffix ||
+        (!extensionMatch.groups.prefix &&
+          extensionMatch.groups.suffix === "fr"))
     ) {
       pathWithoutSuffix = page.path
         .replace(`.${extensionMatch.groups.suffix}/`, "/")
@@ -25,15 +27,6 @@ exports.onCreatePage = ({ page, actions }) => {
       createPage({
         ...page,
         path: pathWithoutSuffix,
-      });
-    }
-    if (
-      extensionMatch.groups.prefix === "fr" &&
-      (!extensionMatch.groups.suffix || extensionMatch.groups.suffix === "fr")
-    ) {
-      createPage({
-        ...page,
-        path: pathWithoutSuffix.substring(3),
       });
     }
     if (extensionMatch.groups.suffix) {

@@ -11,13 +11,11 @@ export const Helmet: React.FC = () => {
 
   const helmet = useStaticQuery(graphql`
     query {
-      file(name: { eq: "social-share" }) {
-        publicURL
-      }
       site {
         siteMetadata {
           siteUrl
           title
+          image
         }
       }
     }
@@ -28,7 +26,8 @@ export const Helmet: React.FC = () => {
   )?.label;
   const title = pageTitle ? t("pages." + pageTitle) : "Devfest Nantes";
 
-  const socialImage = helmet.site.siteMetadata.siteUrl + helmet.file.publicURL;
+  const socialImage =
+    helmet.site.siteMetadata.siteUrl + helmet.site.siteMetadata.image;
 
   const description = t("site.description");
 
