@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import { MyLink, ToggleLanguage } from "../helpers/i18n";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
+import { Footer } from "./footer";
 import { Helmet } from "./helmet";
 import "./layout.scss";
 import { CustomMDXProvider } from "./mdx";
@@ -60,6 +61,7 @@ const Layout: React.FC = ({ children }) => {
           <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
         )}
         <CustomMDXProvider>{children}</CustomMDXProvider>
+        <Footer />
       </ThemeProvider>
     </>
   );

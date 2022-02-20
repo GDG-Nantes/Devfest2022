@@ -21,10 +21,10 @@ export const Helmet: React.FC = () => {
     }
   `);
 
-  const pageTitle = MENU.find(
-    (menu) => pathname.replace(/\/(fr|en)/, "") === menu.link
-  )?.label;
-  const title = pageTitle ? t("pages." + pageTitle) : "Devfest Nantes";
+  const path = pathname.replace(/\/(fr|en)/, "");
+  const pageTitle = MENU.find((menu) => path === menu.link)?.label;
+  const title =
+    pageTitle && path !== "/" ? t("pages." + pageTitle) : "Devfest Nantes";
 
   const socialImage =
     helmet.site.siteMetadata.siteUrl + helmet.site.siteMetadata.image;
