@@ -1,12 +1,12 @@
 import { MDXProvider } from "@mdx-js/react";
 import { Typography } from "@mui/material";
-import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { DefaultPage, PageConfig } from "../components/commun/page";
 import {
   PrimarySection,
   SecondarySection,
 } from "../components/commun/section/section";
+import { MyLink } from "../helpers/links";
 import Layout from "./index";
 
 const components = {
@@ -26,21 +26,11 @@ export const CustomMDXProvider: React.FC = ({ children }) => (
       h5: ({ children }) => <Typography variant="h5">{children}</Typography>,
       h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
       p: ({ children }) => <Typography>{children}</Typography>,
-      a: ({ href, children, ...props }) => {
-        if (href.startsWith("/")) {
-          const { locale } = useLocalization();
-          return (
-            <LocalizedLink language={locale} to={href}>
-              {children}
-            </LocalizedLink>
-          );
-        }
-        return (
-          <a href={href} {...props}>
-            {children}
-          </a>
-        );
-      }, // TODO
+      a: ({ href, children, ...props }) => (
+        <MyLink to={href} {...props}>
+          {children}
+        </MyLink>
+      ),
       ...components,
     }}
   >

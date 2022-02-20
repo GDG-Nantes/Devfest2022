@@ -9,10 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
+import { useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { SocialData, SocialLink } from "../components/commun/socials/socials";
+import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
 import "./footer.scss";
 
@@ -116,15 +117,11 @@ export const Footer: React.FC = () => {
 
           <FooterItem title="Newsletter">
             <p>{t("no-spam")}</p>
-            <Link
-              to="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;amp;id=e0e7ceee5d"
-              target="_blank"
-              rel="noopener"
-            >
+            <MyLink to="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;amp;id=e0e7ceee5d">
               <Button variant="contained">
                 <Send style={{ marginRight: "20px" }} /> {t("news-button")}
               </Button>
-            </Link>
+            </MyLink>
           </FooterItem>
 
           <FooterItem size="full">
@@ -168,14 +165,9 @@ const FooterLinks: React.FC<{ links: FooterLink[] }> = ({ links }) => {
   return (
     <List dense>
       {links.map(({ label, url }) => (
-        <LocalizedLink
-          language={locale}
-          to={url}
-          target="_blank"
-          rel="noopener"
-        >
+        <MyLink to={url}>
           <ListItem style={{ justifyContent: "center" }}>{label}</ListItem>
-        </LocalizedLink>
+        </MyLink>
       ))}
     </List>
   );

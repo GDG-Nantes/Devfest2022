@@ -5,6 +5,9 @@ const secondary = "#ED7954";
 const primary = "#4483A2";
 // A custom theme for this app
 const theme = createTheme({
+  // typography: {
+  //   fontFamily: "Acme, sans-serif",
+  // },
   palette: {
     primary: {
       main: primary,
@@ -61,22 +64,23 @@ const theme = createTheme({
           fontSize: "4rem",
           lineHeight: "4rem",
           margin: "4rem 0",
-          fontWeight: "bold",
+          fontFamily: "Acme, sans-serif",
         },
         h2: {
           fontSize: "2rem",
           lineHeight: "2rem",
           margin: "3rem 0",
-          fontWeight: "bold",
+          fontFamily: "Acme, sans-serif",
         },
         h3: {
           fontSize: "1.17rem",
           lineHeight: "1.5rem",
-          fontWeight: "bold",
+          fontFamily: "Acme, sans-serif",
         },
         h4: {
           fontSize: "1rem",
           lineHeight: "1.5rem",
+          fontFamily: "Acme, sans-serif",
         },
       },
     },

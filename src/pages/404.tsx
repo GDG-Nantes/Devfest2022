@@ -1,8 +1,9 @@
 import { Button, Typography } from "@mui/material";
-import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
+import { useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { DefaultPage } from "../components/commun/page";
+import { MyLink } from "../helpers/links";
 import Layout from "../layout";
 
 const ErrorPage = () => (
@@ -19,11 +20,11 @@ const Jumbo404 = () => {
       <Typography variant="h1" component="h1" textAlign="center">
         {t("main")}
       </Typography>
-      <LocalizedLink language={locale} to="/">
+      <MyLink to="/">
         <Button variant="contained" color="secondary">
           {t("button")}
         </Button>
-      </LocalizedLink>
+      </MyLink>
     </>
   );
 };

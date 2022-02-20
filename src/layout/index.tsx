@@ -15,7 +15,8 @@ import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { MyLink, ToggleLanguage } from "../helpers/i18n";
+import { ToggleLanguage } from "../helpers/i18n";
+import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
 import { Footer } from "./footer";
@@ -149,18 +150,17 @@ const ListMenuButtons: React.FC = () => {
   return (
     <>
       {MENU.map((menuItem) => (
-        <MyLink
-          key={menuItem.label}
-          to={menuItem.link}
-          activeClassName="active-link"
-          style={{ width: "100%" }}
-        >
-          <ListItemButton>
-            <ListItemText disableTypography>
+        <ListItemButton key={menuItem.label}>
+          <MyLink
+            to={menuItem.link}
+            activeClassName="active-link"
+            style={{ width: "100%", height: "100%" }}
+          >
+            <ListItemText primaryTypographyProps={{ variant: "h3" }}>
               {t(menuItem.label + ".name")}
             </ListItemText>
-          </ListItemButton>
-        </MyLink>
+          </MyLink>
+        </ListItemButton>
       ))}
       <ListItemButton>
         <ToggleLanguage />

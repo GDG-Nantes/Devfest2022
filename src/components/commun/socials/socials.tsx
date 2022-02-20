@@ -6,8 +6,9 @@ import {
   Twitter,
   YouTube,
 } from "@mui/icons-material";
-import { IconButton, Link } from "@mui/material";
+import { IconButton } from "@mui/material";
 import React from "react";
+import { MyLink } from "../../../helpers/links";
 
 export type SocialData =
   | {
@@ -41,8 +42,8 @@ export const SocialLink = (social: SocialData) => {
   }
 
   return (
-    <Link href={url} target="_blank">
+    <MyLink to={url}>
       <IconButton>{icon}</IconButton>
-    </Link>
+    </MyLink>
   );
 };
