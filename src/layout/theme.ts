@@ -1,13 +1,12 @@
 import { createTheme } from "@mui/material";
 import "./theme.scss";
 
-const secondary = "#ED7954";
-const primary = "#4483A2";
+const primary = "#C14D32";
+const secondary = "#757341";
+// const secondary = "#C14D32";
+// const primary = "#757341";
 // A custom theme for this app
 const theme = createTheme({
-  // typography: {
-  //   fontFamily: "Acme, sans-serif",
-  // },
   palette: {
     primary: {
       main: primary,
@@ -64,23 +63,23 @@ const theme = createTheme({
           fontSize: "4rem",
           lineHeight: "4rem",
           margin: "4rem 0",
-          fontFamily: "Acme, sans-serif",
+          fontFamily: "RumbleBrave",
         },
         h2: {
           fontSize: "2rem",
           lineHeight: "2rem",
           margin: "3rem 0",
-          fontFamily: "Acme, sans-serif",
+          fontFamily: "RumbleBrave",
         },
         h3: {
           fontSize: "1.17rem",
           lineHeight: "1.5rem",
-          fontFamily: "Acme, sans-serif",
+          fontFamily: "RumbleBrave",
         },
         h4: {
           fontSize: "1rem",
           lineHeight: "1.5rem",
-          fontFamily: "Acme, sans-serif",
+          fontFamily: "RumbleBrave",
         },
       },
     },

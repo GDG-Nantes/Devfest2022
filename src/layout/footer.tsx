@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
 
   const logo = useStaticQuery(graphql`
     query {
-      file(name: { eq: "devfest_color_text_gray" }) {
+      file(name: { eq: "logo_blanc_fond_blanc" }) {
         publicURL
       }
     }

@@ -31,7 +31,7 @@ const Layout: React.FC = ({ children }) => {
 
   const layout = useStaticQuery(graphql`
     query {
-      file(name: { eq: "devfest_color_text_white_white" }) {
+      file(name: { eq: "logo_blanc_fond_blanc" }) {
         publicURL
       }
     }

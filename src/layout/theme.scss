@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "RumbleBrave";
+  src: url("./Rumble_Brave.woff2");
+}
+
 body {
-  --primary: #4483a2;
-  --primary-dark: #1c3744;
-  --secondary: #ed7954;
+  // --primary: #757341;
+  // --primary-dark: #3d3b2f;
+  // --secondary: #c14d32;
+  // --ternary: #ffedbf;
+  --secondary: #757341;
+  --primary-dark: #3d3b2f;
+  --primary: #c14d32;
+  --ternary: #ffedbf;
 }
 
 a {
