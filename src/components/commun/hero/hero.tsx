@@ -15,7 +15,9 @@ export const Hero: React.FC<{ background?: string; title: string }> = ({
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="hero-content">
-        <Typography variant="h1">{title}</Typography>
+        <Typography variant="h1" color="secondary">
+          {title}
+        </Typography>
       </div>
     </div>
   );

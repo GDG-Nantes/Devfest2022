@@ -2,26 +2,10 @@ body {
   --primary: #4483a2;
   --primary-dark: #1c3744;
   --secondary: #ed7954;
-
-  color: white;
 }
 
-a,
-button {
-  color: white;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--secondary);
-  &.primary {
-    color: var(--primary);
-  }
+a {
+  all: unset;
 }
 
 .secondary {
