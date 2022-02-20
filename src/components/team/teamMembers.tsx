@@ -15,7 +15,9 @@ export const TeamMembers: React.FC = () => {
   // All team members pictures with the right size
   const { allFile } = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativePath: { glob: "team/**/*" } }) {
+      allFile(
+        filter: { relativePath: { glob: "team/**/*" }, ext: { ne: ".mdx" } }
+      ) {
         nodes {
           name
           childImageSharp {

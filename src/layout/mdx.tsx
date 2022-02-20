@@ -1,5 +1,6 @@
 import { MDXProvider } from "@mdx-js/react";
-import { Link, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { DefaultPage, PageConfig } from "../components/commun/page";
 import {
@@ -25,7 +26,21 @@ export const CustomMDXProvider: React.FC = ({ children }) => (
       h5: ({ children }) => <Typography variant="h5">{children}</Typography>,
       h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
       p: ({ children }) => <Typography>{children}</Typography>,
-      a: (props) => <Link {...props}>{children}</Link>, // TODO
+      a: ({ href, children, ...props }) => {
+        if (href.startsWith("/")) {
+          const { locale } = useLocalization();
+          return (
+            <LocalizedLink language={locale} to={href}>
+              {children}
+            </LocalizedLink>
+          );
+        }
+        return (
+          <a href={href} {...props}>
+            {children}
+          </a>
+        );
+      }, // TODO
       ...components,
     }}
   >

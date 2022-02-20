@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { graphql, Link, useStaticQuery } from "gatsby";
+import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { SocialData, SocialLink } from "../components/commun/socials/socials";
 import { useResponsiveData } from "../helpers/responsive";
@@ -159,12 +160,20 @@ const FooterItem: React.FC<{
   );
 };
 
-const FooterLinks: React.FC<{ links: FooterLink[] }> = ({ links }) => (
-  <List dense>
-    {links.map(({ label, url }) => (
-      <Link to={url} target="_blank" rel="noopener">
-        <ListItem style={{ justifyContent: "center" }}>{label}</ListItem>
-      </Link>
-    ))}
-  </List>
-);
+const FooterLinks: React.FC<{ links: FooterLink[] }> = ({ links }) => {
+  const { locale } = useLocalization();
+  return (
+    <List dense>
+      {links.map(({ label, url }) => (
+        <LocalizedLink
+          language={locale}
+          to={url}
+          target="_blank"
+          rel="noopener"
+        >
+          <ListItem style={{ justifyContent: "center" }}>{label}</ListItem>
+        </LocalizedLink>
+      ))}
+    </List>
+  );
+};

@@ -1,5 +1,10 @@
 {
   "yaml.schemas": {
     "json_schemas/schema_team.json": "data/team.yml"
-  }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
