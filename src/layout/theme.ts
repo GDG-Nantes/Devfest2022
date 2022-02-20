@@ -50,8 +50,17 @@ const theme = createTheme({
     },
     MuiTypography: {
       styleOverrides: {
+        h1: {
+          fontSize: "4rem",
+          lineHeight: "4rem",
+          margin: "4rem 0",
+          fontWeight: "bold",
+        },
         h2: {
-          margin: "1rem 0 4rem",
+          fontSize: "2rem",
+          lineHeight: "2rem",
+          margin: "3rem 0",
+          fontWeight: "bold",
         },
         h3: {
           fontSize: "1.17rem",

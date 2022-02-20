@@ -21,7 +21,7 @@ export const HomeJumbo = () => {
         height="220px"
       />
 
-      <Typography variant="h2" className="primary">
+      <Typography variant="h1" className="primary">
         October 20,21 2022
       </Typography>
       <Typography variant="h3" className="primary">

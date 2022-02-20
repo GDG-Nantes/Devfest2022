@@ -1,0 +1,26 @@
+import { Button, Typography } from "@mui/material";
+import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { DefaultPage } from "../components/commun/page";
+
+const ErrorPage = () => (
+  <DefaultPage title="404" background="back-neutre.jpg" jumbo={Jumbo404} />
+);
+
+const Jumbo404 = () => {
+  const { t } = useTranslation("translation", { keyPrefix: "404" });
+  const { locale } = useLocalization();
+  return (
+    <>
+      <Typography variant="h1" component="h1">
+        {t("main")}
+      </Typography>
+      <LocalizedLink language={locale} to="/">
+        <Button variant="contained">{t("button")}</Button>
+      </LocalizedLink>
+    </>
+  );
+};
+
+export default ErrorPage;

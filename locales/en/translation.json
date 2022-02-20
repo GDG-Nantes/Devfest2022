@@ -5,5 +5,9 @@
   "pages": {
     "home": "Home",
     "team": "Team"
+  },
+  "404": {
+    "main": "You seem lost...",
+    "button": "Back to a safe place"
   }
 }
