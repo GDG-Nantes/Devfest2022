@@ -145,21 +145,22 @@ const BarMenu: React.FC<{
 );
 
 const ListMenuButtons: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("translation", { keyPrefix: "pages" });
   return (
     <>
       {MENU.map((menuItem) => (
-        <ListItemButton key={menuItem.label}>
-          <MyLink
-            to={menuItem.link}
-            activeClassName="active-link"
-            style={{ width: "100%" }}
-          >
+        <MyLink
+          key={menuItem.label}
+          to={menuItem.link}
+          activeClassName="active-link"
+          style={{ width: "100%" }}
+        >
+          <ListItemButton>
             <ListItemText disableTypography>
-              {t("pages." + menuItem.label)}
+              {t(menuItem.label + ".name")}
             </ListItemText>
-          </MyLink>
-        </ListItemButton>
+          </ListItemButton>
+        </MyLink>
       ))}
       <ListItemButton>
         <ToggleLanguage />

@@ -31,6 +31,13 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: "white",
+        },
+      },
+    },
     MuiIconButton: {
       defaultProps: {
         color: "inherit",

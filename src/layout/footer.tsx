@@ -11,6 +11,7 @@ import {
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SocialData, SocialLink } from "../components/commun/socials/socials";
 import { useResponsiveData } from "../helpers/responsive";
 import "./footer.scss";
@@ -19,6 +20,8 @@ type FooterLink = { label: string; url: string };
 
 export const Footer: React.FC = () => {
   const { isMobileOrTablet } = useResponsiveData();
+  const { t } = useTranslation("translation", { keyPrefix: "footer" });
+  const { t: tPages } = useTranslation("translation", { keyPrefix: "pages" });
 
   const logo = useStaticQuery(graphql`
     query {
@@ -57,22 +60,22 @@ export const Footer: React.FC = () => {
       url: "https://developers.google.com/",
     },
     {
-      label: "Code of conduct",
+      label: tPages("code-of-conduct.name"),
       url: "/code-of-conduct",
     },
     {
-      label: "Legal Mentions",
+      label: tPages("legal-mentions.name"),
       url: "/legal-mentions",
     },
   ];
 
   const partnersLinks: FooterLink[] = [
     {
-      label: "Partnership Kit",
+      label: t("partnership-kit"),
       url: "https://drive.google.com/drive/folders/1mG8fire3iGouszXyS3nxyNf3L0VYpGfa",
     },
     {
-      label: "Media Kit",
+      label: t("media-kit"),
       url: "https://drive.google.com/drive/folders/1Qpe0mmD2btdEIVAIEUlJh081CUdyd5z3",
     },
   ];
@@ -88,7 +91,7 @@ export const Footer: React.FC = () => {
     <footer>
       <Container className={"section"}>
         <Grid container rowSpacing={isMobileOrTablet ? 5 : 10}>
-          <FooterItem title="Follow us" size="half">
+          <FooterItem title={t("follow")} size="half">
             <div className="socials">
               {socials.map((social) => (
                 <SocialLink key={social.type} {...social} />
@@ -107,19 +110,19 @@ export const Footer: React.FC = () => {
             </Link>
           </FooterItem>
 
-          <FooterItem title="About" links={aboutLinks} />
-          <FooterItem title="Previous editions" links={previousEditions} />
-          <FooterItem title="For Partners" links={partnersLinks} />
+          <FooterItem title={t("about")} links={aboutLinks} />
+          <FooterItem title={t("previous-editions")} links={previousEditions} />
+          <FooterItem title={t("partners")} links={partnersLinks} />
 
           <FooterItem title="Newsletter">
-            <p>No spam, only the latest news and updates!</p>
+            <p>{t("no-spam")}</p>
             <Link
               to="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;amp;id=e0e7ceee5d"
               target="_blank"
               rel="noopener"
             >
               <Button variant="contained">
-                <Send style={{ marginRight: "20px" }} /> Discover
+                <Send style={{ marginRight: "20px" }} /> {t("news-button")}
               </Button>
             </Link>
           </FooterItem>
@@ -127,7 +130,7 @@ export const Footer: React.FC = () => {
           <FooterItem size="full">
             <div>
               <img src={logo.file.publicURL} alt="logo defvest" height="50px" />
-              <p>Organized with ❤️ by GDG Nantes.</p>
+              <p>{t("organizers")}</p>
             </div>
           </FooterItem>
         </Grid>

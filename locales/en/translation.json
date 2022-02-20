@@ -1,13 +1,26 @@
 {
   "site": {
-    "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant fpr students, professionals, or any curious techie"
+    "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant for students, professionals, or any curious techie"
   },
   "pages": {
-    "home": "Home",
-    "team": "Team"
+    "home": { "name": "Home", "jumbo": { "date": "October 21,22 2022" } },
+    "team": { "name": "Team" },
+    "code-of-conduct": { "name": "Code of conduct" },
+    "legal-mentions": { "name": "Legal Mentions" }
   },
   "404": {
     "main": "You seem lost...",
     "button": "Back to a safe place"
+  },
+  "footer": {
+    "about": "About",
+    "follow": "Follow us",
+    "partnership-kit": "Partnership Kit",
+    "media-kit": "Media Kit",
+    "previous-editions": "Previous editions",
+    "partners": "For Partners",
+    "organizers": "Organized with ❤️ by GDG Nantes",
+    "no-spam": "No spam, only the latest news and updates!",
+    "news-button": "Discover"
   }
 }

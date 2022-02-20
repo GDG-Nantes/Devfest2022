@@ -3,11 +3,24 @@
     "description": "Le DevFest, ou 'Developers Festival', est une conférence technique destinée aux développeurs. Elle s'adresse aussi bien aux étudiants, aux professionnels ou tout simplement aux curieux technophiles."
   },
   "pages": {
-    "home": "Accueil",
-    "team": "L'Équipe"
+    "home": { "name": "Accueil", "jumbo": { "date": "21 & 22 Octobre 2022" } },
+    "team": { "name": "L'Équipe" },
+    "code-of-conduct": { "name": "Code de conduite" },
+    "legal-mentions": { "name": "Mentions Légales" }
   },
   "404": {
     "main": "Vous avez l'air perdus...",
     "button": "Retour en lieu sûr"
+  },
+  "footer": {
+    "about": "À propos",
+    "follow": "Nous suivre",
+    "partnership-kit": "Kit partenaires",
+    "media-kit": "Kit Média",
+    "previous-editions": "Éditions précédentes",
+    "partners": "Partenaires",
+    "organizers": "Organisé avec ❤️ par le GDG Nantes",
+    "no-spam": "Pas de spam, seulement les dernières infos",
+    "news-button": "Découvrir"
   }
 }

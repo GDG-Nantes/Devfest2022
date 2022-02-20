@@ -3,9 +3,12 @@ import { LocalizedLink, useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { DefaultPage } from "../components/commun/page";
+import Layout from "../layout";
 
 const ErrorPage = () => (
-  <DefaultPage title="404" background="back-neutre.jpg" jumbo={Jumbo404} />
+  <Layout>
+    <DefaultPage title="404" background="back-neutre.jpg" jumbo={Jumbo404} />
+  </Layout>
 );
 
 const Jumbo404 = () => {
@@ -13,11 +16,13 @@ const Jumbo404 = () => {
   const { locale } = useLocalization();
   return (
     <>
-      <Typography variant="h1" component="h1">
+      <Typography variant="h1" component="h1" textAlign="center">
         {t("main")}
       </Typography>
       <LocalizedLink language={locale} to="/">
-        <Button variant="contained">{t("button")}</Button>
+        <Button variant="contained" color="secondary">
+          {t("button")}
+        </Button>
       </LocalizedLink>
     </>
   );
