@@ -102,7 +102,6 @@ const Topbar: React.FC<{
           ) : (
             <IconButton
               edge="start"
-              color="inherit"
               aria-label="open drawer"
               onClick={toggleDrawer(true)}
             >
@@ -133,10 +132,10 @@ const BarMenu: React.FC<{
       onClick={toggleDrawer(false)}
     >
       <List>
-        <ListItemButton style={{ height: "75px", justifyContent: "end" }}>
-          <ListItemText>
-            <CloseRounded />
-          </ListItemText>
+        <ListItemButton
+          style={{ height: "50px", justifyContent: "end", marginRight: "20px" }}
+        >
+          <CloseRounded />
         </ListItemButton>
         <Divider />
         <ListMenuButtons />
