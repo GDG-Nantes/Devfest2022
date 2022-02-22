@@ -9,8 +9,6 @@ import { shuffleArray } from "../../helpers";
 import { SocialLink } from "../commun/socials/socials";
 import "./team.scss";
 
-const members = shuffleArray(team.bureau) as Member[];
-
 export const TeamMembers: React.FC = () => {
   // All team members pictures with the right size
   const { allFile } = useStaticQuery(graphql`
@@ -28,20 +26,25 @@ export const TeamMembers: React.FC = () => {
     }
   `);
 
+  const shuffledMembers = React.useMemo(
+    () => shuffleArray(team.bureau) as Member[],
+    []
+  );
+
   const imageByMember = useMemo(() => {
     const mapObj = {};
-    members.forEach(
+    shuffledMembers.forEach(
       (member) =>
         (mapObj[member.id] = getImage(
           allFile.nodes.find((node) => !member.id || node.name === member.id)
         ))
     );
     return mapObj;
-  }, [allFile]);
+  }, [allFile, shuffledMembers]);
 
   return (
     <Grid container columnSpacing={3} rowSpacing={10} justifyContent="center">
-      {members.map((member) => (
+      {shuffledMembers.map((member) => (
         <Grid
           item
           maxWidth={500}
