@@ -26,8 +26,10 @@ export const TeamMembers: React.FC = () => {
     }
   `);
 
-  const shuffledMembers = React.useMemo(
-    () => shuffleArray(team.bureau) as Member[],
+  const [shuffledMembers, setShuffledMembers] = React.useState<Member[]>([]);
+
+  React.useEffect(
+    () => setShuffledMembers(shuffleArray(team.bureau) as Member[]),
     []
   );
 
