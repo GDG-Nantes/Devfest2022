@@ -51,7 +51,7 @@ export const HomeJumbo = () => {
             Devenir sponsor
           </Button>
         </MyLink>
-        <MyLink to="https://devfestnantes2021.gdgnantes.com">
+        <MyLink to="https://devfest2021.gdgnantes.com">
           <Button
             variant="outlined"
             color="secondary"
