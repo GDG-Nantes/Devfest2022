@@ -23,5 +23,13 @@ handlers:
     upload: (.+)/index.html
     secure: always
 
+    # 404
+  - url: /en/(.*)
+    static_files: en/404.html
+    upload: en/404.html
+  - url: /(.*)
+    static_files: 404.html
+    upload: 404.html
+
 error_handlers:
   - file: 404.html
