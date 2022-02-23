@@ -12,9 +12,6 @@ export const Hero: React.FC<{ background?: string; title: string }> = ({
   return (
     <div
       className="hero"
-      style={{
-        background: "linear-gradient(var(--secondary), 20%, var(--ternary))",
-      }}
       // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="hero-content">

@@ -9,7 +9,6 @@ import {
   Typography,
 } from "@mui/material";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { SocialData, SocialLink } from "../components/commun/socials/socials";
@@ -73,12 +72,12 @@ export const Footer: React.FC = () => {
   const partnersLinks: FooterLink[] = [
     {
       label: t("partnership-kit"),
-      url: "https://drive.google.com/drive/folders/1mG8fire3iGouszXyS3nxyNf3L0VYpGfa",
+      url: "https://drive.google.com/drive/folders/1CnuhE2-hrxmFLx65ftHVYCRq89OOiDp_",
     },
-    {
-      label: t("media-kit"),
-      url: "https://drive.google.com/drive/folders/1Qpe0mmD2btdEIVAIEUlJh081CUdyd5z3",
-    },
+    // {
+    //   label: t("media-kit"),
+    //   url: "https://drive.google.com/drive/folders/1Qpe0mmD2btdEIVAIEUlJh081CUdyd5z3",
+    // },
   ];
 
   const previousEditions: FooterLink[] = [2021, 2020, 2019, 2018].map(
@@ -161,7 +160,6 @@ const FooterItem: React.FC<{
 };
 
 const FooterLinks: React.FC<{ links: FooterLink[] }> = ({ links }) => {
-  const { locale } = useLocalization();
   return (
     <List dense>
       {links.map(({ label, url }) => (

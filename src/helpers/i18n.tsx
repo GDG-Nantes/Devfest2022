@@ -26,14 +26,13 @@ export const ToggleLanguage: React.FC = () => {
       style={{ width: "100%" }}
     >
       <img
-        className="logo-jumbo-home"
         alt="logo"
         src={flag.publicURL}
         style={{
           height: "18px",
           width: "24px",
           objectFit: "cover",
-          verticalAlign: "baseline",
+          verticalAlign: "middle",
         }}
       />
     </LocalizedLink>

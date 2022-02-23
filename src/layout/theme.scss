@@ -4,18 +4,16 @@
 }
 
 body {
-  // --primary: #757341;
-  // --primary-dark: #3d3b2f;
-  // --secondary: #c14d32;
-  // --ternary: #ffedbf;
-  --secondary: #757341;
-  --primary-dark: #3d3b2f;
   --primary: #c14d32;
-  --ternary: #ffedbf;
+  --secondary: #346369;
+  --primary-dark: #19393b;
+  --tertiary: #ffedbf;
+  --tertiary-dark: #f8dda2;
 }
 
 a {
   all: unset;
+  cursor: pointer;
 }
 
 .secondary {

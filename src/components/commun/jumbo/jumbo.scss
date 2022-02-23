@@ -7,6 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    var(--tertiary-dark) 0%,
+    var(--tertiary) 30%,
+    var(--tertiary) 70%,
+    var(--tertiary-dark) 100%
+  );
 
   .jumbo-content {
     display: flex;

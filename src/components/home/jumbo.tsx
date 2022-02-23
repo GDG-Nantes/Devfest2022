@@ -14,7 +14,7 @@ export const HomeJumbo = () => {
   });
   const logo = useStaticQuery(graphql`
     query {
-      file(name: { eq: "logo_extraordinaire" }) {
+      file(name: { eq: "logo_extraordinaire_bleu" }) {
         publicURL
       }
     }
@@ -26,18 +26,14 @@ export const HomeJumbo = () => {
         className="logo-jumbo-home"
         alt="logo"
         src={logo.file.publicURL}
-        height="200px"
+        height="300px"
       />
 
-      <Typography
-        variant={isMobileOrTablet ? "h2" : "h1"}
-        textAlign="center"
-        color="var(--primary-dark)"
-      >
-        Le DevFest Nantes sera de retour le <br /> 21 et 22 Octobre 2022 !
+      <Typography variant="h1" textAlign="center" color="var(--primary-dark)">
+        Les 21 et 22 Octobre 2022 !
       </Typography>
       <Typography
-        variant={isMobileOrTablet ? "h3" : "h2"}
+        variant="h2"
         textAlign="center"
         style={{ marginBottom: "20px" }}
         color="var(--primary-dark)"
@@ -47,14 +43,14 @@ export const HomeJumbo = () => {
 
       <Stack direction="row" spacing={3}>
         <MyLink to="https://www.billetweb.fr/partenaire-devfest-nantes">
-          <Button variant="contained" color="primary" startIcon={<Send />}>
+          <Button variant="contained" color="secondary" startIcon={<Send />}>
             Devenir sponsor
           </Button>
         </MyLink>
         <MyLink to="https://devfest2021.gdgnantes.com">
           <Button
             variant="outlined"
-            color="primary"
+            color="secondary"
             style={{ textAlign: "center" }}
           >
             L'édition 2021
