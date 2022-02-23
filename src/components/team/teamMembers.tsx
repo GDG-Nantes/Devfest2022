@@ -35,14 +35,14 @@ export const TeamMembers: React.FC = () => {
 
   const imageByMember = useMemo(() => {
     const mapObj = {};
-    shuffledMembers.forEach(
+    team.bureau.forEach(
       (member) =>
         (mapObj[member.id] = getImage(
           allFile.nodes.find((node) => !member.id || node.name === member.id)
         ))
     );
     return mapObj;
-  }, [allFile, shuffledMembers]);
+  }, [allFile]);
 
   return (
     <Grid container columnSpacing={3} rowSpacing={10} justifyContent="center">
