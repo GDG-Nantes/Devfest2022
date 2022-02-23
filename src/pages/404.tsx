@@ -17,7 +17,7 @@ const Jumbo404 = () => {
   const { locale } = useLocalization();
   return (
     <>
-      <Typography variant="h1" component="h1" textAlign="center">
+      <Typography variant="h1" textAlign="center" color="var(--primary-dark)">
         {t("main")}
       </Typography>
       <MyLink to="/">

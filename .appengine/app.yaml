@@ -22,3 +22,6 @@ handlers:
     static_files: \1/index.html
     upload: (.+)/index.html
     secure: always
+
+error_handlers:
+  - file: 404.html

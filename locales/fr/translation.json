@@ -9,7 +9,7 @@
     "legal-mentions": { "name": "Mentions Légales" }
   },
   "404": {
-    "main": "Vous avez l'air perdus...",
+    "main": "Vous avez l'air perdu...",
     "button": "Retour en lieu sûr"
   },
   "footer": {
