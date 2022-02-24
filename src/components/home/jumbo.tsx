@@ -30,7 +30,7 @@ export const HomeJumbo = () => {
       />
 
       <Typography variant="h1" textAlign="center" color="var(--primary-dark)">
-        Les 21 et 22 Octobre 2022 !
+        Les 20 et 21 Octobre 2022 !
       </Typography>
       <Typography
         variant="h2"
