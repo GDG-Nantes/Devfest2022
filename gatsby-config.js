@@ -43,9 +43,9 @@ module.exports = {
     },
 
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        id: "G-D66NP8CLV0",
+        trackingIds: ["G-D66NP8CLV0"],
       },
     },
     "gatsby-plugin-react-helmet",
