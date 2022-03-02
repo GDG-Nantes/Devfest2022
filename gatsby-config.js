@@ -54,8 +54,26 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/chevron-stylise.jpg",
+        name: `Devfest Nantes 2022`,
+        short_name: `Devfest Nantes`,
+        start_url: `/`,
+        background_color: `#ffedbf`,
+        theme_color: `#ffedbf`,
+        display: `standalone`,
+        description: `Informations générales sur le Devfest Nantes`,
+        lang: `fr`,
+        localize: [
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `Devfest Nantes 2022`,
+            short_name: `Devfest Nantes`,
+            description: `General informations about the Devfest Nantes.`,
+          },
+        ],
       },
     },
+    "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

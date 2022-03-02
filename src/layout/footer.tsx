@@ -118,7 +118,7 @@ export const Footer: React.FC = () => {
                 className="footer-title"
                 aria-label="bureau@gdgnantes.com"
               >
-                <IconButton>
+                <IconButton aria-label="email icon">
                   <Email style={{ color: "white" }} />
                 </IconButton>
                 bureau@gdgnantes.com
@@ -141,7 +141,12 @@ export const Footer: React.FC = () => {
 
           <FooterItem size="full">
             <div>
-              <img src={logo.file.publicURL} alt="logo defvest" height="50px" />
+              <img
+                src={logo.file.publicURL}
+                alt="logo devfest"
+                height="50"
+                width="150"
+              />
               <p>{t("organizers")}</p>
             </div>
           </FooterItem>
