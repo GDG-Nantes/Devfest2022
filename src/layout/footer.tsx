@@ -16,7 +16,7 @@ import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
 import "./footer.scss";
 
-type FooterLink = { label: string; url: string };
+type FooterLink = { label: string; url: string; disabled?: boolean };
 
 export const Footer: React.FC = () => {
   const { isMobileOrTablet } = useResponsiveData();
@@ -80,12 +80,25 @@ export const Footer: React.FC = () => {
     // },
   ];
 
-  const previousEditions: FooterLink[] = [2021, 2020, 2019, 2018].map(
-    (year) => ({
-      url: `https://devfest${year}.gdgnantes.com`,
-      label: "Devfest Nantes " + year,
-    })
-  );
+  const previousEditions: FooterLink[] = [
+    {
+      url: `https://devfest2021.gdgnantes.com`,
+      label: "Devfest Nantes 2021",
+    },
+    {
+      url: `https://devfest2020.gdgnantes.com`,
+      label: "Devfest Nantes 2020",
+      disabled: true,
+    },
+    {
+      url: `https://devfest2019.gdgnantes.com`,
+      label: "Devfest Nantes 2019",
+    },
+    {
+      url: `https://devfest2018.gdgnantes.com`,
+      label: "Devfest Nantes 2018",
+    },
+  ];
 
   return (
     <footer>
@@ -101,7 +114,10 @@ export const Footer: React.FC = () => {
 
           <FooterItem size="half">
             <Link to="mailto:bureau@gdgnantes.com">
-              <Button className="footer-title">
+              <Button
+                className="footer-title"
+                aria-label="bureau@gdgnantes.com"
+              >
                 <IconButton>
                   <Email style={{ color: "white" }} />
                 </IconButton>
@@ -117,7 +133,7 @@ export const Footer: React.FC = () => {
           <FooterItem title="Newsletter">
             <p>{t("no-spam")}</p>
             <MyLink to="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;amp;id=e0e7ceee5d">
-              <Button variant="contained">
+              <Button variant="contained" aria-label="newsletter">
                 <Send style={{ marginRight: "20px" }} /> {t("news-button")}
               </Button>
             </MyLink>
@@ -162,10 +178,14 @@ const FooterItem: React.FC<{
 const FooterLinks: React.FC<{ links: FooterLink[] }> = ({ links }) => {
   return (
     <List dense>
-      {links.map(({ label, url }) => (
-        <MyLink to={url}>
-          <ListItem style={{ justifyContent: "center" }}>{label}</ListItem>
-        </MyLink>
+      {links.map(({ label, url, disabled }) => (
+        <ListItem style={{ justifyContent: "center" }}>
+          {disabled ? (
+            <div style={{ textDecoration: "line-through" }}>{label}</div>
+          ) : (
+            <MyLink to={url}>{label}</MyLink>
+          )}
+        </ListItem>
       ))}
     </List>
   );

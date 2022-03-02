@@ -91,7 +91,8 @@ const Topbar: React.FC<{
               className="logo-top-bar"
               src={logo}
               alt="Logo Devfest 2021"
-              height="50px"
+              height="50"
+              width="150"
             />
           </MyLink>
         </Box>
@@ -102,7 +103,7 @@ const Topbar: React.FC<{
           ) : (
             <IconButton
               edge="start"
-              aria-label="open drawer"
+              aria-label="open menu"
               onClick={toggleDrawer(true)}
             >
               <MenuRounded />
@@ -135,7 +136,9 @@ const BarMenu: React.FC<{
         <ListItemButton
           style={{ height: "50px", justifyContent: "end", marginRight: "20px" }}
         >
-          <CloseRounded />
+          <IconButton aria-label="close menu">
+            <CloseRounded />
+          </IconButton>
         </ListItemButton>
         <Divider />
         <ListMenuButtons />
@@ -161,7 +164,7 @@ const ListMenuButtons: React.FC = () => {
           </MyLink>
         </ListItemButton>
       ))}
-      <ListItemButton>
+      <ListItemButton aria-label="change language">
         <ToggleLanguage />
       </ListItemButton>
     </>

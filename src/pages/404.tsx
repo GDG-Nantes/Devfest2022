@@ -21,7 +21,7 @@ const Jumbo404 = () => {
         {t("main")}
       </Typography>
       <MyLink to="/">
-        <Button variant="contained" color="secondary">
+        <Button variant="contained" color="secondary" aria-label={t("button")}>
           {t("button")}
         </Button>
       </MyLink>

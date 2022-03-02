@@ -1,4 +1,3 @@
-import { Send } from "@mui/icons-material";
 import { Button, Stack, Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -26,7 +25,8 @@ export const HomeJumbo = () => {
         className="logo-jumbo-home"
         alt="logo"
         src={logo.file.publicURL}
-        height="300px"
+        height="300"
+        width="500"
       />
 
       <Typography variant="h1" textAlign="center" color="var(--primary-dark)">
@@ -42,16 +42,12 @@ export const HomeJumbo = () => {
       </Typography>
 
       <Stack direction="row" spacing={3}>
-        <MyLink to="https://www.billetweb.fr/partenaire-devfest-nantes">
-          <Button variant="contained" color="secondary" startIcon={<Send />}>
-            Devenir sponsor
-          </Button>
-        </MyLink>
         <MyLink to="https://devfest2021.gdgnantes.com">
           <Button
             variant="outlined"
             color="secondary"
             style={{ textAlign: "center" }}
+            aria-label="Edition 2021"
           >
             L'édition 2021
           </Button>

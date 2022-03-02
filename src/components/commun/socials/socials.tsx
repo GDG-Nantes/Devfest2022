@@ -42,8 +42,8 @@ export const SocialLink = (social: SocialData) => {
   }
 
   return (
-    <MyLink to={url}>
-      <IconButton>{icon}</IconButton>
+    <MyLink to={url} aria-label={social.type}>
+      <IconButton aria-label={social.type}>{icon}</IconButton>
     </MyLink>
   );
 };
