@@ -7,6 +7,12 @@ handlers:
     upload: index.html
     secure: always
 
+    # All files with extensions are considered static
+  - url: /(.+\..+)
+    static_files: \1
+    upload: (.*)
+    secure: always
+
     # 404
   - url: /en/(.*)
     static_files: en/404.html
@@ -14,12 +20,6 @@ handlers:
   - url: /(.*)
     static_files: 404.html
     upload: 404.html
-
-    # All files with extensions are considered static
-  - url: /(.+\..+)
-    static_files: \1
-    upload: (.*)
-    secure: always
 
     # The rest are folders
   - url: /(.*)/
