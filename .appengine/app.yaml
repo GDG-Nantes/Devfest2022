@@ -10,8 +10,10 @@ handlers:
     # 404
   - url: /en/(.*)
     static_files: en/404.html
+    upload: en/404.html
   - url: /(.*)
     static_files: 404.html
+    upload: 404.html
 
     # All files with extensions are considered static
   - url: /(.+\..+)
