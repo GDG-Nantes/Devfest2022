@@ -3,7 +3,7 @@
     "description": "Le DevFest, ou 'Developers Festival', est une conférence technique destinée aux développeurs. Elle s'adresse aussi bien aux étudiants, aux professionnels ou tout simplement aux curieux technophiles."
   },
   "pages": {
-    "home": { "name": "Accueil", "jumbo": { "date": "21 & 22 Octobre 2022" } },
+    "home": { "name": "Accueil", "jumbo": { "date": "20 & 21 Octobre 2022" } },
     "team": { "name": "L'Équipe" },
     "code-of-conduct": { "name": "Code de conduite" },
     "legal-mentions": { "name": "Mentions Légales" }
