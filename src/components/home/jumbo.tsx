@@ -30,15 +30,7 @@ export const HomeJumbo = () => {
       />
 
       <Typography variant="h1" textAlign="center" color="var(--primary-dark)">
-        Les 20 et 21 Octobre 2022 !
-      </Typography>
-      <Typography
-        variant="h2"
-        textAlign="center"
-        style={{ marginBottom: "20px" }}
-        color="var(--primary-dark)"
-      >
-        L'ouverture du sponsoring se fera le 24 Février à 14h
+        {t("date")}
       </Typography>
 
       <Stack direction="row" spacing={3}>

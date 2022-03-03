@@ -71,6 +71,9 @@ module.exports = {
             description: `General informations about the Devfest Nantes.`,
           },
         ],
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     "gatsby-plugin-offline",
