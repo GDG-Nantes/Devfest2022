@@ -1,26 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://devfest2022.gdgnantes.com",
+    siteUrl: "https://devfest.gdgnantes.com",
     title: "Devfest Nantes 2022",
-    image: "/images/social-share.png",
+    image: "/images/social-share.jpg",
   },
   plugins: [
     "gatsby-plugin-typescript",
-    {
-      resolve: `gatsby-theme-material-ui`,
-      options: {
-        webFontsConfig: {
-          fonts: {
-            google: [
-              {
-                family: `Acme`,
-                variants: [`300`, `400`, `500`],
-              },
-            ],
-          },
-        },
-      },
-    },
+    "gatsby-theme-material-ui",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-graphql-config",
@@ -53,13 +39,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/chevron-stylise.jpg",
+        icon: "src/images/favicon.jpg",
+        icon_options: {
+          purpose: `any maskable`,
+        },
         name: `Devfest Nantes 2022`,
         short_name: `Devfest Nantes`,
         start_url: `/`,
         background_color: `#ffedbf`,
         theme_color: `#ffedbf`,
-        display: `standalone`,
+        display: `minimal-ui`,
         description: `Informations générales sur le Devfest Nantes`,
         lang: `fr`,
         localize: [
@@ -71,9 +60,6 @@ module.exports = {
             description: `General informations about the Devfest Nantes.`,
           },
         ],
-        icon_options: {
-          purpose: `any maskable`,
-        },
       },
     },
     "gatsby-plugin-offline",

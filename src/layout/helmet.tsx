@@ -24,7 +24,7 @@ export const Helmet: React.FC = () => {
   const path = pathname.replace(/\/(fr|en)/, "");
   const pageTitle = MENU.find((menu) => path === menu.link)?.label;
   const title =
-    pageTitle && path !== "/" ? t("pages." + pageTitle) : "Devfest Nantes";
+    pageTitle && path !== "/" ? t(`pages.${pageTitle}.name`) : "Devfest Nantes";
 
   const socialImage =
     helmet.site.siteMetadata.siteUrl + helmet.site.siteMetadata.image;

@@ -1,4 +1,5 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Campaign } from "@mui/icons-material";
+import { Button, IconButton, Stack, Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -34,11 +35,22 @@ export const HomeJumbo = () => {
       </Typography>
 
       <Stack direction="row" spacing={3}>
+        <MyLink to="https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3">
+          <Button
+            variant="contained"
+            color="secondary"
+            aria-label="Devenir speaker"
+          >
+            <IconButton aria-label="cfp">
+              <Campaign />
+            </IconButton>
+            Devenir speaker
+          </Button>
+        </MyLink>
         <MyLink to="https://devfest2021.gdgnantes.com">
           <Button
             variant="outlined"
             color="secondary"
-            style={{ textAlign: "center" }}
             aria-label="Edition 2021"
           >
             L'édition 2021

@@ -9,4 +9,8 @@ export const MENU: Array<MenuItem> = [
     label: "team",
     link: "/team",
   },
+  {
+    label: "📣 CFP",
+    link: "https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3",
+  },
 ];

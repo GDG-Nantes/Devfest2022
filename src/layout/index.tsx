@@ -159,7 +159,7 @@ const ListMenuButtons: React.FC = () => {
             style={{ width: "100%", height: "100%" }}
           >
             <ListItemText primaryTypographyProps={{ variant: "h3" }}>
-              {t(menuItem.label + ".name")}
+              {t(menuItem.label + ".name", { defaultValue: menuItem.label })}
             </ListItemText>
           </MyLink>
         </ListItemButton>
