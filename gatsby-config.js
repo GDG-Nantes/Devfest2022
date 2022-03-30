@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/favicon.jpg",
+        icon: "static/images/favicon.jpg",
         icon_options: {
           purpose: `any maskable`,
         },
