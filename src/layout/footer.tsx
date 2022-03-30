@@ -1,4 +1,4 @@
-import { Email, Send } from "@mui/icons-material";
+import { Email } from "@mui/icons-material";
 import {
   Button,
   Container,
@@ -11,6 +11,7 @@ import {
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { SubscribeNewsletter } from "../components/commun/newsletter";
 import { SocialData, SocialLink } from "../components/commun/socials/socials";
 import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
@@ -132,11 +133,7 @@ export const Footer: React.FC = () => {
 
           <FooterItem title="Newsletter">
             <p>{t("no-spam")}</p>
-            <MyLink to="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;amp;id=e0e7ceee5d">
-              <Button variant="contained" aria-label="newsletter">
-                <Send style={{ marginRight: "20px" }} /> {t("news-button")}
-              </Button>
-            </MyLink>
+            <SubscribeNewsletter />
           </FooterItem>
 
           <FooterItem size="full">
@@ -184,7 +181,7 @@ const FooterLinks: React.FC<{ links: FooterLink[] }> = ({ links }) => {
   return (
     <List dense>
       {links.map(({ label, url, disabled }) => (
-        <ListItem style={{ justifyContent: "center" }}>
+        <ListItem style={{ justifyContent: "center" }} key={label}>
           {disabled ? (
             <div style={{ textDecoration: "line-through" }}>{label}</div>
           ) : (

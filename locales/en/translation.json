@@ -3,7 +3,17 @@
     "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant for students, professionals, or any curious techie"
   },
   "pages": {
-    "home": { "name": "Home", "jumbo": { "date": "October 20,21 2022" } },
+    "home": {
+      "name": "Home",
+      "jumbo": { "date": "October 20,21 2022" },
+      "numbers": {
+        "attendees": "Attendees",
+        "days": "Days",
+        "sessions": "Sessions",
+        "tracks": "Tracks",
+        "speakers": "Speakers"
+      }
+    },
     "team": { "name": "Team" },
     "code-of-conduct": { "name": "Code of conduct" },
     "legal-mentions": { "name": "Legal Mentions" }

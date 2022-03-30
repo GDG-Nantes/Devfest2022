@@ -4,11 +4,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { MyLink } from "../../helpers/links";
-import { useResponsiveData } from "../../helpers/responsive";
 import "./home.scss";
 
 export const HomeJumbo = () => {
-  const { isMobileOrTablet } = useResponsiveData();
   const { t } = useTranslation("translation", {
     keyPrefix: "pages.home.jumbo",
   });

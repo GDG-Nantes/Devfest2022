@@ -1,7 +1,26 @@
 import MDXPageLayout from "../layout/mdx";
-import { HomeJumbo } from "../components/home/jumbo";
+import { HomeJumbo, DevfestNumbers, DevfestPhotos } from "../components/home";
+import { SubscribeNewsletter } from "../components/commun/newsletter";
 export const metadata = {
   title: "Accueil",
   background: "back-neutre.jpg",
   jumbo: HomeJumbo,
 };
+
+<SecondarySection>
+
+# Le DevFest Nantes
+
+Le DevFest, ou 'Developer Festival', est une conférence technique destinée aux développeurs. Elle s’adresse aussi bien aux étudiants, aux professionnels ou tout simplement aux curieux technophiles.
+
+<DevfestNumbers />
+
+<Youtube id="VyWwCNhqk1w" title="AfterMovie 2021" />
+
+</SecondarySection>
+<TertiarySection>
+
+## Soyez notifié des dernières informations !
+
+<SubscribeNewsletter />
+</TertiarySection>

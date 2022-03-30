@@ -5,14 +5,18 @@ import { DefaultPage, PageConfig } from "../components/commun/page";
 import {
   PrimarySection,
   SecondarySection,
+  TertiarySection,
 } from "../components/commun/section/section";
+import { Youtube } from "../components/commun/youtube";
 import { MyLink } from "../helpers/links";
 import Layout from "./index";
 
 const components = {
   PrimarySection,
   SecondarySection,
+  TertiarySection,
   Typography,
+  Youtube,
 };
 
 export const CustomMDXProvider: React.FC = ({ children }) => (
