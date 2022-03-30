@@ -8,7 +8,7 @@ import Layout from "../layout";
 
 const ErrorPage = () => (
   <Layout>
-    <DefaultPage title="404" background="back-neutre.jpg" jumbo={Jumbo404} />
+    <DefaultPage title="404" jumbo={Jumbo404} />
   </Layout>
 );
 

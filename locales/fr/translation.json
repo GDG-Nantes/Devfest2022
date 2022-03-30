@@ -5,7 +5,11 @@
   "pages": {
     "home": {
       "name": "Accueil",
-      "jumbo": { "date": "20 & 21 Octobre 2022" },
+      "jumbo": {
+        "date": "20 & 21 Octobre 2022",
+        "cfp": "Devenir speaker",
+        "previous": "Édition 2021"
+      },
       "numbers": {
         "attendees": "Participants",
         "days": "Jours",

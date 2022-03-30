@@ -34,24 +34,20 @@ export const HomeJumbo = () => {
 
       <Stack direction="row" spacing={3}>
         <MyLink to="https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3">
-          <Button
-            variant="contained"
-            color="secondary"
-            aria-label="Devenir speaker"
-          >
+          <Button variant="contained" color="secondary" aria-label={t("cfp")}>
             <IconButton aria-label="cfp">
               <Campaign />
             </IconButton>
-            Devenir speaker
+            {t("cfp")}
           </Button>
         </MyLink>
         <MyLink to="https://devfest2021.gdgnantes.com">
           <Button
             variant="outlined"
             color="secondary"
-            aria-label="Edition 2021"
+            aria-label={t("previous")}
           >
-            L'édition 2021
+            {t("previous")}
           </Button>
         </MyLink>
       </Stack>

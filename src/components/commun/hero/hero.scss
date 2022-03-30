@@ -5,12 +5,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
-  background: linear-gradient(
-    var(--tertiary-dark) 0%,
-    var(--tertiary) 30%,
-    var(--tertiary) 70%,
-    var(--tertiary-dark) 100%
-  );
 
   .hero-content {
     display: flex;
