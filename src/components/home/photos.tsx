@@ -2,6 +2,7 @@ import { Button, Stack } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { MyLink } from "../../helpers/links";
 import { useResponsiveData } from "../../helpers/responsive";
 import { SecondarySection } from "../commun/section/section";
@@ -74,7 +75,7 @@ const Album = () => {
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
-        gridTemplateRows: "repeat(5, 25vh)",
+        gridTemplateRows: "repeat(5, 17vh)",
         gridAutoFlow: "dense",
         gap: "5px",
       }}
@@ -128,17 +129,22 @@ const Album = () => {
   );
 };
 
-const ButtonTile = ({ gridColumn }: { gridColumn: string }) => (
-  <Stack style={{ gridColumn }} alignItems="center" justifyContent="center">
-    <p>Quelques photos du DevFest Nantes 2021</p>
-    <p style={{ marginTop: 0 }}>sur le thème du Street Art 🎨</p>
-    <MyLink to="https://photos.app.goo.gl/bEa1r4VVb5GLS4A77">
-      <Button variant="contained" color="primary" aria-label="Photos 2021">
-        Voir toutes les photos
-      </Button>
-    </MyLink>
-  </Stack>
-);
+const ButtonTile = ({ gridColumn }: { gridColumn: string }) => {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "pages.home.photos",
+  });
+  return (
+    <Stack style={{ gridColumn }} alignItems="center" justifyContent="center">
+      <p>{t("p1")}</p>
+      <p style={{ marginTop: 0 }}>{t("p2")}</p>
+      <MyLink to="https://photos.app.goo.gl/bEa1r4VVb5GLS4A77">
+        <Button variant="contained" color="primary" aria-label="Photos 2021">
+          {t("button")}
+        </Button>
+      </MyLink>
+    </Stack>
+  );
+};
 
 const Picture: React.FC<{
   image: ImageDataLike & { name: string };

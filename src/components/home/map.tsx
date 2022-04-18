@@ -61,18 +61,25 @@ const Description = () => {
   );
 };
 
-const FullWidthMap: React.FC<{ file: ImageDataLike }> = ({ children }) => (
-  <div
-    className="home-map"
-    style={{ height: "600px", width: "100%", position: "relative" }}
-  >
-    <StaticImage
-      alt="world map"
-      src="../../images/home/map.jpg"
-      objectFit="cover"
-      style={{ height: "100%", width: "100%" }}
-      layout="fixed"
-    />
-    {children}
-  </div>
-);
+const FullWidthMap: React.FC<{ file: ImageDataLike }> = ({ children }) => {
+  const { isMobileOrTablet } = useResponsiveData();
+  return (
+    <div
+      className="home-map"
+      style={{
+        height: isMobileOrTablet ? "300px" : "600px",
+        width: "100%",
+        position: "relative",
+      }}
+    >
+      <StaticImage
+        alt="world map"
+        src="../../images/home/map.jpg"
+        objectFit="cover"
+        style={{ height: "100%", width: "100%" }}
+        layout="fixed"
+      />
+      {children}
+    </div>
+  );
+};

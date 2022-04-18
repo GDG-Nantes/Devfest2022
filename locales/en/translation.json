@@ -16,6 +16,11 @@
         "sessions": "Sessions",
         "tracks": "Tracks",
         "speakers": "Speakers"
+      },
+      "photos": {
+        "p1": "Some pictures of the 2021 DevFest Nantes",
+        "p2": "on the Street Art theme 🎨",
+        "button": "See all photos"
       }
     },
     "attending": {

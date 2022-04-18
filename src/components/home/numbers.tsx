@@ -9,7 +9,7 @@ export const DevfestNumbers = () => {
       columnSpacing={1}
       rowSpacing={2}
       justifyContent="center"
-      marginTop="20px"
+      margin="20px 0"
     >
       <Number label="attendees" value={2000} />
       <Number label="days" value={2} />
@@ -29,7 +29,7 @@ const Number: React.FC<{ label: string; value: number | string }> = ({
   });
 
   return (
-    <Grid item minWidth={100} xs={12} sm={6} md={4} lg={2}>
+    <Grid item minWidth={100} xs={6} sm={6} md={4} lg={2}>
       <Stack textAlign="center">
         <Typography variant="h2" margin="10px 0">
           {value}
