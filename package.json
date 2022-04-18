@@ -22,6 +22,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@mui/icons-material": "^5.3.1",
+    "@mui/lab": "^5.0.0-alpha.77",
     "@mui/material": "^5.3.1",
     "classnames": "^2.3.1",
     "gatsby": "^4.6.0",

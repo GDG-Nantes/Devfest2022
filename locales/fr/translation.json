@@ -18,6 +18,13 @@
         "speakers": "Speakers"
       }
     },
+    "attending": {
+      "name": "Attending",
+      "map": {
+        "title": "Le Lieu",
+        "description": "Située en plein cœur de ville, La Cité des Congrès de Nantes propose pour le DevFest Nantes plus de 3000m² de salles de conférences, codelabs et lieu de rencontre…"
+      }
+    },
     "team": { "name": "L'Équipe" },
     "code-of-conduct": { "name": "Code de conduite" },
     "legal-mentions": { "name": "Mentions Légales" }

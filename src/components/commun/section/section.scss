@@ -20,6 +20,10 @@
     padding: 2rem 10vw;
   }
 
+  &.noPadding {
+    padding: 1rem 1rem;
+  }
+
   &.primary {
     background-color: var(--primary);
   }
