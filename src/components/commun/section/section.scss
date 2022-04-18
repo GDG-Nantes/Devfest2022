@@ -10,6 +10,14 @@
   h5,
   h6 {
     color: white;
+
+    &:first-child {
+      margin-top: 5px;
+    }
+  }
+
+  &.slim {
+    padding: 2rem 10vw;
   }
 
   &.primary {

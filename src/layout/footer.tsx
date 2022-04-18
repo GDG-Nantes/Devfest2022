@@ -75,10 +75,10 @@ export const Footer: React.FC = () => {
       label: t("partnership-kit"),
       url: "https://drive.google.com/drive/folders/1CnuhE2-hrxmFLx65ftHVYCRq89OOiDp_",
     },
-    // {
-    //   label: t("media-kit"),
-    //   url: "https://drive.google.com/drive/folders/1Qpe0mmD2btdEIVAIEUlJh081CUdyd5z3",
-    // },
+    {
+      label: t("media-kit"),
+      url: "https://drive.google.com/drive/folders/1nbo3YwdxAh4_S0J4wEjO7RLvZ12UUTnY",
+    },
   ];
 
   const previousEditions: FooterLink[] = [

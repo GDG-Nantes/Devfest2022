@@ -1,23 +1,22 @@
-import { Divider, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
 export const DevfestNumbers = () => {
   return (
-    <Stack
-      direction="row"
-      width="100%"
-      margin="30px 0"
-      justifyContent="space-around"
-      divider={<Divider orientation="vertical" flexItem variant="middle" />}
-      spacing={2}
+    <Grid
+      container
+      columnSpacing={1}
+      rowSpacing={2}
+      justifyContent="center"
+      marginTop="20px"
     >
       <Number label="attendees" value={2000} />
       <Number label="days" value={2} />
       <Number label="sessions" value={69} />
       <Number label="tracks" value={4} />
       <Number label="speakers" value={"90+"} />
-    </Stack>
+    </Grid>
   );
 };
 
@@ -30,11 +29,13 @@ const Number: React.FC<{ label: string; value: number | string }> = ({
   });
 
   return (
-    <Stack textAlign="center">
-      <Typography variant="h2" margin="20px 0">
-        {value}
-      </Typography>
-      <p>{t(label)}</p>
-    </Stack>
+    <Grid item minWidth={100} xs={12} sm={6} md={4} lg={2}>
+      <Stack textAlign="center">
+        <Typography variant="h2" margin="10px 0">
+          {value}
+        </Typography>
+        <p>{t(label)}</p>
+      </Stack>
+    </Grid>
   );
 };
