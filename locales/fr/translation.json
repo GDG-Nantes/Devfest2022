@@ -5,11 +5,13 @@
   "pages": {
     "home": {
       "name": "Accueil",
+      "what-is": "Le DevFest Nantes",
       "jumbo": {
         "date": "20 & 21 Octobre 2022",
         "cfp": "Devenir speaker",
         "previous": "Édition 2021"
       },
+      "newsletter": "Soyez notifié des dernières informations !",
       "numbers": {
         "attendees": "Participants",
         "days": "Jours",
