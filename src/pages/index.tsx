@@ -14,6 +14,7 @@ import {
   HomeJumbo,
   HomeMap,
 } from "../components/home";
+import { Partners } from "../components/partners";
 import Layout from "../layout";
 
 const HomeContent = () => {
@@ -31,6 +32,7 @@ const HomeContent = () => {
         <SubscribeNewsletter />
       </TertiarySection>
       <HomeMap />
+      <Partners onlyPlatinium={true} />
 
       <DevfestPhotos />
     </>

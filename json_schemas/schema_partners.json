@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "partners",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "platinium": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/partner" }
+    },
+    "gold": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/partner" }
+    },
+    "silver": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/partner" }
+    },
+    "virtual": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/partner" }
+    }
+  },
+  "definitions": {
+    "partner": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "title"]
+    }
+  }
+}

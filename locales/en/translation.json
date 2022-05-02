@@ -32,6 +32,10 @@
         "description": "Located in the center of Nantes, the event takes place in the “Cité des Congrès” with more than 3000m² of conference rooms, hand’s on and networking space…"
       }
     },
+    "partners": {
+      "name": "Partners",
+      "platinium-partners": "Platinium partners"
+    },
     "team": { "name": "Team" },
     "code-of-conduct": { "name": "Code of conduct" },
     "legal-mentions": { "name": "Legal Mentions" }

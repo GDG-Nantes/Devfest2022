@@ -1,0 +1,12 @@
+.partners {
+  .partner-logo {
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+  }
+}
