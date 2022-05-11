@@ -31,7 +31,7 @@ export const Partners: React.FC<{
         nodes {
           name
           childImageSharp {
-            gatsbyImageData(transformOptions: { grayscale: true })
+            gatsbyImageData
           }
         }
       }
