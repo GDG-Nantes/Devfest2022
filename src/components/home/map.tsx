@@ -1,6 +1,6 @@
 import { Directions } from "@mui/icons-material";
 import { Box, Button, Typography } from "@mui/material";
-import { ImageDataLike, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import { IconButton } from "gatsby-theme-material-ui";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -61,7 +61,7 @@ const Description = () => {
   );
 };
 
-const FullWidthMap: React.FC<{ file: ImageDataLike }> = ({ children }) => {
+const FullWidthMap: React.FC = ({ children }) => {
   const { isMobileOrTablet } = useResponsiveData();
   return (
     <div

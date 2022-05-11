@@ -9,3 +9,131 @@
     margin: 1rem 0 1rem;
   }
 }
+.tickets {
+  .ticket {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    background-color: var(--tertiary);
+    height: 300px;
+    width: 200px;
+    max-width: 200px;
+    color: var(--primary-dark);
+    clip-path: polygon(
+      20px 0,
+      0 20px,
+      0 calc(100% - 20px),
+      20px 100%,
+      calc(100% - 20px) 100%,
+      100% calc(100% - 20px),
+      100% 20px,
+      calc(100% - 20px) 0
+    );
+    border-width: 2px;
+    border-style: dashed none;
+    border-color: var(--primary);
+    border-spacing: 2px;
+    cursor: pointer;
+
+    &::before,
+    &::after,
+    .ticket-wrapper::before,
+    .ticket-wrapper::after {
+      content: "";
+      background-color: var(--primary-dark);
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 60px;
+      height: 60px;
+      border-radius: 0 0 18px 0;
+      z-index: 2;
+    }
+    .ticket-wrapper::before,
+    .ticket-wrapper::after {
+      width: 72px;
+      height: 66px;
+      z-index: 1;
+      background-color: var(--primary);
+    }
+
+    &::before,
+    .ticket-wrapper::before {
+      top: 0;
+    }
+
+    &::after,
+    .ticket-wrapper::after {
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+
+    &::before {
+      background-color: var(--primary-dark);
+      background-image: url("/images/chevron-stylise.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 75%;
+    }
+    &::after {
+      opacity: 0.3;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .ticket-wrapper {
+      padding: 75px 10px;
+      height: 100%;
+
+      .ticket-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+
+        .price {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          text-align: center;
+          align-items: center;
+
+          hr {
+            border-bottom-width: 2px;
+            border-radius: 2px;
+            border-color: var(--secondary);
+            width: 66px;
+          }
+
+          h2 {
+            color: var(--primary-dark);
+            margin: 10px 0 5px 0;
+          }
+        }
+        .description {
+          p {
+            margin: 5px 0;
+          }
+
+          .quantity {
+            opacity: 0.75;
+            font-size: 80%;
+          }
+        }
+      }
+    }
+  }
+}

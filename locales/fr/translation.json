@@ -19,6 +19,15 @@
         "tracks": "Tracks",
         "speakers": "Speakers"
       },
+      "tickets": {
+        "name": "Tickets",
+        "description": "À l'occasion des 10 ans, la billetterie ouvrira le 10 juin à 10h10 !",
+        "2daysEarly": "Early Bird",
+        "2days-1st": "Pass 2 jours",
+        "1day": "Pass 1 jour",
+        "reduced": "Tarif réduit",
+        "2days-2nd": "En vente le 6 Septembre"
+      },
       "photos": {
         "p1": "Quelques photos du DevFest Nantes 2021",
         "p2": "sur le thème du Street Art 🎨",

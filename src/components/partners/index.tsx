@@ -58,57 +58,61 @@ export const Partners: React.FC<{
     [typedPartners]
   );
 
-  return types.map((typePartner) => {
-    const sizes = {
-      platinium: { height: "175px", width: "300px" },
-      gold: { height: "120px", width: "200px" },
-      virtual: { height: "120px", width: "200px" },
-    };
+  return (
+    <>
+      {types.map((typePartner) => {
+        const sizes = {
+          platinium: { height: "175px", width: "300px" },
+          gold: { height: "120px", width: "200px" },
+          virtual: { height: "120px", width: "200px" },
+        };
 
-    return (
-      <TertiarySection key={typePartner}>
-        <Typography
-          variant="h2"
-          align="center"
-          fontSize="40px"
-          style={{ marginBottom: "50px" }}
-        >
-          {onlyPlatinium ? t("platinium-partners") : typePartner}
-        </Typography>
-        <Grid
-          className={classNames("partners", typePartner)}
-          container
-          columnSpacing={typePartner === "platinium" ? 6 : 5}
-          rowSpacing={typePartner === "platinium" ? 8 : 6}
-          justifyContent="center"
-        >
-          {typedPartners[typePartner].map((partner) => (
-            <Grid
-              item
-              maxWidth={500}
-              key={partner.id}
-              sm={12}
-              md={6}
-              lg={4}
-              alignItems="center"
-              justifyContent="center"
-              style={{
-                maxHeight: sizes[typePartner].height,
-                maxWidth: sizes[typePartner].width,
-              }}
+        return (
+          <TertiarySection key={typePartner}>
+            <Typography
+              variant="h2"
+              align="center"
+              fontSize="40px"
+              style={{ marginBottom: "50px" }}
             >
-              <MyLink to={partner.website || ""}>
-                <GatsbyImage
-                  className="partner-logo"
-                  objectFit="contain"
-                  alt={partner.title}
-                  image={partnersImages[typePartner][partner.id]}
-                />
-              </MyLink>
+              {onlyPlatinium ? t("platinium-partners") : typePartner}
+            </Typography>
+            <Grid
+              className={classNames("partners", typePartner)}
+              container
+              columnSpacing={typePartner === "platinium" ? 6 : 5}
+              rowSpacing={typePartner === "platinium" ? 8 : 6}
+              justifyContent="center"
+            >
+              {typedPartners[typePartner].map((partner) => (
+                <Grid
+                  item
+                  maxWidth={500}
+                  key={partner.id}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  alignItems="center"
+                  justifyContent="center"
+                  style={{
+                    maxHeight: sizes[typePartner].height,
+                    maxWidth: sizes[typePartner].width,
+                  }}
+                >
+                  <MyLink to={partner.website || ""}>
+                    <GatsbyImage
+                      className="partner-logo"
+                      objectFit="contain"
+                      alt={partner.title}
+                      image={partnersImages[typePartner][partner.id]}
+                    />
+                  </MyLink>
+                </Grid>
+              ))}
             </Grid>
-          ))}
-        </Grid>
-      </TertiarySection>
-    );
-  });
+          </TertiarySection>
+        );
+      })}
+    </>
+  );
 };

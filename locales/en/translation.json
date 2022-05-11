@@ -19,6 +19,15 @@
         "tracks": "Tracks",
         "speakers": "Speakers"
       },
+      "tickets": {
+        "name": "Tickets",
+        "description": "To celebrate the 10th anniversary of the Devfest Nantes, the ticket office will open on June 10th at 10:10 AM.",
+        "2daysEarly": "Early Bird",
+        "2days-1st": "2 days ticket",
+        "1day": "1 day ticket",
+        "reduced": "Reduced price",
+        "2days-2nd": "On sale on September 6th"
+      },
       "photos": {
         "p1": "Some pictures of the 2021 DevFest Nantes",
         "p2": "on the Street Art theme 🎨",

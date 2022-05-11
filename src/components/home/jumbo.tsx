@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { MyLink } from "../../helpers/links";
-import "./home.scss";
 
 export const HomeJumbo = () => {
   const { t } = useTranslation("translation", {

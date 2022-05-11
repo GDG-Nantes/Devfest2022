@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { SubscribeNewsletter } from "../components/commun/newsletter";
 import { DefaultPage } from "../components/commun/page";
 import {
+  PrimarySection,
   SecondarySection,
   TertiarySection,
 } from "../components/commun/section/section";
@@ -14,6 +15,7 @@ import {
   HomeJumbo,
   HomeMap,
 } from "../components/home";
+import { Tickets } from "../components/home/tickets";
 import { Partners } from "../components/partners";
 import Layout from "../layout";
 
@@ -27,6 +29,13 @@ const HomeContent = () => {
         <DevfestNumbers />
         <Youtube id="VyWwCNhqk1w" title="AfterMovie 2021" />
       </SecondarySection>
+      <PrimarySection>
+        <Typography variant="h2">{t("pages.home.tickets.name")}</Typography>
+        <Typography variant="h3">
+          {t("pages.home.tickets.description")}
+        </Typography>
+        <Tickets />
+      </PrimarySection>
       <TertiarySection slim>
         <Typography variant="h2">{t("pages.home.newsletter")}</Typography>
         <SubscribeNewsletter />
