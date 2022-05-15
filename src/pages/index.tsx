@@ -26,6 +26,7 @@ const HomeContent = () => {
       <SecondarySection>
         <Typography variant="h1">{t("pages.home.what-is")}</Typography>
         <Typography variant="body1">{t("site.description")}</Typography>
+        <Typography variant="body1">{t("site.theme")}</Typography>
         <DevfestNumbers />
         <Youtube id="VyWwCNhqk1w" title="AfterMovie 2021" />
       </SecondarySection>

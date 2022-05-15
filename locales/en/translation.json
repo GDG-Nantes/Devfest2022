@@ -1,6 +1,7 @@
 {
   "site": {
-    "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant for students, professionals, or any curious techie"
+    "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant for students, professionals, or any curious techie",
+    "theme": "This year's theme will be Jules Verne ans his incredible universe !"
   },
   "pages": {
     "home": {
