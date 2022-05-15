@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet as ReactHelmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-import { Event } from "schema-dts";
+import { Event, WithContext } from "schema-dts";
 import { MENU } from "../menu";
 
 export const Helmet: React.FC = () => {
@@ -32,7 +32,8 @@ export const Helmet: React.FC = () => {
 
   const description = t("site.description");
 
-  const eventGoogleData: Event = {
+  const eventGoogleData: WithContext<Event> = {
+    "@context": "https://schema.org",
     "@type": "Event",
     name: "Devfest Nantes 2022",
     startDate: "2022-10-20T08:30+02:00",
