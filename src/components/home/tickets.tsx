@@ -34,7 +34,7 @@ export const Tickets = () => {
     <Grid
       container
       columnSpacing={1}
-      rowSpacing={2}
+      rowSpacing={3}
       margin="20px 0"
       justifyContent="center"
       className="tickets"

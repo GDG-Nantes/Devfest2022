@@ -31,7 +31,11 @@ export const Partners: React.FC<{
         nodes {
           name
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+              placeholder: BLURRED
+              backgroundColor: "transparent"
+              transformOptions: { fit: INSIDE }
+            )
           }
         }
       }
