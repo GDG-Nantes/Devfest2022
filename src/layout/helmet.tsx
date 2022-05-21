@@ -52,6 +52,7 @@ export const Helmet: React.FC = () => {
         addressCountry: "FR",
       },
     },
+    performer: "60 speakers",
     image: ["https://devfest2022.gdgnantes.com/images/social-share.jpg"],
     description,
     offers: {
@@ -59,6 +60,9 @@ export const Helmet: React.FC = () => {
       url: "https://tickets.gdgnantes.com/",
       availability: "https://schema.org/LimitedAvailability",
       availabilityStarts: "2022-10-10T10:10+02:00",
+      price: 78,
+      priceCurrency: "EUR",
+      validFrom: "2022-10-20T08:30+02:00",
     },
     organizer: {
       "@type": "Organization",
