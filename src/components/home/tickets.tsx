@@ -4,41 +4,25 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { MyLink } from "../../helpers/links";
 
-let interval: NodeJS.Timer;
 export const Tickets = () => {
-  const [disabled1st, setDisabled1st] = React.useState(true);
-  const [disabled2nd, setDisabled2nd] = React.useState(true);
-
-  React.useEffect(() => {
-    const firstDate = new Date(2022, 5, 10, 10, 10, 10, 10);
-    console.log("Ticket sale opening: ", firstDate);
-    if (Date.now() >= firstDate.getTime()) {
-      setDisabled1st(false);
-    } else if (Date.now() >= firstDate.setHours(8, 0, 0)) {
-      interval = setInterval(() => {
-        if (Date.now() >= firstDate.getTime()) {
-          clearInterval(interval);
-          setDisabled1st(false);
-        }
-      }, 1000);
-    }
-  }, []);
-
-  React.useEffect(() => {
-    if (Date.now() > new Date(2022, 8, 6).getTime()) {
-      setDisabled2nd(false);
-    }
-  }, []);
+  const disabled1st = true;
+  const disabled2nd = false;
 
   return (
     <Grid
-      container
-      columnSpacing={1}
-      rowSpacing={3}
-      margin="20px 0"
-      justifyContent="center"
-      className="tickets"
+    container
+    columnSpacing={1}
+    rowSpacing={3}
+    margin="20px 0"
+    justifyContent="center"
+    className="tickets"
     >
+      <Ticket
+        labelKey="2days-2nd"
+        price={99}
+        quantity={1000}
+        disabled={disabled2nd}
+      />
       <Ticket
         labelKey="2daysEarly"
         price={78}
@@ -62,12 +46,6 @@ export const Tickets = () => {
         price={20}
         quantity={200}
         disabled={disabled1st}
-      />
-      <Ticket
-        labelKey="2days-2nd"
-        price={99}
-        quantity={1000}
-        disabled={disabled2nd}
       />
     </Grid>
   );
