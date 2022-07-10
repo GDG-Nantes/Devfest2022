@@ -1,0 +1,13 @@
+---
+key: temporal_io___mes_workflows_sont_cloud_ready
+title: Temporal.io - mes workflows sont cloud ready
+language: French
+talkType: quickie
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - alexandre_vilain
+slot: day-1-quickie-2
+room: Tour de Bretagne
+abstract: "Qui ne s’est jamais retrouvé, pour orchestrer des workflows métier complexes, à développer une solution maison ? On commence par ajouter une base de données pour gérer l’état, puis on ajoute du queueing pour faire transiter la donnée et on finit par développer des fonctions de retry complexes qui ne gèrent jamais tous les cas particuliers ? Avant même d’intégrer leur logique métier, les développeurs doivent résoudre une quantité de problématiques d’orchestration de workflows qui rendent les développements lourds et parfois complexes à maintenir. Et si on arrêtait de réinventer la roue ?\n\nTemporal.io est un moteur de workflow, dérivé de Cadence, initialement développé chez Uber et utilisé en production chez Netflix, Stripe ou encore Snapshat. Les paradigmes apportés par temporal.io sont simples et permettent aux équipes de réduire leur «\_glue-code\_» pour se concentrer sur leur code métier. Écrivez vos workflows dans le langage de votre choix grâce à ses SDKs disponibles dans plusieurs langages: JAVA, Go, Typescript, PHP (et bientôt Python, Ruby, Rust & .NET), la plateforme temporal s’occupe du reste. \n\nL’objectif est de vous présenter temporal.io: son fonctionnement, ses cas d’utilisation et son intérêt pour les équipes de développement."

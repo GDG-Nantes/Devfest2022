@@ -1,0 +1,23 @@
+---
+key: arthur_lutz
+name: Arthur LUTZ
+feature: false
+company: Zenika Nantes
+companyLogo: /images/partners/zenika_nantes.png
+city: Nantes, France
+photoUrl: https://lh3.googleusercontent.com/a-/AOh14GiEzfeAQZvPH9ffS6rw5X6EKKVsN9FSJ92tuL-C=s96-c
+socials:
+  - icon: twitter
+    link: https://twitter.com/arthurlutz
+    name: arthurlutz
+  - icon: github
+    link: https://github.com/arthurzenika
+    name: arthurzenika
+bio: |
+  Arthur est consultant DevOps, linuxien, fan de Kubernetes et Pythoniste, il s’est spécialisé dans le domaine du DevOps et de l’Infrastructure-as-code au fur et à mesure de ces 15 années d'expérience.
+
+  Formateur sur plusieurs sujets, il se passionne pour le Continuous Delivery, la métrologie, l'expérience développeur, la production logicielle et les bonnes pratiques associées.
+
+  Curieux de tout, il bidouille de l’électronique, la domotique et les outils makers sur son temps personnel et dans le milieu associatif. 
+
+  Avide de partage, il participe à des communautés de logiciels libres, de nombreux meetup et conférences en tant qu’organisateur et speaker… 

@@ -1,0 +1,20 @@
+---
+key: suistesabeilles
+title: SuisTesAbeilles
+language: French
+talkType: quickie
+tags:
+  - discovery
+complexity: Beginner
+speakers:
+  - guillaume_petra
+slot: day-2-quickie-2
+room: Tour de Bretagne
+abstract: |
+  Etant moitié dans le monde numérique, moitié dans le monde des abeilles, il fallait bien que l'un déborde sur l'autre...
+
+  Apres avoir monté la plateforme de métrologie de l’entreprise et lancé l'obsession de la mesure, je devais l’appliquer sur mes abeilles. Je devais savoir ce qui se passe dans mes ruches, anticiper.. Pour arrêter de courir après mes abeilles...
+
+  Je vous présente un retour d'expérience sur la mise en place d'un système de mesures de l’activité de mes ruches à base de capteurs, d'Arduino et de LoRa, de la conception, la programmation, jusqu’à la gestion de l'énergie.
+
+  Disclaimer: Il est possible que je parle beaucoup de la vie des abeilles...

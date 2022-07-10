@@ -1,0 +1,17 @@
+---
+key: alexandre_vilain
+name: Alexandre vilain
+feature: false
+company: OVHCloud
+companyLogo: /images/partners/ovhcloud.png
+photoUrl: https://pbs.twimg.com/profile_images/720272063567683584/Vq-SDxBc_normal.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@AlexVilain
+    name: '@AlexVilain'
+  - icon: github
+    link: https://github.com/alexandrevilain
+    name: alexandrevilain
+bio: |-
+  Technical Leader @OVHCloud.
+  Working on Kubernetes & Go.

@@ -1,0 +1,22 @@
+---
+key: dates_et_heures_a_l_horizon___fuyez__ou_venez_decouvrir_tous_les_pieges_qu_elles_vous_tendent
+title: Dates et Heures à l'horizon ? Fuyez… ou venez découvrir tous les pièges qu'elles vous tendent
+language: French
+talkType: conference
+tags:
+  - discovery
+complexity: Intermediate
+speakers:
+  - arnaud_pichery
+slot: day-2-conference-2
+room: Tour de Bretagne
+abstract: |
+  Ajouter 24h à une date, rien de plus simple... ou pas! Saviez-vous qu'en 1850 à 13h à Lyon… il était 13h09:58 à Paris ? Ou que si vous étiez monté dans l'Orient-Express le 1er janvier 1900 à Paris, vous seriez arrivé à Bucarest le 23 décembre 1899! 
+
+  Alors, pour vous éviter d'être d'astreinte dans la nuit du 18 au 19 janvier 2038, je vous propose un petit voyage au pays des dates et heures. 
+
+  Nous commencerons ce voyage par une présentation des principaux protagonistes: dates, heures, instants, fuseaux horaires, secondes intercalaires et DST avec ces journées qui font 23h ou 25h… et comment notre notion actuelle du temps s'est mise en place au cours des derniers siècles.
+
+  Nous continuerons par un tour d'horizon des différents types et formats que l'on a créé pour stocker et manipuler les dates. Spoiler alert: certains ingénieur(e)s ont été créatif !
+
+  Nous regarderons ensuite les pièges classiques que vous pourrez rencontrer, cachés dans une spec ou dans le code de votre collègue, et comment certaines librairies et bonnes pratiques pourront vous aider à les éviter.

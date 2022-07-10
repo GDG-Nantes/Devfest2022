@@ -1,0 +1,15 @@
+---
+key: nicolas_berthaud
+name: Nicolas Berthaud
+feature: false
+company: ASI
+companyLogo: /images/partners/asi.png
+city: Bouguenais, France
+photoUrl: https://lh3.googleusercontent.com/a/AATXAJyZpO1dGECM_GAfJdvqvT88FmFappuRACYTg_uz=s96-c
+socials:
+  - icon: github
+    link: https://github.com/nberthaud
+    name: nberthaud
+bio: |-
+  Lead Developer back chez ASI, je cumule plus de 15 ans d'expérience dans le développement. Amoureux du CSS, j'ai fait mes classes en commençant comme intégrateur Web avant de devenir développeur PHP/Symfony. Au gré des projets j'ai été amené à élargir mon domaine d'action en faisant du mobile (angularJs, Angular, VueJs...). Côté serveur je suis également passé par la case Java/Spring. Les BDD ne sont pas en reste, j'ai voyagé avec MariaDb, Postgres, MongoDb, SQL Server et consorts. Depuis quelques années maintenant, j'ai suivi l'évolution de l'univers du Javascript côté serveur en touchant à NodeJs, Express et NestJs.  
+  Reconnu chez ASI comme une personne aimant partager et transmettre ses compétences, je suis amené à accompagner et former les juniors tout en concevant des solutions techniques sur mesures. Ce que j'aime avant tout c'est l'émulation d'équipe et le sentiment éprouvé lorsqu'un projet est mené à son terme avec la satisfaction du client.

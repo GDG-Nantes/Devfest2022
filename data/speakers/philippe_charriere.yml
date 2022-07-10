@@ -1,0 +1,21 @@
+---
+key: philippe_charriere
+name: Philippe Charrière
+feature: false
+company: GitLab
+companyLogo: /images/partners/gitlab.png
+city: Lyon
+photoUrl: https://lh6.googleusercontent.com/-PKwAMaR8DwQ/AAAAAAAAAAI/AAAAAAAAJNQ/H9mANtBiKmg/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@k33g_org
+    name: '@k33g_org'
+  - icon: github
+    link: https://github.com/@k33g
+    name: '@k33g'
+bio: |-
+  J'ai plusieurs vies professionnelles (en même temps)
+  - Senior Technical account manager pour GitLab 🦊
+  - "Boss" chez Bot.Garden (en fait j'ai monté ma boîte pour tenter de "transformer" quelques side projects) 🤖🌼
+
+  Et le reste du temps, si je ne suis pas à la pêche ou avec ma famille, je code en JavaScript, Golo, Kotlin et Scala

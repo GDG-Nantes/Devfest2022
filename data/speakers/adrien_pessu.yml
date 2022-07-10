@@ -1,0 +1,15 @@
+---
+key: adrien_pessu
+name: Adrien PESSU
+feature: false
+company: Freelance
+city: Nantes, France
+photoUrl: https://lh4.googleusercontent.com/-1wzRZnWEiLs/AAAAAAAAAAI/AAAAAAAAAgY/MXjzTjS-Qu4/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@adrienpessu
+    name: '@adrienpessu'
+  - icon: github
+    link: https://github.com/@adrienpessu
+    name: '@adrienpessu'
+bio: Je suis un développeur Freelance passionné, en particulier de Java, Kotlin et Web. Je m'intéresse aussi particulièrement à la sécurité applicative (AppSec). J'aime chercher/corriger des bugs de sécurité, mais aussi partager et mettre en place les bonnes pratiques.

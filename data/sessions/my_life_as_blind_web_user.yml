@@ -1,0 +1,16 @@
+---
+key: my_life_as_blind_web_user
+title: My Life as blind web user
+language: French
+talkType: codelab
+tags:
+  - discovery
+complexity: Beginner
+speakers:
+  - ronan_robe
+slot: day-1-codelab-1
+room: Les Machines
+abstract: |-
+  Atelier mené avec l'ACIAH pour être en immersion dans le quotidien d'un malvoyant face au numérique.
+  Muni d'un bandeau pour cacher les yeux des participants et de casques audio, nous inviterons les participants à réaliser des choses simples du quotidien : envoyer un email, lire un article dans la presse, naviguer sur le site web du devfest :)
+  Après l'atelier, aucun doute qu'ils regarderont les balises HTML aria sous un autre angle

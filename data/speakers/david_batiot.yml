@@ -1,0 +1,16 @@
+---
+key: david_batiot
+name: David BATIOT
+feature: false
+company: cbp
+companyLogo: /images/partners/cbp.png
+city: Nantes, France
+photoUrl: https://lh3.googleusercontent.com/a-/AOh14GgBqMvxwHU80ztWh5I79q9dVb_CulMRGFYIoQXZJw=s96-c
+socials:
+  - icon: twitter
+    link: https://twitter.com/batiot
+    name: batiot
+  - icon: github
+    link: https://github.com/batiot
+    name: batiot
+bio: Développeur Back passionné depuis 20 ans, Side Project Addict et Tech Lead sur www.cbp4you.fr

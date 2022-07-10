@@ -1,0 +1,16 @@
+---
+key: tiffany_souterre
+name: Tiffany Souterre
+feature: false
+company: Microsoft
+companyLogo: /images/partners/microsoft.png
+city: Paris, France
+photoUrl: https://lh3.googleusercontent.com/-0XDx36TcjxU/AAAAAAAAAAI/AAAAAAABQkA/-hqGP4ktCDY/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@tiffanysouterre
+    name: '@tiffanysouterre'
+  - icon: github
+    link: https://github.com/amagash
+    name: amagash
+bio: I love science and I love data! After finishing a PhD in genetic engineering, I continued my quest for discovering new patterns through data science and machine learning. I worked for 3 years as a Data/ML Engineer and I am currently DevRel at Microsoft. Someday, I wish to leverage artificial intelligence and genetics to improve people's lives.

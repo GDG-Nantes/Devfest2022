@@ -1,0 +1,15 @@
+---
+key: cyril_mottier
+name: Cyril Mottier
+feature: false
+company: "Gens\_de\_Confiance"
+companyLogo: /images/partners/gens_de_confiance.png
+city: Nantes, France
+photoUrl: https://lh3.googleusercontent.com/a-/AOh14GglwUL6dsH7_5RmabNnpzd4wsbZZ4JDGIwULD1A=s96-c
+socials:
+  - icon: twitter
+    link: https://twitter.com/cyrilmottier
+    name: cyrilmottier
+  - icon: github
+    link: https://github.com/cyrilmottier
+    name: cyrilmottier

@@ -1,0 +1,20 @@
+---
+key: ____crowdsec___la_securite_web_par_la_foule
+title: " 🔒 Crowdsec - la sécurité web par la foule"
+language: French
+talkType: quickie
+tags:
+  - security
+complexity: Intermediate
+speakers:
+  - arthur_lutz
+slot: day-1-quickie-1
+room: Bellem
+abstract: |-
+  À l'heure de l'intelligence collective et du machine learning, que diriez vous d'une introduction à l'approche collaborative en matière de sécurité informatique ?
+
+  Crowdsec est une plateforme de détection et protection collaborative des tentatives d'intrusion des systèmes informatiques. Sans rentrer dans le détail des enjeux de cybersécurité, nous allons regarder comment fonctionne ce projet.
+
+  Pour faire le pont entre la catégorie "💻 Security" et "☁️ DevOps & Cloud", nous regarderons comment Crowdsec identifie les menaces ou scans dans une infrastructure hébergée sur ☸️ Kubernetes et comment il permet de limiter ces attaques ou tentatives d'intrusions. Une bonne partie de Crowdsec est publié en logiciels libres.
+
+  🧑‍💻 *Pile technique : golang, linux, nginx, lua, kubernetes, iptables, CVE*

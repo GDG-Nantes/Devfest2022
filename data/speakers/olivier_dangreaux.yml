@@ -1,0 +1,18 @@
+---
+key: olivier_dangreaux
+name: Olivier Dangréaux
+feature: false
+company: ASI
+companyLogo: /images/partners/asi.png
+photoUrl: https://lh3.googleusercontent.com/a-/AOh14GjjUoWNJiTI9Qdl9zwHYFwkx4uCbsuesPezKImO3oA
+socials:
+  - icon: twitter
+    link: https://twitter.com/odangreaux
+    name: odangreaux
+  - icon: github
+    link: https://github.com/odangreaux
+    name: odangreaux
+bio: |-
+  J'évolue depuis plus de 20 ans dans le monde du développement et des architectures logicielles.
+  Fort de mon expérience, j’ai à cœur de répondre de manière pragmatique aux besoins techniques des projets et clients.
+  Au travers de mon rôle d’architecte, j’amène une hauteur de vue et du conseil sur les problématiques techniques et je suis aussi en mesure d’apporter une expertise avancée dans des domaines tels que les architectures microservices, les technologies backend et frontend, le devops et le cloud. J’accompagne également les équipes sur leur montée en compétence technique et sur l’industrialisation des processus de production logicielle.

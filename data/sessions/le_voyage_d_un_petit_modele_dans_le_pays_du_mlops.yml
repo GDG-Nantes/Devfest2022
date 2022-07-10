@@ -1,0 +1,23 @@
+---
+key: le_voyage_d_un_petit_modele_dans_le_pays_du_mlops
+title: Le voyage d’un petit modèle dans le pays du MLOps
+language: French
+talkType: codelab
+tags:
+  - bigdata_ai
+complexity: Intermediate
+speakers:
+  - thibaud_le_gall
+  - yulianna_khorolich
+slot: day-1-codelab-1
+room: Hangar
+abstract: |-
+  Le développement d’un modèle est terminé et la clé USB contenant le notebook Jupiter est remise au Team Leader. L’aventure du modèle ne doit pas s'arrêter là.
+
+  Nous vous invitons à un voyage ordinaire dans le MLOps. Une épopée quotidienne du travail menant d'un modèle tout frais sortis des cerveaux potentiellement géniaux de vos data scientists vers une fonctionnalité utilisable !
+
+  Venez vivre les tribulations de l'industrialisation du machine learning, au cours desquelles nous affronterons les affres de la reproductibilité, nous surmonterons les difficultés du monitoring jusqu'à nous repaitre du succès de notre première mise en production.
+
+  Lors de cette expédition, nous serons accompagnés par notre fidèle compagnon, VertexAI, dont nous exploiterons la capacité à faciliter notre parcours pour le déploiement, afin de nous recentrer sur l'intégration.
+
+  Les évènements et faits de cette histoire sont réels, toute ressemblance avec la réalité est purement intentionnelle.

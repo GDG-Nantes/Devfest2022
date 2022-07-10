@@ -1,5 +1,7 @@
 {
-  "yaml.schemas": {},
+  "yaml.schemas": {
+    "json_schemas/schema_sessions.json": "data/sessions/*.yml"
+  },
   "json.schemas": [
     {
       "fileMatch": ["data/team.json"],

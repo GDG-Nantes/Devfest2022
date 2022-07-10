@@ -1,0 +1,13 @@
+---
+key: josian_chevalier
+name: Josian CHEVALIER
+feature: false
+company: Shodo
+companyLogo: /images/partners/shodo.png
+city: Paris, France
+photoUrl: https://lh3.googleusercontent.com/a-/AOh14GgelE_U6a-upP-mAC3GyfCEU8J6JiH8ocfaZcOn=s96-c
+socials:
+  - icon: twitter
+    link: https://twitter.com/@JosianChevalier
+    name: '@JosianChevalier'
+bio: Artisan logiciel chez Shodo, je me spécialise en Domain Driven Design. Je m’efforce à améliorer mon approche du développement et mes connaissances, ainsi qu’à sensibiliser les développeurs aux problématiques de qualité logicielle.

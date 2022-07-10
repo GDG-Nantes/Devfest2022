@@ -1,199 +1,199 @@
 {
   "slots": [
     {
-      "key": "open-day-1",
+      "key": "day-1-open",
       "start": "08:00",
       "type": "opening"
     },
     {
-      "key": "keynote-open",
+      "key": "day-1-keynote-open",
       "start": "09:00",
       "type": "keynote"
     },
     {
-      "key": "pause-1-day-1",
+      "key": "day-1-pause-1",
       "start": "09:40",
       "type": "break"
     },
     {
-      "key": "slot-1-day-1",
+      "key": "day-1-conference-1",
       "start": "10:00",
       "type": "conference"
     },
     {
-      "key": "codelab-1-day-1",
+      "key": "day-1-codelab-1",
       "start": "10:00",
       "type": "codelab"
     },
     {
-      "key": "pause-2-day-1",
+      "key": "day-1-pause-2",
       "start": "10:50",
       "type": "break"
     },
     {
-      "key": "slot-2-day-1",
+      "key": "day-1-conference-2",
       "start": "11:10",
       "type": "conference"
     },
     {
-      "key": "lunch-day-1",
+      "key": "day-1-lunch",
       "start": "12:00",
       "type": "lunch"
     },
     {
-      "key": "slot-3-day-1",
+      "key": "day-1-conference-3",
       "start": "14:00",
       "type": "conference"
     },
     {
-      "key": "codelab-2-day-1",
+      "key": "day-1-codelab-2",
       "start": "14:00",
       "type": "codelab"
     },
     {
-      "key": "pause-3-day-1",
+      "key": "day-1-pause-3",
       "start": "14:50",
       "type": "break"
     },
     {
-      "key": "slot-4-day-1",
+      "key": "day-1-conference-4",
       "start": "15:10",
       "type": "conference"
     },
     {
-      "key": "pause-4-day-1",
+      "key": "day-1-pause-4",
       "start": "16:00",
       "type": "break"
     },
     {
-      "key": "slot-5-day-1",
+      "key": "day-1-conference-5",
       "start": "16:20",
       "type": "conference"
     },
     {
-      "key": "codelab-3-day-1",
+      "key": "day-1-codelab-3",
       "start": "16:20",
       "type": "codelab"
     },
     {
-      "key": "pause-5-day-1",
+      "key": "day-1-pause-5",
       "start": "17:10",
       "type": "break"
     },
     {
-      "key": "slot-6-day-1",
+      "key": "day-1-quickie-1",
       "start": "17:20",
       "type": "quickie"
     },
     {
-      "key": "pause-6-day-1",
+      "key": "day-1-pause-6",
       "start": "17:40",
       "type": "break"
     },
     {
-      "key": "slot-7-day-1",
+      "key": "day-1-quickie-2",
       "start": "17:50",
       "type": "quickie"
     },
     {
-      "key": "party",
+      "key": "day-1-party",
       "start": "18:30",
       "type": "party"
     },
     {
-      "key": "open-day-2",
+      "key": "day-2-open",
       "start": "08:30",
       "type": "opening"
     },
     {
-      "key": "slot-1-day-2",
+      "key": "day-2-quickie-1",
       "start": "09:00",
       "type": "conference"
     },
     {
-      "key": "codelab-1-day-2",
+      "key": "day-2-codelab-1",
       "start": "09:00",
       "type": "codelab"
     },
     {
-      "key": "pause-1-day-2",
+      "key": "day-2-pause-1",
       "start": "09:50",
       "type": "break"
     },
     {
-      "key": "slot-2-day-2",
+      "key": "day-2-conference-2",
       "start": "10:10",
       "type": "conference"
     },
     {
-      "key": "pause-2-day-2",
+      "key": "day-2-pause-2",
       "start": "11:00",
       "type": "break"
     },
     {
-      "key": "slot-3-day-2",
+      "key": "day-2-conference-3",
       "start": "11:20",
       "type": "conference"
     },
     {
-      "key": "lunch-day-2",
+      "key": "day-2-lunch",
       "start": "12:10",
       "type": "lunch"
     },
     {
-      "key": "codelab-2-day-2",
+      "key": "day-2-codelab-2",
       "start": "14:00",
       "type": "codelab"
     },
     {
-      "key": "slot-4-day-2",
+      "key": "day-2-conference-4",
       "start": "14:00",
       "type": "conference"
     },
     {
-      "key": "pause-3-day-2",
+      "key": "day-2-pause-3",
       "start": "14:50",
       "type": "break"
     },
     {
-      "key": "slot-5-day-2",
+      "key": "day-2-conference-5",
       "start": "15:10",
       "type": "conference"
     },
     {
-      "key": "codelab-3-day-2",
+      "key": "day-2-codelab-3",
       "start": "15:10",
       "type": "codelab"
     },
     {
-      "key": "pause-4-day-2",
+      "key": "day-2-pause-4",
       "start": "16:00",
       "type": "break"
     },
     {
-      "key": "slot-6-day-2",
+      "key": "day-2-quickie-1",
       "start": "16:20",
       "type": "quickie"
     },
     {
-      "key": "pause-5-day-2",
+      "key": "day-2-pause-5",
       "start": "16:40",
       "type": "break"
     },
     {
-      "key": "slot-7-day-2",
+      "key": "day-2-quickie-2",
       "start": "16:50",
       "type": "quickie"
     },
     {
-      "key": "pause-6-day-2",
+      "key": "day-2-pause-6",
       "start": "17:10",
       "type": "break"
     },
     {
-      "key": "keynote-close",
+      "key": "day-2-keynote-close",
       "start": "17:20",
-      "type": "conference"
+      "type": "keynote"
     }
   ]
 }

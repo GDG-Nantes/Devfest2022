@@ -1,0 +1,29 @@
+---
+key: dagger_io__le_nouveau_couteau_suisse_portable_base_sur_docker_pour_votre_ci_cd
+title: Dagger.io, le nouveau couteau-suisse portable basé sur Docker pour votre CI/CD
+language: French
+talkType: conference
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - warren_banguet
+slot: day-2-conference-3
+room: Bellem
+abstract: |+
+  Que celui ou celle qui n'a jamais été dans une des situations suivantes me jette la première pierre...
+
+  * Refaire n fois le même pipeline de CI/CD sur n solutions différentes ?
+  * S'arracher les cheveux pour tenter de reproduire la suite de tests exécutée par la PIC sur les environnements de développement
+  * Assimiler n syntaxes pour n solutions de CI/CD différentes ?
+  * Faire 50 commits pour troubleshooter un pipeline de CI/CD
+
+  Dagger.io est un kit de développement permettant de construire des pipelines de CI/CD pouvant être exécutés ensuite sur n'importe quel runtime compatible Docker, y compris votre poste de dev.
+
+  Ces derniers peuvent donc être exécutés sur votre solution de CI/CD préférée, via une simple commande, mais aussi en local. 
+  Dagger a été développé par les créateurs de Docker, en open-source bien évidemment et repose sur le language CUE, développé par Google.
+
+  Je vous propose de le benchmarker ensemble afin de déterminer si la promesse était trop belle pour être vraie, ou si nous sommes en présence de l'outil unique, qui les gouvernera tous. 
+
+  Bon, spoiler alert, on atterrira très probablement quelque part entre les deux....
+

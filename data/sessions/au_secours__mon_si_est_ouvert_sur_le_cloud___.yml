@@ -1,0 +1,18 @@
+---
+key: au_secours__mon_si_est_ouvert_sur_le_cloud___
+title: Au secours, mon SI est ouvert sur le Cloud !!
+language: French
+talkType: conference
+tags:
+  - security
+complexity: Beginner
+speakers:
+  - laurent_grangeau
+  - tjarriault
+slot: day-2-conference-1
+room: Bellem
+abstract: |-
+  Dans un contexte d’ouverture vers l’extérieur, le SI est de plus en plus exposé publiquement sur Internet.
+  Mais comment garantir la sécurité de celui-ci ? Le Zero Trust s’impose comme l’approche la plus sécurisée en obligeant les entreprises à contrôler les identités et les autorisations des ressources afin de garantir l’intégrité des flux.
+  Dans cette session, nous expliquerons brièvement ce qu’est le Zero Trust et comparerons la sécurité périmétrique (modèle du château fort) avec celle de l’approche Zero Trust (modèle de l'aéroport).
+  Nous verrons comment implémenter cette approche en s’appuyant sur Hashicorp Boundary pour accéder de manière sécurisée et transparente à des serveurs et des bases de données, et GCP IAP pour sécuriser des applications.

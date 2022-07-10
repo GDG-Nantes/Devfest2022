@@ -1,0 +1,25 @@
+---
+key: plongez_dans_le_monde_fantastique_de_jules_verne_grace_a_un_peu_d_ar_et_beaucoup_d_imagination___
+title: Plongez dans le monde fantastique de Jules Verne grâce à un peu d’AR et beaucoup d’imagination 📖
+language: French
+talkType: quickie
+tags:
+  - mobile_iot
+complexity: Intermediate
+speakers:
+  - julian_clemot
+  - yannick_jacqueline
+slot: day-1-quickie-1
+room: Titan
+abstract: |-
+  Et s’il était possible de donner vie aux personnages de l’univers futuriste de Jules Verne ? 
+  Quoi de mieux pour présenter un livre à nos enfants que de réussir à l’illustrer pour le rendre interactif ?
+  Nous avons voulu mettre en image ses plus beaux romans afin de pouvoir captiver les petits comme les plus grands lorsque l’heure de “l’histoire du soir” a sonné.
+
+  Pour relever ce défi, nous avons utilisé les dernières technos mobiles :
+  - Jetpack Compose pour l’UI ;
+  - CameraX pour l’utilisation de l’appareil photo ;
+  - ML Kit pour l’OCR ;
+  - ARCore pour la partie réalité augmentée.
+
+  L’objectif de ce talk est de vous montrer comment nous avons utilisé ces technologies pour essayer d’imager certains romans afin de rendre leur lecture plus ludique.

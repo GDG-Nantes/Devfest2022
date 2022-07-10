@@ -1,0 +1,19 @@
+---
+key: et_si_les_meilleurs_dockerfile_etaient_ceux_que_l_on_n_ecrit_pas
+title: Et si les meilleurs Dockerfile étaient ceux que l'on n'écrit pas
+language: French
+talkType: quickie
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - fabien_martin
+slot: day-2-quickie-1
+room: Bellem
+abstract: |
+  Une manière assez commune de construire une image aujourd'hui consiste à écrire un Dockerfile.
+  L'écriture d'un bon Dockerfile n'est pas simple, il faut sélectionner une image de base, mettre en place un ensemble de bonnes pratiques autour de la sécurité, de la maintenabilité, de la performance etc.
+  Mais ce n'est pas tout, il va aussi falloir le maintenir dans le temps !
+
+  La CNCF propose une spécification, les Cloud Native Buildpacks, qui vise à transformer notre code source en une image pouvant tourner sur n'importe quel cloud.
+  Je vous propose durant ce talk une rapide présentation des Cloud Native Buildpacks, suivi d'une mise en oeuvre pratique avec la création et la mise à jour d'une image... sans Dockerfile !

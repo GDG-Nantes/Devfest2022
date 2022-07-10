@@ -1,0 +1,17 @@
+---
+key: apprenez_rust_pas_a_pas_en_construisant_une_application_en_ligne_de_commande
+title: Apprenez Rust pas à pas en construisant une application en ligne de commande
+language: French
+talkType: codelab
+tags:
+  - languages
+complexity: Intermediate
+speakers:
+  - julien_rollin
+slot: day-1-codelab-2
+room: Hangar
+abstract: |
+  Rust est un langage de programmation récent qui promet fiabilité, performance et sécurité. Cependant Rust est aussi réputé comme difficile d’accès.
+   
+  Venez développer pas à pas une application en ligne de commande pour découvrir et apprendre Rust.
+  L’atelier est conçu de manière pédagogique pour appréhender les concepts un par un tout au long de l’atelier.

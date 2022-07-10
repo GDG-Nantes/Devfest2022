@@ -1,0 +1,25 @@
+---
+key: devsecops___de_la_securite_dans_mon_devops
+title: "DevSecOps : de la sécurité dans mon DevOps"
+language: French
+talkType: conference
+tags:
+  - security
+complexity: Beginner
+speakers:
+  - adrien_pessu
+  - tugdual_grall
+slot: day-1-conference-2
+room: Bellem
+abstract: |-
+  De plus en plus d'équipes mettent en place les principes du DevOps avec comme objectif de déployer plus fréquemment en production. Ces principes amènent les Dev et Ops à travailler ensemble avec les mêmes outils et méthodes.
+
+  Il est maintenant standard d’avoir les builds, tests, et déploiements automatisés, mais qu’en est-il de la sécurité?
+
+  La “sécurité des applications” est au mieux quelque chose qui arrive trop tard, ou le plus souvent inexistante. Les raisons mises en avant sont la complexité, l’impact sur la productivité qui ralentissent les déploiements; et on se dit aussi que les attaques n'arrivent qu'aux autres.
+
+  Il est temps d’appliquer les principes du DevOps à la sécurité, c’est ce que promet le DevSecOps! 
+
+  Avec le DevOps, et sans être un expert système, vous arrivez à coder votre infrastructure (Terraform, YAML, Kubernetes, Serverless, …). Avec le DevSecOps, vous allez déployer vos applications tout en  vous assurant de la sécurité de votre code.
+
+  Durant cette présentation, qui s’appuie sur des retours d'expérience et de nombreuses démonstrations, vous verrez qu’il est possible d’intégrer la sécurité au cycle du développement sans impacter la productivité.

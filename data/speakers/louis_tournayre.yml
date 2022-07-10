@@ -1,0 +1,20 @@
+---
+key: louis_tournayre
+name: Louis Tournayre
+feature: false
+company: Zenika
+companyLogo: /images/partners/zenika.png
+city: Lyon
+photoUrl: https://lh4.googleusercontent.com/-cVRndUQ_8GQ/AAAAAAAAAAI/AAAAAAAAAB8/HnFHwMBucLc/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@_louidji
+    name: '@_louidji'
+  - icon: github
+    link: https://github.com/louiznk
+    name: louiznk
+bio: |-
+  Formateur, développeur passionné et surtout Dev qui automatise l' Ops @ Zenika Lyon.   
+  Mes sujets de cœur sont Dev côté backend, kubernetes, cloud, automatisation, ...  
+
+  J'aime le partage et l'échange en tant que speaker et aussi en tant qu'organisateur de meetup (co-fondateur et co-organisateur du [GDG Cloud IoT Lyon](https://www.meetup.com/fr-FR/GDG-Cloud-Lyon/)). 

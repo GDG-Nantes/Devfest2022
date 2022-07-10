@@ -1,0 +1,29 @@
+---
+key: stephanie_baltus_bergamo
+name: Stephanie Baltus-Bergamo
+feature: false
+company: leboncoin (joining kanop.io very soon)
+companyLogo: /images/partners/leboncoin__joining_kanop_io_very_soon_.png
+city: Paris, France
+photoUrl: https://lh3.googleusercontent.com/a-/AOh14Gj_6z28Xy2Hvgu-eUflCFWa1HTu4jq-lpz4v7e0YA=s192-c-rg-br100
+socials:
+  - icon: twitter
+    link: https://twitter.com/steph_baltus
+    name: steph_baltus
+  - icon: github
+    link: https://github.com/sbaltus
+    name: sbaltus
+bio: |-
+  Dans la **data depuis plus de 10 ans**, j'ai commencé par de la **business intelligence** pour ensuite doucement migrer vers du **data engineering**,et un peu de développement backend.  
+
+  J'ai commencé ma carrière par 5 ans de consulting, et depuis 2013 je gravite autour des start-up scale-up.   J'ai notamment travaillé chez **Algolia, JobTeaser et leboncoin**.  
+
+  Depuis fin 2020, je suis de retour chez **leboncoin** en tant que Lead Data Engineer, où je suis en charge de :
+  - designer et developper des services data internes ou publiques
+  - animer la communauté des data engineers 
+  - diffuser les bonnes pratiques et faire grandir les plus juniors 
+
+
+  Je m'intéresse beaucoup à tout ce qui est **software craftmanship** et essaie de diffuser cette approche autour de moi, notamment dans notre communauté de data engineers. 
+
+  En dehors de la tech, je fais du triathlon, de la rando, de la moto et j'adore les Lego ! 

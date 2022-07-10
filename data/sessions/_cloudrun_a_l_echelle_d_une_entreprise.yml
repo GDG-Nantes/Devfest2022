@@ -1,0 +1,24 @@
+---
+key: _cloudrun_a_l_echelle_d_une_entreprise
+title: " CloudRun à l’échelle d’une entreprise"
+language: French
+talkType: conference
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - antony_lallement
+  - christophe_furmaniak
+slot: day-1-conference-5
+room: Jules Verne
+abstract: |
+  **Decathlon** accélère sa transformation numérique avec pour ambition de devenir *LA* plateforme numérique du sportif et atteindre le niveau de maturité des Digital Giants.
+  Pour cela, Decathlon a besoin de construire des fondations solides pour héberger les services développés et mettre à disposition des solutions techniques pour accélérer le développement, la stabilité,la scalabilité et la sécurité.
+
+  Un des choix stratégiques forts de Decathlon est de s’appuyer sur des technologies à base de **conteneurs**, que ceux-ci soient lancés dans des instances **Kubernetes** ou dans des services *serverless* comme **Cloud Run**.
+
+  **Cloud Run**, de par ses racines *serverless*, est présenté comme un service facilitant l’adoption des développeurs. Cependant, dans un contexte d’entreprise où il ne faut pas oublier les aspects industrialisation, sécurisation des accès, audit et intégration avec l’écosystème réseau interne et celui des partenaires, son utilisation se complexifie fortement.
+
+  Nous vous présenterons ce que nous proposons à nos développeurs pour leur permettre de se focaliser sur leur métier, à savoir développer, tout en leur permettant de fournir des services **Cloud Run** qui respectent les pratiques partagées au sein de l’entreprise.
+
+  Mots clé: GCP, Cloud Run, Terraform, GitOps, GitHub Actions, Les Ops sont les amis des Devs, Serverless

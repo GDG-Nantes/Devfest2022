@@ -1,0 +1,18 @@
+---
+key: clement_delafargue
+name: Clement Delafargue
+feature: false
+company: Fretlink
+companyLogo: /images/partners/fretlink.png
+city: Nantes, France
+photoUrl: https://lh3.googleusercontent.com/a-/AAuE7mCBqX89RjV4fdBxtFs9nkbMXT2Jq8yjjO-hob7Y
+socials:
+  - icon: twitter
+    link: https://twitter.com/@clementd
+    name: '@clementd'
+  - icon: github
+    link: https://github.com/divarvel
+    name: divarvel
+bio: |-
+  Développeur fonctionnel. Aujourd'hui je bosse principalement avec haskell.
+  Dans une vie précédente,  j'ai été CTO pour une boîte d'hébergement informatique.

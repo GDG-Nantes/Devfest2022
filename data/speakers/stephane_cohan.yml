@@ -1,0 +1,15 @@
+---
+key: stephane_cohan
+name: Stéphane Cohan
+feature: false
+company: Zenika
+companyLogo: /images/partners/zenika.png
+city: Nantes, France
+photoUrl: https://lh6.googleusercontent.com/-fUnQNoRRLLY/AAAAAAAAAAI/AAAAAAAAAAc/1C3kD_cyyiA/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@SCxPro
+    name: '@SCxPro'
+  - icon: github
+    link: https://github.com/stephanecohan
+    name: stephanecohan

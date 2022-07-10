@@ -1,0 +1,18 @@
+---
+key: guillaume_membre
+name: Guillaume Membré
+feature: false
+company: Zenika
+companyLogo: /images/partners/zenika.png
+city: Nantes, France
+photoUrl: https://lh5.googleusercontent.com/-_wR1F6ARzlY/AAAAAAAAAAI/AAAAAAAAABA/sL5Sk_m1uWA/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@GuillaumeMembre
+    name: '@GuillaumeMembre'
+  - icon: github
+    link: https://github.com/gmembre-zenika
+    name: gmembre-zenika
+bio: |-
+  Geek à toute heure, je travaille principalement autour des technologies Java/JavaEE mais aussi sur des problématiques de déploiement continu, de qualimétrie. Désormais, je partage son expérience pour faciliter la mise en place de démarche devops chez différents acteurs. J'adore bidouiller des RaspberryPi ou Arduino pour créer des choses inutiles donc indispensables.
+  Lorsque le temps le permet, je décris mes aventures sur mon [site web](https://www.geekeries.fun).

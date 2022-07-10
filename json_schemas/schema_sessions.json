@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "partners",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "talkType": {
+      "type": "string",
+      "enum": ["quickie", "conference", "codelab"]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "complexity": {
+      "type": "string"
+    },
+    "speakers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "slot": {
+      "type": "string"
+    },
+    "room": {
+      "type": "string",
+      "enum": [
+        "Jules Verne",
+        "Titan",
+        "Bellem",
+        "Tour de Bretagne",
+        "Les Machines",
+        "Hangar",
+        "L'Atelier"
+      ]
+    },
+    "abstract": {
+      "type": "string"
+    }
+  }
+}

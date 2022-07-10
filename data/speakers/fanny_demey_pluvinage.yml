@@ -1,0 +1,15 @@
+---
+key: fanny_demey_pluvinage
+name: Fanny Demey Pluvinage
+feature: false
+company: Freelance
+city: Lille
+photoUrl: https://lh6.googleusercontent.com/-wScR9-Ut2gk/AAAAAAAAAAI/AAAAAAAAejo/tmttmUVooIQ/photo.jpg
+socials:
+  - icon: twitter
+    link: https://twitter.com/@FannyDemey
+    name: '@FannyDemey'
+  - icon: github
+    link: https://github.com/FannyDemey
+    name: FannyDemey
+bio: Fanny développe dans tout un tas de domaine depuis plus de 10 ans, en particulier du mobile sur Android. C'est une Lilloise engagée pour la communauté, Présidente et organisatrice du DevFest Lille. Elle est également engagée pour l'accessibilité, vous pouvez l'entendre en tant que host sur le podcast TechEthic. Actuellement freelance, elle travaille exclusivement sur des projets avec une forte dimension éthique.

@@ -1,0 +1,27 @@
+---
+key: francois_bouteruche
+name: François Bouteruche
+feature: false
+company: Amazon Web Services EMEA
+companyLogo: /images/partners/amazon_web_services_emea.png
+city: Paris, France
+photoUrl: https://avatars0.githubusercontent.com/u/10872124?v=4
+socials:
+  - icon: twitter
+    link: https://twitter.com/@fbouteruche
+    name: '@fbouteruche'
+  - icon: github
+    link: https://github.com/fbouteruche
+    name: fbouteruche
+bio: |-
+  I'm currently Senior Developer Advocate at Amazon Web Services. I am a tech enthusiast with a strong background around .NET development and DevOps philosophy and practices. 
+
+  I have a PhD  in Computer Science. I worked several years around handwriting recognition and pen-based interfaces so I'm very familiar with all the real stuff behind the buzz words AI and Machine Learning :) I led the R&D team at Evodia, the ancestor of [Script and Go](http://www.scriptandgo.com/en) After the fall of Evodia during the 2008-2010 financial crisis, I joined Orange Applications for Business, a subsidiary of Orange, where I focused on Application Lifecycle Management, Agile methodologies and then DevOps practices. I worked at the technical board of the company reporting to the CTO, [Philippe Ensarguet](https://www.linkedin.com/in/philippeensarguet). After 5 years, I joined [Younited Credit](https://www.younited-credit.com) at the beginning of its scaling stage to help them moving to a public cloud provider (Azure) and setting up Continuous Integration and Continuous Delivery best practices.
+
+  Then, I worked 3 year at Microsoft France help .NET Developers from customers, ISV and meetup communities to take the best advantages of Microsoft Developer Tools.
+
+  I've recently joined Amazon Web Services to help .NET Developers using AWS Cloud to build, test and deploy efficiently and securely on AWS Cloud.
+
+  I regularly talk at conferences such as Tech Days, EclipseCon France, API Days, Paris Open Source Summit, Cloud Expo Europe, Breizhcamp, DevFest Nantes, DevFest Strasbourg, Codeurs en Seine...
+
+  You can find more [here](https://www.linkedin.com/in/francoisbouteruche)

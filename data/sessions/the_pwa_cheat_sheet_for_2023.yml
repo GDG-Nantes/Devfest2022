@@ -1,0 +1,16 @@
+---
+key: the_pwa_cheat_sheet_for_2023
+title: The PWA Cheat Sheet for 2023
+language: English
+talkType: conference
+tags:
+  - web
+complexity: Beginner
+speakers:
+  - maximiliano_firtman
+slot: day-2-conference-4
+room: Titan
+abstract: |
+  PWAs are now installable on every mobile and desktop OS, but there are many new things since last years we need to do to create a successful experience. We will start understanding the current state of the PWA platform, including market share and compatibility. 
+
+  We will mention new challenges for desktop, Android, and iOS and the checklist of features and things for a successful experience for all users in the upcoming year.
