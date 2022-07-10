@@ -7,9 +7,7 @@ companyLogo: /images/partners/cockpit_io.png
 city: Paris, France
 photoUrl: https://avatars.githubusercontent.com/u/40885659?v=4
 socials:
-  - icon: twitter
-    link: https://twitter.com/@katia_tal
-    name: '@katia_tal'
+  twitter: katia_tal
 bio: |-
   À la suite de plusieurs expériences en tant que développeuse backend, Katia s'intéresse très vite à l’ensemble du cycle de vie des applications, ce qui lui permet de faire ses armes dans le monde de l’OPS.
 

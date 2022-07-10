@@ -7,12 +7,8 @@ companyLogo: /images/partners/zenika.png
 city: Lyon
 photoUrl: https://lh4.googleusercontent.com/-cVRndUQ_8GQ/AAAAAAAAAAI/AAAAAAAAAB8/HnFHwMBucLc/photo.jpg
 socials:
-  - icon: twitter
-    link: https://twitter.com/@_louidji
-    name: '@_louidji'
-  - icon: github
-    link: https://github.com/louiznk
-    name: louiznk
+  twitter: _louidji
+  github: louiznk
 bio: |-
   Formateur, développeur passionné et surtout Dev qui automatise l' Ops @ Zenika Lyon.   
   Mes sujets de cœur sont Dev côté backend, kubernetes, cloud, automatisation, ...  

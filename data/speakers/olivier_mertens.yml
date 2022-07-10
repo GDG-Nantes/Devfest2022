@@ -7,12 +7,8 @@ companyLogo: /images/partners/microsoft.png
 city: Paris, France
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GjXkX4EHRf2driLz2VtvU-FYIfP_RMUVwIbcg4NQg=s96-c
 socials:
-  - icon: twitter
-    link: https://twitter.com/xam1311
-    name: xam1311
-  - icon: github
-    link: https://github.com/olivMertens
-    name: olivMertens
+  twitter: xam1311
+  github: olivMertens
 bio: |
   Developer Relations @Microsoft
   13 years in electronic radar domain, 10 years in software development and sofware archictecture, created and lead the french sofware engineer community for an international consulting company for 4600 developpers @capgemini

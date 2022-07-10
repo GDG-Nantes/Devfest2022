@@ -7,12 +7,8 @@ companyLogo: /images/partners/shopify.png
 city: Montreal, Canada
 photoUrl: https://lh4.googleusercontent.com/-5cTMOWbjZcI/AAAAAAAAAAI/AAAAAAAAYt8/AnGapn8N1Tc/photo.jpg
 socials:
-  - icon: twitter
-    link: https://twitter.com/@kanawish
-    name: '@kanawish'
-  - icon: github
-    link: https://github.com/kanawish
-    name: kanawish
+  twitter: kanawish
+  github: kanawish
 bio: |-
   Etienne Caron is a developer lead at Shopify, a popular Canadian e-commerce company. He is also part of Google's Developer Expert program, and an instructor for Caster.io
 

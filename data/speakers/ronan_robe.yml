@@ -7,9 +7,7 @@ companyLogo: /images/partners/digital4better.png
 city: Nantes, France
 photoUrl: https://digital4better.com/media/ronan_nb200.jpeg
 socials:
-  - icon: twitter
-    link: https://twitter.com/RonanR01
-    name: RonanR01
+  twitter: RonanR01
 bio: |-
   Cofondateur de Digital4Better,  profil couteau suisse, expert en delivery de projets digitaux depuis 15ans.
   Membre du collectif Nantes Numérique Reponsable

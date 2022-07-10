@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import yaml from "js-yaml";
 import rimraf from "rimraf";
+import { Speaker } from "../json_schemas/interfaces/schema_speakers";
 import data from "./export.json";
 import { normalize, writeFile } from "./helpers";
 
@@ -21,37 +22,30 @@ transformerSessions();
 function transformerSpeakers() {
   const promises = data.speakers.map((speaker) => {
     const normalizedName = normalize(speaker.displayName);
-    const yamlData: any = {
+    const yamlData: Speaker = {
       key: normalizedName,
       name: speaker.displayName,
       feature: false,
-      company: speaker.company,
+      company: speaker.company || undefined,
       companyLogo:
         speaker.company && speaker.company !== "Freelance"
           ? `/images/partners/${normalize(speaker.company.toLowerCase())}.png`
           : undefined,
       city: speaker.address?.formattedAddress,
-      photoUrl: speaker.photoURL,
-      socials: [],
+      photoUrl: speaker.photoURL || undefined,
+      socials: {},
       bio: speaker.bio && speaker.bio.length > 1 ? speaker.bio : undefined,
     };
     if (speaker.twitter) {
-      yamlData.socials.push({
-        icon: "twitter",
-        link: `${
-          speaker.twitter.startsWith("http") ? "" : "https://twitter.com/"
-        }${speaker.twitter}`,
-        name: speaker.twitter.replace("https://twitter.com/", ""),
-      });
+      yamlData.socials.twitter = speaker.twitter
+        .replace("https://twitter.com/", "")
+        .replace("@", "");
     }
     if (speaker.github) {
-      yamlData.socials.push({
-        icon: "github",
-        link: `${
-          speaker.github.startsWith("http") ? "" : "https://github.com/"
-        }${speaker.github}`,
-        name: speaker.github.replace("https://github.com/", ""),
-      });
+      yamlData.socials.github = speaker.github.replace(
+        "https://github.com/",
+        ""
+      );
     }
 
     const speakerData = `---

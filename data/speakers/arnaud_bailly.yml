@@ -7,10 +7,6 @@ companyLogo: /images/partners/iog.png
 city: Nantes, France
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GhRr_m3TnIcuC0DwlgrBLpWd5kQoOV9bhyRDC5L=s96-c
 socials:
-  - icon: twitter
-    link: https://twitter.com/dr_c0d3
-    name: dr_c0d3
-  - icon: github
-    link: https://github.com/abailly
-    name: abailly
+  twitter: dr_c0d3
+  github: abailly
 bio: Arnaud has been developing software and helping team develop softwares for nearly three decades, in various technologies,  contexts and roles. He is interested in everything software-related with a peculiar passion for strongly-typed functional programming.

@@ -6,12 +6,8 @@ company: Meritis
 companyLogo: /images/partners/meritis.png
 photoUrl: https://blog.egaetan.me/extern/photo.png
 socials:
-  - icon: twitter
-    link: https://twitter.com/@egaetan
-    name: '@egaetan'
-  - icon: github
-    link: https://github.com/@geleouet
-    name: '@geleouet'
+  twitter: egaetan
+  github: '@geleouet'
 bio: |-
   Dans mes jeunes années être geek n’était pas un métier et pourtant je suis aujourd’hui développeur depuis 15 ans. 
   Animé par des convictions fortes sur l’impact des développeurs sur le monde, je transmets et j’enseigne dans le cadre d’atelier de code et en vacation en école d’ingénieur. 

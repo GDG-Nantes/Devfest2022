@@ -7,12 +7,8 @@ companyLogo: /images/partners/decathlon.png
 city: Lille, France
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14Gg00lmhiR1QlD_cCDqqXVwdzbL8_2RCS_a_HWS_yw0
 socials:
-  - icon: twitter
-    link: https://twitter.com/cfurmaniak
-    name: cfurmaniak
-  - icon: github
-    link: https://github.com/looztra
-    name: looztra
+  twitter: cfurmaniak
+  github: looztra
 bio: |-
   Des racines de développeur passionné et responsable m’ont amené à traiter avec attention les sujets du cycle de vie des projets, du poste de travail du développeur jusqu’au déploiement sur les environnements en production.
 

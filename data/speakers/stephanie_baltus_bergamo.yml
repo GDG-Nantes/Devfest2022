@@ -7,12 +7,8 @@ companyLogo: /images/partners/leboncoin__joining_kanop_io_very_soon_.png
 city: Paris, France
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14Gj_6z28Xy2Hvgu-eUflCFWa1HTu4jq-lpz4v7e0YA=s192-c-rg-br100
 socials:
-  - icon: twitter
-    link: https://twitter.com/steph_baltus
-    name: steph_baltus
-  - icon: github
-    link: https://github.com/sbaltus
-    name: sbaltus
+  twitter: steph_baltus
+  github: sbaltus
 bio: |-
   Dans la **data depuis plus de 10 ans**, j'ai commencé par de la **business intelligence** pour ensuite doucement migrer vers du **data engineering**,et un peu de développement backend.  
 

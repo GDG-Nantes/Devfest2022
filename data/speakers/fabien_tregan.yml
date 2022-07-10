@@ -5,12 +5,8 @@ feature: false
 city: Toulouse
 photoUrl: https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg
 socials:
-  - icon: twitter
-    link: https://twitter.com/@ftregan
-    name: '@ftregan'
-  - icon: github
-    link: https://github.com/fabientregan
-    name: fabientregan
+  twitter: ftregan
+  github: fabientregan
 bio: |-
   Je n'ai rien à vendre.
 

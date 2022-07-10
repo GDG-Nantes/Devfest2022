@@ -7,7 +7,5 @@ companyLogo: /images/partners/zenika.png
 city: Nantes, France
 photoUrl: https://lh4.googleusercontent.com/-YW-wpZdJkrk/AAAAAAAAAAI/AAAAAAAAAAA/ACevoQPWmdnLhRJYTKKsHRXZxlcyRJSGgA/mo/photo.jpg
 socials:
-  - icon: github
-    link: https://github.com/yodur2potassium
-    name: yodur2potassium
+  github: yodur2potassium
 bio: Quite new in the development community, I started a career change 3 years ago as a web developer. Beginning with the PHP/Symphony - Javascript combo, I followed for a 2 year internship in the Information Systems Division at La Poste, working on Openshift and CI/CD development and deployment then on an micro-services based application mixing back-end and front-end conception and development with Java/Spring and Angular. I'm now working at Zenika in the Dreamlab team, managing and creating applications for the information system of the company. Passionate about functional programming, I discovered Scala recently and working on a small side project on Elm.

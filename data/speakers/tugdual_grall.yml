@@ -7,12 +7,8 @@ companyLogo: /images/partners/redis_labs.png
 city: Nantes
 photoUrl: https://lh3.googleusercontent.com/a-/AAuE7mD3Lb5ovBNEnOvyIRJBtlwyYbMGSEBtHwfV7FYgqg
 socials:
-  - icon: twitter
-    link: https://twitter.com/tgrall
-    name: tgrall
-  - icon: github
-    link: https://github.com/tgrall
-    name: tgrall
+  twitter: tgrall
+  github: tgrall
 bio: |-
   Tugdual Grall, est Technical Account Manager chez Redis Lavs ou il accompagne les clients dans le déploiement de Redis, et participate a l'adoption de Redis et du NoSQL dans les communautés de développeurs.
 

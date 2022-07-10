@@ -6,10 +6,6 @@ company: CAPGEMINI SOGETI ATS
 companyLogo: /images/partners/capgemini_sogeti_ats.png
 photoUrl: https://avatars3.githubusercontent.com/u/7701382?v=4
 socials:
-  - icon: twitter
-    link: https://twitter.com/@JarriaultTony
-    name: '@JarriaultTony'
-  - icon: github
-    link: https://github.com/TJarriault
-    name: TJarriault
+  twitter: JarriaultTony
+  github: TJarriault
 bio: "J'ai\_été\_responsable technique pour le build et le run de plate forme infogerée. J'ai participé au coaching des équipes sur le volet technique.\n\_ \nSur les sujets clouds publique, j'interviens sur des projets nationnaux ou à plus grand échelle, que ce soit pour des applications B2C que B2B.\n"

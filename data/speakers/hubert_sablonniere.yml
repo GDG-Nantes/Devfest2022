@@ -7,10 +7,6 @@ companyLogo: /images/partners/clever_cloud.png
 city: Lille, France
 photoUrl: https://lh3.googleusercontent.com/-zULkNj_mgrE/AAAAAAAAAAI/AAAAAAAAmiM/s1x33T4pEBo/photo.jpg
 socials:
-  - icon: twitter
-    link: https://twitter.com/@hsablonniere
-    name: '@hsablonniere'
-  - icon: github
-    link: https://github.com/hsablonniere
-    name: hsablonniere
+  twitter: hsablonniere
+  github: hsablonniere
 bio: Hubert est passionné par le Web. Il est toujours à la recherche de nouvelles idées et autres bidouilles pour améliorer l'expérience des utilisateurs et des développeurs.

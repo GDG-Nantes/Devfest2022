@@ -6,6 +6,7 @@ import {
   Session,
 } from "../../../json_schemas/interfaces/schema_sessions";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
+import { MyLink } from "../../helpers/links";
 import "./schedule.scss";
 
 const typedSlots = slots as Slot[];
@@ -16,6 +17,7 @@ export const Schedule: React.FC<{ day: 1 | 2 }> = ({ day }) => {
       allSessionsYaml {
         edges {
           node {
+            key
             slot
             speakers
             tags
@@ -30,7 +32,7 @@ export const Schedule: React.FC<{ day: 1 | 2 }> = ({ day }) => {
     }
   `);
 
-  type PartialSession = Omit<Session, "key" | "abstract"> & { slot: Slot };
+  type PartialSession = Omit<Session, "abstract"> & { slot: Slot };
 
   const sessions: PartialSession[] = allSessionsYaml.edges
     .map((x) => x.node)
@@ -117,8 +119,9 @@ export const Schedule: React.FC<{ day: 1 | 2 }> = ({ day }) => {
             {sessionsRoom.map((session) => {
               const gridRow = slotToRow(session.slot);
               return (
-                <div
+                <MyLink
                   key={session.title}
+                  to={"/sessions/" + session.key}
                   className="slot"
                   style={{
                     gridColumn,
@@ -126,8 +129,8 @@ export const Schedule: React.FC<{ day: 1 | 2 }> = ({ day }) => {
                     background: "red",
                   }}
                 >
-                  {session.title}
-                </div>
+                  <div>{session.title}</div>
+                </MyLink>
               );
             })}
           </React.Fragment>

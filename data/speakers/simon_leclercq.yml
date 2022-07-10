@@ -7,10 +7,6 @@ companyLogo: /images/partners/decathlon_united.png
 city: Lille, France
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GiiGQJjOzg3xx1EumYB8A6chatLmdk1uZEALJVF_Q=s96-c
 socials:
-  - icon: twitter
-    link: https://twitter.com/@simon_leclercq
-    name: '@simon_leclercq'
-  - icon: github
-    link: https://github.com/N0t-Simon
-    name: N0t-Simon
+  twitter: simon_leclercq
+  github: N0t-Simon
 bio: Sr. Designer @Decathlon | Decathlon Design System Core Team

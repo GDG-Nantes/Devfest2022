@@ -7,12 +7,8 @@ companyLogo: /images/partners/foyer_group.png
 city: Luxembourg
 photoUrl: https://pbs.twimg.com/profile_images/958490540651270146/9XzRYrg6_normal.jpg
 socials:
-  - icon: twitter
-    link: https://twitter.com/@geoffreycrofte
-    name: '@geoffreycrofte'
-  - icon: github
-    link: https://github.com/geoffreycrofte
-    name: geoffreycrofte
+  twitter: geoffreycrofte
+  github: geoffreycrofte
 bio: |
   Lead (UX) Designer travaillant à Luxembourg.
   J'ai travaillé pendant 12 ans sur des projets  à des postes très variés. Mes différentes casquettes m’ont permis de découvrir mon métier de points de vue très différents. (Développeur front, chef de projet, freelance, en agence, en startup, en consulting et dans une grosse boîte d'assurance)

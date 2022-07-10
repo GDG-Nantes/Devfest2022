@@ -6,9 +6,5 @@ company: Klaxoon
 companyLogo: /images/partners/klaxoon.png
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GgFf6d1zwQ4PU9Ax7WEzgFcbtg-6Yf4llTFuQkMqw=s96-c
 socials:
-  - icon: twitter
-    link: https://twitter.com/nmor3l
-    name: nmor3l
-  - icon: github
-    link: https://github.com/nmorel
-    name: nmorel
+  twitter: nmor3l
+  github: nmorel

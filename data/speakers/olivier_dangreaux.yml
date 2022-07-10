@@ -6,12 +6,8 @@ company: ASI
 companyLogo: /images/partners/asi.png
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GjjUoWNJiTI9Qdl9zwHYFwkx4uCbsuesPezKImO3oA
 socials:
-  - icon: twitter
-    link: https://twitter.com/odangreaux
-    name: odangreaux
-  - icon: github
-    link: https://github.com/odangreaux
-    name: odangreaux
+  twitter: odangreaux
+  github: odangreaux
 bio: |-
   J'évolue depuis plus de 20 ans dans le monde du développement et des architectures logicielles.
   Fort de mon expérience, j’ai à cœur de répondre de manière pragmatique aux besoins techniques des projets et clients.

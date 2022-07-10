@@ -1,6 +1,7 @@
 {
   "yaml.schemas": {
-    "json_schemas/schema_sessions.json": "data/sessions/*.yml"
+    "json_schemas/schema_sessions.json": "data/sessions/*.yml",
+    "json_schemas/schema_speakers.json": "data/speakers/*.yml"
   },
   "json.schemas": [
     {

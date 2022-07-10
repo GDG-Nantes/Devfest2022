@@ -6,7 +6,7 @@ company: STACK LABS
 companyLogo: /images/partners/stack_labs.png
 city: Toulouse, France
 photoUrl: https://lh5.googleusercontent.com/-I5DdNnX3xKc/AAAAAAAAAAI/AAAAAAAAAEU/pbh4G8bfRX0/photo.jpg
-socials: []
+socials: {}
 bio: |
   Passionate about cybersecurity, I like to dive into security aspects of new technologies (Cloud, IoT, Blockchain).
   In the cybersecurity field for 6 years, I work for Stack Labs as cloud cybersecurity engineer. My job is to help customers  to design and implement secure solution for cloud project and cloud migration.

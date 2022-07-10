@@ -1,4 +1,5 @@
 const locales = require("./locales/config.json").map((l) => l.code);
+const path = require("path");
 
 /** Removes the useless pages (ex: /en/team.fr/)
  *   Changes path for files with extensions: /fr/team.fr/ -> /fr/team/
@@ -33,4 +34,79 @@ exports.onCreatePage = ({ page, actions }) => {
       deletePage(page);
     }
   }
+};
+
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
+  // Query for markdown nodes to use in creating pages.
+  const { data, errors } = await graphql(
+    `
+      {
+        allSessionsYaml {
+          edges {
+            node {
+              key
+              slot
+              speakers
+              tags
+              talkType
+              title
+              room
+              language
+              complexity
+              abstract
+            }
+          }
+        }
+        allSpeakersYaml {
+          edges {
+            node {
+              key
+              name
+              feature
+              city
+              company
+              companyLogo
+              photoUrl
+              bio
+            }
+          }
+        }
+      }
+    `
+  );
+  if (errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
+  }
+
+  // Sessions
+  const sessionPageTemplate = path.resolve(
+    "src/components/sessionPageTemplate.tsx"
+  );
+  data.allSessionsYaml.edges.forEach(({ node: session }) => {
+    const path = "sessions/" + session.key;
+    createPage({
+      path,
+      component: sessionPageTemplate,
+      context: {
+        session,
+      },
+    });
+  });
+
+  // Speakers
+  const speakerPageTemplate = path.resolve(
+    "src/components/speakerPageTemplate.tsx"
+  );
+  data.allSpeakersYaml.edges.forEach(({ node: speaker }) => {
+    const path = "speakers/" + speaker.key;
+    createPage({
+      path,
+      component: speakerPageTemplate,
+      context: {
+        speaker,
+      },
+    });
+  });
 };

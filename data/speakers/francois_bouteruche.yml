@@ -7,12 +7,8 @@ companyLogo: /images/partners/amazon_web_services_emea.png
 city: Paris, France
 photoUrl: https://avatars0.githubusercontent.com/u/10872124?v=4
 socials:
-  - icon: twitter
-    link: https://twitter.com/@fbouteruche
-    name: '@fbouteruche'
-  - icon: github
-    link: https://github.com/fbouteruche
-    name: fbouteruche
+  twitter: fbouteruche
+  github: fbouteruche
 bio: |-
   I'm currently Senior Developer Advocate at Amazon Web Services. I am a tech enthusiast with a strong background around .NET development and DevOps philosophy and practices. 
 

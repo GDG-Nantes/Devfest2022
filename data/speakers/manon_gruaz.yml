@@ -7,6 +7,4 @@ companyLogo: /images/partners/haleo_clinic.png
 city: Montreal, QC, Canada
 photoUrl: https://ibb.co/7YSsMZc
 socials:
-  - icon: twitter
-    link: https://twitter.com/manongruaz
-    name: manongruaz
+  twitter: manongruaz

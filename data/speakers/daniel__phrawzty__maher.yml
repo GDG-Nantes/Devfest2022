@@ -5,10 +5,6 @@ feature: false
 city: Paris, France
 photoUrl: https://on.notist.cloud/headshots/hs-phrawzty-thumb-56755c06f22ebecf.png
 socials:
-  - icon: twitter
-    link: https://twitter.com/phrawzty
-    name: phrawzty
-  - icon: github
-    link: https://github.com/phrawzty
-    name: phrawzty
+  twitter: phrawzty
+  github: phrawzty
 bio: Dan is a veteran of the original dotcom bubble and has since worked in a variety of environments from start-ups to global corporations, including stints as a founder, university lecturer, and a day labourer. Today, Dan is a member of the Devopsdays global team, an amateur geographer, and a big fan of the European tech scene.

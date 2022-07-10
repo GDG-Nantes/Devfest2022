@@ -7,9 +7,7 @@ companyLogo: /images/partners/externatic.png
 city: Nantes, France
 photoUrl: https://web2day.co/wp-content/uploads/2022/03/BenjaminCasseron-Web2day-500x500.jpeg
 socials:
-  - icon: twitter
-    link: https://twitter.com/bcasseron
-    name: bcasseron
+  twitter: bcasseron
 bio: |-
   Recruteur, je suis passionné par la tech et d’entrepreneuriat.
 
