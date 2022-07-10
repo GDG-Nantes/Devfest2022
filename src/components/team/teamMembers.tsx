@@ -3,8 +3,7 @@ import { Box } from "@mui/system";
 import { graphql, useStaticQuery } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import React, { useMemo } from "react";
-//@ts-ignore
-import team from "../../../data/team.yml";
+import team from "../../../data/team.json";
 import { Member, Social } from "../../../json_schemas/interfaces/schema_team";
 import { shuffleArray } from "../../helpers";
 import { SocialLink } from "../commun/socials/socials";

@@ -1,0 +1,218 @@
+{
+  "platinium": [
+    {
+      "title": "Bouygues Telecom",
+      "id": "bouygues-telecom",
+      "website": "https://www.bouyguestelecom.fr/"
+    },
+    {
+      "title": "Capgemini",
+      "id": "capgemini",
+      "website": "https://www.capgemini.com/"
+    },
+    {
+      "title": "Conserto",
+      "id": "conserto",
+      "website": "https://conserto.pro/"
+    },
+    {
+      "title": "Microsoft",
+      "id": "microsoft",
+      "website": "https://www.microsoft.com/"
+    },
+    {
+      "title": "Onepoint",
+      "id": "onepoint",
+      "website": "https://www.groupeonepoint.com/"
+    },
+    {
+      "title": "OVH",
+      "id": "ovh",
+      "website": "https://www.ovhcloud.com/fr/"
+    },
+    {
+      "title": "Proginov",
+      "id": "proginov",
+      "website": "https://www.proginov.com/"
+    },
+    {
+      "title": "Sercel",
+      "id": "sercel",
+      "website": "https://www.sercel.com/"
+    },
+    {
+      "title": "SFEIR",
+      "id": "sfeir",
+      "website": "https://www.sfeir.com/"
+    },
+    {
+      "title": "Shopopop",
+      "id": "shopopop",
+      "website": "https://www.shopopop.com/"
+    },
+    {
+      "title": "Sopra Stéria",
+      "id": "sopra-steria",
+      "website": "https://www.soprasteria.fr/"
+    },
+    {
+      "title": "Thales",
+      "id": "thales",
+      "website": "https://www.thalesgroup.com"
+    },
+    {
+      "title": "U GIE IRIS",
+      "id": "u-gie-iris",
+      "website": "https://ugieiris.fr/"
+    },
+    {
+      "title": "Valeuriad",
+      "id": "valeuriad",
+      "website": "https://www.valeuriad.fr/"
+    },
+    {
+      "title": "Zenika",
+      "id": "zenika",
+      "website": "https://www.zenika.com/"
+    }
+  ],
+  "gold": [
+    {
+      "title": "Aubay",
+      "id": "aubay",
+      "website": "https://www.aubay.com/"
+    },
+    {
+      "title": "Audensiel",
+      "id": "audensiel",
+      "website": "https://www.audensiel.com/"
+    },
+    {
+      "title": "Cat Amania",
+      "id": "cat-amania",
+      "website": "https://www.cat-amania.com/"
+    },
+    {
+      "title": "Creative",
+      "id": "creative",
+      "website": "https://www.groupe-creative.fr/"
+    },
+    {
+      "title": "Delia Technologies",
+      "id": "delia-technologies",
+      "website": "https://www.delia.tech/"
+    },
+    {
+      "title": "Eleven Labs",
+      "id": "eleven-labs",
+      "website": "https://eleven-labs.com/"
+    },
+    {
+      "title": "Epitech",
+      "id": "epitech",
+      "website": "https://www.epitech.eu/"
+    },
+    {
+      "title": "Gatling",
+      "id": "gatling",
+      "website": "https://gatling.io/"
+    },
+    {
+      "title": "Infotel Conseil",
+      "id": "infotel-conseil",
+      "website": "https://www.infotel.com/"
+    },
+    {
+      "title": "ISILOG",
+      "id": "isilog",
+      "website": "https://www.isilog.fr/"
+    },
+    {
+      "title": "Kaïbee",
+      "id": "kaibee",
+      "website": "https://kaibee.fr/"
+    },
+    {
+      "title": "Maisons Du Monde",
+      "id": "maisons-du-monde",
+      "website": "https://www.maisonsdumonde.com/"
+    },
+    {
+      "title": "Mapal OS",
+      "id": "mapal-os",
+      "website": "https://mapal-os.com/"
+    },
+    {
+      "title": "Neosoft",
+      "id": "neosoft",
+      "website": "https://www.neo-soft.fr/"
+    },
+    {
+      "title": "RCA",
+      "id": "rca",
+      "website": "https://rca.fr/"
+    },
+    {
+      "title": "SHODO",
+      "id": "shodo",
+      "website": "https://shodo.io/"
+    },
+    {
+      "title": "SII",
+      "id": "sii",
+      "website": "https://sii-group.com/"
+    },
+    {
+      "title": "Smile",
+      "id": "smile",
+      "website": "https://www.smile.eu/"
+    },
+    {
+      "title": "Talend",
+      "id": "talend",
+      "website": "https://www.talend.com/"
+    },
+    {
+      "title": "Voyage Privé",
+      "id": "voyage-prive",
+      "website": "https://www.voyage-prive.com/"
+    },
+    {
+      "title": "Younup",
+      "id": "younup",
+      "website": "https://www.younup.fr/"
+    },
+    {
+      "title": "We Love Devs",
+      "id": "welovedevs",
+      "website": "https://welovedevs.com/fr/"
+    }
+  ],
+  "virtual": [
+    {
+      "title": "The Fork",
+      "id": "thefork",
+      "website": "https://www.thefork.fr/"
+    },
+    {
+      "title": "OXiane Bretagne",
+      "id": "oxiane-bretagne",
+      "website": "https://www.oxiane.bzh/"
+    },
+    {
+      "title": "Leboncoin",
+      "id": "leboncoin",
+      "website": "https://www.leboncoin.fr/"
+    },
+    {
+      "title": "ACCAB",
+      "id": "accab",
+      "website": "https://accab.fr/"
+    },
+    {
+      "title": "Amaris",
+      "id": "amaris",
+      "website": "https://www.amaris.com/"
+    }
+  ]
+}

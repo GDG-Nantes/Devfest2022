@@ -1,0 +1,368 @@
+{
+  "schedules": [
+    {
+      "day": "2021-10-20",
+      "rooms": [
+        {
+          "room": "Jules Verne",
+          "slots": [
+            {
+              "slot": "slot-1-day-1",
+              "talk": "component_driven_development"
+            },
+            {
+              "slot": "slot-2-day-1",
+              "talk": "level_unlocked__gitops_to_the_edge_and_infrastructure_provisioning_"
+            },
+            {
+              "slot": "slot-3-day-1",
+              "talk": "don_t_miss_the_deno_train"
+            },
+            {
+              "slot": "slot-4-day-1",
+              "talk": "petit_guide_pratique_pour_commencer_un_design_system"
+            },
+            {
+              "slot": "slot-5-day-1",
+              "talk": "java_au_futur___des_record_au_pattern_matching"
+            },
+            {
+              "slot": "slot-6-day-1",
+              "talk": "machine_a_lire"
+            },
+            {
+              "slot": "slot-7-day-1",
+              "talk": "comment_j_ai_peche_des_gros_poissons_avec_9_arduino_nanos_et_des_souvenirs_d_electronique"
+            }
+          ]
+        },
+        {
+          "room": "Titan",
+          "slots": [
+            {
+              "slot": "slot-1-day-1",
+              "talk": "simuler_160k_joueurs_avec_cloud_run"
+            },
+            {
+              "slot": "slot-2-day-1",
+              "talk": "how_to_create_pure_css_games"
+            },
+            {
+              "slot": "slot-3-day-1",
+              "talk": "highly_available__distributed___resilient_software____team"
+            },
+            {
+              "slot": "slot-4-day-1",
+              "talk": "orchestration_de_pipeline_de_donnees_en_serverless_avec_google_workflow"
+            },
+            {
+              "slot": "slot-5-day-1",
+              "talk": "dans_le_cloud_tout_est_manage_mais_pas_la_securite"
+            },
+            {
+              "slot": "slot-6-day-1",
+              "talk": "apres_la_censure__l_auto_censure__mais_la_c_est_drole__educatif_et_avec_de_l_ia"
+            },
+            {
+              "slot": "slot-7-day-1",
+              "talk": "a_la_decouverte_du_material_sound_design"
+            }
+          ]
+        },
+        {
+          "room": "Bellem",
+          "slots": [
+            {
+              "slot": "slot-1-day-1",
+              "talk": "tips_pour_combattre_le_syndrome_de_l_imposteur"
+            },
+            {
+              "slot": "slot-2-day-1",
+              "talk": "github_actions___enfin_des_pipelines_accessible_aux_developpeurs"
+            },
+            {
+              "slot": "slot-3-day-1",
+              "talk": "cloud_cost__separating_myth_from_reality"
+            },
+            {
+              "slot": "slot-4-day-1",
+              "talk": "___rust__un_choix_possible__"
+            },
+            {
+              "slot": "slot-5-day-1",
+              "talk": "shazart__on_a_realise_le_shazam_du_street_art_et_on_vous_explique_comment"
+            },
+            {
+              "slot": "slot-6-day-1",
+              "talk": "react_query__le_server_state_facile_pour_react"
+            },
+            {
+              "slot": "slot-7-day-1",
+              "talk": "developper_et_enseigner__une_bonne_idee__"
+            }
+          ]
+        },
+        {
+          "room": "Tour de Bretagne",
+          "slots": [
+            {
+              "slot": "slot-1-day-1",
+              "talk": "programmation_fonctionelle_en_kotlin_avec_arrow"
+            },
+            {
+              "slot": "slot-2-day-1",
+              "talk": "sensibilisation_au_numerique_responsable"
+            },
+            {
+              "slot": "slot-3-day-1",
+              "talk": "continous_localization_in_web"
+            },
+            {
+              "slot": "slot-4-day-1",
+              "talk": "from_billions_to_hundreds___how_machine_learning_helps_experts_detect_sensible_data_leaks"
+            },
+            {
+              "slot": "slot-5-day-1",
+              "talk": "et_si_vous_appreniez_a_programmer_a_vos_enfants"
+            },
+            {
+              "slot": "slot-6-day-1",
+              "talk": "go_generics"
+            },
+            {
+              "slot": "slot-7-day-1",
+              "talk": "openapi___asyncapi___specifications_et_contrats"
+            }
+          ]
+        },
+        {
+          "room": "Les Machines",
+          "slots": [
+            {
+              "slot": "codelab-1-day-1",
+              "talk": "prenez_vos_notes_en_mode_street_art___"
+            },
+            {
+              "slot": "codelab-2-day-1",
+              "talk": "hacking_game___crack_the_safe"
+            },
+            {
+              "slot": "codelab-3-day-1",
+              "talk": "gitops___une_mise_en_situation_un_peu_realiste_sur_kubernetes_avec_fluxcd"
+            }
+          ]
+        },
+        {
+          "room": "Hangar",
+          "slots": [
+            {
+              "slot": "codelab-1-day-1",
+              "talk": "workshop_apache_kafka___introduction_aux_fondamentaux"
+            },
+            {
+              "slot": "codelab-2-day-1",
+              "talk": "a_la_decouverte_d_accelerate"
+            },
+            {
+              "slot": "codelab-3-day-1",
+              "talk": "developpement_zero_dechet___tips___tricks_pour_ameliorer_l_empreinte_carbone_de_vos_applications"
+            }
+          ]
+        },
+        {
+          "room": "L'Atelier",
+          "slots": [
+            {
+              "slot": "codelab-1-day-1",
+              "talk": "workshop_apache_kafka___introduction_aux_fondamentaux"
+            },
+            {
+              "slot": "codelab-2-day-1",
+              "talk": "a_la_decouverte_d_accelerate"
+            },
+            {
+              "slot": "codelab-3-day-1",
+              "talk": "developpement_zero_dechet___tips___tricks_pour_ameliorer_l_empreinte_carbone_de_vos_applications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2021-10-21",
+      "rooms": [
+        {
+          "room": "Jules Verne",
+          "slots": [
+            {
+              "slot": "slot-1-day-2",
+              "talk": "_️_vite_️the_webpack_killer"
+            },
+            {
+              "slot": "slot-2-day-2",
+              "talk": "flutter_en_2021___est__le_moment_de_s_y_interesser__"
+            },
+            {
+              "slot": "slot-3-day-2",
+              "talk": "notre_recette_de_l_equipe_parfaite__"
+            },
+            {
+              "slot": "slot-4-day-2",
+              "talk": "resiliency_and_availability_design_patterns_for_the_cloud"
+            },
+            {
+              "slot": "slot-5-day-2",
+              "talk": "comment_l_opendata_peut_aider_l_agriculture_de_demain"
+            },
+            {
+              "slot": "slot-6-day-2",
+              "talk": "j_ai_presque_fini__"
+            },
+            {
+              "slot": "slot-7-day-2",
+              "talk": "trucs_et_astuces_pour_reussir_son_burn_out"
+            }
+          ]
+        },
+        {
+          "room": "Titan",
+          "slots": [
+            {
+              "slot": "slot-1-day-2",
+              "talk": "place_des_femmes_dans_le_numerique__comment_inverser_la_tendance__"
+            },
+            {
+              "slot": "slot-2-day-2",
+              "talk": "next_js_a_la_rescousse_de_mon_frontend"
+            },
+            {
+              "slot": "slot-3-day-2",
+              "talk": "vue_3_et_son_ecosysteme"
+            },
+            {
+              "slot": "slot-4-day-2",
+              "talk": "the_blind_test"
+            },
+            {
+              "slot": "slot-5-day-2",
+              "talk": "securisez_votre_pipeline_de_livraison_multi_cloud_avec_hashicorp_vault"
+            },
+            {
+              "slot": "slot-6-day-2",
+              "talk": "developper_des_applis_web_pour_les_foldable_devices"
+            },
+            {
+              "slot": "slot-7-day-2",
+              "talk": "a_la_decouverte_du_code_source_du_vaccin_pfizer_biontech"
+            }
+          ]
+        },
+        {
+          "room": "Bellem",
+          "slots": [
+            {
+              "slot": "slot-1-day-2",
+              "talk": "google_cloud__construisez_votre_cloud_open_source_avec_anthos_private_mode"
+            },
+            {
+              "slot": "slot-2-day-2",
+              "talk": "iart_ou_comment_apprendre_a_une_machine_a_tagger_et_a_composer"
+            },
+            {
+              "slot": "slot-3-day-2",
+              "talk": "quand_windows_rencontre_linux___"
+            },
+            {
+              "slot": "slot-4-day-2",
+              "talk": "art___entropie__du_chaos_dans_ton_frontend"
+            },
+            {
+              "slot": "slot-5-day-2",
+              "talk": "la_dette_ui___en_finir_avec_les_interfaces_jetables_et_concevoir_une_ui_durable__adaptable_et_structuree_"
+            },
+            {
+              "slot": "slot-6-day-2",
+              "talk": "animer_et_organiser_un_plateau_de__devs_differemment"
+            },
+            {
+              "slot": "slot-7-day-2",
+              "talk": "postgresql_+_json___bye_bye_jpa_et_passe_le_bonjour_a_mongo"
+            }
+          ]
+        },
+        {
+          "room": "Tour de Bretagne",
+          "slots": [
+            {
+              "slot": "slot-1-day-2",
+              "talk": "coupable_de_code_legacy_en_js__comment_s_en_sortir__"
+            },
+            {
+              "slot": "slot-2-day-2",
+              "talk": "hasura___le_graphql_qui_hassure"
+            },
+            {
+              "slot": "slot-3-day-2",
+              "talk": "la_policy_as_code_via_le_moteur_de_regles_cloud_custodian_"
+            },
+            {
+              "slot": "slot-4-day-2",
+              "talk": "jetpack_compose__ui_toolkit_for_android_and_desktop_apps"
+            },
+            {
+              "slot": "slot-5-day-2",
+              "talk": "retour_d_experience_sur_remix"
+            },
+            {
+              "slot": "slot-6-day-2",
+              "talk": "industrialiser_son_app_mobile___self_hosted_ou_saas_"
+            },
+            {
+              "slot": "slot-7-day-2",
+              "talk": "java_a_la_vitesse_de_la_lumiere_grace_au_graal__"
+            }
+          ]
+        },
+        {
+          "room": "Les Machines",
+          "slots": [
+            {
+              "slot": "codelab-1-day-2",
+              "talk": "une_approche_pragmatique_pour_debogguer__des_services_sur_openshift_kubernetes"
+            },
+            {
+              "slot": "codelab-2-day-2",
+              "talk": "the_walking_bread___participe_a_la_conception_ux_d_un_produit"
+            }
+          ]
+        },
+        {
+          "room": "Hangar",
+          "slots": [
+            {
+              "slot": "codelab-1-day-2",
+              "talk": "deux_heures_pour_coder_un_catalogue_de_street_art_avec_stencil"
+            },
+            {
+              "slot": "codelab-2-day-2",
+              "talk": "devenir_svelte_avec_svelte"
+            }
+          ]
+        },
+        {
+          "room": "L'Atelier",
+          "slots": [
+            {
+              "slot": "codelab-1-day-2",
+              "talk": "deux_heures_pour_coder_un_catalogue_de_street_art_avec_stencil"
+            },
+            {
+              "slot": "codelab-2-day-2",
+              "talk": "devenir_svelte_avec_svelte"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

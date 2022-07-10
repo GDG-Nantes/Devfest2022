@@ -46,6 +46,7 @@
       "name": "Partners",
       "platinium-partners": "Platinium partners"
     },
+    "schedule": { "name": "Schedule" },
     "team": { "name": "Team" },
     "code-of-conduct": { "name": "Code of conduct" },
     "legal-mentions": { "name": "Legal Mentions" }
