@@ -1,0 +1,24 @@
+{
+  "name": "data-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/js-yaml": "^4.0.2",
+    "ics": "^2.31.0",
+    "js-yaml": "^4.1.0",
+    "marked": "^3.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/marked": "^2.0.4",
+    "@types/node": "^16.3.1",
+    "@types/rimraf": "^3.0.1"
+  }
+}
