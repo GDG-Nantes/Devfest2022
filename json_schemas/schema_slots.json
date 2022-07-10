@@ -21,20 +21,35 @@
           "type": "string"
         },
         "type": {
-          "type": "string",
-          "enum": [
-            "opening",
-            "keynote",
-            "lunch",
-            "break",
-            "quickie",
-            "conference",
-            "codelab",
-            "party"
-          ]
+          "$ref": "#/definitions/slotTypes"
+        },
+        "display": {
+          "type": "object",
+          "required": ["row", "size"],
+          "properties": {
+            "row": {
+              "type": "number"
+            },
+            "size": {
+              "type": "number"
+            }
+          }
         }
       },
-      "required": ["key", "start", "type"]
+      "required": ["key", "start", "type", "display"]
+    },
+    "slotTypes": {
+      "type": "string",
+      "enum": [
+        "opening",
+        "keynote",
+        "lunch",
+        "break",
+        "quickie",
+        "conference",
+        "codelab",
+        "party"
+      ]
     }
   }
 }
