@@ -46,7 +46,7 @@
       "name": "Partenaires",
       "platinium-partners": "Nos Sponsors Platinium"
     },
-    "schedule": { "name": "Programme" },
+    "schedule": { "name": "Programme", "day1": "Jour 1", "day2": "Jour 2" },
     "team": { "name": "L'Équipe" },
     "code-of-conduct": { "name": "Code de conduite" },
     "legal-mentions": { "name": "Mentions Légales" }

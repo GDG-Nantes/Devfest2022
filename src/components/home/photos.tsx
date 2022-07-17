@@ -8,7 +8,7 @@ import { useResponsiveData } from "../../helpers/responsive";
 import { SecondarySection } from "../commun/section/section";
 
 export const DevfestPhotos = () => (
-  <SecondarySection noPadding>
+  <SecondarySection padding="none">
     <Album />
   </SecondarySection>
 );

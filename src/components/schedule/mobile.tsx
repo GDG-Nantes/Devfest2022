@@ -1,8 +1,7 @@
 import React from "react";
-import { Rooms } from "../../../json_schemas/interfaces/schema_sessions";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
 import { MyLink } from "../../helpers/links";
-import { PartialSession, rooms } from "./common";
+import { PartialSession, Speakers, Tags } from "./common";
 import "./schedule.scss";
 
 export const MobileSchedule: React.FC<{
@@ -10,38 +9,29 @@ export const MobileSchedule: React.FC<{
   allHoursSlots: Slot[];
   fixedSlots: Slot[];
 }> = ({ sessions, allHoursSlots, fixedSlots }) => {
-  const sessionsByRoom: { [k in Rooms]: PartialSession[] } = {} as any;
-  rooms.forEach((room) => {
-    sessionsByRoom[room] = sessions.filter((s) => s.room === room);
+  const hours = allHoursSlots
+    .map((slot) => slot.start) //
+    // unicity
+    .filter((start, i, l) => l.indexOf(start) === i);
+
+  const sessionsByHours: { [k: string]: Array<PartialSession> } = {};
+  const fixedSlotsByHours: { [k: string]: Array<Slot> } = {};
+  hours.forEach((hour) => {
+    sessionsByHours[hour] = sessions.filter((s) => s.slot.start === hour);
+    fixedSlotsByHours[hour] = fixedSlots.filter((s) => s.start === hour);
   });
 
-  const gridStyle = {
-    display: "grid",
-    gridTemplateColumns: `repeat(${rooms.length + 1}, 1fr)`,
-    gridAutoRows: "minmax(100px, auto)",
-    gridGap: "1rem",
-    width: "100%",
-  };
-
   return (
-    <div style={gridStyle}>
-      {allHoursSlots.map((slot) => (
-        <Hour key={slot.key} slot={slot} />
-      ))}
-      {fixedSlots.map((slot) => (
-        <FixedSlot slot={slot} key={slot.key} />
-      ))}
-      {Object.entries(sessionsByRoom).map(([room, sessionsRoom], i) => {
-        const gridColumn = i + 2 + " / " + (i + 2);
+    <div>
+      {hours.map((hour) => {
         return (
-          <React.Fragment key={room}>
-            <Room name={room} gridColumn={gridColumn} />
-            {sessionsRoom.map((session) => (
-              <Session
-                session={session}
-                gridColumn={gridColumn}
-                key={session.title}
-              />
+          <React.Fragment key={hour}>
+            <Hour hour={hour} />
+            {sessionsByHours[hour].map((session) => (
+              <Session session={session} key={session.key} />
+            ))}
+            {fixedSlotsByHours[hour].map((slot) => (
+              <FixedSlot slot={slot} key={slot.key} />
             ))}
           </React.Fragment>
         );
@@ -50,71 +40,35 @@ export const MobileSchedule: React.FC<{
   );
 };
 
-const Hour: React.FC<{ slot: Slot }> = ({ slot }) => (
-  <div
-    className="slot"
-    style={{
-      gridColumn: "1 / 1",
-      gridRow: slotToRow(slot as Slot),
-    }}
-  >
-    {slot.start}
-  </div>
+const Hour: React.FC<{ hour: string }> = ({ hour }) => (
+  <div className="hour">{hour}</div>
 );
 
 const FixedSlot: React.FC<{ slot: Slot }> = ({ slot }) => (
-  <div
-    className="slot"
-    style={{
-      gridColumn: "2 / -1",
-      gridRow: slotToRow(slot as Slot),
-      background: "blue",
-    }}
-  >
-    {slot.type}
-  </div>
+  <div className="slot">{slot.type}</div>
 );
 
-const Room: React.FC<{ name: string; gridColumn: string }> = ({
-  name,
-  gridColumn,
-}) => {
-  return (
-    <div
-      className="slot"
-      style={{
-        gridColumn,
-        gridRow: "1 / 1",
-      }}
-    >
-      {name}
-    </div>
-  );
-};
-
-const Session: React.FC<{ session: PartialSession; gridColumn: string }> = ({
-  session,
-  gridColumn,
-}) => {
+const Session: React.FC<{ session: PartialSession }> = ({ session }) => {
   return (
     <MyLink
       key={session.title}
       to={"/sessions/" + session.key}
       className="slot"
-      style={{
-        gridColumn,
-        gridRow: slotToRow(session.slot),
-        background: "red",
-      }}
     >
-      <div>{session.title}</div>
+      <SessionInfo session={session} />
     </MyLink>
   );
 };
 
-function slotToRow(slot: Slot) {
-  const firstRow = 1;
-  const rowStart = slot.display.row + firstRow;
-  const spanRow = slot.display.size;
-  return `${rowStart} / span ${spanRow}`;
-}
+const SessionInfo: React.FC<{ session: PartialSession }> = ({ session }) => {
+  return (
+    <div className="session-info">
+      <div className="session-info-top">
+        <span className=".session-title">{session.title}</span>
+        <Tags tags={session.tags} />
+        {session.room}
+      </div>
+      <Speakers speakers={session.speakers} />
+    </div>
+  );
+};

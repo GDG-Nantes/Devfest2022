@@ -5,21 +5,24 @@ import "./section.scss";
 export const DefaultSection: React.FC<{
   variant?: "primary" | "secondary" | "tertiary";
   slim?: boolean;
-  noPadding?: boolean;
-}> = ({ children, variant = "primary", slim, noPadding }) => (
+  padding?: "normal" | "none" | "small";
+}> = ({ children, variant = "primary", slim, padding = "normal" }) => (
   <div
     className={classNames(
       "section",
       variant,
       slim && "slim",
-      noPadding && "noPadding"
+      padding && "padding-" + padding
     )}
   >
     {children}
   </div>
 );
 
-type Section = React.FC<{ slim?: boolean; noPadding?: boolean }>;
+type Section = React.FC<{
+  slim?: boolean;
+  padding?: "normal" | "none" | "small";
+}>;
 
 export const SecondarySection: Section = ({ children, ...props }) => (
   <DefaultSection variant="secondary" {...props}>

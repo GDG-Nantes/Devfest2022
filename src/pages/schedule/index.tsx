@@ -1,3 +1,4 @@
+import { Button, Stack } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { DefaultPage } from "../../components/commun/page";
@@ -14,12 +15,27 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
 
   return (
     <Layout>
-      <DefaultPage title={t("name")} background="back-5">
-        <PrimarySection>
-          <MyLink to="/schedule/1">Jour 1</MyLink>
-          <MyLink to="/schedule/2">Jour 2</MyLink>
+      <DefaultPage title={t("name")} background="back-2">
+        <PrimarySection slim>
+          <Stack
+            direction="row"
+            spacing="20px"
+            width="100%"
+            justifyContent="center"
+          >
+            <MyLink to="/schedule/1">
+              <Button variant="text" color="inherit">
+                {t("day1")}
+              </Button>
+            </MyLink>
+            <MyLink to="/schedule/2">
+              <Button variant="text" color="inherit">
+                {t("day2")}
+              </Button>
+            </MyLink>
+          </Stack>
         </PrimarySection>
-        <SecondarySection>
+        <SecondarySection padding="small">
           <Schedule day={day} />
         </SecondarySection>
       </DefaultPage>

@@ -1,14 +1,48 @@
+.schedule-large {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(7, 1fr);
+  grid-auto-rows: minmax(75px, auto);
+  grid-gap: 10px;
+  width: 100%;
+}
+
 .slot {
   border-radius: 5px;
+  padding: 10px;
   overflow: hidden;
   word-wrap: break-word;
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  &.room {
+    align-items: center;
+    margin: 0 -10px;
+    border: solid 1px var(--primary-dark);
+    border-radius: 0;
+    border-width: 0 0 0 1px;
+    &:last-of-type {
+      border-width: 0 1px;
+    }
+  }
+
+  &.session {
+    background-color: var(--tertiary);
+  }
+
+  &.fixed {
+    align-items: center;
+  }
+
+  &.keynote,
+  &.opening,
+  &.lunch,
+  &.party {
+    background-color: var(--primary);
+  }
+  &.break {
+    background-color: var(--primary-dark);
+  }
 
   .session-info {
     width: 100%;
@@ -18,25 +52,30 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    .session-info-top {
+    .session-title {
+      font-size: 13px;
+      text-align: left;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .session-info-bottom {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       font-size: small;
-
-      .session-title {
-        font-size: 10px;
-      }
+      width: 100%;
+      margin: 0 auto;
     }
 
     .speakers {
       display: flex;
       justify-content: space-evenly;
-      width: 90%;
-      margin: 5px auto;
-      background-color: blueviolet;
+      background-color: var(--tertiary-dark);
       border-radius: 5px;
+      width: 100%;
+      margin: 5px auto;
 
       .speaker {
         display: flex;

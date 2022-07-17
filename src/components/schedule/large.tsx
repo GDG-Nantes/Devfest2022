@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import classNames from "classnames";
 import React from "react";
 import { Rooms } from "../../../json_schemas/interfaces/schema_sessions";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
@@ -16,16 +17,8 @@ export const LargeSchedule: React.FC<{
     sessionsByRoom[room] = sessions.filter((s) => s.room === room);
   });
 
-  const gridStyle = {
-    display: "grid",
-    gridTemplateColumns: `repeat(${rooms.length + 1}, 1fr)`,
-    gridAutoRows: "minmax(100px, auto)",
-    gridGap: "1rem",
-    width: "100%",
-  };
-
   return (
-    <div style={gridStyle}>
+    <div className="schedule-large">
       {allHoursSlots.map((slot) => (
         <Hour key={slot.key} slot={slot} />
       ))}
@@ -63,18 +56,24 @@ const Hour: React.FC<{ slot: Slot }> = ({ slot }) => (
   </div>
 );
 
-const FixedSlot: React.FC<{ slot: Slot }> = ({ slot }) => (
-  <div
-    className="slot"
-    style={{
-      gridColumn: "2 / -1",
-      gridRow: slotToRow(slot as Slot),
-      background: "blue",
-    }}
-  >
-    {slot.type}
-  </div>
-);
+const FixedSlot: React.FC<{ slot: Slot }> = ({ slot }) => {
+  const gridColumn = slot.type.startsWith("keynote")
+    ? "2 / 2"
+    : slot.display.notForCodelab
+    ? "2 / span 4"
+    : "2 / -1";
+  return (
+    <div
+      className={classNames("slot", "fixed", slot.type)}
+      style={{
+        gridColumn,
+        gridRow: slotToRow(slot as Slot),
+      }}
+    >
+      {slot.type}
+    </div>
+  );
+};
 
 const Room: React.FC<{ name: string; gridColumn: string }> = ({
   name,
@@ -82,7 +81,7 @@ const Room: React.FC<{ name: string; gridColumn: string }> = ({
 }) => {
   return (
     <div
-      className="slot"
+      className="slot room"
       style={{
         gridColumn,
         gridRow: "1 / 1",
@@ -101,11 +100,10 @@ const Session: React.FC<{ session: PartialSession; gridColumn: string }> = ({
     <MyLink
       key={session.title}
       to={"/sessions/" + session.key}
-      className="slot"
+      className="slot session"
       style={{
         gridColumn,
         gridRow: slotToRow(session.slot),
-        background: "red",
       }}
     >
       <SessionInfo session={session} />
@@ -116,11 +114,11 @@ const Session: React.FC<{ session: PartialSession; gridColumn: string }> = ({
 const SessionInfo: React.FC<{ session: PartialSession }> = ({ session }) => {
   return (
     <div className="session-info">
-      <div className="session-info-top">
-        <span className=".session-title">{session.title}</span>
+      <span className="session-title">{session.title}</span>
+      <div className="session-info-bottom">
         <Tags tags={session.tags} />
+        <Speakers speakers={session.speakers} />
       </div>
-      <Speakers speakers={session.speakers} />
     </div>
   );
 };

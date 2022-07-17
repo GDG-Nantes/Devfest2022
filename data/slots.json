@@ -51,7 +51,8 @@
       "type": "break",
       "display": {
         "row": 7,
-        "size": 1
+        "size": 1,
+        "notForCodelab": true
       }
     },
     {
@@ -96,7 +97,8 @@
       "type": "break",
       "display": {
         "row": 14,
-        "size": 1
+        "size": 1,
+        "notForCodelab": true
       }
     },
     {
@@ -141,7 +143,8 @@
       "type": "break",
       "display": {
         "row": 20,
-        "size": 1
+        "size": 1,
+        "notForCodelab": true
       }
     },
     {
@@ -159,7 +162,8 @@
       "type": "break",
       "display": {
         "row": 22,
-        "size": 1
+        "size": 1,
+        "notForCodelab": true
       }
     },
     {
@@ -213,7 +217,8 @@
       "type": "break",
       "display": {
         "row": 4,
-        "size": 1
+        "size": 1,
+        "notForCodelab": true
       }
     },
     {
@@ -276,7 +281,8 @@
       "type": "break",
       "display": {
         "row": 14,
-        "size": 1
+        "size": 1,
+        "notForCodelab": true
       }
     },
     {

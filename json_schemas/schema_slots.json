@@ -32,6 +32,9 @@
             },
             "size": {
               "type": "number"
+            },
+            "notForCodelab": {
+              "type": "boolean"
             }
           }
         }
