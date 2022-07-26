@@ -102,5 +102,12 @@ module.exports = {
         path: `./data/`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-remote-images`,
+    //   options: {
+    //     nodeType: "SpeakersYaml",
+    //     imagePath: "photoUrl",
+    //   },
+    // },
   ],
 };

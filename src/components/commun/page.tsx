@@ -7,6 +7,7 @@ export type PageConfig = {
   description?: string;
   background?: string;
   jumbo?: React.FC;
+  noHero?: boolean;
 };
 
 export const DefaultPage: React.FC<PageConfig> = ({
@@ -14,6 +15,7 @@ export const DefaultPage: React.FC<PageConfig> = ({
   title,
   jumbo: JumboContent,
   background,
+  noHero,
 }) => {
   return (
     <main>
@@ -23,8 +25,9 @@ export const DefaultPage: React.FC<PageConfig> = ({
           <JumboContent />
         </Jumbo>
       ) : (
-        <Hero background={background} title={title} />
+        !noHero && <Hero background={background} title={title} />
       )}
+
       {children}
     </main>
   );

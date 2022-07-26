@@ -7,6 +7,7 @@ import "./hero.scss";
 export const Hero: React.FC<{ background?: string; title: string }> = ({
   background,
   title,
+  children,
 }) => {
   const { allFile } = useStaticQuery(graphql`
     query {
@@ -41,6 +42,7 @@ export const Hero: React.FC<{ background?: string; title: string }> = ({
         <Typography variant="h1" color="primary">
           {title}
         </Typography>
+        {children}
       </div>
     </div>
   );

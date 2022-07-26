@@ -69,6 +69,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               companyLogo
               photoUrl
               bio
+              socials {
+                twitter
+                github
+              }
             }
           }
         }
@@ -82,7 +86,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Sessions
   const sessionPageTemplate = path.resolve(
-    "src/components/sessionPageTemplate.tsx"
+    "src/components/session/sessionPageTemplate.tsx"
   );
   data.allSessionsYaml.edges.forEach(({ node: session }) => {
     const path = "sessions/" + session.key;
@@ -97,7 +101,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Speakers
   const speakerPageTemplate = path.resolve(
-    "src/components/speakerPageTemplate.tsx"
+    "src/components/speaker/speakerPageTemplate.tsx"
   );
   data.allSpeakersYaml.edges.forEach(({ node: speaker }) => {
     const path = "speakers/" + speaker.key;

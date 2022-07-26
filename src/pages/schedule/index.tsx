@@ -15,7 +15,7 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
 
   return (
     <Layout>
-      <DefaultPage title={t("name")} background="back-2">
+      <DefaultPage title={t("name")} background="back-5">
         <PrimarySection slim>
           <Stack
             direction="row"

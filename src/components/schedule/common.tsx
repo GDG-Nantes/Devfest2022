@@ -41,6 +41,7 @@ export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
           label={tagLabels[tag]}
           variant="outlined"
           size="small"
+          color="primary"
         />
       ))}
     </div>
@@ -90,16 +91,20 @@ export const Speakers: React.FC<{ speakers: string[] }> = ({ speakers }) => {
   );
 };
 
-export const AvatarSpeaker: React.FC<{ speaker: PartialSpeaker }> = ({
-  speaker,
-}) => (
-  <MyLink to={"/speakers/" + speaker.key}>
-    <Tooltip title={speaker.name}>
-      <Avatar
-        alt={speaker.name}
-        src={speaker.photoUrl}
-        sx={{ width: "24px", height: "24px", margin: "4px 4px" }}
-      />
-    </Tooltip>
-  </MyLink>
-);
+export const AvatarSpeaker: React.FC<{
+  speaker: PartialSpeaker;
+  size?: "small" | "medium" | "large";
+}> = ({ speaker, size = "small" }) => {
+  const sizePx = size == "large" ? "150px" : size == "medium" ? "50px" : "24px";
+  return (
+    <MyLink to={"/speakers/" + speaker.key}>
+      <Tooltip title={speaker.name}>
+        <Avatar
+          alt={speaker.name}
+          src={speaker.photoUrl}
+          sx={{ width: sizePx, height: sizePx, margin: "4px 4px" }}
+        />
+      </Tooltip>
+    </MyLink>
+  );
+};
