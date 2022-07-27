@@ -1,9 +1,6 @@
 import { Card, Stack, Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { remark } from "remark";
-import remarkHtml from "remark-html";
-import remarkPresetLintMarkdownStyleGuide from "remark-preset-lint-markdown-style-guide";
 import { Session } from "../../../json_schemas/interfaces/schema_sessions";
 import {
   Social,
@@ -11,6 +8,7 @@ import {
 } from "../../../json_schemas/interfaces/schema_speakers";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
+import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
 import { PrimarySection, TertiarySection } from "../commun/section/section";
 import { SocialLink } from "../commun/socials/socials";
@@ -41,16 +39,6 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
   const sessions: PartialSession[] = allSessionsYaml.edges
     .filter((edge) => edge.node.speakers.includes(speaker.key))
     .map((e) => e.node);
-
-  let bio = null;
-  remark()
-    .use(remarkPresetLintMarkdownStyleGuide)
-    .use(remarkHtml)
-    .process(speaker.bio)
-    .then((file) => {
-      console.log(file);
-      bio = file;
-    });
 
   return (
     <Layout>
@@ -89,7 +77,7 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
           </Stack>
         </TertiarySection>
         <PrimarySection>
-          <div>{bio}</div>
+          <Markdown content={speaker.bio} />
         </PrimarySection>
       </DefaultPage>
     </Layout>

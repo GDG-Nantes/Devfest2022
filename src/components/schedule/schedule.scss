@@ -87,3 +87,29 @@
     }
   }
 }
+
+.mobile-schedule {
+  .hour {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+  }
+  .slot {
+    height: 80px;
+
+    .session-title {
+      font-size: 13px;
+      text-align: left;
+    }
+    .session-info-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .speakers {
+        margin-left: 10px;
+      }
+    }
+  }
+}

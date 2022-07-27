@@ -1,3 +1,5 @@
+import { Stack, Typography } from "@mui/material";
+import classNames from "classnames";
 import React from "react";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
 import { MyLink } from "../../helpers/links";
@@ -22,7 +24,7 @@ export const MobileSchedule: React.FC<{
   });
 
   return (
-    <div>
+    <Stack direction="column" spacing={2} className="mobile-schedule">
       {hours.map((hour) => {
         return (
           <React.Fragment key={hour}>
@@ -36,16 +38,18 @@ export const MobileSchedule: React.FC<{
           </React.Fragment>
         );
       })}
-    </div>
+    </Stack>
   );
 };
 
 const Hour: React.FC<{ hour: string }> = ({ hour }) => (
-  <div className="hour">{hour}</div>
+  <div className="hour">
+    <Typography variant="h3">{hour}</Typography>
+  </div>
 );
 
 const FixedSlot: React.FC<{ slot: Slot }> = ({ slot }) => (
-  <div className="slot">{slot.type}</div>
+  <div className={classNames("slot", "fixed", slot.type)}>{slot.type}</div>
 );
 
 const Session: React.FC<{ session: PartialSession }> = ({ session }) => {
@@ -53,7 +57,7 @@ const Session: React.FC<{ session: PartialSession }> = ({ session }) => {
     <MyLink
       key={session.title}
       to={"/sessions/" + session.key}
-      className="slot"
+      className="slot session"
     >
       <SessionInfo session={session} />
     </MyLink>
@@ -63,12 +67,11 @@ const Session: React.FC<{ session: PartialSession }> = ({ session }) => {
 const SessionInfo: React.FC<{ session: PartialSession }> = ({ session }) => {
   return (
     <div className="session-info">
-      <div className="session-info-top">
-        <span className=".session-title">{session.title}</span>
+      <span className="session-title">{session.title}</span>
+      <Stack spacing={2} className="session-info-bottom">
         <Tags tags={session.tags} />
-        {session.room}
-      </div>
-      <Speakers speakers={session.speakers} />
+        <Speakers speakers={session.speakers} />
+      </Stack>
     </div>
   );
 };
