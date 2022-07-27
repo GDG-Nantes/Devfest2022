@@ -1,0 +1,15 @@
+---
+key: simple_jstures_can_go_a_long_way
+title: Simple JStures can go a long way
+language: English
+talkType: conference
+tags:
+  - web
+complexity: Intermediate
+speakers:
+  - charlie_gerard
+slot: day-1-conference-1
+room: Jules Verne
+abstract: |
+  When talking about devices that use motion detection, what usually comes to mind is sensors that trigger lights or alarms but rarely anything more than that. However, the human body can execute a lot more complex gestures that are not detected by these systems.
+  What if I told you, you could build interactive applications using personalized motion detection in a few lines of JavaScript code?! In this talk, I’ll show you how building such a system doesn’t have to be as complicated as it sounds!

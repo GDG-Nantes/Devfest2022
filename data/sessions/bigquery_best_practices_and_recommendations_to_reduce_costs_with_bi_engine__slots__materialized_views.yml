@@ -1,0 +1,14 @@
+---
+key: bigquery_best_practices_and_recommendations_to_reduce_costs_with_bi_engine__slots__materialized_views
+title: BigQuery best practices and recommendations to reduce costs with BI Engine, Slots, Materialized Views
+language: English
+talkType: conference
+tags:
+  - bigdata_ai
+complexity: Intermediate
+speakers:
+  - marton_kodok
+slot: day-2-conference-3
+room: Tour de Bretagne
+abstract: |
+  This session will deliver best practices and recommendations for tuning BI Engine for your existing BigQuery workloads for cheaper and faster queries. Learn how we at REEA are orchestrating BI Engine reservations, on a 5TB dataset, considered small for BigQuery but with big cost savings and accelerated queries. We are seeing many presentations for big enterprises, but now we are showcasing how our queries perform better with lower costs. We are going to address the top considerations when to turn on BI Engine, how to use cloud orchestration for making this an automatic process, and combined with BigQuery and Datastudio query complexity that might save precious development time, lower bills, faster queries.

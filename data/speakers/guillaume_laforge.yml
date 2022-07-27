@@ -1,0 +1,13 @@
+---
+key: guillaume_laforge
+name: Guillaume Laforge
+feature: false
+company: Google
+companyLogo: /images/partners/google.png
+city: Paris, France
+photoUrl: https://lh6.googleusercontent.com/-q2nbAhzprxo/AAAAAAAAAAI/AAAAAAAAL6g/rLd0hunWYhg/photo.jpg
+socials:
+  twitter: glaforge
+  github: glaforge
+bio: |-
+  Guillaume Laforge est Developer Advocate chez Google et se focalise en particulier sur l'offre Google Cloud Platform. Et la nuit, il enfile sa casquette Apache Groovy !

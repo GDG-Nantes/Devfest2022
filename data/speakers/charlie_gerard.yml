@@ -1,0 +1,13 @@
+---
+key: charlie_gerard
+name: Charlie Gerard
+feature: true
+company: Stripe
+companyLogo: /images/partners/stripe.png
+city: Seattle
+photoUrl: https://avatars.githubusercontent.com/u/5985247?v=4
+socials:
+  twitter: devdevcharlie
+  github: charliegerard
+bio: |-
+  Senior developer advocate at Stripe. Also GoogleDevExpert and author 📗. Very much into creative technology and HCI, mostly in JavaScript.

@@ -1,0 +1,14 @@
+---
+key: mete_atamel
+name: Mete Atamel
+feature: false
+company: Google
+companyLogo: /images/partners/google.png
+city: London, UK
+photoUrl: https://atamel.dev/img/mete-512.jpg
+socials:
+  twitter: meteatamel
+  github: meteatamel
+bio: |+
+  Mete is a Developer Advocate at Google, focused on helping developers with Google Cloud. As a long-time Java and C# developer, he likes to compare the two ecosystems. Prior to Google, he worked at Microsoft, Skype, Adobe, EMC, and Nokia building apps and services on various web, mobile and cloud platforms. Originally from the island of Cyprus, he currently lives in Greenwich of London, not too far away from the prime meridian.
+

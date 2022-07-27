@@ -42,6 +42,7 @@ export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
           variant="outlined"
           size="small"
           color="primary"
+          sx={{ fontSize: "10px" }}
         />
       ))}
     </div>

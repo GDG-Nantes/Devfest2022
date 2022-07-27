@@ -1,0 +1,17 @@
+---
+key: marton_kodok
+name: Marton Kodok
+feature: false
+company: REEA.net
+companyLogo: /images/partners/reea_net.png
+city: Târgu Mureș, Romania
+photoUrl: https://lh4.googleusercontent.com/-zHuP1iWEDI8/AAAAAAAAAAI/AAAAAAABdts/1S_KVVRrcg0/photo.jpg
+socials:
+  twitter: martonkodok
+  github: pentium10
+bio: |-
+  Márton is a Google Developer Expert(GDE) On Cloud, top user on Stackoverflow with 186k reputation, software developer, international speaker & passionate about mountain hiking.
+
+  Active contributor for open-source solutions like Beanstalkd console, and Riak admin interface. Expert in Cloud Technologies, Scalability, HA, Serverless, database systems like Google BigQuery, Redis, MySQL, Elasticsearch. Mentor and consultant for startups.
+
+  For my updated speaker bio visit: https://kodokmarton.com/speaker/
