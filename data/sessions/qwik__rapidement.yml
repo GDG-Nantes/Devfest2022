@@ -1,0 +1,21 @@
+---
+key: qwik__rapidement
+title: Qwik, rapidement
+language: French
+talkType: quickie
+tags:
+  - discovery
+complexity: Intermediate
+speakers:
+  - benjamin_legrand
+slot: day-2-quickie-2
+room: Jules Verne
+abstract: |+
+  Qwik, par le créateur d'angular, est un nouveau venu dans la jungle des frameworks javascript
+
+  Ses performances sont très impressionnantes, car il fait le pari de miser sur le HTML d'abord.
+
+  Dans ce qwikie  ;) , on verra pourquoi ca fonctionne, et comment. 
+
+  Et est ce que Qwik est au niveau de ses concurrents ?
+

@@ -1,0 +1,18 @@
+---
+key: conception_de_language___communiquer_avec_la_machine
+title: "Conception de language : communiquer avec la machine"
+language: French
+talkType: quickie
+tags:
+  - languages
+complexity: Beginner
+speakers:
+  - monsieurbadia
+slot: day-2-quickie-2
+room: Bellem
+abstract: |-
+  parser, tranformer, transpiler, compiler ou encore analyser sont les fers de lance pour construire un compilateur. Mais qu'est-ce qu'un compilateur ? Grosso modo ce n'est rien d'autre qu'un traducteur.
+
+  Longtemps laissé pour compte dans le paysage front le compilateur fait son retour dans l'écosystème des frameworks modernes. Par exemple, la stack de l'excellent framework Svelte est basée sur un compilateur. L'idée de ce talk est de voir ensemble les différents modules qui composent la stack d'un compilateur. Pour ensuite pouvoir être capable de créer le notre en Rust from scratch avec zero dépendances *(pas de Bison, pas de Flex).* En soi, le langage d'implémentation n'est pas important. Ce qui nous importe, c'est la sémantique et être capable de traduire un langage donné vers un langage cible. Pour notre cas, nous traduirons un langage A vers l'assemblage web *(WebAssembly).*
+
+  Ainsi, notre compilateur produira un programme sûr et optimisé pour le web. Si tu es intéressé par le turfu, ou plutôt curieux de comprendre le fonctionnement des frameworks modernes à l'instar de Svelte. Ce talk éclairera tes zones d'ombres et te donnera le bagage technique pour te permettre de créer ton propre compilateur avec le langage de ton choix.

@@ -1,0 +1,18 @@
+---
+key: serverless___eviter_le_vendor_locking_en_construisant_sa_propre_plateforme_faas_grace_a_openfaas_et_kubernetes
+title: "Serverless : Éviter le vendor locking en construisant sa propre plateforme FaaS grâce à OpenFaaS et Kubernetes"
+language: French
+talkType: codelab
+tags:
+  - cloud_devops
+complexity: Advanced
+speakers:
+  - katia_himeur
+slot: day-1-codelab-3
+room: Hangar
+abstract: |-
+  Le serverless permet d’exécuter des applications sans avoir à gérer de serveurs. Le “Function as a Service” ou FaaS est un modèle d’exécution qui consiste à considérer ses applications comme des fonctions dans un environnement serverless. 
+
+  Les offres managées FaaS font parties des services de base que proposent la grande majorité des fournisseurs cloud. D’un fournisseur à un autre, la manière d’utiliser ces services est différente, augmentant le vendor locking.
+
+  Au travers cet atelier, nous allons voir comment il est possible de créer sa propre plateforme FaaS dans Kubernetes avec OpenFaaS. Favorisant ainsi la réversibilité et facilitant les tests dès le poste du développeur.

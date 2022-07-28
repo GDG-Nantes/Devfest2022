@@ -1,0 +1,28 @@
+---
+key: liberez__delivrez__webassembly_du_navigateur_____avec_wasi
+title: Libérez, délivrez  WebAssembly du navigateur ... Avec WASI
+language: French
+talkType: conference
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - philippe_charriere
+slot: day-2-conference-5
+room: Tour de Bretagne
+abstract: |+
+  Vous avez les paroles ?  Désolé 😉
+
+  On a commencé à entendre parler de WebAssembly aux alentours de 2015 (une sorte de bytecode optimisé qui peut s'exécuter dans un navigateur pour apporter des supers pouvoirs à JavaScript - Et vous pouvez coder ça avec du Rust, Go, Swift, ...). L'intégration de Wasm (le petit nom de WebAssembly) avec la VM JavaScript est plutôt complète (on peut déjà faire de belles choses et les mettre en production). Rapidement (plus ou moins) il est apparu que Wasm présentait de l'intérêt pour d'autres cas d'usages (FaaS, UDF, plugins, ...). Donc en 2019, c'est la naissance de la spécification WASI : WebAssembly System Interface, ou comment "exécuter du Wasm" en dehors d'un navigateur.
+
+  Ce talk comportera 2 parties:
+
+  - Une "petite" partie : une introduction à WASI avec ses qualités et ses faiblesses, les perspectives
+  - Une "plus grosse partie" :  des démonstrations avec différents langages (Rust, Go, C#, AssemblyScript, Swift, ...) et différents outils pour par exemple faire des services Wasm (Suborbital, Spin, ...)  et une CLI en Go avec des plugins Wasm.
+
+  L'objectif est de vous donner tous les éléments nécessaires pour vous y mettre par vous même. Je fournirais donc tous les environnements avec les toolchains préinstallées utilisable dans Gitpod mais aussi Docker avec VSCode.
+
+
+
+
+

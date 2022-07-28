@@ -1,0 +1,21 @@
+---
+key: franceconnect_pour_authentifier_vos_utilisateurs__
+title: FranceConnect pour authentifier vos utilisateurs ?
+language: French
+talkType: quickie
+tags:
+  - discovery
+complexity: Beginner
+speakers:
+  - david_batiot
+  - sophie_luzin
+slot: day-2-quickie-1
+room: Tour de Bretagne
+abstract: |
+  Vous avez tous utilisé FranceConnect pour vos démarches administratives.  
+  Depuis 2020, nous le proposons pour s’authentifier sur notre espace assuré cbp4you.fr.
+
+  Pourquoi une société privée a-t-elle voulu utiliser FranceConnect ?  
+  Quelle est la différence avec les providers OpenID Connect des GAFAM ?  
+  Comment réconcilier les données FranceConnect dans son écosystème ?  
+  Nous vous partagerons ce retour d’expérience et celui de nos utilisateurs.

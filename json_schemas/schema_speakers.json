@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "speaker",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["key", "name", "feature", "socials"],
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "feature": {
+      "type": "boolean"
+    },
+    "city": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "companyLogo": {
+      "type": "string"
+    },
+    "photoUrl": {
+      "type": "string"
+    },
+    "socials": {
+      "$ref": "#/definitions/social"
+    },
+    "bio": {
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "social": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "twitter": {
+          "type": "string"
+        },
+        "linkedin": {
+          "type": "string"
+        },
+        "github": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

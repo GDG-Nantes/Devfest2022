@@ -19,27 +19,25 @@ const components = {
   Youtube,
 };
 
+export const mdxComponents = {
+  // Map HTML element tag to React component
+  h1: ({ children }) => <Typography variant="h1">{children}</Typography>,
+  h2: ({ children }) => <Typography variant="h2">{children}</Typography>,
+  h3: ({ children }) => <Typography variant="h3">{children}</Typography>,
+  h4: ({ children }) => <Typography variant="h4">{children}</Typography>,
+  h5: ({ children }) => <Typography variant="h5">{children}</Typography>,
+  h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
+  p: ({ children }) => <Typography>{children}</Typography>,
+  a: ({ href, children, ...props }) => (
+    <MyLink to={href} {...props}>
+      {children}
+    </MyLink>
+  ),
+  ...components,
+};
+
 export const CustomMDXProvider: React.FC = ({ children }) => (
-  <MDXProvider
-    components={{
-      // Map HTML element tag to React component
-      h1: ({ children }) => <Typography variant="h1">{children}</Typography>,
-      h2: ({ children }) => <Typography variant="h2">{children}</Typography>,
-      h3: ({ children }) => <Typography variant="h3">{children}</Typography>,
-      h4: ({ children }) => <Typography variant="h4">{children}</Typography>,
-      h5: ({ children }) => <Typography variant="h5">{children}</Typography>,
-      h6: ({ children }) => <Typography variant="h6">{children}</Typography>,
-      p: ({ children }) => <Typography>{children}</Typography>,
-      a: ({ href, children, ...props }) => (
-        <MyLink to={href} {...props}>
-          {children}
-        </MyLink>
-      ),
-      ...components,
-    }}
-  >
-    {children}
-  </MDXProvider>
+  <MDXProvider components={mdxComponents}>{children}</MDXProvider>
 );
 
 const MDXPageLayout: React.FC<{ metadata?: PageConfig }> = ({

@@ -1,0 +1,18 @@
+---
+key: cloud_seed_____le_voyage_extraordinaire_promis_par_gitlab_pour_deployer_rapidement_votre_application_sur_gcp
+title: Cloud Seed 🌱- le voyage extraordinaire promis par GitLab pour déployer rapidement votre application sur GCP
+language: French
+talkType: quickie
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - jean_phi_baconnais
+slot: day-2-quickie-2
+room: Titan
+abstract: |-
+  Le déploiement de nos applications sur un provider Cloud ne devrait pas être une étape compliquée.
+
+  C’est dans ce sens que les équipes d’incubation de GitLab ont initié un nouveau projet : Cloud Seed 🌱. Cette expérimentation basée sur des templates de GitLab CI vous permet de déployer, pour le moment, vos applications rapidement avec Cloud Run. 
+
+  Dans ce talk, je vous présenterai cette nouvelle expérimentation et vous ferai un état des lieux des fonctionnalités à venir.

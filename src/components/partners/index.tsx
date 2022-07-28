@@ -4,8 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-//@ts-ignore
-import partners from "../../../data/partners.yml";
+import partners from "../../../data/partners.json";
 import { Partners as IPartners } from "../../../json_schemas/interfaces/schema_partners";
 import { MyLink } from "../../helpers/links";
 import { TertiarySection } from "../commun/section/section";

@@ -1,0 +1,22 @@
+---
+key: la_programmation_dynamique_pour_sauver_jules_verne
+title: La programmation dynamique pour sauver Jules Verne
+language: French
+talkType: conference
+tags:
+  - discovery
+complexity: Beginner
+speakers:
+  - eleouet_gaetan
+slot: day-1-conference-5
+room: Tour de Bretagne
+abstract: |-
+  Rien n'a voir avec la programmation orientée objet ou la programmation fonctionnelle, la programmation dynamique est une famille d'algorithme.
+
+  De la terre à la lune ont été cartographiée des micro-météorites, la carte présente dans un quadrillage, la terre en bas à gauche et la lune en haut en droite, l'obus se dirige au plus court, soit vers le haut, soit vers la droite. Quel est le plus petit nombre de météorites que l'on risque de rencontrer ?
+
+  Le nautilus descend vers les profondeurs, à chaque minutes, le capitaine Nemo peut changer son allure, pour descendre 1, 2 ou 3 lieu. De combien de façons différentes peut-il descendre jusqu'à 20000 lieux ?
+
+  Pour fêter Jules Verne, je souhaitais disposer ses livres sur des grandes tables. Les livres sont identiques de tous les côtés et font 10cm par 20cm, les tables sont disposées en un grand rectangle de 1m par 20m, de combien de façons possibles puis-je disposer mes livres ?
+
+  Si cela t'intéresse de résoudre ces problèmes, et même mieux de comprendre ce qui se cache derrière la programmation dynamique, cette conférence est faite pour toi

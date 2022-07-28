@@ -6,7 +6,7 @@ import {
   Twitter,
   YouTube,
 } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import React from "react";
 import { MyLink } from "../../../helpers/links";
 
@@ -17,7 +17,18 @@ export type SocialData =
     }
   | { type: "website"; url: string };
 
-export const SocialLink = (social: SocialData) => {
+export const SocialLink: React.FC<
+  SocialData & {
+    withLogin?: boolean;
+  }
+> = ({ withLogin, ...social }) => {
+  if (
+    (social.type != "website" && social.login == null) ||
+    (social.type == "website" && social.url == null)
+  ) {
+    return null;
+  }
+
   let icon;
   let url;
 
@@ -43,7 +54,22 @@ export const SocialLink = (social: SocialData) => {
 
   return (
     <MyLink to={url} aria-label={social.type}>
-      <IconButton aria-label={social.type}>{icon}</IconButton>
+      {withLogin ? (
+        <Button
+          variant="text"
+          sx={{ color: "var(--primary-dark)" }}
+          size="small"
+          startIcon={
+            <IconButton aria-label={social.type} color="inherit">
+              {icon}
+            </IconButton>
+          }
+        >
+          {social.type != "website" && social.login}
+        </Button>
+      ) : (
+        <IconButton aria-label={social.type}>{icon}</IconButton>
+      )}
     </MyLink>
   );
 };

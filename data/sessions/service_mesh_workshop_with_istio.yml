@@ -1,0 +1,15 @@
+---
+key: service_mesh_workshop_with_istio
+title: Service Mesh Workshop with Istio
+language: English
+talkType: codelab
+tags:
+  - cloud_devops
+complexity: Intermediate
+speakers:
+  - abdellfetah_sghiouar
+slot: day-2-codelab-2
+room: L'Atelier
+abstract: |+
+  Service Mesh is becoming a key component in Cloud Native world. It allows dev and Ops teams to connect, secure, and observe applications without mixing business logic with infrastructure concerns. This way teams can focus on delivering value, letting the mesh does all the complex non-functional work like service discovery, load balancing, encryption, authentication, authorization, support for the circuit breaker pattern, and other capabilities. Istio is one of the major Open Source Service Mesh options available today. In this workshop, you will have an opportunity to deploy and try some of the key concepts of Istio. We will provide you with a Cloud Environment and all the tools and guidance needed to get your hands dirty with Istio
+

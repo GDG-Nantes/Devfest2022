@@ -1,8 +1,22 @@
 {
   "yaml.schemas": {
-    "json_schemas/schema_team.json": "data/team.yml",
-    "json_schemas/schema_partners.json": "data/partners.yml"
+    "json_schemas/schema_sessions.json": "data/sessions/*.yml",
+    "json_schemas/schema_speakers.json": "data/speakers/*.yml"
   },
+  "json.schemas": [
+    {
+      "fileMatch": ["data/team.json"],
+      "url": "./json_schemas/schema_team.json"
+    },
+    {
+      "fileMatch": ["data/partners.json"],
+      "url": "./json_schemas/schema_partners.json"
+    },
+    {
+      "fileMatch": ["data/slots.json"],
+      "url": "./json_schemas/schema_slots.json"
+    }
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.organizeImports": true

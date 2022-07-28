@@ -1,0 +1,22 @@
+---
+key: le_gitops_dont_vous_etes_le_heros
+title: Le GitOps dont vous êtes le héros
+language: French
+talkType: conference
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - louis_tournayre
+slot: day-1-conference-4
+room: Bellem
+abstract: |-
+  Dans le vaste royaume de Kubernetes, notre application est en péril. Les bugs et les besoins utilisateurs non couverts sont en train d’épuiser la patience du métier. Les correctifs et nouvelles fonctionnalités seront-ils déployés à temps pour sauver l’Application ? Si le processus de livraison ne s’améliore pas, les utilisateurs vont déserter l’Application et ce sera sa fin.
+
+  À vous, public, de devenir le héros qui va sauver l’Application en embrassant la voie du GitOps.
+
+  Cette ~~présentation~~ aventure sera interactive ! Vos choix vous permettront d’arriver ou pas en production dans les temps. Dans ce premier tome de cette saga, vous allez apprendre ce qu’est GitOps, vous choisirez votre solution et la mettrez en œuvre. Préparez-vous à des démonstrations basées sur vos choix, vous apprendrez de vos erreurs comme de vos succès, et peut être arriverez vous à temps en production.  
+  ___
+  *4ème de couverture :  
+  Cette conférence est destinée aux aventuriers de tous niveaux, curieux de découvrir l’approche GitOps qui traite de l'automatisation et du "versionnement" des déploiements des applications.  
+  Le seul prérequis est l’envie d’apprendre en s’amusant. Quelques bases sur kubernetes peuvent aider mais ce n'est pas essentiel.*

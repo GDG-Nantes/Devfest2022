@@ -1,0 +1,15 @@
+---
+key: entreprise_agile_et_sans_chef___l_atelier
+title: "Entreprise agile et sans chef : l'atelier"
+language: French
+talkType: codelab
+tags:
+  - discovery
+complexity: Beginner
+speakers:
+  - benjamin_casseron
+  - cecile_staehle
+  - godefroy
+slot: day-1-codelab-2
+room: L'Atelier
+abstract: "Recrutement, investissement, choix d’un prestataire, attribution des tâches, licenciement : découvrez comment embarquer les équipes (tech/support/produit/etc.) dans la vie d'une entreprise collaborative, en gouvernance partagée."

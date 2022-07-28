@@ -20,8 +20,12 @@
     padding: 2rem 10vw;
   }
 
-  &.noPadding {
+  &.padding-none {
     padding: 1rem 1rem;
+  }
+
+  &.padding-small {
+    padding: 2rem 5vw;
   }
 
   &.primary {

@@ -1,0 +1,21 @@
+---
+key: oh_crab___my_watch_speaks_rust___
+title: Oh crab ! My watch speaks Rust 🦀
+language: French
+talkType: conference
+tags:
+  - mobile_iot
+complexity: Intermediate
+speakers:
+  - pierre_yves_aillet
+slot: day-1-conference-5
+room: Bellem
+abstract: |+
+  Lorsqu'on parle d'IoT, on a tous à l'esprit l'Arduino, les puces WiFi ESP...
+  Et en général, on les programmes en hybride C/C++.
+
+  Par nostalgie, j'aime beaucoup le C, mais je me suis demandé si on ne pouvait pas utiliser des langages plus modernes...
+
+  Lors de ce talk je vous présenterai ma découverte de la T-Watch 2020 et mes tentatives pour la programmer en Rust.
+  Ce sera aussi l'occasion de découvrir l'éco-système Rust existant autour de l'embarqué et les avantages qu'apporte le langage dans ce contexte particulier.
+

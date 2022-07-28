@@ -1,0 +1,17 @@
+---
+key: cassons_des_tokens_jwt
+title: Cassons des tokens JWT
+language: French
+talkType: codelab
+tags:
+  - security
+complexity: Beginner
+speakers:
+  - benjamin_merieau
+  - jean_verrons
+slot: day-2-codelab-2
+room: Les Machines
+abstract: |-
+  Vous connaissez tous, ou avez déjà entendu parler des tokens JWT (JSON Web Token). Ils sont souvent utilisés dans le cas de partage d’information entre deux ou plusieurs entités ( par exemple entre un Serveur et un Client).
+  Cependant, connaissez-vous vraiment leurs entrailles ? Pourquoi certaines informations sont-elles présentes ? Que se passerait-il si vous les oubliez ?
+  Après avoir détaillé la structure d'un token JWT, nous verrons étape par étape quelles sont les attaques possibles sur des tokens JWT et comment les implémenter. Vérification de la signature, clé publique, secret faible ou encore révocation de token sont autant de notions que nous aborderons dans ce TP guidé. Au cours de ces différents exercices nous verrons également quelles sont les bonnes pratiques en termes de sécurité lorsque l'on utilise des tokens JWT.

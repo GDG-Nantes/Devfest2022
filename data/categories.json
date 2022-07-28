@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "mobile_iot",
+      "label": "📱 Mobile & IoT"
+    },
+    {
+      "id": "web",
+      "label": "🌍 Web"
+    },
+    {
+      "id": "discovery",
+      "label": "💡 Discovery"
+    },
+    {
+      "id": "cloud_devops",
+      "label": "☁️ Cloud & DevOps"
+    },
+    {
+      "id": "languages",
+      "label": "📝 Languages"
+    },
+    {
+      "id": "bigdata_ai",
+      "label": "🤖 BigData & AI"
+    },
+    {
+      "id": "security",
+      "label": "🐱‍💻 SECURITY"
+    },
+    {
+      "id": "ux_ui",
+      "label": "💚 UX / UI"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+---
+key: dall_e_v2____un_robot_et_un_peintre_font_de_la_generation_d_image_par_ia_
+title: "DALL-E V2 -  un robot et un peintre font de la génération d'image par IA "
+language: French
+talkType: conference
+tags:
+  - bigdata_ai
+complexity: Intermediate
+speakers:
+  - olivier_mertens
+slot: day-1-conference-3
+room: Jules Verne
+abstract: |
+  ### Cela commence comme une histoire drôle 
+
+  En lisant le titre on peut se dire que les  moustaches se frisent ( quoi tu connais pas *Dali* ? ) 
+  Qu'a pu inventer ce cher petit robot ramasseur ? a -t'il vu un astronaute chevaucher un cheval blanc dans l'espace ?
+
+  *DALL-E*  **v2** est une technologie *open AI* où l'on peut d'une simple phrase ( en natural language ) :
+  - créer une image à la volée avec des éléments générés
+  - éditer une photo existante avec des éléments supplémentaires ou la modifier selon votre demande 
+  - faire des variations d'une image à la volée suivant son bon vouloir
+
+  Une chose est sûre avec DALL-E votre imagination débordante peut se lâcher ! 
+
+  ### Au revoir GIMP , Photoshop et les créatifs ?
+
+  Sous cet aspect fun, cet outil permet de comprendre comment l'IA interprète et analyse nos demandes.
+
+  En démontrant ses capacités, son fonctionnement et réfléchir à des possibles usages pour celle-ci.
+
+  Par exemple comment son modèle utilise des biais imposés, gère les stéréotypes éventuels et ses hypothèses de compréhension par rapport à sa technique d'apprentissage.
+
+  Et pour alimenter le petit rabot facétieux, on générera un tas d'image suivant avec des phrases aléatoires.

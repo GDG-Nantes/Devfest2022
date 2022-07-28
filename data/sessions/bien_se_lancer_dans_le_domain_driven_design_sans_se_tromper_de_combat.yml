@@ -1,0 +1,18 @@
+---
+key: bien_se_lancer_dans_le_domain_driven_design_sans_se_tromper_de_combat
+title: Bien se lancer dans le Domain Driven Design sans se tromper de combat
+language: French
+talkType: conference
+tags:
+  - discovery
+complexity: Beginner
+speakers:
+  - josian_chevalier
+slot: day-2-conference-5
+room: Titan
+abstract: |-
+  Le Domain Driven Design est sur toutes les lèvres. Silver bullet ultime, distributeur à buzzwords, à croire que si à ta troisième levée de fonds tu ne fais pas du DDD, t’as raté ta start up. Mais par quoi commencer pour en tirer de la valeur rapidement ?
+
+  Et si la réponse n’était pas dans ses agrégats, value-objects, domain events et autres patterns tactiques populaires mais plutôt dans compréhension du métier ? Cela tombe bien car le DDD offre des outils qui permettent de s’approprier le métier afin de le modéliser correctement. 
+
+  Découvrons ensemble les patterns stratégiques - la partie la plus importante du Domain-Driven Design  - qui vous offriront de meilleurs retours sur investissement. Cela vous permettra d’adopter en douceur cette philosophie, loin de la hype et des difficultés techniques.

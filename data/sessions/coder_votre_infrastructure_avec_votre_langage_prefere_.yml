@@ -1,0 +1,19 @@
+---
+key: coder_votre_infrastructure_avec_votre_langage_prefere_
+title: Coder votre infrastructure avec votre langage préféré!
+language: French
+talkType: codelab
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - francois_bouteruche
+  - olivier_leplus
+slot: day-1-codelab-2
+room: Les Machines
+abstract: |
+  Pulumi et l'AWS Cloud Developement Kit (AWS CDK) ont ouvert une nouvelle ère pour l'infrastructure-as-code. Jusqu’à maintenant, nous utilisions principalement des langages déclaratifs pour décrire les ressources d'infrastructure dont nous avions besoin. Cela permet d'automatiser complètement le déploiement de l'infrastructure et de rendre celui-ci répétable de manière consistante à l'envie. Cependant, tester ces modèles d’infrastructure sans déployer s’avère complexe, les décomposer en module réutilisable est fastidieux et l’auto-complétion dans les IDE est pauvre.
+
+  Pulumi et AWS CDK amène à l’infrastructure-as-code à un nouveau niveau en permettant aux développeurs d’utiliser leur langage de programmation favori pour développer, tester et déployer leur infrastructure. Ils peuvent exploiter toute la puissance d’abstraction de leur langage, créer facilement des packages réutilisables et bénéficier d’une auto-complétion performante.
+
+  Dans ce workshop, vous allez coder votre première infrastructure-as-code avec un des 4 langages proposés : TypeScript, Java, Python ou C#.

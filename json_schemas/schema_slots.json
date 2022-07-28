@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "slots",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "slots": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/slot" }
+    }
+  },
+  "definitions": {
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "start": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/slotTypes"
+        },
+        "display": {
+          "type": "object",
+          "required": ["row", "size"],
+          "properties": {
+            "row": {
+              "type": "number"
+            },
+            "size": {
+              "type": "number"
+            },
+            "notForCodelab": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "required": ["key", "start", "type", "display"]
+    },
+    "slotTypes": {
+      "type": "string",
+      "enum": [
+        "opening",
+        "keynote",
+        "lunch",
+        "break",
+        "quickie",
+        "conference",
+        "codelab",
+        "party"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "slots",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schedules": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/schedule" }
+    }
+  },
+  "definitions": {
+    "schedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "day": {
+          "type": "string"
+        },
+        "rooms": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/room" }
+        }
+      },
+      "required": ["day", "rooms"]
+    },
+    "room": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "room": {
+          "type": "string",
+          "enum": [
+            "Jules Verne",
+            "Titan",
+            "Bellem",
+            "Tour de Bretagne",
+            "Les Machines",
+            "Hangar",
+            "L'Atelier"
+          ]
+        },
+        "slots": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/roomSlot" }
+        }
+      },
+      "required": ["room", "slots"]
+    },
+    "roomSlot": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "type": "string"
+        },
+        "talk": {
+          "type": "string"
+        }
+      },
+      "required": ["slot", "talk"]
+    }
+  }
+}

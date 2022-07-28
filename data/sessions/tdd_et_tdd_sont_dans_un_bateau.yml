@@ -1,0 +1,29 @@
+---
+key: tdd_et_tdd_sont_dans_un_bateau
+title: TDD et TDD sont dans un bateau
+language: French
+talkType: conference
+tags:
+  - languages
+complexity: Intermediate
+speakers:
+  - arnaud_bailly
+slot: day-2-conference-4
+room: Bellem
+abstract: |-
+  Cette session est une introduction par la pratique à l’utilisation des systèmes de types fonctionnels “avancés”, tels qu’on peut les trouver dans des langages comme Haskell, OCaml ou Idris, pour modéliser et coder des problèmes concrets complexes de manière plus sûre et compacte. À partir d’un exemple relativement complexe mais très concret, le numéro de sécurité sociale et sa vérification, je présente différentes approches pour développer une implémentation qui soit la plus sûr et la plus expressive possible : tests de propriétés, tests de mutations, types de données algébriques et types dépendants sont au programme. Bien que le code présenté soit en Haskell, cette session devrait donner aux participants des idées et concepts transposables dans leur environnement technique particulier.
+
+  Le Test-Driven Development ou TDD est une pratique essentielle pour faire croître du logiciel de manière incrémentale et sûre. Mais le mot "Test" dans TDD est trompeur : il n'est pas tant question de _tester_ que de guider le développement en définissant des micro-objectifs, des exemples, automatiquement vérifiés. 
+
+  Si les exemples sont nécessaires pour comprendre un problème, ils présentent quelques inconvénients :
+
+  * leur énumération est quelque peu fastidieuse, répétitive, verbeuse et parfois difficile à relier au problème que l'on cherche à résoudre ;
+  * ils ne sont pas suffisants pour s'assurer que la solution produite est robuste.
+
+  Cette session se veut une introduction à différentes autres approches pour guider le développement :
+
+  * utiliser un système de types plus _précis_ pour "rendre les états impossibles non représentables" afin de réduire l'espace à explorer (donc à tester) ;
+  * définir des _propriétés_ automatiquement vérifiées, ie. le _Property-Based Testing_, pour guider le développement et accroître la confiance dans le code produit ;
+  * utiliser des _mutations_ pour prendre en défaut du code "naïf" et améliorer sa résilience.
+
+  Je présente ces différentes pratiques en codant en direct un exemple tiré de notre vie quotidienne, la validation d'un numéro de sécurité sociale.

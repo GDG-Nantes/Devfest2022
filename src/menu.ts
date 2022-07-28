@@ -6,6 +6,10 @@ export const MENU: Array<MenuItem> = [
     link: "/",
   },
   {
+    label: "schedule",
+    link: "/schedule",
+  },
+  {
     label: "team",
     link: "/team",
   },

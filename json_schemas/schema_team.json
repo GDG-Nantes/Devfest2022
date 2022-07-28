@@ -30,7 +30,7 @@
           "$ref": "#/definitions/social"
         }
       },
-      "required": ["id", "firstName", "lastName"]
+      "required": ["id", "firstName", "lastName", "socials"]
     },
     "social": {
       "type": "object",

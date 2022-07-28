@@ -1,0 +1,18 @@
+---
+key: des_cloud_events_partout__
+title: Des Cloud Events partout !
+language: French
+talkType: conference
+tags:
+  - cloud_devops
+complexity: Beginner
+speakers:
+  - loic_mathieu
+slot: day-1-conference-1
+room: Titan
+abstract: |-
+  Cloud Events est une spécification d’événement standard pour le cloud. Elle permet de faciliter l'implémentation d'application inter-opérable dans le cloud, en étant agnostique du cloud provider et de la technologie.
+
+  Après une courte introduction sur ce que sont les Cloud Events, je vais vous monter dans une session de live coding comment utiliser les Cloud Events dans une fonction Google Cloud, puis dans une API REST, et enfin dans un composant messaging Kafka. 
+
+  Le tout en Java avec Quarkus naturellement ;) !

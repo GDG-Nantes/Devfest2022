@@ -1,0 +1,22 @@
+---
+key: l_accessibilite__c_est_pas_sorcier__
+title: L'accessibilité, c'est pas sorcier !
+language: French
+talkType: conference
+tags:
+  - mobile_iot
+complexity: Beginner
+speakers:
+  - fanny_demey_pluvinage
+  - gerard_paligot
+slot: day-2-conference-2
+room: Bellem
+abstract: |-
+  Le handicap est l'affaire de tous. Il existe sous différentes formes et touche près d'une personne sur cinq.  Pourtant la plupart des applications mobiles que l'on retrouve sur les stores sont inaccessibles.
+  Fanny (alias Jamy), spécialiste de l'accessibilité, et Gérard (alias Fred), vrai touche à tout, vous invite à bord de leur camion laboratoire pour expérimenter les problématiques d'accessibilité mobile les plus courantes et surtout apprendre ensemble à les résoudre sur Android avec Jetpack Compose. 
+
+  Démonstration, mise en situation, live coding sont au programme.
+
+  Allez Marcel, en route ! 🚚
+
+  *Voix off : Cette emission s'adresse aux développeurs et développeuses Android bien sûr mais également à toute personne curieuse de découvrir comment  utiliser un smartphone quand on est aveugle.*

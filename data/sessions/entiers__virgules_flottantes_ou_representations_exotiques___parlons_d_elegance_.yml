@@ -1,0 +1,17 @@
+---
+key: entiers__virgules_flottantes_ou_representations_exotiques___parlons_d_elegance_
+title: "Entiers, virgules flottantes ou représentations exotiques : parlons d'élégance "
+language: French
+talkType: conference
+tags:
+  - discovery
+complexity: Intermediate
+speakers:
+  - fabien_tregan
+  - olivier_poncet
+slot: day-1-conference-1
+room: Bellem
+abstract: |-
+  Manipuler des nombres dans notre code est un problème à peu près résolu et auquel nous n'accordons plus beaucoup d'importance. Et pourtant ! Prendre le temps de se pencher un peu sur les bases se révèle parfois très intéressant.
+
+  Nous vous proposons de revenir sur ce que signifie « représenter un nombre », pourquoi et comment nous faisons souvent des maths plus ou moins fausses, des concessions et avec plus ou moins de rigueur ou d'astuce selon que nous traitons du bancaire ou du jeu vidéo. Nous parlerons de solutions utilisées sur les cartes graphiques d'aujourd'hui mais aussi d'autres un peu oubliées telles que les nombres à virgule fixe ou les compteurs polynomiaux ... et de pourquoi un RotoZoom sur 486, c'était mathématiquement faux et beau à la fois.

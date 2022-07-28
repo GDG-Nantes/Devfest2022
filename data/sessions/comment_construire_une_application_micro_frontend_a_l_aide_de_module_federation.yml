@@ -1,0 +1,19 @@
+---
+key: comment_construire_une_application_micro_frontend_a_l_aide_de_module_federation
+title: Comment construire une application Micro-Frontend à l'aide de Module Federation
+language: French
+talkType: codelab
+tags:
+  - web
+complexity: Advanced
+speakers:
+  - nicolas_morel
+slot: day-2-codelab-2
+room: Hangar
+abstract: |-
+  Alors que votre application frontend grossit, elle devient de plus en plus difficile à maintenir, notamment avec plusieurs équipes travaillant sur  la même base de code.   
+  Micro-Frontend est un concept emprunté des microservices pour scaler une application frontend. Votre application monolithique est découpée en de multiple morceaux (par fonctionnalité, page, composant…) où chacun de ces morceaux peuvent être développés et déployés en autonomie par une équipe. 
+
+  Module Federation permet de partager du code et des dépendances entre application au runtime.  
+
+  Dans cet atelier, vous apprendrez comment Module Federation facilite la construction d'une application Micro-Frontend.

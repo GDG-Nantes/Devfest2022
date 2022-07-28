@@ -1,0 +1,31 @@
+---
+key: testez_vos_data_pipelines___
+title: "Testez vos data pipelines ! "
+language: French
+talkType: codelab
+tags:
+  - bigdata_ai
+complexity: Beginner
+speakers:
+  - stephanie_baltus_bergamo
+slot: day-1-codelab-3
+room: Les Machines
+abstract: |-
+  Les tests unitaires et d'intégration font partie intégrante de la vie des backend ou frontend engineers. Le Test Driven Development (TDD) commence même à devenir une habitude. Pourtant, **chez les data engineers** c'est une toute autre histoire : la pratique n'est pas automatique, peu répandue alors que nous développons bien du logiciel.
+
+  Le logiciel évolue chaque jour et **qui dit évolution, dit introduction de bug** ! Notre vie de data engineer ne serait-elle pas plus simple si nous pouvions nous assurer très rapidement de la qualité de nos pipelines ? 
+
+  Que ce soit en python, en java, en scala, les outils existent pourtant pour tester le code de transformations de données. Alors, si vous voulez **prendre soin de votre futur logiciel** en rendant vos pipelines  plus robustes, cet atelier est fait pour vous !
+
+  Je vous propose de **développer ensemble, des pipelines testées, facile à faire évoluer** et de vous aider à vous orienter vers du TDD. Pour cela nous utiliserons :
+
+  - Python
+  - Poetry pour le build & la gestion de dépendances
+  - Apache Airflow pour orchestrer nos pipelines
+  - unitest pour les test unitaires
+  - Docker & testscontainer pour les tests d'intégration
+  - great_expectation pour les tests de qualité de la donnée
+
+  Un repository git sera mis à disposition peu avant l'atelier, contenant notamment les dépendances nécessaires et un squelette de projet.
+
+  A la fin de cet atelier, j'espère que chacun(e) soit convaincu(e) de l'intérêt des tests dans le développement de pipelines data et se sente suffisamment à l'aise pour intégrer cette pratique dans son quotidien.

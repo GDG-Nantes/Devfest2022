@@ -1,0 +1,12 @@
+---
+key: olivier_leplus
+name: Olivier Leplus
+feature: false
+company: AWS
+companyLogo: /images/partners/aws.png
+city: Paris, France
+photoUrl: https://raw.githubusercontent.com/tagazok/tagazok.github.io/master/assets/images/avatar%20olivier.png
+socials:
+  twitter: olivierleplus
+  github: tagazok
+bio: Developer Advocate at AWS and Google Developer Expert in Web Technologies. I love to share knowledge (and love) among developers and people in general.

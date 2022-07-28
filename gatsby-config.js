@@ -95,5 +95,19 @@ module.exports = {
       },
       __key: "pages",
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./data/`,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-remote-images`,
+    //   options: {
+    //     nodeType: "SpeakersYaml",
+    //     imagePath: "photoUrl",
+    //   },
+    // },
   ],
 };
