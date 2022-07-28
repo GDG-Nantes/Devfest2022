@@ -13,7 +13,7 @@
     "@types/js-yaml": "^4.0.2",
     "ics": "^2.31.0",
     "js-yaml": "^4.1.0",
-    "marked": "^3.0.0",
+    "marked": "^4.0.10",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
