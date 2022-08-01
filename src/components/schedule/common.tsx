@@ -16,7 +16,7 @@ export type PartialSpeaker = Pick<Speaker, "key" | "name" | "photoUrl">;
 export const rooms: Rooms[] = [
   "Jules Verne",
   "Titan",
-  "Bellem",
+  "Belem",
   "Tour de Bretagne",
   "Les Machines",
   "Hangar",

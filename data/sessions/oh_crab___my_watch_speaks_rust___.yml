@@ -9,7 +9,7 @@ complexity: Intermediate
 speakers:
   - pierre_yves_aillet
 slot: day-1-conference-5
-room: Bellem
+room: Belem
 abstract: |+
   Lorsqu'on parle d'IoT, on a tous à l'esprit l'Arduino, les puces WiFi ESP...
   Et en général, on les programmes en hybride C/C++.

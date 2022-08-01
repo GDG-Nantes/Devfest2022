@@ -9,7 +9,7 @@ complexity: Beginner
 speakers:
   - monsieurbadia
 slot: day-2-quickie-2
-room: Bellem
+room: Belem
 abstract: |-
   parser, tranformer, transpiler, compiler ou encore analyser sont les fers de lance pour construire un compilateur. Mais qu'est-ce qu'un compilateur ? Grosso modo ce n'est rien d'autre qu'un traducteur.
 

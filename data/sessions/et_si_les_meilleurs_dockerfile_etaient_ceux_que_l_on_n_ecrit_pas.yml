@@ -9,7 +9,7 @@ complexity: Beginner
 speakers:
   - fabien_martin
 slot: day-2-quickie-1
-room: Bellem
+room: Belem
 abstract: |
   Une manière assez commune de construire une image aujourd'hui consiste à écrire un Dockerfile.
   L'écriture d'un bon Dockerfile n'est pas simple, il faut sélectionner une image de base, mettre en place un ensemble de bonnes pratiques autour de la sécurité, de la maintenabilité, de la performance etc.

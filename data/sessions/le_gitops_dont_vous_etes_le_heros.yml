@@ -9,7 +9,7 @@ complexity: Beginner
 speakers:
   - louis_tournayre
 slot: day-1-conference-4
-room: Bellem
+room: Belem
 abstract: |-
   Dans le vaste royaume de Kubernetes, notre application est en péril. Les bugs et les besoins utilisateurs non couverts sont en train d’épuiser la patience du métier. Les correctifs et nouvelles fonctionnalités seront-ils déployés à temps pour sauver l’Application ? Si le processus de livraison ne s’améliore pas, les utilisateurs vont déserter l’Application et ce sera sa fin.
 
