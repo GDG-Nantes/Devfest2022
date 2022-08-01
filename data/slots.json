@@ -212,6 +212,15 @@
       }
     },
     {
+      "key": "day-2-codelab-1-long",
+      "start": "09:00",
+      "type": "codelab",
+      "display": {
+        "row": 2,
+        "size": 8
+      }
+    },
+    {
       "key": "day-2-pause-1",
       "start": "09:50",
       "type": "break",
