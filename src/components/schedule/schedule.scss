@@ -113,3 +113,19 @@
     }
   }
 }
+
+.button-schedule {
+  min-width: 150px;
+  min-height: 50px;
+
+  &.current {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  &.day1 {
+    background-color: var(--primary);
+  }
+  &.day2 {
+    background-color: var(--secondary);
+  }
+}

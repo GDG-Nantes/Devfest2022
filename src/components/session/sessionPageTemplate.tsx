@@ -1,19 +1,23 @@
 import { Card, Stack, Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { slots } from "../../../data/slots.json";
 import { Session } from "../../../json_schemas/interfaces/schema_sessions";
 import { Speaker } from "../../../json_schemas/interfaces/schema_speakers";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
+import { Flag } from "../commun/flags";
 import { CompanyLogo } from "../commun/images";
 import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
 import { PrimarySection, TertiarySection } from "../commun/section/section";
-import { AvatarSpeaker, Tags } from "../schedule/common";
+import { AvatarSpeaker, SessionComplexity, Tags } from "../schedule/common";
 
 const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
   pageContext: { session },
 }) => {
+  const slotLabel = getSessionSlotLabel(session.slot);
   return (
     <Layout>
       <DefaultPage title={session.title} noHero={true}>
@@ -22,7 +26,12 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
             {session.title}
           </Typography>
           <Stack spacing={5}>
-            <Tags tags={session.tags} />
+            <Stack direction="row" spacing={2} alignItems="center">
+              <Tags tags={session.tags} />
+              <SessionComplexity complexity={session.complexity} />
+              <Flag lang={session.language} />
+            </Stack>
+            <Typography variant="h3">{slotLabel}</Typography>
             <Stack spacing={1}>
               {session.speakers.map((speaker) => (
                 <SpeakerCard key={speaker} speakerKey={speaker} />
@@ -64,7 +73,12 @@ const SpeakerCard: React.FC<{ speakerKey }> = ({ speakerKey }) => {
   return (
     <MyLink to={"/speakers/" + speaker.key}>
       <Card
-        sx={{ maxWidth: "400px", padding: '5px', minHeight: "75px", color: "var(--primary)" }}
+        sx={{
+          maxWidth: "400px",
+          padding: "5px",
+          minHeight: "75px",
+          color: "var(--primary)",
+        }}
       >
         <Stack
           direction="row"
@@ -83,5 +97,12 @@ const SpeakerCard: React.FC<{ speakerKey }> = ({ speakerKey }) => {
     </MyLink>
   );
 };
+
+function getSessionSlotLabel(slotKey: string): string {
+  const { t } = useTranslation("translation", { keyPrefix: "pages.schedule" });
+  const slot = slots.find((s) => s.key == slotKey);
+  const slotDay = slotKey.startsWith("day-1") ? t("day1") : t("day2");
+  return `📅 ${slotDay} ${slot?.start}`;
+}
 
 export default SessionPageTemplate;

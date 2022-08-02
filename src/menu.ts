@@ -17,10 +17,10 @@ export const MENU: Array<MenuItem> = [
     label: "partners",
     link: "/partners",
   },
-  {
-    label: "📣 CFP",
-    link: "https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3",
-  },
+  // {
+  //   label: "📣 CFP",
+  //   link: "https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3",
+  // },
   {
     label: "🎟️ Tickets",
     link: "https://www.billetweb.fr/devfest-Nantes",

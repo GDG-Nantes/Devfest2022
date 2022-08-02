@@ -1,9 +1,10 @@
 import { Button, Stack } from "@mui/material";
+import classNames from "classnames";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { DefaultPage } from "../../components/commun/page";
 import {
-  PrimarySection,
+  DefaultSection,
   SecondarySection,
 } from "../../components/commun/section/section";
 import { Schedule } from "../../components/schedule";
@@ -15,8 +16,8 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
 
   return (
     <Layout>
-      <DefaultPage title={t("name")} background="back-5">
-        <PrimarySection slim>
+      <DefaultPage title={t("name")}>
+        <DefaultSection slim variant="primary-dark">
           <Stack
             direction="row"
             spacing="20px"
@@ -24,17 +25,33 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
             justifyContent="center"
           >
             <MyLink to="/schedule/1">
-              <Button variant="text" color="inherit">
-                {t("day1")}
+              <Button
+                variant="contained"
+                color="inherit"
+                className={classNames(
+                  "button-schedule",
+                  "day1",
+                  day == 1 && "current"
+                )}
+              >
+                {t("day1-number")}
               </Button>
             </MyLink>
             <MyLink to="/schedule/2">
-              <Button variant="text" color="inherit">
-                {t("day2")}
+              <Button
+                variant="contained"
+                color="inherit"
+                className={classNames(
+                  "button-schedule",
+                  "day2",
+                  day == 2 && "current"
+                )}
+              >
+                {t("day2-number")}
               </Button>
             </MyLink>
           </Stack>
-        </PrimarySection>
+        </DefaultSection>
         <SecondarySection padding="small">
           <Schedule day={day} />
         </SecondarySection>

@@ -3,7 +3,7 @@ import React from "react";
 import "./section.scss";
 
 export const DefaultSection: React.FC<{
-  variant?: "primary" | "secondary" | "tertiary";
+  variant?: "primary" | "primary-dark" | "secondary" | "tertiary";
   slim?: boolean;
   padding?: "normal" | "none" | "small";
 }> = ({ children, variant = "primary", slim, padding = "normal" }) => (

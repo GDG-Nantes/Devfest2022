@@ -48,6 +48,19 @@ export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
     </div>
   );
 };
+export const SessionComplexity: React.FC<{
+  complexity: "Beginner" | "Intermediate" | "Advanced";
+}> = ({ complexity }) => {
+  return (
+    <Chip
+      label={complexity}
+      variant="outlined"
+      size="small"
+      color="primary"
+      sx={{ fontSize: "10px" }}
+    />
+  );
+};
 
 export const Speakers: React.FC<{ speakers: string[] }> = ({ speakers }) => {
   const { allSpeakersYaml } = useStaticQuery(graphql`

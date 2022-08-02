@@ -23,7 +23,8 @@
       "type": "string"
     },
     "language": {
-      "type": "string"
+      "type": "string",
+      "enum": ["English", "French"]
     },
     "talkType": {
       "type": "string",
@@ -36,7 +37,8 @@
       }
     },
     "complexity": {
-      "type": "string"
+      "type": "string",
+      "enum": ["Beginner", "Intermediate", "Advanced"]
     },
     "speakers": {
       "type": "array",
