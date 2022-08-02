@@ -6,6 +6,7 @@ import { Speaker } from "../../../json_schemas/interfaces/schema_speakers";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
 import { CompanyLogo } from "../commun/images";
+import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
 import { PrimarySection, TertiarySection } from "../commun/section/section";
 import { AvatarSpeaker, Tags } from "../schedule/common";
@@ -30,7 +31,7 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
           </Stack>
         </TertiarySection>
         <PrimarySection>
-          <div>{session.abstract}</div>
+          <Markdown content={session.abstract} />
         </PrimarySection>
       </DefaultPage>
     </Layout>
@@ -63,7 +64,7 @@ const SpeakerCard: React.FC<{ speakerKey }> = ({ speakerKey }) => {
   return (
     <MyLink to={"/speakers/" + speaker.key}>
       <Card
-        sx={{ maxWidth: "400px", minHeight: "75px", color: "var(--primary)" }}
+        sx={{ maxWidth: "400px", padding: '5px', minHeight: "75px", color: "var(--primary)" }}
       >
         <Stack
           direction="row"

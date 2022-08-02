@@ -45,29 +45,27 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
       <DefaultPage title={speaker.name} noHero={true}>
         <TertiarySection>
           <Stack spacing={5}>
-            <Stack spacing={5} direction="row" alignItems="center">
+            <Stack spacing={5} direction="column" alignItems="center">
               <AvatarSpeaker speaker={speaker} size="large" />
-              <Stack spacing={1} direction="column">
-                <Typography
-                  variant="h1"
-                  color="primary"
-                  sx={{ marginBottom: "5px" }}
-                >
-                  {speaker.name}
-                </Typography>
-                <Stack direction="row" spacing={2}>
-                  {Object.entries(speaker.socials || {}).map(
-                    ([media, login]) => (
-                      <SocialLink
-                        key={media}
-                        login={login}
-                        type={media as keyof Social}
-                        withLogin
-                      />
-                    )
-                  )}
-                </Stack>
+              {/* <Stack spacing={1} direction="column"> */}
+              <Typography
+                variant="h1"
+                color="primary"
+                sx={{ marginBottom: "5px" }}
+              >
+                {speaker.name}
+              </Typography>
+              <Stack direction="row" spacing={2}>
+                {Object.entries(speaker.socials || {}).map(([media, login]) => (
+                  <SocialLink
+                    key={media}
+                    login={login}
+                    type={media as keyof Social}
+                    withLogin
+                  />
+                ))}
               </Stack>
+              {/* </Stack> */}
             </Stack>
             <Stack spacing={1}>
               {sessions.map((session) => (
@@ -92,7 +90,7 @@ const SessionCard: React.FC<{ session: PartialSession }> = ({ session }) => {
           maxWidth: "90%",
           minHeight: "60px",
           color: "var(--primary)",
-          paddingLeft: "10px",
+          padding: "10px",
         }}
       >
         <Stack
