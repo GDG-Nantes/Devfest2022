@@ -100,8 +100,10 @@ const SessionCard: React.FC<{ session: PartialSession }> = ({ session }) => {
           alignItems="center"
           sx={{ minHeight: "60px" }}
         >
-          <Tags tags={session.tags} />
-          <Typography variant="h3">{session.title}</Typography>
+          <Tags tags={session.tags} color="default" />
+          <Typography variant="h3" color="inherit" style={{ color: "white" }}>
+            {session.title}
+          </Typography>
         </Stack>
       </Card>
     </MyLink>

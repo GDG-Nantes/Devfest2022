@@ -32,7 +32,10 @@ const tagLabels = {
   security: "🐱‍💻 SECURITY",
   ux_ui: "💚 UX / UI",
 };
-export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
+export const Tags: React.FC<{
+  tags: string[];
+  color?: "primary" | "default";
+}> = ({ tags, color = "primary" }) => {
   return (
     <div className="tags">
       {tags.map((tag) => (
@@ -41,7 +44,7 @@ export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
           label={tagLabels[tag]}
           variant="outlined"
           size="small"
-          color="primary"
+          color={color}
           sx={{ fontSize: "10px" }}
         />
       ))}
