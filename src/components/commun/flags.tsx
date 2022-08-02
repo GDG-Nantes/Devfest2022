@@ -1,9 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
-export const Flag: React.FC<{ lang: "English" | "French" | "fr" | "en" }> = ({
-  lang,
-}) => {
+export const Flag: React.FC<{
+  lang: "English" | "French" | "fr" | "en";
+  size?: "medium" | "small";
+}> = ({ lang, size = "medium" }) => {
   const flags = useStaticQuery(graphql`
     query {
       allFile(filter: { relativePath: { glob: "flags/*" } }) {
@@ -18,13 +19,17 @@ export const Flag: React.FC<{ lang: "English" | "French" | "fr" | "en" }> = ({
     lang.toLowerCase().startsWith(node.name)
   );
 
+  const sizes =
+    size == "medium"
+      ? { height: "18px", width: "24px" }
+      : { height: "14px", width: "19px" };
+
   return (
     <img
       alt="logo"
       src={flag.publicURL}
       style={{
-        height: "18px",
-        width: "24px",
+        ...sizes,
         objectFit: "cover",
         verticalAlign: "middle",
       }}

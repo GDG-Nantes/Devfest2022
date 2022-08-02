@@ -3,7 +3,8 @@ import classNames from "classnames";
 import React from "react";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
 import { MyLink } from "../../helpers/links";
-import { PartialSession, Speakers, Tags } from "./common";
+import { Flag } from "../commun/flags";
+import { PartialSession, rooms, Speakers, Tags } from "./common";
 import "./schedule.scss";
 
 export const MobileSchedule: React.FC<{
@@ -19,7 +20,9 @@ export const MobileSchedule: React.FC<{
   const sessionsByHours: { [k: string]: Array<PartialSession> } = {};
   const fixedSlotsByHours: { [k: string]: Array<Slot> } = {};
   hours.forEach((hour) => {
-    sessionsByHours[hour] = sessions.filter((s) => s.slot.start === hour);
+    sessionsByHours[hour] = sessions
+      .filter((s) => s.slot.start === hour)
+      .sort((s1, s2) => rooms.indexOf(s1.room) - rooms.indexOf(s2.room));
     fixedSlotsByHours[hour] = fixedSlots.filter((s) => s.start === hour);
   });
 
@@ -68,10 +71,12 @@ const SessionInfo: React.FC<{ session: PartialSession }> = ({ session }) => {
   return (
     <div className="session-info">
       <span className="session-title">{session.title}</span>
-      <Stack spacing={2} className="session-info-bottom">
+      <Stack spacing={2} alignItems="center" direction="row">
         <Tags tags={session.tags} />
-        <Speakers speakers={session.speakers} />
+        <Flag lang={session.language} size="small" />
+        <span>{session.room}</span>
       </Stack>
+      <Speakers speakers={session.speakers} />
     </div>
   );
 };

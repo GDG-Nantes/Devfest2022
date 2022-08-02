@@ -1,3 +1,4 @@
+import { AccessTime } from "@mui/icons-material";
 import { Card, Stack, Typography } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -11,7 +12,7 @@ import { Flag } from "../commun/flags";
 import { CompanyLogo } from "../commun/images";
 import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
-import { PrimarySection, TertiarySection } from "../commun/section/section";
+import { SecondarySection, TertiarySection } from "../commun/section/section";
 import { AvatarSpeaker, SessionComplexity, Tags } from "../schedule/common";
 
 const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
@@ -31,7 +32,14 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
               <SessionComplexity complexity={session.complexity} />
               <Flag lang={session.language} />
             </Stack>
-            <Typography variant="h3">{slotLabel}</Typography>
+
+            <Stack direction="row" spacing={1}>
+              <AccessTime
+                color="inherit"
+                sx={{ color: "var(--primary-dark)" }}
+              />
+              <Typography variant="h3">{slotLabel}</Typography>
+            </Stack>
             <Stack spacing={1}>
               {session.speakers.map((speaker) => (
                 <SpeakerCard key={speaker} speakerKey={speaker} />
@@ -39,15 +47,16 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
             </Stack>
           </Stack>
         </TertiarySection>
-        <PrimarySection>
+        <SecondarySection>
           <Markdown content={session.abstract} />
-        </PrimarySection>
+        </SecondarySection>
       </DefaultPage>
     </Layout>
   );
 };
 
 export type PartialSpeaker = Omit<Speaker, "feature" | "socials" | "bio">;
+
 const SpeakerCard: React.FC<{ speakerKey }> = ({ speakerKey }) => {
   const { allSpeakersYaml } = useStaticQuery(graphql`
     query {
@@ -77,7 +86,8 @@ const SpeakerCard: React.FC<{ speakerKey }> = ({ speakerKey }) => {
           maxWidth: "400px",
           padding: "5px",
           minHeight: "75px",
-          color: "var(--primary)",
+          color: "var(--tertiary)",
+          backgroundColor: "var(--primary)",
         }}
       >
         <Stack
@@ -88,8 +98,12 @@ const SpeakerCard: React.FC<{ speakerKey }> = ({ speakerKey }) => {
         >
           <AvatarSpeaker speaker={speaker} size="medium" />
           <Stack direction="column" spacing={1} justifyContent="center">
-            <Typography variant="h4">{speaker.name}</Typography>
-            {speaker.city}
+            <Typography variant="h4" color="inherit" style={{ color: "white" }}>
+              {speaker.name}
+            </Typography>
+            <span style={{ color: "var(--tertiary-darker)" }}>
+              {speaker.city}
+            </span>
           </Stack>
           <CompanyLogo logo={speaker.companyLogo} company={speaker.company} />
         </Stack>
@@ -102,7 +116,7 @@ function getSessionSlotLabel(slotKey: string): string {
   const { t } = useTranslation("translation", { keyPrefix: "pages.schedule" });
   const slot = slots.find((s) => s.key == slotKey);
   const slotDay = slotKey.startsWith("day-1") ? t("day1") : t("day2");
-  return `📅 ${slotDay} ${slot?.start}`;
+  return `${slotDay} ${slot?.start}`;
 }
 
 export default SessionPageTemplate;

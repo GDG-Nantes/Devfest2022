@@ -60,7 +60,7 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         h1: {
-          fontSize: "3rem",
+          fontSize: "2rem",
           lineHeight: "1.2",
           margin: "3rem 0",
           fontFamily: "RumbleBrave",

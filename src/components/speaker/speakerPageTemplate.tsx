@@ -10,7 +10,7 @@ import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
 import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
-import { PrimarySection, TertiarySection } from "../commun/section/section";
+import { SecondarySection, TertiarySection } from "../commun/section/section";
 import { SocialLink } from "../commun/socials/socials";
 import { AvatarSpeaker, Tags } from "../schedule/common";
 
@@ -74,9 +74,9 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
             </Stack>
           </Stack>
         </TertiarySection>
-        <PrimarySection>
+        <SecondarySection>
           <Markdown content={speaker.bio} />
-        </PrimarySection>
+        </SecondarySection>
       </DefaultPage>
     </Layout>
   );
@@ -89,7 +89,8 @@ const SessionCard: React.FC<{ session: PartialSession }> = ({ session }) => {
         sx={{
           maxWidth: "90%",
           minHeight: "60px",
-          color: "var(--primary)",
+          color: "var(--tertiary)",
+          backgroundColor: "var(--primary)",
           padding: "10px",
         }}
       >
