@@ -1,6 +1,6 @@
 ---
-key: tracing_go_applications
-title: Tracing Go Applications
+key: go_fuzz-testing
+title: Fuzz Testing Made Easy
 language: English
 talkType: conference
 tags:
@@ -11,8 +11,6 @@ speakers:
 slot: day-1-conference-3
 room: Titan
 abstract: |-
-  This talk will discuss tracing in Go, with discussions around how this works in different languages and some practical applications of tracing. This will be more technically focused, and won't be a product demo for Datadog (though there will likely be mentions of how tracing works at Datadog)
-  - Practical applications of tracing
-  - How the tracing libraries instrument Go code in Datadog APM 
-  - Benefits and limitations of tracing in different languages (e.g. compiled versus interpreted languages)
-  - Open Telemetry API for tracing
+  Go now supports fuzz testing natively as of Go 1.18, a tool that can be used to identify bugs and security vulnerabilities in your code. 
+  This talk will discuss how and why fuzzing can be used in Go, introduce differential fuzzing, and describe the mechanics of how fuzzing works under the hood. 
+  This talk will include a live code demo of a bug being found, fixed, and tested in real time using fuzzing.
