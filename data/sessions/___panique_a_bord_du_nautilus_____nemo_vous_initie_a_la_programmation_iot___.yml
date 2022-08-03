@@ -13,9 +13,10 @@ speakers:
 slot: day-1-codelab-1
 room: Hangar
 abstract: |-
-  Vous êtes les électromécanicien 🛠 du Nautilus 🐚 et une avarie a provoqué une défaillance des générateurs ! Vous devez à tout prix réparer la salle des machines…. 
-  Pas de panique, armé d’un micro-contrôleur, de leds et de capteurs, vous vous attelez à remettre en marche le sous-marin, façon DIY.
+  Vous êtes les électromécaniciens 🛠  du Nautilus 🐚 et une avarie a provoqué une défaillance des générateurs ! Vous devez à tout prix réparer la salle des machines 
+  Pas de panique, armé d'un micro-contrôleur, de leds et de capteurs, vous vous attelez à remettre en marche le sous-marin, façon DIY.
 
-  Au travers de ce codelab, venez réveiller le Maker qui sommeille en vous en s’initiant à la programmation sur ESP32, un micro-contrôleur très utilisé par la communauté DIY, et (re-)découvrir quelques bases d’informatique embarquée.
+  Au travers de ce codelab, venez réveiller le Maker qui sommeille en vous en s'initiant à la programmation sur ESP32, un micro-contrôleur très utilisé par la communauté DIY, et (re-)découvrir quelques bases d'informatique embarquée.
 
-  Seul ou en binôme, cet atelier est accessible aux débutants en électronique comme en développement. Pour faciliter le démarrage des TPs, l’installation de l’outil [Arduino IDE](https://www.arduino.cc/en/software) est fortement recommandée. Attention, le nombre de places est limité !
+  Seul ou en binôme, cet atelier est accessible aux débutants en électronique comme en développement. Pour faciliter le démarrage des TPs, l'installation de l'outil [Arduino IDE](https://www.arduino.cc/en/software) est indispensable.
+  Attention, le nombre de places est limité à 20 tables en binome ou en individuel!
