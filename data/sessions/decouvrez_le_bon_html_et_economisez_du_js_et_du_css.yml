@@ -1,0 +1,16 @@
+---
+key: decouvrez_le_bon_html_et_economisez_du_js_et_du_css
+title: Découvrez « le bon HTML » et économisez du JS et du CSS
+language: French
+talkType: conference
+tags:
+  - web
+complexity: Beginner
+speakers:
+  - gael_poupard
+slot: day-2-conference-4
+room: Titan
+abstract: |
+  Le bon HTML vous fait économiser du JavaScript, du CSS, et est accessible. 
+  Alors pourquoi se limiter a du mauvais HTML à base de soupe de et de diarrhée de et tartiner du .preventDefault() sur vos écouteurs d’événements ?
+  Voici quelques pistes pour éclairer le sujet. Venez découvrir des éléments et attributs HTML modernes, et leurs utilisations avancées — pour respecter le principe de moindre pouvoir et adopter l’amélioration progressive comme approche préférentielle !
