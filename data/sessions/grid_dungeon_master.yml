@@ -10,6 +10,7 @@ speakers:
   - raphael_goetter
 slot: day-2-codelab-1
 room: Les Machines
+openfeedbackId: 60
 abstract: |-
   Ingrid, cheffe aventurière en CSS Grid Layout, vous emmène avec elle explorer le Grid Dungeon Master. Différents paliers d'exercices et de quiz vous attendent jusqu'au niveau du trésor final qu'il faudra récupérer à grand coup de lignes de code CSS.
 

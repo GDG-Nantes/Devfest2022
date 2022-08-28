@@ -11,6 +11,7 @@ speakers:
   - yulianna_khorolich
 slot: day-2-codelab-1
 room: Hangar
+openfeedbackId: 42
 abstract: |-
   Le développement d’un modèle est terminé et la clé USB contenant le notebook Jupiter est remise au Team Leader. L’aventure du modèle ne doit pas s'arrêter là.
 

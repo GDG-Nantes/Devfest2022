@@ -10,6 +10,7 @@ speakers:
   - ronan_robe
 slot: day-1-codelab-1
 room: Les Machines
+openfeedbackId: 9
 abstract: |-
   Atelier mené avec l'ACIAH pour être en immersion dans le quotidien d'un malvoyant face au numérique.
   Muni d'un bandeau pour cacher les yeux des participants et de casques audio, nous inviterons les participants à réaliser des choses simples du quotidien : envoyer un email, lire un article dans la presse, naviguer sur le site web du devfest :)

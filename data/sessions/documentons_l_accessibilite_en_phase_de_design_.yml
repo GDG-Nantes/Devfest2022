@@ -10,4 +10,5 @@ speakers:
   - stephanie_w
 slot: day-1-conference-4
 room: Titan
+openfeedbackId: 31
 abstract: Les besoins en termes d’accessibilité sont, aujourd’hui encore, pris en compte après coup, en fin de projet. Et très mal documentés. Voir carrément pas du tout pris en compte et oubliés des maquettes livrées aux équipes de développement. Pourquoi réparer plus tard, ce qu’on pourrait construire correctement dès le début ? Une bonne documentation aide les équipes à implémenter les besoins d’accessibilité de la bonne manière, dès le départ. Nous verrons pourquoi et comment les designers peuvent documenter l’accessibilité et les interactions utilisateurs

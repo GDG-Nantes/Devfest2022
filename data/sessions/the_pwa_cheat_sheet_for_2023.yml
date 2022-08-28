@@ -10,6 +10,7 @@ speakers:
   - maximiliano_firtman
 slot: day-1-conference-5
 room: Titan
+openfeedbackId: 56
 abstract: |
   PWAs are now installable on every mobile and desktop OS, but there are many new things since last years we need to do to create a successful experience. We will start understanding the current state of the PWA platform, including market share and compatibility. 
 

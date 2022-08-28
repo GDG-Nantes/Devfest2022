@@ -12,6 +12,7 @@ speakers:
   - stephane_cohan
 slot: day-1-codelab-1
 room: Hangar
+openfeedbackId: 24
 abstract: |-
   Vous êtes les électromécaniciens 🛠 du Nautilus 🐚 et une avarie a provoqué une défaillance des générateurs ! Vous devez à tout prix réparer la salle des machines…. 
   Pas de panique, armé d’un micro-contrôleur, de leds et de capteurs, vous vous attelez à remettre en marche le sous-marin, façon DIY.

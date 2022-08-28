@@ -11,6 +11,7 @@ speakers:
   - geoffroy_couprie
 slot: day-2-conference-2
 room: Titan
+openfeedbackId: 41
 abstract: |
   Depuis l'essor des architectures microservices, l'auth a bien évolué. Au cookie de session se sont ajoutés tout un tas de tokens et de topologies (délégation d'accès avec oauth, tokens stateless avec JWT, atténuation avec les macarons…).
 

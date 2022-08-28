@@ -11,6 +11,7 @@ speakers:
   - olivier_poncet
 slot: day-1-conference-1
 room: Belem
+openfeedbackId: 63
 abstract: |-
   Manipuler des nombres dans notre code est un problème à peu près résolu et auquel nous n'accordons plus beaucoup d'importance. Et pourtant ! Prendre le temps de se pencher un peu sur les bases se révèle parfois très intéressant.
 

@@ -10,4 +10,5 @@ speakers:
   - daniel__phrawzty__maher
 slot: day-1-quickie-1
 room: Jules Verne
+openfeedbackId: 51
 abstract: "In this fun, fast-paced talk, Dan puts his sysadmin hat on and takes you on a fun—and hopefully enlightening—journey through a topic that most of us take for granted: **logs**. There’s a good chance you’ve been emitting, collecting, and generally dealing with logs for much of your career (in one form or another). Yet despite the fact that logging is a technique as old as computing itself, there’s a very good chance that you’ve never stopped to ask yourself: what are they? Really, *what are logs?* Good question. Let’s find out!"

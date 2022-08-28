@@ -10,6 +10,7 @@ speakers:
   - maud_nalpas
 slot: day-2-conference-1
 room: Titan
+openfeedbackId: 11
 abstract: |-
   A tour of a few best practices for privacy on the web:
   * (Why does this matter? Overview of the landscape and how it's changing)

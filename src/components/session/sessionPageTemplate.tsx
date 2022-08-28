@@ -55,7 +55,9 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
           title="Openfeedback"
           width="100%"
           height="500"
-          src="https://openfeedback.io/devfestnantes22/2022-10-20/5"
+          src={`https://openfeedback.io/devfestnantes22/${
+            session.slot.startsWith("day-1") ? "2022-10-20" : "2022-10-21"
+          }/${session.openfeedbackId}?hideHeader=true&forceColorScheme=dark`}
         ></iframe>
       </DefaultPage>
     </Layout>

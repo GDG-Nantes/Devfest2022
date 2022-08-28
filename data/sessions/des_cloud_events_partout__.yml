@@ -10,6 +10,7 @@ speakers:
   - loic_mathieu
 slot: day-2-conference-1
 room: Belem
+openfeedbackId: 10
 abstract: |-
   Cloud Events est une spécification d’événement standard pour le cloud. Elle permet de faciliter l'implémentation d'application inter-opérable dans le cloud, en étant agnostique du cloud provider et de la technologie.
 

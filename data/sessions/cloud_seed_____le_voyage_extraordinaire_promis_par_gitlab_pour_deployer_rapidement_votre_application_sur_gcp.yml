@@ -10,6 +10,7 @@ speakers:
   - jean_phi_baconnais
 slot: day-2-quickie-2
 room: Titan
+openfeedbackId: 53
 abstract: |-
   Le déploiement de nos applications sur un provider Cloud ne devrait pas être une étape compliquée.
 

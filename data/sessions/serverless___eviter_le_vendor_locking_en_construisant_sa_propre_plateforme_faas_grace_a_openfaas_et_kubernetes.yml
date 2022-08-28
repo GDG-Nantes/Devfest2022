@@ -10,6 +10,7 @@ speakers:
   - katia_himeur
 slot: day-1-codelab-3
 room: Hangar
+openfeedbackId: 55
 abstract: |-
   Le serverless permet d’exécuter des applications sans avoir à gérer de serveurs. Le “Function as a Service” ou FaaS est un modèle d’exécution qui consiste à considérer ses applications comme des fonctions dans un environnement serverless. 
 

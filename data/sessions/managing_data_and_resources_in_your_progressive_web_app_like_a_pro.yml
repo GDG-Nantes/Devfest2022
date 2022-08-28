@@ -10,4 +10,5 @@ speakers:
   - laura_morinigo
 slot: day-2-conference-2
 room: Jules Verne
+openfeedbackId: 50
 abstract: Creating a web app means that we will use different resources like assets, fonts, and some other interface elements. The challenge relies on managing those resources to load fast and be available offline. PWAs use modern capabilities to target this problem and of course, make sure to deliver a good user experience. During this talk, we will learn about client-side storage solutions, cache strategies, and what it means to have an offline-ready web app so you can choose wisely from these strategies like a pro!

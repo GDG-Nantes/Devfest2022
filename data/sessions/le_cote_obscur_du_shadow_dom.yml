@@ -10,6 +10,7 @@ speakers:
   - adrien_bordone
 slot: day-1-quickie-1
 room: Tour de Bretagne
+openfeedbackId: 29
 abstract: |
   Tu as déjà essayé de mettre en place du shadowDom ? C’est super, ça permet d’isoler ton CSS du reste de l’application. Mais au moment où tout te semble parfait, tout s’écroule comme un château de cartes.
 

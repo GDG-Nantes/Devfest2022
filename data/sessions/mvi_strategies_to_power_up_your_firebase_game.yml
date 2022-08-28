@@ -10,6 +10,7 @@ speakers:
   - etienne_caron
 slot: day-1-conference-2
 room: Tour de Bretagne
+openfeedbackId: 54
 abstract: |-
   Thanks to its cross-platform support and extensive feature list, the Firebase platform is a compelling choice for app development. It also comes with a few challenges. 
 

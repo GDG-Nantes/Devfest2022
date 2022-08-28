@@ -11,6 +11,7 @@ speakers:
   - fabien_hiegel
 slot: day-1-conference-4
 room: Tour de Bretagne
+openfeedbackId: 59
 abstract: |
   React 32 ? Groovy 12 ? Kotlin 7 ? Docker 202 ? Des technologies inconnues déferlent chaque jour des sombres recoins de l'internet. Le temps de vous y intéresser est difficile à trouver : ni votre projet, ni votre organisation personnelle ne le permettent. Et finalement, quand arrive le moment de s’y atteler, vous manquez d’efficacité.
 
