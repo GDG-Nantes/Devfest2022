@@ -11,6 +11,8 @@ speakers:
 slot: day-2-conference-4
 room: Titan
 abstract: |
-  Le bon HTML vous fait économiser du JavaScript, du CSS, et est accessible. 
-  Alors pourquoi se limiter a du mauvais HTML à base de soupe de et de diarrhée de et tartiner du .preventDefault() sur vos écouteurs d’événements ?
-  Voici quelques pistes pour éclairer le sujet. Venez découvrir des éléments et attributs HTML modernes, et leurs utilisations avancées — pour respecter le principe de moindre pouvoir et adopter l’amélioration progressive comme approche préférentielle !
+  Si vous utilisez une tartine de JavaScript pour implémenter un bloc dépliant, une fenêtre modale ou de la suggestion dans un champ de formulaire : ce sujet est fait pour vous ! 
+
+  Venez découvrir des éléments et attributs HTML modernes, et leurs utilisations avancées — pour respecter le principe de moindre pouvoir et adopter l’amélioration progressive comme approche préférentielle.
+
+  Gardez votre JavaScript pour les grandes occasions, HTML s’occupe de tout !
