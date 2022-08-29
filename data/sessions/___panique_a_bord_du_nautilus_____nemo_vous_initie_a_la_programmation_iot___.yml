@@ -13,8 +13,8 @@ speakers:
 slot: day-1-codelab-1
 room: Hangar
 abstract: |-
-  Vous êtes les électromécaniciens 🛠  du Nautilus 🐚 et une avarie a provoqué une défaillance des générateurs ! Vous devez à tout prix réparer la salle des machines 
-  Pas de panique, armé d'un micro-contrôleur, de leds et de capteurs, vous vous attelez à remettre en marche le sous-marin, façon DIY.
+  Vous êtes les électromécaniciens 🛠 du Nautilus 🐚 et une avarie a provoqué une défaillance des générateurs ! Vous devez à tout prix réparer la salle des machines 
+  Pas de panique, armé d’un micro-contrôleur, de leds et de capteurs, vous vous attelez à remettre en marche le sous-marin, façon DIY.
 
   Au travers de ce codelab, venez réveiller le Maker qui sommeille en vous en s'initiant à la programmation sur ESP32, un micro-contrôleur très utilisé par la communauté DIY, et (re-)découvrir quelques bases d'informatique embarquée.
 

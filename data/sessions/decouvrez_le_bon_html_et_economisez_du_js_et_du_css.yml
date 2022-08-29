@@ -1,0 +1,18 @@
+---
+key: decouvrez_le_bon_html_et_economisez_du_js_et_du_css
+title: Découvrez « le bon HTML » et économisez du JS et du CSS
+language: French
+talkType: conference
+tags:
+  - web
+complexity: Beginner
+speakers:
+  - gael_poupard
+slot: day-2-conference-4
+room: Titan
+abstract: |
+  Si vous utilisez une tartine de JavaScript pour implémenter un bloc dépliant, une fenêtre modale ou de la suggestion dans un champ de formulaire : ce sujet est fait pour vous ! 
+
+  Venez découvrir des éléments et attributs HTML modernes, et leurs utilisations avancées — pour respecter le principe de moindre pouvoir et adopter l’amélioration progressive comme approche préférentielle.
+
+  Gardez votre JavaScript pour les grandes occasions, HTML s’occupe de tout !
