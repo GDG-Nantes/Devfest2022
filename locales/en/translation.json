@@ -29,6 +29,10 @@
         "reduced": "Reduced price",
         "2days-2nd": "On sale on September 6th"
       },
+      "speakers": {
+        "title": "Featured speakers",
+        "seeAll": "See all speakers"
+      },
       "photos": {
         "p1": "Some pictures of the 2021 DevFest Nantes",
         "p2": "on the Street Art theme 🎨",
@@ -45,6 +49,9 @@
     "partners": {
       "name": "Partners",
       "platinium-partners": "Platinium partners"
+    },
+    "speakers": {
+      "name": "Speakers"
     },
     "schedule": {
       "name": "Schedule",

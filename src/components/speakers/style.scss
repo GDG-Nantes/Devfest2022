@@ -1,0 +1,18 @@
+.speakers-list {
+  .speaker {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    h4 {
+      color: var(--primary-dark);
+      &:first-of-type {
+        font-weight: 600;
+      }
+    }
+
+    li {
+      display: flex;
+    }
+  }
+}

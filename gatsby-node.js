@@ -102,7 +102,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Speakers
   const speakerPageTemplate = path.resolve(
-    "src/components/speaker/speakerPageTemplate.tsx"
+    "src/components/speakers/speakerPageTemplate.tsx"
   );
   data.allSpeakersYaml.edges.forEach(({ node: speaker }) => {
     const path = "speakers/" + speaker.key;

@@ -17,6 +17,10 @@ export const MENU: Array<MenuItem> = [
     label: "partners",
     link: "/partners",
   },
+  {
+    label: "speakers",
+    link: "/speakers",
+  },
   // {
   //   label: "📣 CFP",
   //   link: "https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3",

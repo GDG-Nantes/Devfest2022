@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { SubscribeNewsletter } from "../components/commun/newsletter";
@@ -17,6 +17,7 @@ import {
 } from "../components/home";
 import { Tickets } from "../components/home/tickets";
 import { Partners } from "../components/partners";
+import { Speakers } from "../components/speakers/speakers";
 import Layout from "../layout";
 
 const HomeContent = () => {
@@ -37,6 +38,13 @@ const HomeContent = () => {
         </Typography>
         <Tickets />
       </PrimarySection>
+      <SecondarySection>
+        <Typography variant="h2">{t("pages.home.speakers.title")}</Typography>
+        <Speakers featuredOnly={true} />
+        <Stack justifyContent="center" alignItems="center" marginTop={8}>
+          <Button variant="contained">{t("pages.home.speakers.seeAll")}</Button>
+        </Stack>
+      </SecondarySection>
       <TertiarySection slim>
         <Typography variant="h2">{t("pages.home.newsletter")}</Typography>
         <SubscribeNewsletter />
