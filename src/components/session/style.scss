@@ -1,0 +1,13 @@
+#iframe-openfeedback {
+  background-color: #303030;
+  padding: 16px 0;
+  width: 100%;
+  height: 410px;
+
+  @media (max-width: 980px) {
+    height: 520px;
+  }
+  @media (max-width: 620px) {
+    height: 630px;
+  }
+}

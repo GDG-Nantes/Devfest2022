@@ -10,6 +10,7 @@ speakers:
   - katie_hockman
 slot: day-1-conference-3
 room: Titan
+openfeedbackId: 70
 abstract: |-
   Go now supports fuzz testing natively as of Go 1.18, a tool that can be used to identify bugs and security vulnerabilities in your code. This talk will discuss how and why fuzzing can be used in Go, introduce differential fuzzing,
   and describe the mechanics of how fuzzing works under the hood. This talk will include a live code demo of a bug being found, fixed, and tested in real time using fuzzing.

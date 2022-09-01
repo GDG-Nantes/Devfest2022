@@ -54,6 +54,9 @@
     },
     "abstract": {
       "type": "string"
+    },
+    "openfeedbackId": {
+      "type": "number"
     }
   },
   "definitions": {

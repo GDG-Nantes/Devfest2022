@@ -11,6 +11,7 @@ speakers:
   - jean_verrons
 slot: day-2-codelab-2
 room: Les Machines
+openfeedbackId: 1
 abstract: |-
   Vous connaissez tous, ou avez déjà entendu parler des tokens JWT (JSON Web Token). Ils sont souvent utilisés dans le cas de partage d’information entre deux ou plusieurs entités ( par exemple entre un Serveur et un Client).
   Cependant, connaissez-vous vraiment leurs entrailles ? Pourquoi certaines informations sont-elles présentes ? Que se passerait-il si vous les oubliez ?

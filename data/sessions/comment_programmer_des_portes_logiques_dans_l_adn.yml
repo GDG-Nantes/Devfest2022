@@ -10,6 +10,7 @@ speakers:
   - tiffany_souterre
 slot: day-1-quickie-2
 room: Titan
+openfeedbackId: 32
 abstract: |-
   "Programmer le vivant", on entend souvent cette phrase mais à quel point cela est-il vrai ? 
   Les avancées en biotechnologies ont permis de comprendre une partie du code du vivant et l'ingénierie génétique nous permet de le re-programmer de façon très précise. Des concepts tels que les portes et les circuits logiques peuvent être programmés dans l'ADN. 

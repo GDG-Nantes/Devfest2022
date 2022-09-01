@@ -11,6 +11,7 @@ speakers:
   - olivier_leplus
 slot: day-1-codelab-2
 room: Les Machines
+openfeedbackId: 21
 abstract: |
   Pulumi et l'AWS Cloud Developement Kit (AWS CDK) ont ouvert une nouvelle ère pour l'infrastructure-as-code. Jusqu’à maintenant, nous utilisions principalement des langages déclaratifs pour décrire les ressources d'infrastructure dont nous avions besoin. Cela permet d'automatiser complètement le déploiement de l'infrastructure et de rendre celui-ci répétable de manière consistante à l'envie. Cependant, tester ces modèles d’infrastructure sans déployer s’avère complexe, les décomposer en module réutilisable est fastidieux et l’auto-complétion dans les IDE est pauvre.
 

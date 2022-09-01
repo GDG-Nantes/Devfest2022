@@ -10,6 +10,7 @@ speakers:
   - julien_rollin
 slot: day-1-codelab-2
 room: Hangar
+openfeedbackId: 8
 abstract: |
   Rust est un langage de programmation récent qui promet fiabilité, performance et sécurité. Cependant Rust est aussi réputé comme difficile d’accès.
    

@@ -10,6 +10,7 @@ speakers:
   - stephanie_baltus_bergamo
 slot: day-1-codelab-3
 room: Les Machines
+openfeedbackId: 35
 abstract: |-
   Les tests unitaires et d'intégration font partie intégrante de la vie des backend ou frontend engineers. Le Test Driven Development (TDD) commence même à devenir une habitude. Pourtant, **chez les data engineers** c'est une toute autre histoire : la pratique n'est pas automatique, peu répandue alors que nous développons bien du logiciel.
 

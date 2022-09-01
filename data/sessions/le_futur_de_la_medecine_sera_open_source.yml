@@ -10,4 +10,5 @@ speakers:
   - david_sferruzza
 slot: day-2-quickie-1
 room: Jules Verne
+openfeedbackId: 44
 abstract: Pendant la crise du COVID, un collectif d'ingénieurs crée le respirateur artificiel MakAir. La particularité de ce projet ? Être parti de rien pour arriver à des essais cliniques en quelques mois seulement. Une des principales raisons qui rend ça possible est l'open source. Dans cette présentation nous utiliserons l'aventure MakAir pour montrer à quel point il peut être décisif de changer nos méthodes de travail en s'inspirant des méthodes de l'open source et pourquoi c'est important pour le futur de la médecine.

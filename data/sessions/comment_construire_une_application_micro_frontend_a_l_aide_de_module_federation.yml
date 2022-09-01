@@ -10,6 +10,7 @@ speakers:
   - nicolas_morel
 slot: day-2-codelab-2
 room: Hangar
+openfeedbackId: 3
 abstract: |-
   Alors que votre application frontend grossit, elle devient de plus en plus difficile à maintenir, notamment avec plusieurs équipes travaillant sur  la même base de code.   
   Micro-Frontend est un concept emprunté des microservices pour scaler une application frontend. Votre application monolithique est découpée en de multiple morceaux (par fonctionnalité, page, composant…) où chacun de ces morceaux peuvent être développés et déployés en autonomie par une équipe. 

@@ -10,6 +10,7 @@ speakers:
   - gael_poupard
 slot: day-2-conference-4
 room: Titan
+openfeedbackId: 38
 abstract: |
   Si vous utilisez une tartine de JavaScript pour implémenter un bloc dépliant, une fenêtre modale ou de la suggestion dans un champ de formulaire : ce sujet est fait pour vous ! 
 

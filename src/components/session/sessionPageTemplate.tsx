@@ -14,11 +14,16 @@ import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
 import { SecondarySection, TertiarySection } from "../commun/section/section";
 import { AvatarSpeaker, SessionComplexity, Tags } from "../schedule/common";
+import "./style.scss"
 
 const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
   pageContext: { session },
 }) => {
   const slotLabel = getSessionSlotLabel(session.slot);
+  const dateSession = session.slot.startsWith("day-1")
+    ? "2022-10-20"
+    : "2022-10-21";
+  const urlOpenfeedback = `https://openfeedback.io/devfestnantes22/${dateSession}/${session.openfeedbackId}?hideHeader=true&forceColorScheme=dark`;
   return (
     <Layout>
       <DefaultPage title={session.title} noHero={true}>
@@ -50,6 +55,11 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
         <SecondarySection>
           <Markdown content={session.abstract} />
         </SecondarySection>
+        <iframe
+          id="iframe-openfeedback"
+          title="Openfeedback"
+          src={urlOpenfeedback}
+        />
       </DefaultPage>
     </Layout>
   );

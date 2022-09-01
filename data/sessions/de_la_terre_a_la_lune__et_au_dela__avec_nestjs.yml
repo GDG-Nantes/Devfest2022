@@ -12,6 +12,7 @@ speakers:
   - olivier_thierry
 slot: day-1-codelab-1
 room: L'Atelier
+openfeedbackId: 19
 abstract: |-
   Un backend javascript avec un framework moderne, efficient et performant ? NestJS est là pour vous emmener vers les étoiles !
 

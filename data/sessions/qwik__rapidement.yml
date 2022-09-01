@@ -10,6 +10,7 @@ speakers:
   - benjamin_legrand
 slot: day-2-quickie-2
 room: Jules Verne
+openfeedbackId: 13
 abstract: |+
   Qwik, par le créateur d'angular, est un nouveau venu dans la jungle des frameworks javascript
 
