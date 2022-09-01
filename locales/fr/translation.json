@@ -29,6 +29,10 @@
         "reduced": "Tarif réduit",
         "2days-2nd": "En vente le 6 Septembre"
       },
+      "speakers": {
+        "title": "Speakers en vedette",
+        "seeAll": "Voir tous les speakers"
+      },
       "photos": {
         "p1": "Quelques photos du DevFest Nantes 2021",
         "p2": "sur le thème du Street Art 🎨",
@@ -45,6 +49,9 @@
     "partners": {
       "name": "Partenaires",
       "platinium-partners": "Nos Sponsors Platinium"
+    },
+    "speakers": {
+      "name": "Présentateurs"
     },
     "schedule": {
       "name": "Programme",
