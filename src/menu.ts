@@ -10,16 +10,16 @@ export const MENU: Array<MenuItem> = [
     link: "/schedule",
   },
   {
+    label: "speakers",
+    link: "/speakers",
+  },
+  {
     label: "team",
     link: "/team",
   },
   {
     label: "partners",
     link: "/partners",
-  },
-  {
-    label: "speakers",
-    link: "/speakers",
   },
   // {
   //   label: "📣 CFP",
