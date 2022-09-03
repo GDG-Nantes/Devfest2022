@@ -12,10 +12,12 @@ import {
   Toolbar,
 } from "@mui/material";
 import { Box } from "@mui/system";
+import { useLocation } from "@reach/router";
 import { graphql, useStaticQuery } from "gatsby";
+import { useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { ToggleLanguage } from "../helpers/i18n";
+import { getForcedLanguage, ToggleLanguage } from "../helpers/i18n";
 import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
@@ -28,6 +30,23 @@ import theme from "./theme";
 const Layout: React.FC = ({ children }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
   const { isMobileOrTablet } = useResponsiveData();
+
+  const { locale } = useLocalization();
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    const forcedLanguage = getForcedLanguage();
+    const current = locale.substring(0, 2).toLocaleLowerCase();
+    const navLocale =
+      forcedLanguage ||
+      (navigator.language.substring(0, 2).toLocaleLowerCase() !== "fr"
+        ? "en"
+        : "fr");
+    if (!/\/en(\/.*)?/.test(pathname) && current !== navLocale) {
+      const prefix = navLocale == "/fr" ? "" : "/" + navLocale;
+      window.location.assign(prefix + pathname);
+    }
+  });
 
   const layout = useStaticQuery(graphql`
     query {

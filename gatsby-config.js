@@ -59,6 +59,11 @@ module.exports = {
             short_name: `Devfest Nantes`,
             description: `General informations about the Devfest Nantes.`,
           },
+          {
+            start_url: `/fr/`,
+            lang: `fr`,
+            description: `Informations générales sur le Devfest Nantes.`,
+          },
         ],
       },
     },

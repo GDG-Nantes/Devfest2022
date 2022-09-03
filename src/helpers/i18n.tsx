@@ -13,8 +13,17 @@ export const ToggleLanguage: React.FC = () => {
       language={targetLanguage}
       to={pathname.replace(/\/(fr|en)/, "")}
       style={{ width: "100%" }}
+      onClick={() => setForcedLanguage(targetLanguage)}
     >
       <Flag lang={targetLanguage} />
     </LocalizedLink>
   );
 };
+
+export function setForcedLanguage(targetLanguage: "fr" | "en") {
+  localStorage.setItem("forcedLanguage", targetLanguage);
+}
+
+export function getForcedLanguage(): string | null {
+  return localStorage.getItem("forcedLanguage");
+}
