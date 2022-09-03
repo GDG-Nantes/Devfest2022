@@ -1,3 +1,13 @@
+import {
+  Brush,
+  Cloud,
+  Code,
+  Language,
+  Lightbulb,
+  PhoneAndroid,
+  Security,
+  SmartToy,
+} from "@mui/icons-material";
 import { Avatar, Chip, Tooltip } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -22,15 +32,40 @@ export const rooms: Rooms[] = [
   "Hangar",
   "L'Atelier",
 ];
+
 const tagLabels = {
-  mobile_iot: "📱 Mobile & IoT",
-  web: "🌍 Web",
-  discovery: "💡 Discovery",
-  cloud_devops: "☁️ Cloud & DevOps",
-  languages: "📝 Languages",
-  bigdata_ai: "🤖 BigData & AI",
-  security: "🐱‍💻 SECURITY",
-  ux_ui: "💚 UX / UI",
+  mobile_iot: {
+    label: "Mobile & IoT",
+    icon: <PhoneAndroid />,
+  },
+  web: {
+    label: "Web",
+    icon: <Language />,
+  },
+  discovery: {
+    label: "Discovery",
+    icon: <Lightbulb />,
+  },
+  cloud_devops: {
+    label: "Cloud & DevOps",
+    icon: <Cloud />,
+  },
+  languages: {
+    label: "Languages",
+    icon: <Code />,
+  },
+  bigdata_ai: {
+    label: "BigData & AI",
+    icon: <SmartToy />,
+  },
+  security: {
+    label: "SECURITY",
+    icon: <Security />,
+  },
+  ux_ui: {
+    label: "UX / UI",
+    icon: <Brush />,
+  },
 };
 export const Tags: React.FC<{
   tags: string[];
@@ -40,8 +75,9 @@ export const Tags: React.FC<{
     <div className="tags">
       {tags.map((tag) => (
         <Chip
+          icon={tagLabels[tag].icon}
           key={tag}
-          label={tagLabels[tag]}
+          label={tagLabels[tag].label}
           variant="outlined"
           size="small"
           color={color}

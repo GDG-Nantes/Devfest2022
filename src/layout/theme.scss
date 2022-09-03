@@ -7,7 +7,7 @@
 body {
   --primary: #c14d32;
   --secondary: #346369;
-  --primary-dark: #19393b;
+  --primary-dark: #1c4241;
   --tertiary: #ffedbf;
   --tertiary-dark: #f8dda2;
   --tertiary-darker: #f8dda2ac;
@@ -18,7 +18,8 @@ a {
   cursor: pointer;
 }
 
-.secondary {
+.secondary,
+.primary-dark {
   a {
     color: var(--primary-dark);
   }

@@ -1,6 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 import classNames from "classnames";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
 import { MyLink } from "../../helpers/links";
 import { Flag } from "../commun/flags";
@@ -51,9 +52,14 @@ const Hour: React.FC<{ hour: string }> = ({ hour }) => (
   </div>
 );
 
-const FixedSlot: React.FC<{ slot: Slot }> = ({ slot }) => (
-  <div className={classNames("slot", "fixed", slot.type)}>{slot.type}</div>
-);
+const FixedSlot: React.FC<{ slot: Slot }> = ({ slot }) => {
+  const { t } = useTranslation("translation", { keyPrefix: "pages.schedule" });
+  return (
+    <div className={classNames("slot", "fixed", slot.type)}>
+      <Typography variant="h3">{t(slot.type)}</Typography>
+    </div>
+  );
+};
 
 const Session: React.FC<{ session: PartialSession }> = ({ session }) => {
   return (

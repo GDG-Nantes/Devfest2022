@@ -21,6 +21,7 @@ import { getForcedLanguage, ToggleLanguage } from "../helpers/i18n";
 import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
+import "./accessibility.scss";
 import { Footer } from "./footer";
 import { Helmet } from "./helmet";
 import "./layout.scss";
@@ -109,7 +110,7 @@ const Topbar: React.FC<{
             <img
               className="logo-top-bar"
               src={logo}
-              alt="Logo Devfest 2021"
+              alt="Logo Devfest 2022"
               height="50"
               width="150"
             />

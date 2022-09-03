@@ -58,7 +58,12 @@
       "day1-number": "Jeudi 20",
       "day2-number": "Vendredi 21",
       "day1": "Jeudi",
-      "day2": "Vendredi"
+      "day2": "Vendredi",
+      "opening": "Ouverture",
+      "keynote": "Keynote",
+      "break": "Pause",
+      "lunch": "Déjeuner",
+      "party": "After Party"
     },
     "team": { "name": "L'Équipe" },
     "code-of-conduct": { "name": "Code de conduite" },

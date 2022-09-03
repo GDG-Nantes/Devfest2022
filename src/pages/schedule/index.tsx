@@ -3,10 +3,7 @@ import classNames from "classnames";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { DefaultPage } from "../../components/commun/page";
-import {
-  DefaultSection,
-  SecondarySection,
-} from "../../components/commun/section/section";
+import { DefaultSection } from "../../components/commun/section/section";
 import { Schedule } from "../../components/schedule";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
@@ -19,6 +16,7 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
       <DefaultPage title={t("name")}>
         <DefaultSection slim variant="primary-dark">
           <Stack
+            className="header-days"
             direction="row"
             spacing="20px"
             width="100%"
@@ -27,7 +25,7 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
             <MyLink to="/schedule/1">
               <Button
                 variant="contained"
-                color="inherit"
+                color="primary"
                 className={classNames(
                   "button-schedule",
                   "day1",
@@ -40,7 +38,7 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
             <MyLink to="/schedule/2">
               <Button
                 variant="contained"
-                color="inherit"
+                color="primary"
                 className={classNames(
                   "button-schedule",
                   "day2",
@@ -51,10 +49,10 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
               </Button>
             </MyLink>
           </Stack>
-        </DefaultSection>
-        <SecondarySection padding="small">
           <Schedule day={day} />
-        </SecondarySection>
+        </DefaultSection>
+        {/* <SecondarySection padding="small">
+        </SecondarySection> */}
       </DefaultPage>
     </Layout>
   );
