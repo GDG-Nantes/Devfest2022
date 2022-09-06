@@ -2,12 +2,13 @@
   background-color: #303030;
   padding: 16px 0;
   width: 100%;
-  height: 410px;
+  height: 520px;
+  overflow: hidden;
 
-  @media (max-width: 980px) {
-    height: 520px;
+  @media (max-width: 600px) {
+    height: 760px;
   }
-  @media (max-width: 620px) {
-    height: 630px;
-  }
+  // @media (max-width: 400px) {
+  //   height: 780px;
+  // }
 }

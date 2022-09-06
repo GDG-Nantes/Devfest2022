@@ -29,7 +29,7 @@ const HomeContent = () => {
         <Typography variant="body1">{t("site.description")}</Typography>
         <Typography variant="body1">{t("site.theme")}</Typography>
         <DevfestNumbers />
-        <Youtube id="VyWwCNhqk1w" title="AfterMovie 2021" />
+        <Youtube id="rQaEzZIZIRg" title="Teaser 2022" />
       </SecondarySection>
       <PrimarySection>
         <Typography variant="h2">{t("pages.home.tickets.name")}</Typography>
