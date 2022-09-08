@@ -35,15 +35,15 @@ const DataPage = () => {
     }
   `);
 
-  const talksByDay: Session[][] = [[], []];
+  type SessionComplete = Session & { hour: string; speakersNames: string[] };
+  const talksByDay: Array<Array<SessionComplete>> = [[], []];
   allSessionsYaml.edges.forEach((e) => {
-    const session = e.node as Session;
-    session.speakers = session.speakers.map(
+    const session = e.node as SessionComplete;
+    session.speakersNames = session.speakers.map(
       (s) => allSpeakersYaml.edges.find((es) => es.node.key === s)?.node?.name
     );
     const day = session.slot.startsWith("day-1") ? 0 : 1;
-    session.talkType;
-    session.slot = slots.find((s) => s.key === session.slot)?.start as string;
+    session.hour = slots.find((s) => s.key === session.slot)?.start as string;
     talksByDay[day].push(session);
   });
 
@@ -69,7 +69,7 @@ const DataPage = () => {
               </Typography>
               {tbd
                 .filter((s) => s.room === room)
-                .sort((s1, s2) => s1.slot.localeCompare(s2.slot))
+                .sort((s1, s2) => s1.hour?.localeCompare(s2.hour))
                 .map((session) => (
                   <div key={session.key}>
                     <br />
@@ -87,7 +87,7 @@ const DataPage = () => {
                       style={{ color: "var(--primary-dark)" }}
                     >{`${session.talkType} - ${session.tags[0]} - ${session.slot}`}</Typography>
                     <Flag lang={session.language} size="small" />
-                    {session.speakers.map((s) => (
+                    {session.speakersNames.map((s) => (
                       <p
                         key={s}
                         style={{ cursor: "pointer" }}
