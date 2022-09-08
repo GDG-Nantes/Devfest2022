@@ -1,9 +1,10 @@
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import classNames from "classnames";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Slot } from "../../../json_schemas/interfaces/schema_slots";
 import { MyLink } from "../../helpers/links";
+import { Flag } from "../commun/flags";
 import { PartialSession, rooms, Speakers, Tags } from "./common";
 import "./schedule.scss";
 
@@ -130,7 +131,10 @@ const SessionInfo: React.FC<{ session: PartialSession }> = ({ session }) => {
       <span className="session-title">{session.title}</span>
       <span className="sr-only">Salle {session.room}</span>
       <div className="session-info-bottom">
-        <Tags tags={session.tags} />
+        <Stack direction="row" alignItems="center" spacing={1}>
+          <Tags tags={session.tags} />
+          <Flag lang={session.language} size="tiny" />
+        </Stack>
         <Speakers speakers={session.speakers} />
       </div>
     </div>

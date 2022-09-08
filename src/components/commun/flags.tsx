@@ -3,7 +3,7 @@ import React from "react";
 
 export const Flag: React.FC<{
   lang: "English" | "French" | "fr" | "en";
-  size?: "medium" | "small";
+  size?: "medium" | "small" | "tiny";
 }> = ({ lang, size = "medium" }) => {
   const flags = useStaticQuery(graphql`
     query {
@@ -22,6 +22,8 @@ export const Flag: React.FC<{
   const sizes =
     size == "medium"
       ? { height: "18px", width: "24px" }
+      : size == "tiny"
+      ? { height: "12px", width: "16px" }
       : { height: "14px", width: "19px" };
 
   return (

@@ -14,7 +14,7 @@ import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
 import { SecondarySection, TertiarySection } from "../commun/section/section";
 import { AvatarSpeaker, SessionComplexity, Tags } from "../schedule/common";
-import "./style.scss"
+import "./style.scss";
 
 const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
   pageContext: { session },
@@ -24,6 +24,7 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
     ? "2022-10-20"
     : "2022-10-21";
   const urlOpenfeedback = `https://openfeedback.io/devfestnantes22/${dateSession}/${session.openfeedbackId}?hideHeader=true&forceColorScheme=dark`;
+
   return (
     <Layout>
       <DefaultPage title={session.title} noHero={true}>
@@ -33,6 +34,12 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
           </Typography>
           <Stack spacing={5}>
             <Stack direction="row" spacing={2} alignItems="center">
+              <Typography
+                variant="h3"
+                style={{ textTransform: "capitalize", marginTop: "0" }}
+              >
+                {session.talkType}
+              </Typography>
               <Tags tags={session.tags} />
               <SessionComplexity complexity={session.complexity} />
               <Flag lang={session.language} />
