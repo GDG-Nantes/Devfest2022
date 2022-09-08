@@ -18,6 +18,7 @@ import {
 import { Tickets } from "../components/home/tickets";
 import { Partners } from "../components/partners";
 import { Speakers } from "../components/speakers/speakers";
+import { MyLink } from "../helpers/links";
 import Layout from "../layout";
 
 const HomeContent = () => {
@@ -42,7 +43,11 @@ const HomeContent = () => {
         <Typography variant="h2">{t("pages.home.speakers.title")}</Typography>
         <Speakers featuredOnly={true} />
         <Stack justifyContent="center" alignItems="center" marginTop={8}>
-          <Button variant="contained">{t("pages.home.speakers.seeAll")}</Button>
+          <MyLink to="/speakers">
+            <Button variant="contained">
+              {t("pages.home.speakers.seeAll")}
+            </Button>
+          </MyLink>
         </Stack>
       </SecondarySection>
       <TertiarySection slim>
