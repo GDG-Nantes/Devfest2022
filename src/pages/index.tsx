@@ -79,7 +79,7 @@ const DataPage = () => {
                     <Typography
                       variant="h4"
                       style={{ color: "var(--primary-dark)" }}
-                    >{`${session.talkType} - ${session.tags[0]} - ${session.slot}`}</Typography>
+                    >{`${session.talkType} - ${session.tags[0]} - ${session.hour}`}</Typography>
                     <Flag lang={session.language} size="small" />
                     {session.speakersNames.map((s) => (
                       <p
