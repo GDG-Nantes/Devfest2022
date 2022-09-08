@@ -1,0 +1,12 @@
+name: update
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -v -X POST https://import-dot-confetti-349319.uw.r.appspot.com/update/devfestnantes
