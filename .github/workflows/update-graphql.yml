@@ -2,11 +2,8 @@ name: update
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    branches: 
-      - '*'
+    tags:
+      - v*
 
 jobs:
   update:
