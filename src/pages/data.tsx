@@ -39,7 +39,7 @@ const DataPage = () => {
   allSessionsYaml.edges.forEach((e) => {
     const session = e.node as Session;
     session.speakers = session.speakers.map(
-      (s) => allSpeakersYaml.edges.find((es) => es.node.key === s).node.name
+      (s) => allSpeakersYaml.edges.find((es) => es.node.key === s)?.node?.name
     );
     const day = session.slot.startsWith("day-1") ? 0 : 1;
     session.talkType;
