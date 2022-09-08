@@ -6,6 +6,7 @@ import { Session } from "../../json_schemas/interfaces/schema_sessions";
 import { Flag } from "../components/commun/flags";
 import { PrimarySection } from "../components/commun/section/section";
 import { rooms } from "../components/schedule/common";
+import "../layout";
 
 const DataPage = () => {
   const { allSessionsYaml, allSpeakersYaml } = useStaticQuery(graphql`
@@ -48,17 +49,10 @@ const DataPage = () => {
   });
 
   const copy = (x) => navigator.clipboard.writeText(x);
-
   return (
     <PrimarySection>
       {talksByDay.map((tbd, i) => (
         <>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Typography variant="h1">{i == 0 ? "Jeudi" : "Vendredi"}</Typography>
           {rooms.map((room) => (
             <>
@@ -100,6 +94,12 @@ const DataPage = () => {
                 ))}
             </>
           ))}
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </>
       ))}
     </PrimarySection>
