@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { slots } from "../../data/slots.json";
 import { Session } from "../../json_schemas/interfaces/schema_sessions";
+import { Flag } from "../components/commun/flags";
 import { PrimarySection } from "../components/commun/section/section";
 import { rooms } from "../components/schedule/common";
 
@@ -85,6 +86,7 @@ const DataPage = () => {
                       variant="h4"
                       style={{ color: "var(--primary-dark)" }}
                     >{`${session.talkType} - ${session.tags[0]} - ${session.slot}`}</Typography>
+                    <Flag lang={session.language} size="small" />
                     {session.speakers.map((s) => (
                       <p
                         key={s}
