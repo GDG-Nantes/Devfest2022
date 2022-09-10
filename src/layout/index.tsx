@@ -20,7 +20,7 @@ import { useTranslation } from "react-i18next";
 import { getForcedLanguage, ToggleLanguage } from "../helpers/i18n";
 import { MyLink } from "../helpers/links";
 import { useResponsiveData } from "../helpers/responsive";
-import { MENU } from "../menu";
+import { MENU } from "../navbar-menu";
 import "./accessibility.scss";
 import { Footer } from "./footer";
 import { Helmet } from "./helmet";

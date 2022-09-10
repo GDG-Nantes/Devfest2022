@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "menuTraiteur",
+  "type": "object",
+  "additionalProperties": {
+    "type": "array",
+    "items": { "$ref": "#/definitions/sectionMenu" }
+  },
+  "definitions": {
+    "sectionMenu": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "titre": {
+          "type": "string"
+        },
+        "plats": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/plat" }
+        }
+      },
+      "required": ["titre", "plats"]
+    },
+    "plat": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "titre": {
+          "type": "string"
+        },
+        "allergenes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/allergene" }
+        }
+      },
+      "required": ["titre", "allergenes"]
+    },
+    "allergene": {
+      "type": "string",
+      "enum": ["allergene1"]
+    }
+  }
+}

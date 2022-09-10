@@ -15,6 +15,10 @@
     {
       "fileMatch": ["data/slots.json"],
       "url": "./json_schemas/schema_slots.json"
+    },
+    {
+      "fileMatch": ["data/menu/*.json"],
+      "url": "./json_schemas/schema_menu.json"
     }
   ],
   "editor.codeActionsOnSave": {

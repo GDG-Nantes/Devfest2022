@@ -4,7 +4,7 @@ import React from "react";
 import { Helmet as ReactHelmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Event, WithContext } from "schema-dts";
-import { MENU } from "../menu";
+import { MENU } from "../navbar-menu";
 
 export const Helmet: React.FC = () => {
   const { t } = useTranslation();

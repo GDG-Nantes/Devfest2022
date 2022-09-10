@@ -1,0 +1,288 @@
+{
+  "Jeudi": [
+    {
+      "titre": "ATELIER JAMBON – BEURRE !",
+      "plats": [
+        {
+          "titre": "Chiffonnade de jambon à croquer dans une baguette au beurre salé",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "ATELIER POKE BOWL!",
+      "plats": [
+        {
+          "titre": "Riz sushi, févettes, carotte, avocat\nSaumon mariné ou poulet teriyaki\nSauce soja au gingembre",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "LE COIN DES VÉGÉTARIENS",
+      "plats": [
+        {
+          "titre": "Sucrine et mirepoix de légumes au citron vert",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Sablé parmesan, crème légère au basilic et perle de poivron",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Velouté de champignons (chaud)",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Polenta, épinard et pignons grillés",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Tartelette de légumes confit au pesto",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Foccacia, tapenade d’olive et tomate confite",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Wrap houmous et crudités",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "LES PIÈCES TENTATION",
+      "plats": [
+        {
+          "titre": "Rouleau de printemps de crabe",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Gambas au Curé Nantais et abricot sec",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Polenta saumon fumé et câpre à queue",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Pressé de volaille au citron confit",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Navarin d’agneau aux petits pois",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Mini opéra foie gras et coing",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "MINI SANDWICH",
+      "plats": [
+        {
+          "titre": "Wrap jambon Serrano, crème de tomate, légumes confit et parmesan",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Wrap crevettes et crudités",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "CHAUD CHAUD !",
+      "plats": [
+        {
+          "titre": "Confit de veau au citron confit, fleurette de brocolis et pomme grenaille",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Cabillaud au beurre citronné, petits légumes à la fleur de sel",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Butternut et champignons poêlées, chèvre et crumble de noisettes",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "Douceurs sucrées",
+      "plats": [
+        {
+          "titre": "Mini crêpes garnies minute chocolat, sucre, caramel au beurre salé",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Finger chocolat lait et brownies",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Tarte poire amande",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Coque chocolat et cachuète",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Biscuit amande caramel au beurre salé",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Tarte citron meringuée",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    }
+  ],
+  "Vendredi": [
+    {
+      "titre": "ATELIER HOT DOG",
+      "plats": [
+        {
+          "titre": "Hot dog saucisse",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "ATELIER OEUF PARFAIT",
+      "plats": [
+        {
+          "titre": "Piperade de légumes & oeuf juste parfait, chips de lard",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "LE COIN DES VÉGÉTARIENS",
+      "plats": [
+        {
+          "titre": "Tatin de tomate aux aromates",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Le tout carotte",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Tarte fine petits pois",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Velouté butternut et chataîgne",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Polenta et bouton de champignons",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Crème de céleri et artichaut confit",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Viennois coleslaw aux oignons rouges et avocat",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "LES PIÈCES TENTATION",
+      "plats": [
+        {
+          "titre": "Filet de poulet au saté pistache, oignons grelot et miel",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Pic de boeuf mariné et champignon confit",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Foccacia jambon de Parme et crème de Meaux",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Pince moi de gambas",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Fraîcheur de lieu jaune en papyrus de saumon",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Croustille pétoncle marinée au Yuzu, tapenade de tomate",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "LES PIÈCES LUNCH",
+      "plats": [
+        {
+          "titre": "Viennois au poulet, beurre d'avocat, tomates confites et poivrons marinés",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Wraps Coppa au chèvre et pesto, tomates confites et roquette",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Tarte fine au thon de Concarneau",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "MINI PLAT CHAUD",
+      "plats": [
+        {
+          "titre": "Volaille au cidre, pomme confite et risotto d’épeautre",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Dos de saumon au sésame et légumes d’automne",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Penne à la crème de roquette et Pecorino Pepato",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    },
+    {
+      "titre": "Douceurs sucrées",
+      "plats": [
+        {
+          "titre": "Découpe d’éclairs géant, parfums vanille, chocolat, pistache",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Comme un café crème",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Carot cake",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Tatin pomme",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Paris Brest",
+          "allergenes": ["allergene1"]
+        },
+        {
+          "titre": "Mini Mont Blanc marron",
+          "allergenes": ["allergene1"]
+        }
+      ]
+    }
+  ]
+}
