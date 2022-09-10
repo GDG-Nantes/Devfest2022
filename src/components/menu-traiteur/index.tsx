@@ -19,18 +19,17 @@ export const MenuTraiteur: React.FC = () => {
     <>
       {Object.entries(MenuFR).map(([jour, sectionsJour], i) => (
         <DefaultSection
+          padding="none"
           key={jour}
           variant={i % 2 == 0 ? "primary" : "secondary"}
         >
           <Typography variant="h2">{jour}</Typography>
-          <Table
-            sx={{ minWidth: 700 }}
-            size="small"
-            aria-label="spanning table"
-          >
+          <Table size="small" aria-label="spanning table">
             <TableHead>
               <TableRow>
-                <TableCell component="th">Nom</TableCell>
+                <TableCell component="th" sx={{ maxWidth: "50%" }}>
+                  Nom
+                </TableCell>
                 {ALLERGENES.map((allergene) => (
                   <TableCell key={allergene}>{allergene}</TableCell>
                 ))}
@@ -46,7 +45,9 @@ export const MenuTraiteur: React.FC = () => {
                   </TableRow>
                   {section.plats.map((plat) => (
                     <TableRow key={plat.titre}>
-                      <TableCell component="th">{plat.titre}</TableCell>
+                      <TableCell component="th" sx={{ maxWidth: "50%" }}>
+                        {plat.titre}
+                      </TableCell>
                       {ALLERGENES.map((allergene) => (
                         <TableCell key={plat.titre + "-" + allergene}>
                           {plat.allergenes.includes(allergene) ? (
