@@ -1,9 +1,13 @@
 ---
 key: david_franck
-name: David FRANCK
+name: David Franck
 feature: false
 city: Nantes, France
-photoUrl: https://lh3.googleusercontent.com/a-/AOh14GiQQ7ALdYQR8Nc_qMtLXDS45PitGQBTWYBzWL0wDA=s96-c
+photoUrl: https://s.gravatar.com/avatar/cf1cbcce6f105882a1fd51fceafe3f0e?s=80
 socials:
   twitter: dayoud
-bio: 'Développeur depuis 2005, passioné d''amélioration continue, d''apprentissage et de partage de connaissances. '
+bio: |-
+  Développeur passionné par l'apprentissage, l'amélioration continue, le craft et le partage de connaissances. 
+  J'aime travailler dans des équipes qui sont ouvertes à l'échange. 
+  Je développpe principalement en Java sur des backends jusqu'à présent. 
+  J'ai rejoint Shodo depuis Juillet 2022, en accord avec mes valeurs. 
