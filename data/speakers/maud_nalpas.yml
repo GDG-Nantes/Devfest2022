@@ -3,4 +3,9 @@ key: maud_nalpas
 name: Maud Nalpas
 feature: false
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GgfHjfweLkPE3NakHDTVlYJr6JNuudqF-tcBmopdQ=s96-c
-socials: {}
+city: Berlin
+socials: 
+  linkedin: maudnalpas
+  twitter: maudnals
+bio: |-
+  Developer Relations @ Google, Chrome, web privacy and security.
