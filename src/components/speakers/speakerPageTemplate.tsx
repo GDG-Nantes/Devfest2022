@@ -4,7 +4,7 @@ import React from "react";
 import { Session } from "../../../json_schemas/interfaces/schema_sessions";
 import {
   Social,
-  Speaker,
+  Speaker
 } from "../../../json_schemas/interfaces/schema_speakers";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
@@ -47,7 +47,6 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
           <Stack spacing={5}>
             <Stack spacing={5} direction="column" alignItems="center">
               <AvatarSpeaker speaker={speaker} size="large" />
-              {/* <Stack spacing={1} direction="column"> */}
               <Typography
                 variant="h1"
                 color="primary"
@@ -65,7 +64,6 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
                   />
                 ))}
               </Stack>
-              {/* </Stack> */}
             </Stack>
             <Stack spacing={1}>
               {sessions.map((session) => (

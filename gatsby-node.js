@@ -73,6 +73,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               socials {
                 twitter
                 github
+                linkedin
               }
             }
           }
