@@ -12,13 +12,12 @@ slot: day-2-conference-1
 room: Titan
 openfeedbackId: 11
 abstract: |-
-  A tour of a few best practices for privacy on the web:
-  * (Why does this matter? Overview of the landscape and how it's changing)
-  * Privacy is boring (NOT!)
-  * Example app (will be used as a red thread)
-  * Headers, policies (Permissions / Referrer)
-  * Cookies
-  * Third-parties
-  * Browser testing 
-  * Encryption
-  *  What about fingerprinting?
+  Hitchhiking isn't really a thing anymore, is it? "The real danger of hitchhiking has most likely remained relatively constant, but the general perception of this danger has increased".
+
+  In the same way, people are increasingly worried about their privacy on the web. Browsers are taking measures to allay these concerns, and the whole landscape is shifting.
+
+  This also impacts us, web developers. What can you do, and what should you do, to improve privacy on your site?
+
+  In this talk, I'll take you on a little trip to answer that question. I'll share concrete tips, things you can do today on your site to improve user privacy—and also user experience, while we're at it.
+
+  Pack up and follow me!
