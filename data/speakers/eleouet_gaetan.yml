@@ -1,13 +1,14 @@
 ---
 key: eleouet_gaetan
-name: ELEOUET Gaëtan
+name: Gaëtan Eleouet
 feature: false
 company: Meritis
 companyLogo: /images/partners/meritis.png
+city: Nantes, France
 photoUrl: https://blog.egaetan.me/extern/photo.png
 socials:
   twitter: egaetan
-  github: '@geleouet'
+  github: geleouet
 bio: |-
   Dans mes jeunes années être geek n’était pas un métier et pourtant je suis aujourd’hui développeur depuis 15 ans. 
   Animé par des convictions fortes sur l’impact des développeurs sur le monde, je transmets et j’enseigne dans le cadre d’atelier de code et en vacation en école d’ingénieur. 
