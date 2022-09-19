@@ -1,7 +1,14 @@
 ---
 key: laura_morinigo
 name: Laura Morinigo
+company: Samsung
 city: London, UK
 feature: true
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GhKBShL3YJ-JUQ4fpafi2aZ_hVJwshJmRfY3Ko8H_o=s96-c
-socials: {}
+socials:
+  twitter: thisislalaok
+  github: lauramorinigo
+  linkedin: laurasmorinigo
+bio: |-
+  Web Developer Advocate at Samsung
+  Mentor & Google Developer Expert for Firebase
