@@ -1,7 +1,21 @@
 ---
 key: stephanie_wong
 name: Stephanie Wong
+company: Google
 city: San Franscisco, USA
 feature: true
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GjpaCrsShiSjW1i53K0Sq2zHNtd9Whw-D_EYuSZkw=s96-c
-socials: {}
+socials:
+  twitter: stephr_wong
+  github: swongra
+  linkedin: stephrwong
+bio: |-
+  3x Webby Award-winning speaker, writer, producer, engineer, and developer content guru. I'm a leader at Google with a mission to blend storytelling and technology to create remarkable online developer content. I bring a unique combination of technical expertise, world-class public-speaking skills, sales and marketing expertise, and ability to lead organizational change. At Google, I've created over 400 videos, blogs, courses, tutorials, and podcasts that have helped developers learn fundamentals, solve their toughest challenges, and pass certifications all around the world.
+
+  I'm the writer and creator of Google Cloud Youtube series like Eyes on Enterprise, Networking end-to-end, and Season of Scale. You might recognize me as the host of the weekly GCP Podcast and the Next onAir broadcast. Born and raised in San Francisco, I'm active in my community, fiercely supporting women in tech and mentoring students. 
+
+  Stay up to date with my latest content:
+  Website: stephrwong.com
+  Twitter: @stephr_wong
+  Videos: https://bit.ly/2Vkckh5
+  Articles: https://bit.ly/gcp_blogs
