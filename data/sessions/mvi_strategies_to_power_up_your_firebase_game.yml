@@ -1,19 +1,25 @@
 ---
-key: mvi_strategies_to_power_up_your_firebase_game
-title: MVI Strategies to Power-Up your Firebase Game
-language: English
+key: comment_j_ai_largue_apollo_server_pour_graphql_yoga
+title: Comment j'ai largué Apollo Server pour GraphQL Yoga
+language: French
 talkType: conference
 tags:
-  - mobile_iot
+  - web
 complexity: Intermediate
 speakers:
-  - etienne_caron
+  - nicolas_lepage
 slot: day-1-conference-2
 room: Tour de Bretagne
 openfeedbackId: 54
 abstract: |-
-  Thanks to its cross-platform support and extensive feature list, the Firebase platform is a compelling choice for app development. It also comes with a few challenges. 
+  Dans l'écosystème des serveurs GraphQL, Apollo Server fait figure de référence.
+  Mais de plus en plus d'alternatives font leur apparition, et notamment en début d'année GraphQL Yoga v2, un serveur fully featured et extensible.
+  Simple à mettre en place, Yoga ouvre l'accès via des plugins à de nombreuses fonctionnalités : authentification, mise en cache, reporting d'erreur, et bien plus...
 
-  The API surface can be uneven from one platform to the next, especially when working with a shared web and mobile codebase. Working with live-streaming sources of data can be difficult. Firebase NoSQL approach usually involves recombining multiple streams of flattened data structures. 
+  Alors après 4 années de relation compliquée avec Apollo, ma décision est prise, je le largue pour Yoga !
+  Seulement après autant de temps, l'adhérence entre mon projet et Apollo est devenue assez forte...
+  Comment migrer les directives customs ? les subscriptions ? les uploads/downloads de fichiers ? le batching de queries ? et qui va s'occuper des enfants ?
 
-  Thankfully the MVI architecture, with its reactive and functional approach, can help make short work of all these challenges. In this talk, we'll look at various Firebase services (both web and mobile) to show how you can handle the challenges they each present.
+  Dans cette présentation, je vous donne mon retour d'expérience sur cette séparation difficile mais salutaire.
+  GraphQL Yoga est-il vraiment mieux que Apollo Server ? Est-ce simple de migrer de l'un à l'autre ? La promesse de l'extensibilité de Yoga est-elle tenue ?
+  Essayons de répondre à toutes ces questions !
