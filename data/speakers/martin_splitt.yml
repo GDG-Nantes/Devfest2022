@@ -1,7 +1,13 @@
 ---
 key: martin_splitt
 name: Martin Splitt
+company: Google
 city: Zürich, Switzerland
 feature: true
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14Gjl4PGXSEUsKMlYw14ckkOEAwcIkZdJuduO1Qi3SPs=s96-c
-socials: {}
+socials:
+  twitter: g33konaut
+  github: AVGP
+  linkedin: martinsplitt
+bio: |-
+  Friendly internet fairy & community unicorn & cheerleader. He/him. Developer 🥑  at Google. Build stuff, have fun! 
