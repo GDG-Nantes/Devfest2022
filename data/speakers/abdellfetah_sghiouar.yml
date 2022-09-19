@@ -1,7 +1,15 @@
 ---
 key: abdellfetah_sghiouar
 name: Abdellfetah Sghiouar
+company: Google
 city: Stockholm, Sweden
 feature: false
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GhSLJKrHXv6ctwyeNDMLGxTZv93wf2GoTNBKhitVQ=s96-c
-socials: {}
+socials:
+  twitter: boredabdel
+  github: boredabdel
+  linkedin: sabdelfettah
+bio: |-
+  Senior Cloud Developer Advocate at Google Cloud
+  Community lead and Podcast host
+  4 x Kubernetes & 5 x Google Cloud certified
