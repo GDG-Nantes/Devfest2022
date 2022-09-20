@@ -4,7 +4,7 @@ import { DefaultPage } from "../components/commun/page";
 import { MenuTraiteur } from "../components/menu-traiteur";
 import Layout from "../layout";
 
-const PartnersPage = () => {
+const MenuTraiteurPage = () => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.menu" });
   return (
     <Layout>
@@ -15,4 +15,4 @@ const PartnersPage = () => {
   );
 };
 
-export default PartnersPage;
+export default MenuTraiteurPage;

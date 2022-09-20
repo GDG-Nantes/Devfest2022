@@ -21,6 +21,10 @@ export const MENU: Array<MenuItem> = [
     label: "partners",
     link: "/partners",
   },
+  {
+    label: "menu",
+    link: "/menu",
+  },
   // {
   //   label: "📣 CFP",
   //   link: "https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3",
