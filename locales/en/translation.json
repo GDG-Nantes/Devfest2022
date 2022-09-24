@@ -53,6 +53,9 @@
     "speakers": {
       "name": "Speakers"
     },
+    "blog": {
+      "name": "Blog"
+    },
     "schedule": {
       "name": "Schedule",
       "day1-number": "Thursday 20th",
