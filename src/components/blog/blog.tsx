@@ -69,7 +69,7 @@ const ArticleBlog: React.FC<{
           {isBig && (
             <div
               style={{
-                width: "25%",
+                minWidth: "25%",
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -90,8 +90,8 @@ const ArticleBlog: React.FC<{
             >
               {blog.date}
             </Typography>
-            <Typography variant="body1">
-              {truncate(blog.content, 400)}
+            <Typography variant="body1" className="two-line-text">
+              {blog.content}
             </Typography>
           </Stack>
         </Stack>
@@ -99,7 +99,3 @@ const ArticleBlog: React.FC<{
     </MyLink>
   );
 };
-
-function truncate(str, n) {
-  return str.length > n ? str.slice(0, n - 1) + "..." : str;
-}
