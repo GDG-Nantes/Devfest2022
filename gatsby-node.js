@@ -78,6 +78,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
+        allBlogsYaml {
+          edges {
+            node {
+              key
+              title
+              image
+              date
+              content
+            }
+          }
+        }
       }
     `
   );
@@ -112,6 +123,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: speakerPageTemplate,
       context: {
         speaker,
+      },
+    });
+  });
+
+  // Blogs
+  const blogPageTemplate = path.resolve(
+    "src/components/blog/blogPageTemplate.tsx"
+  );
+  data.allBlogsYaml.edges.forEach(({ node: blog }) => {
+    const path = "blog/" + blog.key;
+    createPage({
+      path,
+      component: blogPageTemplate,
+      context: {
+        blog,
       },
     });
   });
