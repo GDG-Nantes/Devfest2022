@@ -81,7 +81,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         allBlogsYaml {
           edges {
             node {
-              id
+              key
               title
               image
               date
@@ -132,7 +132,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     "src/components/blog/blogPageTemplate.tsx"
   );
   data.allBlogsYaml.edges.forEach(({ node: blog }) => {
-    const path = "blog/" + blog.id;
+    const path = "blog/" + blog.key;
     createPage({
       path,
       component: blogPageTemplate,

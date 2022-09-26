@@ -12,81 +12,97 @@ export const Blogs: React.FC = () => {
       allBlogsYaml {
         edges {
           node {
-            id
+            key
             title
             image
-            date
+            date(formatString: "YYYY-MM-DD")
             content
           }
         }
       }
-      allFile(
-        filter: { relativePath: { glob: "blog/**/*" }, ext: { ne: ".mdx" } }
-      ) {
+      allFile(filter: { relativePath: { glob: "blog/**/mini-*" } }) {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData(
-              width: 200
-              height: 200
-              backgroundColor: "#fff"
-              transformOptions: { cropFocus: CENTER }
-            )
+            gatsbyImageData
           }
         }
       }
     }
   `);
 
-  const { isBig } = useResponsiveData();
-
   const blogs = allBlogsYaml.edges.map((e) => {
     return {
       ...e.node,
       imageData: getImage(
-        allFile.nodes.find((node) => node.name == e.node.image)
+        allFile.nodes.find((node) => node.name == "mini-" + e.node.image)
       ),
     };
   }) as Array<Blog & { imageData: IGatsbyImageData }>;
 
+  const [currentDate, setCurrentDate] = React.useState<string | null>(null);
+  React.useEffect(() => {
+    setCurrentDate(new Date().toISOString());
+    console.log();
+  }, []);
+
   return (
     <Stack spacing={5} divider={<Divider />}>
-      {blogs.map((blog, i) => (
-        <MyLink key={blog.id} to={"/blog/" + blog.id}>
-          <article className="lien-blog">
-            <Stack
-              direction={i % 2 == 0 ? "row" : "row-reverse"}
-              spacing={5}
-              maxHeight={200}
-              overflow="hidden"
-            >
-              {isBig && (
-                <div
-                  style={{
-                    width: "25%",
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  <GatsbyImage
-                    image={blog.imageData}
-                    alt={"image " + blog.title}
-                    objectFit="cover"
-                    objectPosition="50% 50%"
-                  />
-                </div>
-              )}
-              <Stack direction="column" style={{ maxWidth: "75%" }}>
-                <Typography variant="h2">{blog.title}</Typography>
-                <Typography variant="body1" textOverflow="ellipsis">
-                  {truncate(blog.content, 400)}
-                </Typography>
-              </Stack>
-            </Stack>
-          </article>
-        </MyLink>
-      ))}
+      {blogs.map(
+        (blog, i) =>
+          (currentDate == null || currentDate > blog.date) && (
+            <ArticleBlog key={blog.key} blog={blog} i={i} />
+          )
+      )}
     </Stack>
+  );
+};
+
+const ArticleBlog: React.FC<{
+  blog: Blog & { imageData: IGatsbyImageData };
+  i: number;
+}> = ({ blog, i }) => {
+  const { isBig } = useResponsiveData();
+  return (
+    <MyLink key={blog.key} to={"/blog/" + blog.key}>
+      <article className="lien-blog">
+        <Stack
+          direction={i % 2 == 0 ? "row" : "row-reverse"}
+          spacing={5}
+          maxHeight={200}
+          overflow="hidden"
+        >
+          {isBig && (
+            <div
+              style={{
+                width: "25%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <GatsbyImage
+                image={blog.imageData}
+                alt={"image " + blog.title}
+                objectFit="cover"
+                objectPosition="50% 50%"
+              />
+            </div>
+          )}
+          <Stack direction="column" style={{ maxWidth: "75%" }}>
+            <Typography variant="h2">{blog.title}</Typography>
+            <Typography
+              variant="subtitle2"
+              style={{ marginTop: "-35px", marginBottom: "20px" }}
+            >
+              {blog.date}
+            </Typography>
+            <Typography variant="body1">
+              {truncate(blog.content, 400)}
+            </Typography>
+          </Stack>
+        </Stack>
+      </article>
+    </MyLink>
   );
 };
 

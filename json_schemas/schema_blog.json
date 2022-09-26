@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "required": ["title", "image", "date", "content"],
   "properties": {
-    "id": {
+    "key": {
       "type": "string"
     },
     "title": {

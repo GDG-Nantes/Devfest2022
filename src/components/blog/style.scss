@@ -1,0 +1,16 @@
+.blog-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 450px;
+  align-items: flex-end;
+  display: flex;
+
+  @media (max-width: 960px) {
+    height: 250px;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+  }
+}

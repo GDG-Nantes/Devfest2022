@@ -7,14 +7,23 @@ export const DefaultSection: React.FC<{
   slim?: boolean;
   padding?: "normal" | "none" | "small";
   style?: CSSProperties;
-}> = ({ children, variant = "primary", slim, padding = "normal", style }) => (
+  className?: string;
+}> = ({
+  children,
+  variant = "primary",
+  slim,
+  padding = "normal",
+  style,
+  className,
+}) => (
   <div
     style={style}
     className={classNames(
       "section",
       variant,
       slim && "slim",
-      padding && "padding-" + padding
+      padding && "padding-" + padding,
+      className
     )}
   >
     {children}
@@ -25,6 +34,7 @@ type Section = React.FC<{
   slim?: boolean;
   padding?: "normal" | "none" | "small";
   style?: CSSProperties;
+  className?: string;
 }>;
 
 export const SecondarySection: Section = ({ children, ...props }) => (

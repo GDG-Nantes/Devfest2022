@@ -7,15 +7,14 @@ import Layout from "../../layout";
 import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
 import { SecondarySection, TertiarySection } from "../commun/section/section";
+import "./style.scss";
 
 const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
   pageContext: { blog },
 }) => {
   const { allFile } = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: { relativePath: { glob: "blog/**/*" }, ext: { ne: ".mdx" } }
-      ) {
+      allFile(filter: { relativePath: { glob: "blog/**/hero-*" } }) {
         nodes {
           name
           childImageSharp {
@@ -27,7 +26,7 @@ const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
   `);
 
   const backgroundSrc = getSrc(
-    allFile.nodes.find((node) => node.name == blog.image)
+    allFile.nodes.find((node) => node.name == "hero-" + blog.image)
   );
 
   return (
@@ -35,21 +34,12 @@ const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
       <DefaultPage title={blog.title} noHero={true}>
         <TertiarySection
           padding="none"
+          className="blog-section"
           style={{
             backgroundImage: `url(${backgroundSrc})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 40%",
-            height: "300px",
-            alignItems: "flex-end",
-            display: "flex",
           }}
         >
-          <Typography
-            variant="h1"
-            style={{ marginBottom: "5px" }}
-            color="primary"
-          >
+          <Typography variant="h1" color="primary">
             {blog.title}
           </Typography>
         </TertiarySection>
