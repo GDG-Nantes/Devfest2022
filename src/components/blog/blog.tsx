@@ -1,4 +1,5 @@
 import { Divider, Stack, Typography } from "@mui/material";
+import { format } from "date-fns";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
@@ -40,20 +41,13 @@ export const Blogs: React.FC = () => {
     };
   }) as Array<Blog & { imageData: IGatsbyImageData }>;
 
-  const [currentDate, setCurrentDate] = React.useState<string | null>(null);
-  React.useEffect(() => {
-    setCurrentDate(new Date().toISOString());
-    console.log();
-  }, []);
-
   return (
     <Stack spacing={5} divider={<Divider />}>
-      {blogs.map(
-        (blog, i) =>
-          (currentDate == null || currentDate > blog.date) && (
-            <ArticleBlog key={blog.key} blog={blog} i={i} />
-          )
-      )}
+      {blogs
+        .filter((blog) => format(Date.now(), "yyyy-MM-dd") >= blog.date)
+        .map((blog, i) => (
+          <ArticleBlog key={blog.key} blog={blog} i={i} />
+        ))}
     </Stack>
   );
 };
@@ -88,7 +82,7 @@ const ArticleBlog: React.FC<{
               />
             </div>
           )}
-          <Stack direction="column" style={{ maxWidth: "75%" }}>
+          <Stack direction="column" style={{ minWidth: "75%" }}>
             <Typography variant="h2">{blog.title}</Typography>
             <Typography
               variant="subtitle2"

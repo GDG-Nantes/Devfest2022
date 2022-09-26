@@ -11,6 +11,10 @@
   }
 
   h1 {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
+}
+
+.two-line-text {
+  -webkit-line-clamp: 2;
 }

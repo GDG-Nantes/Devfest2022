@@ -44,7 +44,7 @@ const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
           </Typography>
         </TertiarySection>
         <SecondarySection>
-          <Markdown content={blog.content} />
+          <Markdown content={blog.content} className="two-line-text" />
         </SecondarySection>
       </DefaultPage>
     </Layout>
