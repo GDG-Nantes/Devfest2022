@@ -62,7 +62,7 @@ const ArticleBlog: React.FC<{
       <article className="lien-blog">
         <Stack
           direction={i % 2 == 0 ? "row" : "row-reverse"}
-          spacing={5}
+          spacing={2}
           maxHeight={200}
           overflow="hidden"
         >
@@ -71,7 +71,7 @@ const ArticleBlog: React.FC<{
               style={{
                 minWidth: "25%",
                 display: "flex",
-                justifyContent: "center",
+                justifyContent: i % 2 == 0 ? "flex-start" : "flex-end",
               }}
             >
               <GatsbyImage
@@ -82,7 +82,7 @@ const ArticleBlog: React.FC<{
               />
             </div>
           )}
-          <Stack direction="column" style={{ minWidth: "75%" }}>
+          <Stack direction="column" style={{ minWidth: "calc(75% - 16px)" }}>
             <Typography variant="h2">{blog.title}</Typography>
             <Typography
               variant="subtitle2"
