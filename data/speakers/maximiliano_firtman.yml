@@ -4,4 +4,8 @@ name: Maximiliano Firtman
 city: Buenos Aires, Argentina
 feature: false
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GhrFJ3_esY0sGmRsKYs7Lz1FymbLMxb_NP9t1jRmA=s96-c
-socials: {}
+socials:
+  twitter: firt
+  github: firtman
+bio: |-
+  Hi!, I'm a freelance mobile+web developer, author, trainer and speaker focusing on Progressive Web Apps, Performance, Mobile and the Web Platform.
