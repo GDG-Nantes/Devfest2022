@@ -23,6 +23,8 @@ a {
   a {
     color: var(--primary-dark);
     font-weight: 500;
+  }
+  & > a {
     text-decoration: underline;
     text-underline-offset: 2px;
   }
