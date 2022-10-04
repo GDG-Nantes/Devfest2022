@@ -11,9 +11,9 @@ export const DevfestNumbers = () => {
       justifyContent="center"
       margin="20px 0"
     >
-      <Number label="attendees" value={2000} />
+      <Number label="attendees" value={3500} />
       <Number label="days" value={2} />
-      <Number label="sessions" value={69} />
+      <Number label="sessions" value={71} />
       <Number label="tracks" value={4} />
       <Number label="speakers" value={"90+"} />
     </Grid>

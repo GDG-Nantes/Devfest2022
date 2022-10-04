@@ -6,16 +6,16 @@ import { MyLink } from "../../helpers/links";
 
 export const Tickets = () => {
   const disabled1st = true;
-  const disabled2nd = false;
+  const disabled2nd = true;
 
   return (
     <Grid
-    container
-    columnSpacing={1}
-    rowSpacing={3}
-    margin="20px 0"
-    justifyContent="center"
-    className="tickets"
+      container
+      columnSpacing={1}
+      rowSpacing={3}
+      margin="20px 0"
+      justifyContent="center"
+      className="tickets"
     >
       <Ticket
         labelKey="2days-2nd"
