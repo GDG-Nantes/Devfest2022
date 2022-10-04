@@ -22,7 +22,7 @@
       },
       "tickets": {
         "name": "Tickets",
-        "description": "La première vente des places est terminée, rendez-vous le 6 septembre pour la seconde vague !",
+        "description": "La vente des places est terminée !",
         "2daysEarly": "Early Bird",
         "2days-1st": "Pass 2 jours",
         "1day": "Pass 1 jour",

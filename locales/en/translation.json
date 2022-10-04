@@ -22,7 +22,7 @@
       },
       "tickets": {
         "name": "Tickets",
-        "description": "The first round of ticket sales is over, don't miss the second one on September 6th!",
+        "description": "The sale is over !",
         "2daysEarly": "Early Bird",
         "2days-1st": "2 days ticket",
         "1day": "1 day ticket",
