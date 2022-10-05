@@ -7,7 +7,9 @@ content: |-
   L’axolotl est l’animal totem de SFEIR depuis 2016. Fétiche de l’entreprise, sa bouille bienveillante séduit en interne comme en externe. 
   Retrouve-nous sur le stand de SFEIR pour tenter de gagner des stickers, un t-shirt ou ta peluche Axolotl ! 
 
-  ![plein d'axolotl](https://i.ibb.co/tpwzTQd/axolotl.jpg)
+  <div style="text-align: center">
+    <img src="https://i.ibb.co/tpwzTQd/axolotl.jpg" alt="plein de peluche d'axololt" style="max-width: 100%" />
+  </div>
 
   Mais alors, pourquoi avoir choisi cette créature ?
 
