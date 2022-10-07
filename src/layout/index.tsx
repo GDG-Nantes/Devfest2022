@@ -72,15 +72,9 @@ const Layout: React.FC = ({ children }) => {
       <Helmet />
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Topbar
-          toggleDrawer={toggleDrawer}
-          showMenu={!isMobileOrTablet}
-          logo={layout.file.publicURL}
-        />
+        <Topbar toggleDrawer={toggleDrawer} logo={layout.file.publicURL} />
 
-        {isMobileOrTablet && (
-          <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
-        )}
+        <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
         <CustomMDXProvider>{children}</CustomMDXProvider>
         <Footer />
       </ThemeProvider>
@@ -96,15 +90,11 @@ const TopMenu = () => (
 
 const Topbar: React.FC<{
   toggleDrawer: (open) => (event) => void;
-  showMenu: boolean;
   logo: string;
-}> = ({ toggleDrawer, showMenu, logo }) => {
-  const styleToolbar = showMenu
-    ? { maxWidth: "1100px", width: "100%", margin: "auto" }
-    : {};
+}> = ({ toggleDrawer, logo }) => {
   return (
     <AppBar position="sticky">
-      <Toolbar style={styleToolbar}>
+      <Toolbar className="toolbar">
         <Box className="top-bar-left">
           <MyLink to="/">
             <img
@@ -118,17 +108,15 @@ const Topbar: React.FC<{
         </Box>
 
         <Box className="top-bar-right">
-          {showMenu ? (
-            <TopMenu />
-          ) : (
-            <IconButton
-              edge="start"
-              aria-label="open menu"
-              onClick={toggleDrawer(true)}
-            >
-              <MenuRounded />
-            </IconButton>
-          )}
+          <TopMenu />
+          <IconButton
+            className="drawer"
+            edge="start"
+            aria-label="open menu"
+            onClick={toggleDrawer(true)}
+          >
+            <MenuRounded />
+          </IconButton>
         </Box>
       </Toolbar>
     </AppBar>
