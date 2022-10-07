@@ -19,7 +19,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { getForcedLanguage, ToggleLanguage } from "../helpers/i18n";
 import { MyLink } from "../helpers/links";
-import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../menu";
 import "./accessibility.scss";
 import { Footer } from "./footer";
@@ -30,7 +29,6 @@ import theme from "./theme";
 
 const Layout: React.FC = ({ children }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
-  const { isMobileOrTablet } = useResponsiveData();
 
   const { locale } = useLocalization();
   const { pathname } = useLocation();
