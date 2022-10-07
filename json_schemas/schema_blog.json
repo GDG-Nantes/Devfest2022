@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "blog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "image", "date", "content"],
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}

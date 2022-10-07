@@ -4,7 +4,7 @@ import {
   Language,
   LinkedIn,
   Twitter,
-  YouTube,
+  YouTube
 } from "@mui/icons-material";
 import { Button, IconButton } from "@mui/material";
 import React from "react";
@@ -65,7 +65,7 @@ export const SocialLink: React.FC<
             </IconButton>
           }
         >
-          {social.type != "website" && social.login}
+          {(social.type == "github" || social.type == "twitter") && social.login}
         </Button>
       ) : (
         <IconButton aria-label={social.type}>{icon}</IconButton>

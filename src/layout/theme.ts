@@ -92,7 +92,7 @@ const theme = createTheme({
 
 theme.typography.h1 = {
   [theme.breakpoints.up("md")]: {
-    fontSize: "4rem",
+    fontSize: "3.5rem",
   },
 };
 theme.typography.h2 = {

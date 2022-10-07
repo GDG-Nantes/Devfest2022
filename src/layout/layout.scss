@@ -13,18 +13,38 @@
   flex-grow: 1;
 }
 
+.toolbar {
+  @media (min-width: 960px) {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
 .menu-desktop {
   display: inline-flex;
+
+  @media (max-width: 960px) {
+    visibility: hidden;
+    display: none;
+  }
+
   .active-link {
     border-bottom: 1px solid white;
   }
 }
-.menu-mobile {
-  background-color: var(--secondary);
-  a {
-    color: white;
-    padding: 0.5rem 5rem;
-    font-size: 1.5rem;
+.drawer {
+  @media (min-width: 960px) {
+    visibility: hidden;
+    display: none;
+  }
+  .menu-mobile {
+    background-color: var(--secondary);
+    a {
+      color: white;
+      padding: 0.5rem 5rem;
+      font-size: 1.5rem;
+    }
   }
 }
 

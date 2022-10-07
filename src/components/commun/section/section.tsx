@@ -1,18 +1,29 @@
 import classNames from "classnames";
-import React from "react";
+import React, { CSSProperties } from "react";
 import "./section.scss";
 
 export const DefaultSection: React.FC<{
   variant?: "primary" | "primary-dark" | "secondary" | "tertiary";
   slim?: boolean;
   padding?: "normal" | "none" | "small";
-}> = ({ children, variant = "primary", slim, padding = "normal" }) => (
+  style?: CSSProperties;
+  className?: string;
+}> = ({
+  children,
+  variant = "primary",
+  slim,
+  padding = "normal",
+  style,
+  className,
+}) => (
   <div
+    style={style}
     className={classNames(
       "section",
       variant,
       slim && "slim",
-      padding && "padding-" + padding
+      padding && "padding-" + padding,
+      className
     )}
   >
     {children}
@@ -22,6 +33,8 @@ export const DefaultSection: React.FC<{
 type Section = React.FC<{
   slim?: boolean;
   padding?: "normal" | "none" | "small";
+  style?: CSSProperties;
+  className?: string;
 }>;
 
 export const SecondarySection: Section = ({ children, ...props }) => (

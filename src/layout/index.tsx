@@ -9,7 +9,7 @@ import {
   ListItemButton,
   ListItemText,
   ThemeProvider,
-  Toolbar,
+  Toolbar
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { useLocation } from "@reach/router";
@@ -19,7 +19,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { getForcedLanguage, ToggleLanguage } from "../helpers/i18n";
 import { MyLink } from "../helpers/links";
-import { useResponsiveData } from "../helpers/responsive";
 import { MENU } from "../navbar-menu";
 import "./accessibility.scss";
 import { Footer } from "./footer";
@@ -30,7 +29,6 @@ import theme from "./theme";
 
 const Layout: React.FC = ({ children }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
-  const { isMobileOrTablet } = useResponsiveData();
 
   const { locale } = useLocalization();
   const { pathname } = useLocation();
@@ -72,15 +70,9 @@ const Layout: React.FC = ({ children }) => {
       <Helmet />
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Topbar
-          toggleDrawer={toggleDrawer}
-          showMenu={!isMobileOrTablet}
-          logo={layout.file.publicURL}
-        />
+        <Topbar toggleDrawer={toggleDrawer} logo={layout.file.publicURL} />
 
-        {isMobileOrTablet && (
-          <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
-        )}
+        <BarMenu isOpen={isOpen} toggleDrawer={toggleDrawer} />
         <CustomMDXProvider>{children}</CustomMDXProvider>
         <Footer />
       </ThemeProvider>
@@ -96,15 +88,11 @@ const TopMenu = () => (
 
 const Topbar: React.FC<{
   toggleDrawer: (open) => (event) => void;
-  showMenu: boolean;
   logo: string;
-}> = ({ toggleDrawer, showMenu, logo }) => {
-  const styleToolbar = showMenu
-    ? { maxWidth: "1100px", width: "100%", margin: "auto" }
-    : {};
+}> = ({ toggleDrawer, logo }) => {
   return (
     <AppBar position="sticky">
-      <Toolbar style={styleToolbar}>
+      <Toolbar className="toolbar">
         <Box className="top-bar-left">
           <MyLink to="/">
             <img
@@ -118,17 +106,15 @@ const Topbar: React.FC<{
         </Box>
 
         <Box className="top-bar-right">
-          {showMenu ? (
-            <TopMenu />
-          ) : (
-            <IconButton
-              edge="start"
-              aria-label="open menu"
-              onClick={toggleDrawer(true)}
-            >
-              <MenuRounded />
-            </IconButton>
-          )}
+          <TopMenu />
+          <IconButton
+            className="drawer"
+            edge="start"
+            aria-label="open menu"
+            onClick={toggleDrawer(true)}
+          >
+            <MenuRounded />
+          </IconButton>
         </Box>
       </Toolbar>
     </AppBar>

@@ -1,6 +1,15 @@
 ---
 key: debbie_o_brien
 name: Debbie O'Brien
+company: Microsoft
+city: Palma, Spain
 feature: true
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14GhLe6WBVfMbsf-rP-Sm96_SwsenKsQ5bsEAPpdGww=s96-c
-socials: {}
+socials:
+  twitter: debs_obrien
+  github: debs-obrien
+  linkedin: debbie-o-brien-1a199975
+bio: |-
+  Senior Program Manager at Microsoft
+  
+  Over 10 years experience in Frontend development. Microsoft Most Valuable Professional in developer technologies, Google Developer Expert in web technologies and Cloudinary Media Developer Expert and Github Star. International Conference Speaker. Teacher at Vue School. Writer for Ultimate Courses and Open Source contributor. Mentor for online learning platforms, Treehouse and OpenClassrooms. Lead teams both in house and remotely as well as giving workshops and training.

@@ -1,6 +1,12 @@
 ---
 key: julian_clemot
-name: Julian CLEMOT
+name: Julian Clemot
 feature: false
-photoUrl: https://lh3.googleusercontent.com/a/AATXAJy4EYOTUemGTyZHVCU_rfTsfXKOkWBDn2B7GZFX=s96-c
-socials: {}
+company: Ippon Technologies
+companyLogo: /images/partners/ippon_technologies.png
+city: Nantes, France
+photoUrl: https://lh3.googleusercontent.com/a-/ACNPEu-OwvJ67WbtpPO3HtVy_UnFQZcdxl8mV84Cxqxl=s512-p-k-rw-no
+socials:
+  linkedin: julianclemot
+  github: JulianClemot
+bio: Développeur Mobile depuis plus de 8 ans, et plus spécialement en Android, j'ai exercé mon métier au Luxembourg et en Irlande avant d'effectuer un retour au sources et de poser mes valises à Nantes pour de bon.

@@ -4,9 +4,10 @@ name: Frédéric Harper
 feature: true
 company: Mindee
 companyLogo: /images/partners/mindee.png
-city: Montreal, QC, Canada
-photoUrl: https://pbs.twimg.com/profile_images/1502279161980850178/2uFJLOAl_400x400.jpg
+city: Montreal, Canada
+photoUrl: https://i.ibb.co/Kzb1zrk/fharper.jpg
 socials:
   twitter: fharper
   github: fharper
-bio: As the Director of Developer Relations at Mindee, Frédéric Harper helps developers merge the physical and digital worlds using the magic of machine learning coupled with the ease of APIs. Fred has shared his passion for technology on the stage at dozens of events around the world. He’s helped build successful communities at npm, Mozilla, Microsoft, DigitalOcean, and Fitbit, and is the author of the book Personal Branding for Developers at Apress. Behind this extrovert is a very passionate individual who believes in the power of communication... and cat videos.
+bio: |-
+  With his Developer Relations as a Service company, Frédéric Harper help companies build healthy and thriving community, while creating educational content to help developers being successful with his customers' offerings. Fred had helped thousands of developers and has shared his passion for technology on the stage at more than 170 events around the world. He’s helped build successful communities at npm, Mozilla, Microsoft, DigitalOcean, and Fitbit, and is the author of the book Personal Branding for Developers at Apress. Behind this extrovert is a very passionate individual who believes in the power of communication... and cat videos.

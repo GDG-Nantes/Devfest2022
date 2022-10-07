@@ -1,6 +1,21 @@
 ---
 key: godefroy
-name: Godefroy
+name: Godefroy de Compreignac
+company: Lonestone
 feature: false
 photoUrl: https://avatars.githubusercontent.com/u/148421?v=4
-socials: {}
+city: Nantes, France
+socials:
+  twitter: Godefroy
+  github: Godefroy
+  linkedin: godefroy
+bio: |-
+  Je crée de belles apps web et mobile avec mon équipe de 30 personnes et j’accompagne notre démarche d’entreprise libérée.
+  
+  Quand on a dépassé 10 personnes, l’organisation informelle ne marchait plus et on voulu se structurer.
+  
+  Mais pas en reproduisant le schéma classique de hiérarchie pyramidale dont je redoute les travers.
+  
+  Nous avons adopté progressivement les principes d’entreprise libérée et les process de la constitution Holacratie.
+  
+  Ça nous va bien et je vous partage mes retours d’expérience.

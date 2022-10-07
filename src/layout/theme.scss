@@ -22,5 +22,10 @@ a {
 .primary-dark {
   a {
     color: var(--primary-dark);
+    font-weight: 500;
+  }
+  & > p > a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }

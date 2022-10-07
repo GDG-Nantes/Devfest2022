@@ -22,6 +22,10 @@ export const MENU: Array<MenuItem> = [
     link: "/partners",
   },
   {
+    label: "blog",
+    link: "/blog",
+  },
+  {
     label: "menu",
     link: "/menu",
   },
@@ -29,8 +33,8 @@ export const MENU: Array<MenuItem> = [
   //   label: "📣 CFP",
   //   link: "https://conference-hall.io/public/event/CfucIjaXxrZThJE0POR3",
   // },
-  {
-    label: "🎟️ Tickets",
-    link: "https://www.billetweb.fr/devfest-Nantes",
-  },
+  // {
+  //   label: "🎟️ Tickets",
+  //   link: "https://www.billetweb.fr/devfest-Nantes",
+  // },
 ];

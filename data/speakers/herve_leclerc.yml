@@ -1,0 +1,24 @@
+---
+key: herve_leclerc
+name: Hervé Leclerc
+feature: false
+company: Alterway
+companyLogo: /images/partners/alterway.png
+city: Nantes, France
+photoUrl: https://assets.alterway.fr/2021/04/Herve_Leclerc-2.jpg
+socials: {}
+bio: |-
+  Hervé Leclerc est le CTO d'Alter Way du groupe Smile.
+
+  Monsieur Jourdain du DevOps, Il a lancé les premières plateformes d'intégration continue intégralement conteneurisées de la société ainsi que l'offre commerciale de CAAS (Container as a Service) d'Alter Way dès 2016.
+
+  Il aime partager son savoir, son enthousiasme soit en tant que formateur officiel Docker ou Kubernetes ou lors d'événements en ligne ou physique.
+
+  Voici quelques événements auxquels il a participé :
+
+  - Webinar : Finops sur azure et aws (2021)
+  - Webinar : GreenOps sur Azure (2022)
+  - Cloud Sud (Meetup Montpellier) : Gestion dynamique des DNS et certificats dans kubernetes (2022)
+  - OSXP : "Native Kubernetes CD pipelines with Tekton CD"
+  - Animations de plusieurs ateliers Cloud Native Apss & Infra on Azure (2021)
+  - Passage sur ifttd (if this then dev)  #154: Ordinateurs gris, téléphones noirs, et Ops vertes | IFTTD - If This Then Dev

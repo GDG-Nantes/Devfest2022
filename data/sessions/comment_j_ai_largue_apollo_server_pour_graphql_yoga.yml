@@ -1,0 +1,25 @@
+---
+key: comment_j_ai_largue_apollo_server_pour_graphql_yoga
+title: Comment j'ai largué Apollo Server pour GraphQL Yoga
+language: French
+talkType: conference
+tags:
+  - web
+complexity: Intermediate
+speakers:
+  - nicolas_lepage
+slot: day-1-conference-2
+room: Tour de Bretagne
+openfeedbackId: 54
+abstract: |-
+  Dans l'écosystème des serveurs GraphQL, Apollo Server fait figure de référence.
+  Mais de plus en plus d'alternatives font leur apparition, et notamment en début d'année GraphQL Yoga v2, un serveur fully featured et extensible.
+  Simple à mettre en place, Yoga ouvre l'accès via des plugins à de nombreuses fonctionnalités : authentification, mise en cache, reporting d'erreur, et bien plus...
+
+  Alors après 4 années de relation compliquée avec Apollo, ma décision est prise, je le largue pour Yoga !
+  Seulement après autant de temps, l'adhérence entre mon projet et Apollo est devenue assez forte...
+  Comment migrer les directives customs ? les subscriptions ? les uploads/downloads de fichiers ? le batching de queries ? et qui va s'occuper des enfants ?
+
+  Dans cette présentation, je vous donne mon retour d'expérience sur cette séparation difficile mais salutaire.
+  GraphQL Yoga est-il vraiment mieux que Apollo Server ? Est-ce simple de migrer de l'un à l'autre ? La promesse de l'extensibilité de Yoga est-elle tenue ?
+  Essayons de répondre à toutes ces questions !
