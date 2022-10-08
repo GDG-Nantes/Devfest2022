@@ -53,6 +53,9 @@
     "blog": {
       "name": "Blog"
     },
+    "menu": {
+      "name": "Menu"
+    },
     "speakers": {
       "name": "Speakers"
     },

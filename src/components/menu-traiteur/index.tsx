@@ -11,6 +11,7 @@ import React from "react";
 import MenuFR from "../../../data/menu/menu-fr.json";
 import { Allergene } from "../../../json_schemas/interfaces/schema_menu";
 import { DefaultSection } from "../commun/section/section";
+import "./styles.scss";
 
 const ALLERGENES: Allergene[] = ["allergene1", "allergene1", "allergene1"];
 
@@ -31,7 +32,6 @@ export const MenuTraiteur: React.FC = () => {
               {section.plats.map((plat) => (
                 <Accordion key={plat.titre}>
                   <AccordionSummary
-                    style={{ color: "var(--primary-dark)" }}
                     expandIcon={<ExpandMore />}
                     aria-controls="voir les allergenes"
                   >
@@ -55,45 +55,6 @@ export const MenuTraiteur: React.FC = () => {
               ))}
             </Box>
           ))}
-          {/* <Table size="small" aria-label="spanning table">
-            <TableHead>
-              <TableRow>
-                <TableCell component="th" sx={{ maxWidth: "50%" }}>
-                  Nom
-                </TableCell>
-                {ALLERGENES.map((allergene) => (
-                  <TableCell key={allergene}>{allergene}</TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {sectionsJour.map((section) => (
-                <>
-                  <TableRow style={{ backgroundColor: "var(--primary-dark)" }}>
-                    <TableCell component="th" colSpan={ALLERGENES.length + 1}>
-                      {section.titre}
-                    </TableCell>
-                  </TableRow>
-                  {section.plats.map((plat) => (
-                    <TableRow key={plat.titre}>
-                      <TableCell component="th" sx={{ maxWidth: "50%" }}>
-                        {plat.titre}
-                      </TableCell>
-                      {ALLERGENES.map((allergene) => (
-                        <TableCell key={plat.titre + "-" + allergene}>
-                          {plat.allergenes.includes(allergene) ? (
-                            <StopCircle />
-                          ) : (
-                            <Check />
-                          )}
-                        </TableCell>
-                      ))}
-                    </TableRow>
-                  ))}
-                </>
-              ))}
-            </TableBody>
-          </Table> */}
         </DefaultSection>
       ))}
     </>
