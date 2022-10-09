@@ -9,12 +9,14 @@ import {
   Typography,
 } from "@mui/material";
 import classNames from "classnames";
+import { StaticImage } from "gatsby-plugin-image";
 import { useLocalization } from "gatsby-theme-i18n";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import MenuFR from "../../../data/menu/menu-traiteur.json";
 import { Allergene } from "../../../json_schemas/interfaces/schema_menu";
-import { DefaultSection } from "../commun/section/section";
+import { MyLink } from "../../helpers/links";
+import { DefaultSection, TertiarySection } from "../commun/section/section";
 import "./styles.scss";
 
 const ALLERGENES: Allergene[] = [
@@ -47,6 +49,20 @@ export const MenuTraiteur: React.FC = () => {
           ))}
         </DefaultSection>
       ))}
+      <TertiarySection padding="none">
+        <MyLink
+          to="https://lamaisonhebel.fr/"
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        >
+          <StaticImage
+            alt="La Maison Hebel"
+            src="https://lamaisonhebel.fr/wp-content/themes/hebel/hebel_img/logo.png"
+            objectFit="contain"
+            style={{ width: "90%", height: "250px", maxWidth: "500px" }}
+            layout="constrained"
+          />
+        </MyLink>
+      </TertiarySection>
     </>
   );
 };
