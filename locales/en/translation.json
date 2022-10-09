@@ -56,6 +56,9 @@
     "blog": {
       "name": "Blog"
     },
+    "jobs": {
+      "name": "Jobs"
+    },
     "schedule": {
       "name": "Schedule",
       "day1-number": "Thursday 20th",
