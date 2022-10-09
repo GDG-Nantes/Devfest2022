@@ -56,6 +56,9 @@
     "menu": {
       "name": "Menu"
     },
+    "jobs": {
+      "name": "Jobs"
+    },
     "speakers": {
       "name": "Speakers"
     },
