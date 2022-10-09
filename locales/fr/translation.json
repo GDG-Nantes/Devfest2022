@@ -53,6 +53,9 @@
     "blog": {
       "name": "Blog"
     },
+    "jobs": {
+      "name": "Jobs"
+    },
     "speakers": {
       "name": "Speakers"
     },
