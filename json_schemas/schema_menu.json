@@ -37,7 +37,23 @@
     },
     "allergene": {
       "type": "string",
-      "enum": ["allergene1"]
+      "enum": [
+        "gluten",
+        "crustaces",
+        "vegetarien",
+        "oeufs",
+        "poissons",
+        "arachides",
+        "soja",
+        "lactose",
+        "fruits-a-coques",
+        "celeri",
+        "moutarde",
+        "sesame",
+        "sulfites",
+        "lupin",
+        "mollusques"
+      ]
     }
   }
 }

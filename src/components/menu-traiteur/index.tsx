@@ -1,4 +1,4 @@
-import { Check, ExpandMore, StopCircle } from "@mui/icons-material";
+import { Check, Close, ExpandMore } from "@mui/icons-material";
 import {
   Accordion,
   AccordionDetails,
@@ -13,7 +13,23 @@ import { Allergene } from "../../../json_schemas/interfaces/schema_menu";
 import { DefaultSection } from "../commun/section/section";
 import "./styles.scss";
 
-const ALLERGENES: Allergene[] = ["allergene1", "allergene1", "allergene1"];
+const ALLERGENES: Allergene[] = [
+  "gluten",
+  "crustaces",
+  "vegetarien",
+  "œufs",
+  "poissons",
+  "arachides",
+  "soja",
+  "lactose",
+  "fruits-a-coques",
+  "celeri",
+  "moutarde",
+  "sesame",
+  "sulfites",
+  "lupin",
+  "mollusques",
+];
 
 export const MenuTraiteur: React.FC = () => {
   return (
@@ -34,16 +50,27 @@ export const MenuTraiteur: React.FC = () => {
                   <AccordionSummary
                     expandIcon={<ExpandMore />}
                     aria-controls="voir les allergenes"
+                    sx={{
+                      backgroundColor: "var(--primary-dark)",
+                    }}
                   >
                     <Typography variant="h4">{plat.titre}</Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Stack direction="row" spacing={2}>
+                  <AccordionDetails
+                    sx={{
+                      backgroundColor: "var(--secondary)",
+                    }}
+                  >
+                    <Stack
+                      direction="row"
+                      spacing={2}
+                      justifyContent="space-between"
+                    >
                       {ALLERGENES.map((allergene) => (
-                        <Stack key={allergene}>
-                          <Typography variant="h5">{allergene}</Typography>
+                        <Stack key={allergene} alignItems="center">
+                          <Typography variant="body1">{allergene}</Typography>
                           {plat.allergenes.includes(allergene) ? (
-                            <StopCircle />
+                            <Close />
                           ) : (
                             <Check />
                           )}

@@ -5,7 +5,7 @@
       "plats": [
         {
           "titre": "Chiffonnade de jambon à croquer dans une baguette au beurre salé",
-          "allergenes": ["allergene1"]
+          "allergenes": ["lactose", "gluten", "vegetarien"]
         }
       ]
     },
@@ -14,7 +14,7 @@
       "plats": [
         {
           "titre": "Riz sushi, févettes, carotte, avocat\nSaumon mariné ou poulet teriyaki\nSauce soja au gingembre",
-          "allergenes": ["allergene1"]
+          "allergenes": ["poissons", "soja", "sesame", "sulfites", "vegetarien"]
         }
       ]
     },
@@ -23,31 +23,31 @@
       "plats": [
         {
           "titre": "Sucrine et mirepoix de légumes au citron vert",
-          "allergenes": ["allergene1"]
+          "allergenes": ["soja", "celeri"]
         },
         {
           "titre": "Sablé parmesan, crème légère au basilic et perle de poivron",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "soja", "celeri"]
         },
         {
           "titre": "Velouté de champignons (chaud)",
-          "allergenes": ["allergene1"]
+          "allergenes": ["lactose", "celeri", "sulfites"]
         },
         {
           "titre": "Polenta, épinard et pignons grillés",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "lactose", "celeri"]
         },
         {
           "titre": "Tartelette de légumes confit au pesto",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "lactose", "fruits-a-coques"]
         },
         {
           "titre": "Foccacia, tapenade d’olive et tomate confite",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten"]
         },
         {
           "titre": "Wrap houmous et crudités",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten"]
         }
       ]
     },
@@ -56,27 +56,27 @@
       "plats": [
         {
           "titre": "Rouleau de printemps de crabe",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "crustaces", "oeufs", "vegetarien"]
         },
         {
           "titre": "Gambas au Curé Nantais et abricot sec",
-          "allergenes": ["allergene1"]
+          "allergenes": ["crustaces", "lactose", "vegetarien"]
         },
         {
           "titre": "Polenta saumon fumé et câpre à queue",
-          "allergenes": ["allergene1"]
+          "allergenes": ["poissons", "lactose", "celeri", "vegetarien"]
         },
         {
           "titre": "Pressé de volaille au citron confit",
-          "allergenes": ["allergene1"]
+          "allergenes": ["oeufs", "lactose", "vegetarien"]
         },
         {
           "titre": "Navarin d’agneau aux petits pois",
-          "allergenes": ["allergene1"]
+          "allergenes": ["vegetarien"]
         },
         {
           "titre": "Mini opéra foie gras et coing",
-          "allergenes": ["allergene1"]
+          "allergenes": ["vegetarien"]
         }
       ]
     },
@@ -85,11 +85,20 @@
       "plats": [
         {
           "titre": "Wrap jambon Serrano, crème de tomate, légumes confit et parmesan",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "oeufs", "lactose", "moutarde", "vegetarien"]
         },
         {
           "titre": "Wrap crevettes et crudités",
-          "allergenes": ["allergene1"]
+          "allergenes": [
+            "gluten",
+            "crustaces",
+            "oeufs",
+            "lactose",
+            "soja",
+            "sesame",
+            "moutarde",
+            "vegetarien"
+          ]
         }
       ]
     },
@@ -98,15 +107,22 @@
       "plats": [
         {
           "titre": "Confit de veau au citron confit, fleurette de brocolis et pomme grenaille",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "celeri", "vegetarien"]
         },
         {
           "titre": "Cabillaud au beurre citronné, petits légumes à la fleur de sel",
-          "allergenes": ["allergene1"]
+          "allergenes": [
+            "gluten",
+            "poissons",
+            "lactose",
+            "celeri",
+            "sulfites",
+            "vegetarien"
+          ]
         },
         {
           "titre": "Butternut et champignons poêlées, chèvre et crumble de noisettes",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "lactose", "fruits-a-coques"]
         }
       ]
     },
@@ -115,27 +131,43 @@
       "plats": [
         {
           "titre": "Mini crêpes garnies minute chocolat, sucre, caramel au beurre salé",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "oeufs", "lactose"]
         },
         {
           "titre": "Finger chocolat lait et brownies",
-          "allergenes": ["allergene1"]
+          "allergenes": [
+            "gluten",
+            "oeufs",
+            "lactose",
+            "soja",
+            "fruits-a-coques"
+          ]
         },
         {
           "titre": "Tarte poire amande",
-          "allergenes": ["allergene1"]
+          "allergenes": [
+            "gluten",
+            "oeufs",
+            "lactose",
+            "fruits-a-coques",
+            "vegetarien"
+          ]
         },
         {
           "titre": "Coque chocolat et cachuète",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "lactose", "arachides"]
         },
         {
           "titre": "Biscuit amande caramel au beurre salé",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "oeufs", "lactose", "fruits-a-coques"]
         },
         {
           "titre": "Tarte citron meringuée",
-          "allergenes": ["allergene1"]
+          "allergenes": ["gluten", "oeufs", "lactose"]
+        },
+        {
+          "titre": "Macarons",
+          "allergenes": ["gluten", "oeufs", "lactose", "fruits-a-coques"]
         }
       ]
     }
