@@ -11,7 +11,10 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "titre": {
+        "titreFR": {
+          "type": "string"
+        },
+        "titreEN": {
           "type": "string"
         },
         "plats": {
@@ -19,13 +22,16 @@
           "items": { "$ref": "#/definitions/plat" }
         }
       },
-      "required": ["titre", "plats"]
+      "required": ["titreFR", "titreEN", "plats"]
     },
     "plat": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "titre": {
+        "titreFR": {
+          "type": "string"
+        },
+        "titreEN": {
           "type": "string"
         },
         "allergenes": {
@@ -33,7 +39,7 @@
           "items": { "$ref": "#/definitions/allergene" }
         }
       },
-      "required": ["titre", "allergenes"]
+      "required": ["titreFR", "titreEN", "allergenes"]
     },
     "allergene": {
       "type": "string",
