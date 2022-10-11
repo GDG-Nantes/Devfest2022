@@ -20,6 +20,5 @@ abstract: |-
 
   Dans cet atelier, vous apprendrez comment Module Federation facilite la construction d'une application Micro-Frontend.
   L'application sera écrite en React mais il n'est pas nécessaire de connaitre le framework.  
-  
-  Prérequis : https://workshop-module-federation-doc.vercel.app/docs/prerequisites/
-  
+
+  Prérequis : [https://workshop-module-federation-doc.vercel.app/docs/prerequisites/](https://workshop-module-federation-doc.vercel.app/docs/prerequisites/)
