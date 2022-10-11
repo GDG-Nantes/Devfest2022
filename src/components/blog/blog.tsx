@@ -1,4 +1,5 @@
 import { Divider, Stack, Typography } from "@mui/material";
+import { format } from "date-fns";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
@@ -43,7 +44,7 @@ export const Blogs: React.FC = () => {
   return (
     <Stack spacing={5} divider={<Divider />}>
       {blogs
-        // .filter((blog) => format(Date.now(), "yyyy-MM-dd") >= blog.date)
+        .filter((blog) => format(Date.now(), "yyyy-MM-dd") >= blog.date)
         .sort((b1, b2) => b2.date.localeCompare(b1.date))
         .map((blog, i) => (
           <ArticleBlog key={blog.key} blog={blog} i={i} />
