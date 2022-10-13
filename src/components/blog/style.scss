@@ -34,5 +34,7 @@
   &.blog-section a {
     text-decoration: underline;
     text-underline-offset: 2px;
+    color: var(--primary-light);
+    font-weight: 500;
   }
 }
