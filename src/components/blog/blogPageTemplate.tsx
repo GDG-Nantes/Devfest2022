@@ -6,7 +6,7 @@ import { Blog } from "../../../json_schemas/interfaces/schema_blog";
 import Layout from "../../layout";
 import { Markdown } from "../commun/markdown";
 import { DefaultPage } from "../commun/page";
-import { SecondarySection, TertiarySection } from "../commun/section/section";
+import { DefaultSection, TertiarySection } from "../commun/section/section";
 import "./style.scss";
 
 const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
@@ -34,7 +34,7 @@ const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
       <DefaultPage title={blog.title} noHero={true}>
         <TertiarySection
           padding="none"
-          className="blog-section"
+          className="blog-section-header"
           style={{
             backgroundImage: `url(${backgroundSrc})`,
           }}
@@ -43,9 +43,9 @@ const BlogPageTemplate: React.FC<{ pageContext: { blog: Blog } }> = ({
             {blog.title}
           </Typography>
         </TertiarySection>
-        <SecondarySection>
+        <DefaultSection variant="primary-dark" className="blog-section">
           <Markdown content={blog.content} />
-        </SecondarySection>
+        </DefaultSection>
       </DefaultPage>
     </Layout>
   );

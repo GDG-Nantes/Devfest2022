@@ -91,6 +91,10 @@ const ArticleBlog: React.FC<{
             >
               {blog.date}
             </Typography>
+            {/* <Markdown
+              content={mettreEnForme(blog.content)}
+              className="two-line-text"
+            /> */}
             <Typography variant="body1" className="two-line-text">
               {mettreEnForme(blog.content)}
             </Typography>
@@ -103,7 +107,8 @@ const ArticleBlog: React.FC<{
 
 function mettreEnForme(content) {
   return content
-    .replace(/^#/g, "")
+    .replace(/^#+/g, "")
+    .replace(/__(.+)__/g, "$1")
     .replace(/!?\[.*\]\(.+\)/g, "")
     .replace(/<.+>/g, "");
 }
