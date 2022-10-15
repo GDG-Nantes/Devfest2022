@@ -8,7 +8,7 @@ const MenuTraiteurPage = () => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.menu" });
   return (
     <Layout>
-      <DefaultPage title={t("name")} background="back-5">
+      <DefaultPage title={t("name")} noHero>
         <MenuTraiteur />
       </DefaultPage>
     </Layout>

@@ -38,12 +38,26 @@ const ALLERGENES: Allergene[] = [
 ];
 
 export const MenuTraiteur: React.FC = () => {
+  const refVendredi = React.useRef<HTMLElement | null>(null);
+  React.useEffect(() => {
+    if (
+      refVendredi.current &&
+      new Date().toLocaleDateString("fr") === "21/10/2022"
+    ) {
+      refVendredi.current.scrollIntoView();
+    }
+  }, [refVendredi]);
   return (
     <>
       {Object.entries(MenuFR).map(([jour, sectionsJour], i) => (
         <DefaultSection padding="none" key={jour} variant="primary">
           {i !== 0 && <Divider />}
-          <Typography variant="h2">{jour}</Typography>
+          <Typography
+            variant="h2"
+            ref={jour == "Vendredi" ? refVendredi : null}
+          >
+            {jour}
+          </Typography>
           {sectionsJour.map((section) => (
             <SectionMenu key={section.titreFR} section={section} />
           ))}
@@ -112,7 +126,7 @@ const AllergenesPlat: React.FC<{ plat: TypePlat }> = ({ plat }) => {
   });
   return (
     <Stack direction="row" justifyContent="center" flexWrap="wrap">
-      {ALLERGENES.sort((a1, a2) => (plat.allergenes.includes(a1) ? -1 : 1)).map(
+      {ALLERGENES.sort((a1, a2) => (plat.allergenes.includes(a2) ? 1 : -1)).map(
         (allergene) => {
           const isAllergeneKo = plat.allergenes.includes(allergene);
           return (
