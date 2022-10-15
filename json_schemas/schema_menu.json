@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "menuTraiteur",
+  "type": "object",
+  "additionalProperties": {
+    "type": "array",
+    "items": { "$ref": "#/definitions/sectionMenu" }
+  },
+  "definitions": {
+    "sectionMenu": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "titreFR": {
+          "type": "string"
+        },
+        "titreEN": {
+          "type": "string"
+        },
+        "plats": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/plat" }
+        }
+      },
+      "required": ["titreFR", "titreEN", "plats"]
+    },
+    "plat": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "titreFR": {
+          "type": "string"
+        },
+        "titreEN": {
+          "type": "string"
+        },
+        "allergenes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/allergene" }
+        }
+      },
+      "required": ["titreFR", "titreEN", "allergenes"]
+    },
+    "allergene": {
+      "type": "string",
+      "enum": [
+        "gluten",
+        "crustaces",
+        "vegetarien",
+        "oeufs",
+        "poissons",
+        "arachides",
+        "soja",
+        "lactose",
+        "fruits-a-coques",
+        "celeri",
+        "moutarde",
+        "sesame",
+        "sulfites",
+        "lupin",
+        "mollusques"
+      ]
+    }
+  }
+}

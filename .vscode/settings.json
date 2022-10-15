@@ -15,11 +15,18 @@
     {
       "fileMatch": ["data/slots.json"],
       "url": "./json_schemas/schema_slots.json"
+    },
+    {
+      "fileMatch": ["data/menu/*.json"],
+      "url": "./json_schemas/schema_menu.json"
     }
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.organizeImports": true
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

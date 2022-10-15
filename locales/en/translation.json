@@ -56,6 +56,26 @@
     "blog": {
       "name": "Blog"
     },
+    "menu": {
+      "name": "Menu",
+      "allergenes": {
+        "gluten": "Gluten",
+        "crustaces": "Shellfish",
+        "vegetarien": "Vegetarian",
+        "oeufs": "Eggs",
+        "poissons": "Fish",
+        "arachides": "Peanuts",
+        "soja": "Soy",
+        "lactose": "Milk",
+        "fruits-a-coques": "Nuts",
+        "celeri": "Celery",
+        "moutarde": "Mustard",
+        "sesame": "Sesame",
+        "sulfites": "Sulfites",
+        "lupin": "Lupine",
+        "mollusques": "Molluscs"
+      }
+    },
     "jobs": {
       "name": "Jobs"
     },

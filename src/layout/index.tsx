@@ -9,7 +9,7 @@ import {
   ListItemButton,
   ListItemText,
   ThemeProvider,
-  Toolbar,
+  Toolbar
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { useLocation } from "@reach/router";
@@ -19,7 +19,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { getForcedLanguage, ToggleLanguage } from "../helpers/i18n";
 import { MyLink } from "../helpers/links";
-import { MENU } from "../menu";
+import { MENU } from "../navbar-menu";
 import "./accessibility.scss";
 import { Footer } from "./footer";
 import { Helmet } from "./helmet";

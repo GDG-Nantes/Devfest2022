@@ -26,6 +26,10 @@ export const MENU: Array<MenuItem> = [
     link: "/blog",
   },
   {
+    label: "menu",
+    link: "/menu",
+  },
+  {
     label: "jobs",
     link: "/jobs",
   },

@@ -53,6 +53,26 @@
     "blog": {
       "name": "Blog"
     },
+    "menu": {
+      "name": "Menu",
+      "allergenes": {
+        "gluten": "Gluten",
+        "crustaces": "Crustacés",
+        "vegetarien": "Végétariens",
+        "oeufs": "Oeufs",
+        "poissons": "Poissons",
+        "arachides": "Arachides",
+        "soja": "Soja",
+        "lactose": "Lactose",
+        "fruits-a-coques": "Fruits à coques",
+        "celeri": "Célerie",
+        "moutarde": "Moutarde",
+        "sesame": "Sésame",
+        "sulfites": "Sulfites",
+        "lupin": "Lupin",
+        "mollusques": "Mollusques"
+      }
+    },
     "jobs": {
       "name": "Jobs"
     },
