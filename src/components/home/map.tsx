@@ -12,7 +12,7 @@ export const HomeMap = () => {
   const { isMobileOrTablet } = useResponsiveData();
   return isMobileOrTablet ? (
     <>
-      <FullWidthMap />
+      {/* <FullWidthMap /> */}
       <PrimarySection slim>
         <Description />
       </PrimarySection>

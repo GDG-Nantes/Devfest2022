@@ -1,6 +1,8 @@
-import { Typography } from "@mui/material";
+import { ConfirmationNumber } from "@mui/icons-material";
+import { Button, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { MyLink } from "../../helpers/links";
 
 export const HomeJumbo = () => {
   const { t } = useTranslation("translation", {
@@ -26,8 +28,22 @@ export const HomeJumbo = () => {
         textAlign="center"
         color="var(--primary-dark)"
       >
-        Plonge dans l'univers de Jules Verne !
+        Plonge dans l&apos;univers de Jules Verne !
       </Typography>
+      <Stack direction="row" spacing={3}>
+        <MyLink to="https://www.billetweb.fr/devfest-Nantes">
+          <Button
+            variant="contained"
+            color="secondary"
+            aria-label={t("generate-ticket")}
+          >
+            <IconButton>
+              <ConfirmationNumber />
+            </IconButton>
+            {t("generate-ticket")}
+          </Button>
+        </MyLink>
+      </Stack>
     </>
   );
 };
