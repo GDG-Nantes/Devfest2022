@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { SubscribeNewsletter } from "../components/commun/newsletter";
 import { DefaultPage } from "../components/commun/page";
 import {
+  DefaultSection,
   PrimarySection,
   SecondarySection,
   TertiarySection,
@@ -39,7 +40,7 @@ const HomeContent = () => {
         </Typography>
         <Tickets />
       </PrimarySection>
-      <SecondarySection>
+      <DefaultSection variant="primary-dark" className="home-speakers">
         <Typography variant="h2">{t("pages.home.speakers.title")}</Typography>
         <Speakers featuredOnly={true} />
         <Stack justifyContent="center" alignItems="center" marginTop={8}>
@@ -49,7 +50,7 @@ const HomeContent = () => {
             </Button>
           </MyLink>
         </Stack>
-      </SecondarySection>
+      </DefaultSection>
       <TertiarySection slim>
         <Typography variant="h2">{t("pages.home.newsletter")}</Typography>
         <SubscribeNewsletter />

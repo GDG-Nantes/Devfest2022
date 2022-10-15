@@ -1,4 +1,4 @@
-.blog-section {
+.blog-section-header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -21,4 +21,20 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   max-width: 95%;
+}
+
+.blog-section {
+  strong {
+    font-size: 1.1rem;
+  }
+}
+
+.secondary,
+.primary-dark {
+  &.blog-section a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: var(--primary-light);
+    font-weight: 500;
+  }
 }
