@@ -4,7 +4,7 @@ import React from "react";
 import { Session } from "../../../json_schemas/interfaces/schema_sessions";
 import {
   Social,
-  Speaker
+  Speaker,
 } from "../../../json_schemas/interfaces/schema_speakers";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
@@ -54,6 +54,14 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
               >
                 {speaker.name}
               </Typography>
+              {speaker.company && (
+                <Typography
+                  variant="h4"
+                  sx={{ color: "var(--primary)", marginTop: "20px" }}
+                >
+                  {speaker.company}
+                </Typography>
+              )}
               <Stack direction="row" spacing={2}>
                 {Object.entries(speaker.socials || {}).map(([media, login]) => (
                   <SocialLink
