@@ -1,9 +1,9 @@
 .allergene {
   border: 1px solid var(--primary-dark);
   border-radius: 10px;
-  height: 75px;
-  padding: 5px;
-  margin: 5px;
+  height: 70px;
+  padding: 5px 2px;
+  margin: 5px 2px;
 
   &.allergeneKO {
     border: 2px solid var(--primary);

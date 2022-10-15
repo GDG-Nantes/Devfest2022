@@ -84,7 +84,7 @@ const SectionMenu: React.FC<{ section: TypeSectionMenu }> = ({ section }) => {
       {section.plats.map((plat) => (
         <Accordion key={plat.titreFR}>
           <AccordionSummary
-            expandIcon={<ExpandMore />}
+            expandIcon={<ExpandMore sx={{ color: "white" }} />}
             aria-controls="voir les allergenes"
             style={{
               backgroundColor: "var(--primary-dark)",
@@ -112,33 +112,39 @@ const AllergenesPlat: React.FC<{ plat: TypePlat }> = ({ plat }) => {
   });
   return (
     <Stack direction="row" justifyContent="center" flexWrap="wrap">
-      {ALLERGENES.map((allergene) => {
-        const isAllergeneKo = plat.allergenes.includes(allergene);
-        return (
-          <Box
-            key={allergene}
-            className={classNames("allergene", isAllergeneKo && "allergeneKO")}
-          >
-            <Stack
-              alignItems="center"
-              width="100px"
-              height="100%"
-              justifyContent="space-between"
+      {ALLERGENES.sort((a1, a2) => (plat.allergenes.includes(a1) ? -1 : 1)).map(
+        (allergene) => {
+          const isAllergeneKo = plat.allergenes.includes(allergene);
+          return (
+            <Box
+              key={allergene}
+              className={classNames(
+                "allergene",
+                isAllergeneKo && "allergeneKO"
+              )}
             >
-              <Typography
-                variant="subtitle1"
-                textAlign="center"
-                style={{
-                  lineHeight: "1",
-                }}
+              <Stack
+                alignItems="center"
+                width="75px"
+                height="100%"
+                justifyContent="space-between"
               >
-                {t(allergene)}
-              </Typography>
-              {isAllergeneKo ? <Close /> : <Check />}
-            </Stack>
-          </Box>
-        );
-      })}
+                <Typography
+                  variant="subtitle1"
+                  textAlign="center"
+                  style={{
+                    lineHeight: "1",
+                    fontSize: "0.8rem",
+                  }}
+                >
+                  {t(allergene)}
+                </Typography>
+                {isAllergeneKo ? <Close /> : <Check />}
+              </Stack>
+            </Box>
+          );
+        }
+      )}
     </Stack>
   );
 };

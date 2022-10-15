@@ -85,11 +85,6 @@
           "titreFR": "Navarin d’agneau aux petits pois",
           "titreEN": "Lamb stews with peas",
           "allergenes": ["vegetarien"]
-        },
-        {
-          "titreFR": "Mini opéra foie gras et coing",
-          "titreEN": "Mini opéra foie gras et coing",
-          "allergenes": ["vegetarien"]
         }
       ]
     },
@@ -180,7 +175,7 @@
         {
           "titreFR": "Coque chocolat et cachuète",
           "titreEN": "Chocolate shell with caramelised peanuts",
-          "allergenes": ["gluten", "lactose", "arachides"]
+          "allergenes": ["lactose", "arachides"]
         },
         {
           "titreFR": "Biscuit amande caramel au beurre salé",
@@ -195,7 +190,7 @@
         {
           "titreFR": "Macarons",
           "titreEN": "Macarons",
-          "allergenes": ["gluten", "oeufs", "lactose", "fruits-a-coques"]
+          "allergenes": ["oeufs", "lactose", "fruits-a-coques"]
         }
       ]
     }
@@ -234,7 +229,7 @@
         {
           "titreFR": "Tarte fine petits pois",
           "titreEN": "French pea's pie",
-          "allergenes": ["gluten", "oeufs", "lactose", "vegetarien"]
+          "allergenes": ["gluten", "oeufs", "lactose"]
         },
         {
           "titreFR": "Velouté butternut et chataîgne",
@@ -249,7 +244,7 @@
         {
           "titreFR": "Crème de céleri et artichaut confit",
           "titreEN": "Celery cream and candied artichokes",
-          "allergenes": ["lactose", "celeri", "vegetarien"]
+          "allergenes": ["lactose", "celeri"]
         },
         {
           "titreFR": "Viennois coleslaw aux oignons rouges et avocat",
@@ -370,6 +365,7 @@
     },
     {
       "titreFR": "Douceurs sucrées",
+      "titreEN": "Sweet bites",
       "plats": [
         {
           "titreFR": "Découpe d’éclairs géant, parfums vanille, chocolat, pistache",
@@ -384,7 +380,7 @@
         {
           "titreFR": "Carrot cake",
           "titreEN": "Carrot cake",
-          "allergenes": ["gluten", "oeufs", "lactose", "fruits-a-coques"]
+          "allergenes": ["gluten", "fruits-a-coques"]
         },
         {
           "titreFR": "Tatin pomme",
@@ -404,7 +400,7 @@
         {
           "titreFR": "Macarons",
           "titreEN": "Macarons",
-          "allergenes": ["gluten", "oeufs", "lactose", "fruits-a-coques"]
+          "allergenes": ["oeufs", "lactose", "fruits-a-coques"]
         }
       ]
     }
