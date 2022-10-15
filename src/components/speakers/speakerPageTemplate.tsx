@@ -57,7 +57,7 @@ const SpeakerPageTemplate: React.FC<{ pageContext: { speaker: Speaker } }> = ({
               {speaker.company && (
                 <Typography
                   variant="h4"
-                  sx={{ color: "var(--primary)", marginTop: "20px" }}
+                  style={{ color: "var(--primary)", marginTop: "20px" }}
                 >
                   {speaker.company}
                 </Typography>
