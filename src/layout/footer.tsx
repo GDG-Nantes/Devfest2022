@@ -49,6 +49,10 @@ export const Footer: React.FC = () => {
       login: "francegdg",
       type: "youtube",
     },
+    {
+      login: "GDG-Nantes/Devfest2022",
+      type: "github",
+    },
   ];
 
   const aboutLinks: FooterLink[] = [
