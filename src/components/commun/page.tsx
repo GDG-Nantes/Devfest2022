@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Hero } from "./hero/hero";
 import { Jumbo } from "./jumbo/jumbo";
 
@@ -19,7 +20,9 @@ export const DefaultPage: React.FC<PageConfig> = ({
 }) => {
   return (
     <main>
-      <title>{title}</title>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       {JumboContent ? (
         <Jumbo background={background}>
           <JumboContent />
