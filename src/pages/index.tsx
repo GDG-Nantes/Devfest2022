@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { SubscribeNewsletter } from "../components/commun/newsletter";
 import { DefaultPage } from "../components/commun/page";
 import {
+  DefaultSection,
   PrimarySection,
   SecondarySection,
   TertiarySection,
@@ -15,6 +16,7 @@ import {
   HomeJumbo,
   HomeMap,
 } from "../components/home";
+import { PlanCite } from "../components/home/plan";
 import { Tickets } from "../components/home/tickets";
 import { Partners } from "../components/partners";
 import { Speakers } from "../components/speakers/speakers";
@@ -32,14 +34,9 @@ const HomeContent = () => {
         <DevfestNumbers />
         <Youtube id="rQaEzZIZIRg" title="Teaser 2022" />
       </SecondarySection>
-      <PrimarySection>
-        <Typography variant="h2">{t("pages.home.tickets.name")}</Typography>
-        <Typography variant="h3">
-          {t("pages.home.tickets.description")}
-        </Typography>
-        <Tickets />
-      </PrimarySection>
-      <SecondarySection>
+      <PlanCite />
+      <HomeMap />
+      <DefaultSection variant="primary-dark" className="home-speakers">
         <Typography variant="h2">{t("pages.home.speakers.title")}</Typography>
         <Speakers featuredOnly={true} />
         <Stack justifyContent="center" alignItems="center" marginTop={8}>
@@ -49,12 +46,18 @@ const HomeContent = () => {
             </Button>
           </MyLink>
         </Stack>
-      </SecondarySection>
+      </DefaultSection>
+      <PrimarySection>
+        <Typography variant="h2">{t("pages.home.tickets.name")}</Typography>
+        <Typography variant="h3">
+          {t("pages.home.tickets.description")}
+        </Typography>
+        <Tickets />
+      </PrimarySection>
       <TertiarySection slim>
         <Typography variant="h2">{t("pages.home.newsletter")}</Typography>
         <SubscribeNewsletter />
       </TertiarySection>
-      <HomeMap />
       <Partners onlyPlatinium={true} />
 
       <DevfestPhotos />

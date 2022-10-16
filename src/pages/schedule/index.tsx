@@ -8,12 +8,18 @@ import { Schedule } from "../../components/schedule";
 import { MyLink } from "../../helpers/links";
 import Layout from "../../layout";
 
-export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
+export const SchedulePage: React.FC<{ day?: 1 | 2 }> = ({ day }) => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.schedule" });
+
+  React.useEffect(() => {
+    if (day == null && new Date().toLocaleDateString("fr") === "21/10/2022") {
+      window.location.pathname = "/schedule/2";
+    }
+  }, []);
 
   return (
     <Layout>
-      <DefaultPage title={t("name")}>
+      <DefaultPage title={t("name")} noHero>
         <DefaultSection slim variant="primary-dark">
           <Stack
             className="header-days"
@@ -49,10 +55,8 @@ export const SchedulePage: React.FC<{ day: 1 | 2 }> = ({ day = 1 }) => {
               </Button>
             </MyLink>
           </Stack>
-          <Schedule day={day} />
+          <Schedule day={day || 1} />
         </DefaultSection>
-        {/* <SecondarySection padding="small">
-        </SecondarySection> */}
       </DefaultPage>
     </Layout>
   );

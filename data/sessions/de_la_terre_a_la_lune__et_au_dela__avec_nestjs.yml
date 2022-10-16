@@ -18,8 +18,8 @@ abstract: |-
 
   NestJS est un framework Node.js s'appuyant au choix sur Express ou Fastify. Pourquoi ne pas utiliser directement ces derniers ? Tout simplement parce que NestJS intègre les paradigmes des frameworks de référence du marché (Spring pour Java, Django pour Python ou encore Laravel pour PHP) pour faciliter la vie du développeur et lui permettre de développer rapidement des API bien conçues et plus fiables.
 
-  Durant ce codelab vous aurez sous vos doigts tous les outils pour satelliser vos API aussi bien que Jules Verne a lancé sa fusée vers la lune. En créant une API de réservation de voyages spatiaux vous découvrirez l'approche MVC  structurée en modules de NestJS inspirée d'Angular.  Nous coderons en TypeScript une API REST sécurisée s'appuyant sur le puissant TypeORM, en utilisant des "decorators", l'injection de dépendances et autres "guards" ... Enfin, nous fiabiliserons notre API au travers de tests unitaires Jest.
+  Durant ce codelab vous aurez sous vos doigts tous les outils pour satelliser vos API aussi bien que Jules Verne a lancé sa fusée vers la lune. En créant une API de réservation de voyages spatiaux vous découvrirez l'approche MVC  structurée en modules de NestJS inspirée d'Angular.  Nous coderons en TypeScript une API REST sécurisée s'appuyant sur le puissant TypeORM, en utilisant des "decorators", l'injection de dépendances et autres "guards" ...
 
   NestJS, vers l'infini et au-delà !
 
-  Prérequis : Node.js installé sur votre machine (en version LTS de préférence), VS Code (ou n'importe quel éditeur de code). Des connaissances de base de Javascript. Suivez nous sur les réseaux sociaux où nous partagerons le repository Github que vous pourrez cloner avant le codelab.
+  Prérequis : Node.js installé sur votre machine (en version LTS de préférence), VS Code (ou n'importe quel éditeur de code). Des connaissances de base de Javascript. Nous vous recommandons, avant d'assister au codelab, de suivre les instructions de l'étape 1 du codelab que vous trouverez [ici](https://chawax.github.io/nestjs-codelab/#0).
