@@ -14,6 +14,11 @@ openfeedbackId: 55
 abstract: |-
   Le serverless permet d’exécuter des applications sans avoir à gérer de serveurs. Le “Function as a Service” ou FaaS est un modèle d’exécution qui consiste à considérer ses applications comme des fonctions dans un environnement serverless.
 
-  Les offres managées FaaS font parties des services de base que proposent la grande majorité des fournisseurs cloud. D’un fournisseur à un autre, la manière d’utiliser ces services est différente, augmentant le vendor locking.
+  Les offres managées FaaS font parties des services de base que propose la grande majorité des fournisseurs cloud. D’un fournisseur à un autre, la manière d’utiliser ces services est différente, augmentant le vendor locking.
 
-  À travers cet atelier, nous allons voir comment il est possible de créer sa propre plateforme FaaS dans Kubernetes avec OpenFaaS. Favorisant ainsi la réversibilité et facilitant les tests dès le poste de développement.
+  À travers cet atelier, nous allons voir comment et pourquoi créer sa propre plateforme FaaS dans Kubernetes avec OpenFaaS. Nous découvrirons toutes les possibilités offertes par ce modèle.
+
+  Cet atelier s’adresse à tous les types de profils : du développement à l’OPS. Il n’y a pas besoin de maîtriser Kubernetes pour y participer.
+
+  Prérequis : Disposer d’un cluster Kubernetes local (Kubernetes dans Docker Desktop, Kind, k3s…) et kubectl.  (facultatif : l’IDE Lens pour plus de facilité).
+
