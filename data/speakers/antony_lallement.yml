@@ -8,3 +8,13 @@ city: Lille, France
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14Gj83vz09VDCMQQ9TksnAMwDXFhIlUjGRa1YsRkN=s96-c
 socials:
   github: ADN182
+bio: |-
+  (Dev)Ops depuis 4 ans chez [__ADN Consulting__](https://www.adn-consulting.fr/).
+
+  Je suis passionné d'informatique, de domotique, j'aime partager, échanger de bonnes pratiques, automatiser !
+
+  Mon objectif est de rendre la vie plus facile aux utilisateurs d'infrastructures dans le but de leur faire gagner du temps #ReduceTimeToMarket
+
+  Je travaille actuellement sur des technologies containers tant chez les clients qu'à la maison.
+
+  #Serverless #K8s #K3s #GitOps
