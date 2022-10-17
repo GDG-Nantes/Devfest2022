@@ -12,17 +12,7 @@ slot: day-1-conference-1
 room: Tour de Bretagne
 openfeedbackId: 48
 abstract: |-
-  J’ai toujours rêver de comprendre comment  fonctionnait Shazam.
+  J’ai toujours rêvé de comprendre comment fonctionnait Shazam.
 
-  Cette application qui permet de retrouver l’artiste et le titre d’une chanson juste avec un enregistrement de quelques secondes.
-  Du coup j’ai décider de la re-coder ! Je vous montre tout cela pendant ce talk,  et ce sera l’occasion de parler notes musicales, harmoniques, fréquences, signaux, et de transformée de fourrier (et de Kanye West) pour recréer l’algorithme qui fait tourner le moteur Shazam  ⚡️
-
-
-
-
-
-
-
-  Comment cloner Shazam !  L'application qui permet de retrouver l'artiste et le titre d'une chanson juste avec un enregistrement de quelques secondes.
-
-  On va parler notes musicales, harmoniques, fréquences, signaux,  et transformation de fourrier (et de Kanye West) pour recréer l'algorithme qui fait tourner le moteur Shazam  ⚡️
+  L'application qui permet de retrouver l’artiste et le titre d’une chanson juste avec un enregistrement de quelques secondes.
+  Du coup, j’ai décidé de la re-coder ! Je vous montre tout cela pendant ce talk, et ce sera l’occasion de parler notes musicales, harmoniques, fréquences, signaux, et de transformée de Fourier (et de Kanye West) pour recréer l’algorithme qui fait tourner le moteur Shazam  ⚡️
