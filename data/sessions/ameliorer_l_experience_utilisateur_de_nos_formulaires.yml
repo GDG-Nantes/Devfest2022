@@ -1,6 +1,6 @@
 ---
 key: ameliorer_l_experience_utilisateur_de_nos_formulaires
-title: Améliorer l'expérience utilisateur de nos formulaires
+title: Améliorer l'expérience utilisateur de nos formulaires web
 language: French
 talkType: conference
 tags:
@@ -14,8 +14,8 @@ openfeedbackId: 6
 abstract: |
   **Les formulaires sont au centre de notre utilisation du Web aujourd'hui.**
 
-  Ce n'est pas à l'ère où les chatbots et interfaces vocales sont censés remplacer les formulaires et accompagner les utilisateur·rice·s qu'il faut relâcher nos efforts sur l'ergonomie et la qualité du code et de l'expérience de formulaires web.
+  Ce n'est pas à l'ère où les chatbots et interfaces vocales sont censés remplacer les formulaires et accompagner les utilisateur·rice·s qu'il faut relâcher nos efforts sur l'ergonomie et la qualité du code et de l'expérience de nos formulaires web.
 
   Entre **accessibilité, ergonomie, qualité du code et expérience utilisateur**, je vous propose de faire un petit tour d'horizon des erreurs les plus communes et de synthétiser tout cela sous la forme d'une checklist de **bonnes pratiques** qui pourrait encadrer la création de formulaires dans vos projets.
 
-  Je vous expliquerai brièvement comment **suivre l'usage** que vos utilisateurs et utilisatrices en ont pour **toujours améliorer leur expérience**.
+  Ce talk est un doux rappel que nous avons toujours des choses à améliorer, et que nous ne connaissons pas toujours nos utilisateurs.
