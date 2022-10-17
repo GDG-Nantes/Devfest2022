@@ -50,7 +50,9 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
                 color="inherit"
                 sx={{ color: "var(--primary-dark)" }}
               />
-              <Typography variant="h3">{slotLabel}</Typography>
+              <Typography variant="h3">
+                {slotLabel} {session.room}
+              </Typography>
             </Stack>
             <Stack spacing={1}>
               {session.speakers.map((speaker) => (
