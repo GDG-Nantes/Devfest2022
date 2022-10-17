@@ -16,3 +16,13 @@ abstract: |
    
   Venez développer pas à pas une application en ligne de commande pour découvrir et apprendre Rust.
   L’atelier est conçu de manière pédagogique pour appréhender les concepts un par un tout au long de l’atelier.
+
+  Attention, le nombre de places est limité à 15 maximum !
+   
+  Pour gagner du temps, préparez votre environnement en installant Rust ([suivre les instructions d'installation](https://www.rust-lang.org/tools/install))
+
+  Le dépôt Github de l'atelier est ici :  https://github.com/jrollin/Rust-cli-workshop
+
+
+
+
