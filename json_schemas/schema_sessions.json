@@ -57,6 +57,9 @@
     },
     "openfeedbackId": {
       "type": "number"
+    },
+    "cancelled": {
+      "type": "boolean"
     }
   },
   "definitions": {

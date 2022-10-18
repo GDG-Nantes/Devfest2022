@@ -6,13 +6,13 @@ talkType: codelab
 tags:
   - discovery
 complexity: Beginner
+cancelled: true
 speakers:
   - arthur_tarroux
   - melissa_cottin
   - stephanie_vachon
 slot: day-1-codelab-3
 room: L'Atelier
-openfeedbackId: 49
 abstract: |-
   Le constat est assez simple : les métiers du numérique recrutent, les besoins en compétences ne cessent de grandir, les opportunités d’emplois sont aujourd'hui bien réelles. Pourtant, les femmes restent encore sous-représentées dans ce secteur porteur : seulement 27 % de femmes travaillent aujourd’hui dans le numérique. Ce chiffre tombe à 15 % environ dans les métiers de l’informatique. 
 

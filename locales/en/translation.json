@@ -100,6 +100,9 @@
     "main": "You seem lost...",
     "button": "Back to a safe place"
   },
+  "sessions": {
+    "cancelled": "Cancelled"
+  },
   "footer": {
     "about": "About",
     "follow": "Follow us",

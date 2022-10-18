@@ -43,6 +43,18 @@ export const HomeJumbo = () => {
             {t("generate-ticket")}
           </Button>
         </MyLink>
+        <MyLink to="/schedule">
+          <Button
+            variant="contained"
+            color="secondary"
+            aria-label={t("generate-ticket")}
+          >
+            <IconButton>
+              <ConfirmationNumber />
+            </IconButton>
+            {t("generate-ticket")}
+          </Button>
+        </MyLink>
       </Stack>
     </>
   );

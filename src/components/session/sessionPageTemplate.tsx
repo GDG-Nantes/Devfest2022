@@ -1,5 +1,6 @@
 import { AccessTime } from "@mui/icons-material";
 import { Card, Stack, Typography } from "@mui/material";
+import classNames from "classnames";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -19,6 +20,7 @@ import "./style.scss";
 const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
   pageContext: { session },
 }) => {
+  const { t } = useTranslation("translation", { keyPrefix: "sessions" });
   const slotLabel = getSessionSlotLabel(session.slot);
   const dateSession = session.slot.startsWith("day-1")
     ? "2022-10-20"
@@ -29,7 +31,19 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
     <Layout>
       <DefaultPage title={session.title} noHero={true}>
         <TertiarySection>
-          <Typography variant="h1" color="primary">
+          {session.cancelled && (
+            <Typography variant="h1" color="primary">
+              {t("cancelled")}
+            </Typography>
+          )}
+          <Typography
+            variant="h1"
+            color="primary"
+            className={classNames(
+              "session-title",
+              session.cancelled && "cancelled"
+            )}
+          >
             {session.title}
           </Typography>
           <Stack spacing={5}>
@@ -64,11 +78,13 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
         <SecondarySection>
           <Markdown content={session.abstract} />
         </SecondarySection>
-        <iframe
-          id="iframe-openfeedback"
-          title="Openfeedback"
-          src={urlOpenfeedback}
-        />
+        {session.openfeedbackId && (
+          <iframe
+            id="iframe-openfeedback"
+            title="Openfeedback"
+            src={urlOpenfeedback}
+          />
+        )}
       </DefaultPage>
     </Layout>
   );

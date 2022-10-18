@@ -96,6 +96,9 @@
     "code-of-conduct": { "name": "Code de conduite" },
     "legal-mentions": { "name": "Mentions Légales" }
   },
+  "sessions": {
+    "cancelled": "Annulé"
+  },
   "404": {
     "main": "Vous avez l'air perdu...",
     "button": "Retour en lieu sûr"

@@ -75,7 +75,9 @@ const Session: React.FC<{ session: PartialSession }> = ({ session }) => {
 
 const SessionInfo: React.FC<{ session: PartialSession }> = ({ session }) => {
   return (
-    <div className="session-info">
+    <div
+      className={classNames("session-info", session.cancelled && "cancelled")}
+    >
       <span className="session-title">{session.title}</span>
       <Stack spacing={2} alignItems="center" direction="row">
         <Tags tags={session.tags} />
