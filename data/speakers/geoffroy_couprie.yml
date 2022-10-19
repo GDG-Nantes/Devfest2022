@@ -1,7 +1,7 @@
 ---
 key: geoffroy_couprie
 name: Geoffroy Couprie
-company: Freelance
+company: Apollo GraphQL
 city: Nantes, France
 feature: false
 photoUrl: https://lh3.googleusercontent.com/a-/AOh14Gjbu0BR5NRQI_BbpyOd1N97-0azre710tLUGqxFWw=s96-c
@@ -9,3 +9,7 @@ socials:
   twitter: gcouprie
   github: Geal 
   linkedin: gcouprie
+bio: |-
+  Un jour, j'ai pris une pelletée d'octets pour les déplacer, et depuis je travaille à des méthodes
+  de plus en plus efficaces pour déplacer des octets. Développeur de proxys et implémentations de HTTP,
+  bricoleur de cryptographie, je cache du code Rust dans vos systèmes
