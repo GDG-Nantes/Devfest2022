@@ -22,7 +22,7 @@ export const JobsWidget = () => {
           {/* @ts-ignore */}
           <jobs-widget
             locale="fr"
-            items="30"
+            items="150"
             hidepartnership="false"
             hidefooter="false"
             referralcode="GDGNantes"
