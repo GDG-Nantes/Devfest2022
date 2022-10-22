@@ -1,4 +1,4 @@
-import { ConfirmationNumber } from "@mui/icons-material";
+import { AddComment } from "@mui/icons-material";
 import { Button, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -31,28 +31,16 @@ export const HomeJumbo = () => {
         Plonge dans l&apos;univers de Jules Verne !
       </Typography>
       <Stack direction="row" spacing={3}>
-        <MyLink to="https://www.billetweb.fr/devfest-Nantes">
+        <MyLink to="https://openfeedback.io/devfestnantes22">
           <Button
             variant="contained"
             color="secondary"
-            aria-label={t("generate-ticket")}
+            aria-label="OpenFeedback"
           >
             <IconButton>
-              <ConfirmationNumber />
+              <AddComment />
             </IconButton>
-            {t("generate-ticket")}
-          </Button>
-        </MyLink>
-        <MyLink to="/schedule">
-          <Button
-            variant="contained"
-            color="secondary"
-            aria-label={t("generate-ticket")}
-          >
-            <IconButton>
-              <ConfirmationNumber />
-            </IconButton>
-            {t("generate-ticket")}
+            Openfeedback
           </Button>
         </MyLink>
       </Stack>
