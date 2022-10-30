@@ -12,6 +12,7 @@ speakers:
 slot: day-1-conference-1
 room: Titan
 openfeedbackId: 23
+youtube: nNjUApac0cU
 abstract: |-
   Dans un contexte d’ouverture vers l’extérieur, le SI est de plus en plus exposé publiquement sur Internet.
   Mais comment garantir la sécurité de celui-ci ? Le Zero Trust s’impose comme l’approche la plus sécurisée en obligeant les entreprises à contrôler les identités et les autorisations des ressources afin de garantir l’intégrité des flux.

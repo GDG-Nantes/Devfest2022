@@ -11,6 +11,7 @@ speakers:
 slot: day-1-conference-5
 room: Belem
 openfeedbackId: 43
+youtube: PNNHGmXcmHw
 abstract: |+
   Lorsqu'on parle d'IoT, on a tous à l'esprit l'Arduino, les puces WiFi ESP...
   Et en général, on les programmes en hybride C/C++.

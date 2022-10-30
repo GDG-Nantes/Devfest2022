@@ -11,6 +11,8 @@ speakers:
 slot: day-2-quickie-2
 room: Titan
 openfeedbackId: 53
+youtube: dO6ASsadHqM
+slides: https://speakerdeck.com/jeanphibaconnais/cloud-seed-le-voyage-extraordinaire-promis-par-gitlab-pour-deployer-rapidement-votre-application-sur-gcp
 abstract: |-
   Le déploiement de nos applications sur un provider Cloud ne devrait pas être une étape compliquée.
 

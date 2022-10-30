@@ -11,6 +11,7 @@ speakers:
 slot: day-2-conference-5
 room: Jules Verne
 openfeedbackId: 62
+youtube: H62ykGQwLHk
 abstract: |-
   The web is a great platform to reach a broad audience with our web apps and sites, but to do so we need to make sure that our web apps are findable for our potential users. 
   In this session we will open up the black box of SEO and find out what we can do in our code to make sure our web apps are search-friendly and gather a set of tools to debug and test our sites for discoverability.

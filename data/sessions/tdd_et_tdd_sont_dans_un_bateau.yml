@@ -11,6 +11,7 @@ speakers:
 slot: day-2-conference-4
 room: Belem
 openfeedbackId: 52
+youtube: 6zQs4B2NIKA
 abstract: |-
   Cette session est une introduction par la pratique à l’utilisation des systèmes de types fonctionnels “avancés”, tels qu’on peut les trouver dans des langages comme Haskell, OCaml ou Idris, pour modéliser et coder des problèmes concrets complexes de manière plus sûre et compacte. À partir d’un exemple relativement complexe mais très concret, le numéro de sécurité sociale et sa vérification, je présente différentes approches pour développer une implémentation qui soit la plus sûr et la plus expressive possible : tests de propriétés, tests de mutations, types de données algébriques et types dépendants sont au programme. Bien que le code présenté soit en Haskell, cette session devrait donner aux participants des idées et concepts transposables dans leur environnement technique particulier.
 

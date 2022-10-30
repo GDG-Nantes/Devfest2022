@@ -11,6 +11,7 @@ speakers:
 slot: day-2-conference-3
 room: Jules Verne
 openfeedbackId: 2
+youtube: xtpaQ8_mmKM
 abstract: |-
   Dans le cadre de nos projets Web, on finit tous tôt au tard par faire appel à ce bon vieux cache HTTP.
   Évidemment, on cherche à réduire les temps de chargement de nos utilisateurs et à soulager la charge de nos serveurs.
