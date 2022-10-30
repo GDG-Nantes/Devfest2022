@@ -11,6 +11,8 @@ speakers:
 slot: day-1-conference-5
 room: Tour de Bretagne
 openfeedbackId: 40
+youtube: z7BdJyZyXAo
+slides: /slides/JulesVerne_deck.pdf
 abstract: |-
   Rien n'a voir avec la programmation orientée objet ou la programmation fonctionnelle, la programmation dynamique est une famille d'algorithme.
 

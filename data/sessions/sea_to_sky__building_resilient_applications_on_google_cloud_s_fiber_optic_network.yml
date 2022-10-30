@@ -11,4 +11,5 @@ speakers:
 slot: day-1-conference-2
 room: Jules Verne
 openfeedbackId: 33
+youtube: fmpecix8odQ
 abstract: "Some of you might be surprised to know that the Cloud isn't in the sky, it's undersea. Google Cloud is underpinned by fiber optic cables that criss-cross the globe to create one of the most advanced networks supporting failover, redundancy, and a highly performant virtualized network. Join Stephanie Wong on a journey to the bottom of the ocean and up into the sky as she discusses Google's physical network infrastructure, the technology that support Google Cloud's virtual private cloud, and the new world of service-oriented networking in the cloud. She'll dig into the inner workings of Google's decades of subsea and terrestrial cable designs, the network topology they've built to withstand failures, and how you can build resilient applications in the cloud as a result. "

@@ -58,6 +58,12 @@
     "openfeedbackId": {
       "type": "number"
     },
+    "youtube": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "string"
+    },
     "cancelled": {
       "type": "boolean"
     }

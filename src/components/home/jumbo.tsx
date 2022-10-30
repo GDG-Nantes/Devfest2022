@@ -1,4 +1,4 @@
-import { AddComment } from "@mui/icons-material";
+import { AddComment, PhotoCamera } from "@mui/icons-material";
 import { Button, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -41,6 +41,14 @@ export const HomeJumbo = () => {
               <AddComment />
             </IconButton>
             Openfeedback
+          </Button>
+        </MyLink>
+        <MyLink to="https://photos.app.goo.gl/zGn6FXECdRXH9D4f8">
+          <Button variant="contained" color="secondary" aria-label="Photos">
+            <IconButton>
+              <PhotoCamera />
+            </IconButton>
+            Photos
           </Button>
         </MyLink>
       </Stack>

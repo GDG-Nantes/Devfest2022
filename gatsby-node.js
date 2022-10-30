@@ -57,6 +57,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               abstract
               openfeedbackId
               cancelled
+              youtube
+              slides
             }
           }
         }

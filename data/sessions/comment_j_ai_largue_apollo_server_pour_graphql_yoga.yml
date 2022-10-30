@@ -11,6 +11,7 @@ speakers:
 slot: day-1-conference-2
 room: Tour de Bretagne
 openfeedbackId: 54
+youtube: xzykiQJJRmw
 abstract: |-
   Dans l'écosystème des serveurs GraphQL, Apollo Server fait figure de référence.
   Mais de plus en plus d'alternatives font leur apparition, et notamment en début d'année GraphQL Yoga v2, un serveur fully featured et extensible.
