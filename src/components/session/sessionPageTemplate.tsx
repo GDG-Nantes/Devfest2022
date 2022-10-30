@@ -1,8 +1,7 @@
 import { AccessTime, Slideshow, YouTube } from "@mui/icons-material";
-import { Card, Stack, Typography } from "@mui/material";
+import { Button, Card, IconButton, Stack, Typography } from "@mui/material";
 import classNames from "classnames";
 import { graphql, useStaticQuery } from "gatsby";
-import { Button, IconButton } from "gatsby-theme-material-ui";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { slots } from "../../../data/slots.json";
@@ -74,39 +73,39 @@ const SessionPageTemplate: React.FC<{ pageContext: { session: Session } }> = ({
                 <SpeakerCard key={speaker} speakerKey={speaker} />
               ))}
             </Stack>
-            {session.youtube ||
-              (session.slides && (
-                <Stack direction="row" spacing={3}>
-                  {session.youtube && (
-                    <MyLink to={`https://youtu.be/${session.youtube}`}>
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        aria-label="Youtube"
-                      >
-                        <IconButton>
-                          <YouTube />
-                        </IconButton>
-                        Youtube
-                      </Button>
-                    </MyLink>
-                  )}
-                  {session.slides && (
-                    <MyLink to={session.slides}>
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        aria-label="Slides"
-                      >
-                        <IconButton>
-                          <Slideshow />
-                        </IconButton>
-                        Slides
-                      </Button>
-                    </MyLink>
-                  )}
-                </Stack>
-              ))}
+
+            {(session.youtube || session.slides) && (
+              <Stack direction="row" spacing={3}>
+                {session.youtube && (
+                  <MyLink to={`https://youtu.be/${session.youtube}`}>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      aria-label="Youtube"
+                    >
+                      <IconButton>
+                        <YouTube />
+                      </IconButton>
+                      Youtube
+                    </Button>
+                  </MyLink>
+                )}
+                {session.slides && (
+                  <MyLink to={session.slides}>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      aria-label="Slides"
+                    >
+                      <IconButton>
+                        <Slideshow />
+                      </IconButton>
+                      Slides
+                    </Button>
+                  </MyLink>
+                )}
+              </Stack>
+            )}
           </Stack>
         </TertiarySection>
         <SecondarySection>
