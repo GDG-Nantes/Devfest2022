@@ -1,5 +1,6 @@
 import { AddComment, PhotoCamera } from "@mui/icons-material";
-import { Button, IconButton, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
+import { Button, IconButton } from "gatsby-theme-material-ui";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { MyLink } from "../../helpers/links";
