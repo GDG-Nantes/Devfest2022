@@ -1,4 +1,4 @@
-import { AddComment, PhotoCamera } from "@mui/icons-material";
+import { AddComment, PhotoCamera, YouTube } from "@mui/icons-material";
 import { Button, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -49,6 +49,14 @@ export const HomeJumbo = () => {
               <PhotoCamera />
             </IconButton>
             Photos
+          </Button>
+        </MyLink>
+        <MyLink to="https://www.youtube.com/watch?v=rQaEzZIZIRg&list=PLuZ_sYdawLiWIRK-QW6zpEJMSeCtspXP8">
+          <Button variant="contained" color="secondary" aria-label="Youtube">
+            <IconButton>
+              <YouTube />
+            </IconButton>
+            Youtube
           </Button>
         </MyLink>
       </Stack>
