@@ -1,4 +1,4 @@
-import { AddComment, PhotoCamera, YouTube } from "@mui/icons-material";
+import { PhotoCamera, YouTube } from "@mui/icons-material";
 import { Button, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -31,7 +31,7 @@ export const HomeJumbo = () => {
         Plonge dans l&apos;univers de Jules Verne !
       </Typography>
       <Stack direction="row" spacing={3}>
-        <MyLink to="https://openfeedback.io/devfestnantes22">
+        {/* <MyLink to="https://openfeedback.io/devfestnantes22">
           <Button
             variant="contained"
             color="secondary"
@@ -42,7 +42,7 @@ export const HomeJumbo = () => {
             </IconButton>
             Openfeedback
           </Button>
-        </MyLink>
+        </MyLink> */}
         <MyLink to="https://photos.app.goo.gl/zGn6FXECdRXH9D4f8">
           <Button variant="contained" color="secondary" aria-label="Photos">
             <IconButton>
