@@ -43,6 +43,11 @@ export const HomeJumbo = () => {
             Openfeedback
           </Button>
         </MyLink> */}
+        <MyLink to="https://devfest2023.gdgnantes.com">
+          <Button variant="contained" color="secondary" aria-label="édition 2023">
+            Edition 2023
+          </Button>
+        </MyLink>
         <MyLink to="https://photos.app.goo.gl/zGn6FXECdRXH9D4f8">
           <Button variant="contained" color="secondary" aria-label="Photos">
             <IconButton>
