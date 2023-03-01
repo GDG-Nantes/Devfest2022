@@ -1,5 +1,4 @@
-import { PhotoCamera, YouTube } from "@mui/icons-material";
-import { Button, IconButton, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { MyLink } from "../../helpers/links";
@@ -44,23 +43,21 @@ export const HomeJumbo = () => {
           </Button>
         </MyLink> */}
         <MyLink to="https://devfest2023.gdgnantes.com">
-          <Button variant="contained" color="secondary" aria-label="édition 2023">
+          <Button
+            variant="contained"
+            color="secondary"
+            aria-label="édition 2023"
+          >
             Edition 2023
           </Button>
         </MyLink>
         <MyLink to="https://photos.app.goo.gl/zGn6FXECdRXH9D4f8">
           <Button variant="contained" color="secondary" aria-label="Photos">
-            <IconButton>
-              <PhotoCamera />
-            </IconButton>
             Photos
           </Button>
         </MyLink>
         <MyLink to="https://www.youtube.com/watch?v=rQaEzZIZIRg&list=PLuZ_sYdawLiWIRK-QW6zpEJMSeCtspXP8">
           <Button variant="contained" color="secondary" aria-label="Youtube">
-            <IconButton>
-              <YouTube />
-            </IconButton>
             Youtube
           </Button>
         </MyLink>
